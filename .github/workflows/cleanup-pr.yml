@@ -1,0 +1,21 @@
+name: Cleanup PR Preview
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  pages: write
+  deployments: write
+  id-token: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete PR Environment
+        uses: peter-evans/delete-environment@v2
+        with:
+          environment: pr-${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
