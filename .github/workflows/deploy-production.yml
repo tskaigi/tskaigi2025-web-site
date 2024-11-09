@@ -28,13 +28,9 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
-
-      # 環境変数を設定
       - name: Set environment variables
-        run: echo "NEXT_PUBLIC_BASE_PATH=${{ env.BASE_PATH }}" >> $GITHUB_ENV
-        env:
-          # 本番環境のベースパスを設定（必要に応じて変更）
-          BASE_PATH: "/tskaigi2025-web-site"
+        run: |
+          echo "NEXT_PUBLIC_BASE_PATH=/tskaigi2025-web-site" >> $GITHUB_ENV
 
       - run: pnpm build
 
