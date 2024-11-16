@@ -2,7 +2,7 @@
 
 import { useCountdownTimer } from "./useCountdownTimer";
 
-export default function CountdownTimer() {
+export function CountdownTimer() {
   const { timeLeft } = useCountdownTimer();
 
   return (

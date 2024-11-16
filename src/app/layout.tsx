@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type React from "react";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
