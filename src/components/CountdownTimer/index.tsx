@@ -10,36 +10,51 @@ export default function CountdownTimer() {
       <div className="backdrop-blur-sm bg-white/85 rounded-xl py-4 md:py-8 shadow-lg">
         <div className="flex gap-1 md:gap-4 items-end justify-center text-blue-600">
           <div className="text-center min-w-[3rem]">
-            <div className="text-xs md:text-sm font-bold mb-1 md:mb-3">
+            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Days
-            </div>
+            </span>
             <div className="text-2xl md:text-5xl font-bold tabular-nums">
               {timeLeft.days.toString().padStart(3, "0")}
             </div>
           </div>
-          <div className="text-2xl md:text-5xl font-bold mb-0.5">:</div>
+          <span
+            className="text-2xl md:text-5xl font-bold mb-0.5"
+            aria-hidden="true"
+          >
+            :
+          </span>
           <div className="text-center min-w-[3rem]">
-            <div className="text-xs md:text-sm font-bold mb-1 md:mb-3">
+            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Hour
-            </div>
+            </span>
             <div className="text-2xl md:text-5xl font-bold tabular-nums">
               {timeLeft.hours.toString().padStart(2, "0")}
             </div>
           </div>
-          <div className="text-2xl md:text-5xl font-bold mb-0.5">:</div>
+          <span
+            className="text-2xl md:text-5xl font-bold mb-0.5"
+            aria-hidden="true"
+          >
+            :
+          </span>
           <div className="text-center min-w-[3rem]">
-            <div className="text-xs md:text-sm font-bold mb-1 md:mb-3">
+            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Minutes
-            </div>
+            </span>
             <div className="text-2xl md:text-5xl font-bold tabular-nums">
               {timeLeft.minutes.toString().padStart(2, "0")}
             </div>
           </div>
-          <div className="text-2xl md:text-5xl font-bold mb-0.5">:</div>
+          <span
+            className="text-2xl md:text-5xl font-bold mb-0.5"
+            aria-hidden="true"
+          >
+            :
+          </span>
           <div className="text-center min-w-[3rem]">
-            <div className="text-xs md:text-sm font-bold mb-1 md:mb-3">
+            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Seconds
-            </div>
+            </span>
             <div className="text-2xl md:text-5xl font-bold tabular-nums">
               {timeLeft.seconds.toString().padStart(2, "0")}
             </div>
