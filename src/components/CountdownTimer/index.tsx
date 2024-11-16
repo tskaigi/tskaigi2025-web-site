@@ -13,9 +13,12 @@ export default function CountdownTimer() {
             <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Days
             </span>
-            <div className="text-2xl md:text-5xl font-bold tabular-nums">
+            <time
+              className="block text-2xl md:text-5xl font-bold tabular-nums"
+              dateTime={`P${timeLeft.days}D`}
+            >
               {timeLeft.days.toString().padStart(3, "0")}
-            </div>
+            </time>
           </div>
           <span
             className="text-2xl md:text-5xl font-bold mb-0.5"
@@ -27,9 +30,12 @@ export default function CountdownTimer() {
             <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Hour
             </span>
-            <div className="text-2xl md:text-5xl font-bold tabular-nums">
+            <time
+              className="block text-2xl md:text-5xl font-bold tabular-nums"
+              dateTime={`PT${timeLeft.hours}H`}
+            >
               {timeLeft.hours.toString().padStart(2, "0")}
-            </div>
+            </time>
           </div>
           <span
             className="text-2xl md:text-5xl font-bold mb-0.5"
@@ -41,9 +47,12 @@ export default function CountdownTimer() {
             <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Minutes
             </span>
-            <div className="text-2xl md:text-5xl font-bold tabular-nums">
+            <time
+              className="block text-2xl md:text-5xl font-bold tabular-nums"
+              dateTime={`PT${timeLeft.minutes}M`}
+            >
               {timeLeft.minutes.toString().padStart(2, "0")}
-            </div>
+            </time>
           </div>
           <span
             className="text-2xl md:text-5xl font-bold mb-0.5"
@@ -55,9 +64,12 @@ export default function CountdownTimer() {
             <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
               Seconds
             </span>
-            <div className="text-2xl md:text-5xl font-bold tabular-nums">
+            <time
+              className="block text-2xl md:text-5xl font-bold tabular-nums"
+              dateTime={`PT${timeLeft.seconds}S`}
+            >
               {timeLeft.seconds.toString().padStart(2, "0")}
-            </div>
+            </time>
           </div>
         </div>
       </div>
