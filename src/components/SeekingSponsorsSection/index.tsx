@@ -15,7 +15,7 @@ export function SeekingSponsorsSection() {
         asChild
         variant="default"
         size="lg"
-        className="rounded-full w-48 bg-blue-600 hover:bg-blue-700 dark:bg-primary dark:hover:bg-primary/90"
+        className="rounded-full w-48 bg-blue-600 hover:bg-blue-700"
       >
         <Link href="#" target="_blank" rel="noopener noreferrer">
           抽選を申し込む
