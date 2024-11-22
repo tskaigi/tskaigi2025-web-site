@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_JP, Outfit } from "next/font/google";
 import type React from "react";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={`${outfit.variable} ${notoSansJP.variable} font-sans`}>
+        <Header />
         {children}
       </body>
     </html>
