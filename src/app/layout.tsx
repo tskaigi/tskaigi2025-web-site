@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
+import { Noto_Sans_JP, Outfit } from "next/font/google";
 import type React from "react";
 import "./globals.css";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
+  variable: "--font-noto",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${notoSansJP.variable} font-noto-sans-jp`}>
+      <body className={`${outfit.variable} ${notoSansJP.variable} font-sans`}>
         {children}
       </body>
     </html>

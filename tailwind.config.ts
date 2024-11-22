@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   content: [
@@ -57,7 +56,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        "noto-sans-jp": ["var(--font-noto-sans-jp)", "sans-serif"],
+        sans: ["var(--font-outfit)", "var(--font-noto)", "sans-serif"],
       },
     },
   },
