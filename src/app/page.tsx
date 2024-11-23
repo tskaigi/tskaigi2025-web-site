@@ -1,10 +1,9 @@
-import { SeekingSponsorsSection } from "@/components/SeekingSponsorsSection";
+import { EventCountdownBanner } from "@/components/EventCountdownBanner";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
-      <h1 className="text-4xl font-bold">TSKaigi 2025</h1>
-      <SeekingSponsorsSection />
-    </div>
+    <main>
+      <EventCountdownBanner />
+    </main>
   );
 }
