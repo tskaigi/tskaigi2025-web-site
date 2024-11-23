@@ -1,43 +1,24 @@
-"use client";
+import { GridBackground } from "./GridBackground";
 
 export function MainContent() {
   return (
-    <div className="relative overflow-hidden w-full">
-      <div
-        className="absolute inset-[-50%] w-[200%] h-[200%] opacity-15 bg-[length:42px_42px] lg:bg-[length:55px_55px]"
-        style={{
-          backgroundImage: `
-            linear-gradient(hsl(var(--primary)) 2px, transparent 2px),
-            linear-gradient(90deg, hsl(var(--primary)) 2px, transparent 2px)
-          `,
-          mask: `radial-gradient(
-            ellipse 40% 50% at center,
-            black 0%,
-            black 20%,
-            transparent 50%
-          )`,
-          WebkitMask: `radial-gradient(
-            ellipse 40% 50% at center,
-            black 0%,
-            black 20%,
-            transparent 50%
-          )`,
-        }}
+    <div className="w-full min-h-screen relative flex flex-col items-center justify-center gap-10 text-center">
+      <GridBackground />
+
+      <img
+        src="/logo.svg"
+        className="absolute top-6 left-6 w-40 lg:w-64 lg:top-10 lg:left-10"
+        alt="logo"
       />
-      <div className="relative flex flex-col items-center justify-center min-h-screen gap-10 text-center">
-        <img
-          src="/logo.svg"
-          className="absolute top-6 lg:top-10 left-6 lg:left-10 w-40 lg:w-64"
-          alt="logo"
-        />
-        <div className="flex flex-col gap-1 text-2xl font-semibold">
-          <p>5/23, 5/24</p>
-          <p>ベルサール神田</p>
-        </div>
-        <h1 className="text-5xl font-bold text-primary">
-          TSKaigi 2025 Coming Soon
-        </h1>
+
+      <div className="text-2xl font-semibold space-y-1">
+        <time dateTime="2025-05-23">5/23, 5/24</time>
+        <p>ベルサール神田</p>
       </div>
+
+      <h1 className="text-5xl font-bold text-primary w-96 lg:w-full">
+        TSKaigi 2025 Coming Soon
+      </h1>
     </div>
   );
 }
