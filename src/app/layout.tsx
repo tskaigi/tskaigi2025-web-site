@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "オンライン",
   ],
   publisher: "TSKaigi.org",
-  robots: "index, follow",
+  robots: "noindex, nofollow",
   twitter: {
     title: "TSKaigi 2025",
     description: "TypeScriptカンファレンスを開催します。",
