@@ -20,10 +20,23 @@ export const metadata: Metadata = {
     default: "TSKaigi 2025",
   },
   metadataBase: new URL("https://2025.tskaigi.org/"),
-  description: "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
+  description:
+    "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
   applicationName: "TSKaigi 2025",
-  authors: [{ name: "一般社団法人TSKaigi Association", url: "https://association.tskaigi.org/" }],
-  keywords: ["TypeScript", "TSKaigi", "TS会議", "カンファレンス", "イベント", "オンライン"],
+  authors: [
+    {
+      name: "一般社団法人TSKaigi Association",
+      url: "https://association.tskaigi.org/",
+    },
+  ],
+  keywords: [
+    "TypeScript",
+    "TSKaigi",
+    "TS会議",
+    "カンファレンス",
+    "イベント",
+    "オンライン",
+  ],
   publisher: "TSKaigi.org",
   robots: "index, follow",
   twitter: {
@@ -37,7 +50,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TSKaigi 2025",
     url: "https://2025.tskaigi.org/",
-    description: "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
+    description:
+      "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
     type: "website",
     images: ["/banner.jpg"],
   },
