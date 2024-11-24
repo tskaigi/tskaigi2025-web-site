@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://2025.tskaigi.org/"),
   description:
-    "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
+    "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
   applicationName: "TSKaigi 2025",
   authors: [
     {
@@ -41,7 +41,8 @@ export const metadata: Metadata = {
   robots: "noindex, nofollow",
   twitter: {
     title: "TSKaigi 2025",
-    description: "TypeScriptカンファレンスを開催します。",
+    description:
+      "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです",
     card: "summary_large_image",
     site: "@tskaigi",
     creator: "@tskaigi",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     title: "TSKaigi 2025",
     url: "https://2025.tskaigi.org/",
     description:
-      "TSKaigi 2025は、日本最大級のTypeScriptカンファレンスを開催します。",
+      "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。。",
     type: "website",
     images: ["/banner.jpg"],
   },
