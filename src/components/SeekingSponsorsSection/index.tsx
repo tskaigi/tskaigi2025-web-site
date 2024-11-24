@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export function SeekingSponsorsSection() {
   return (
-    <div className="w-full flex flex-col items-center gap-8">
-      <h2 className="text-4xl font-bold">スポンサー募集開始</h2>
+    <div className="w-full flex flex-col items-center gap-8 px-8 pb-16">
+      <h2 className="text-3xl font-bold text-center">スポンサー募集開始</h2>
       <div>
         <p>
           一緒にTypescriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。

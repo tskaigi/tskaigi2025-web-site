@@ -41,7 +41,7 @@ export function CountdownTimer() {
         }}
       />
 
-      <div className="relative flex items-start gap-4 text-white">
+      <div className="relative flex items-start gap-3 text-white">
         <TimeLeft
           value={timeLeft.days}
           unit="Days"
