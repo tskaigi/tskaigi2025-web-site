@@ -8,7 +8,7 @@ export function SeekingSponsorsSection() {
       <h2 className="text-3xl font-bold text-center">スポンサー募集開始</h2>
       <div>
         <p>
-          一緒にTypescriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。
+          一緒にTypeScriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。
         </p>
       </div>
       <Button
