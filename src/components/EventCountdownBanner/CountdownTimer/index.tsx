@@ -1,77 +1,38 @@
 "use client";
 
+import { Divider } from "./Divider";
+import { TimeLeft } from "./TimeLeft";
 import { useCountdownTimer } from "./useCountdownTimer";
 
 export function CountdownTimer() {
   const { timeLeft } = useCountdownTimer();
 
   return (
-    <div className="w-full max-w-full md:max-w-2xl">
-      <div className="backdrop-blur-sm bg-white/85 rounded-xl py-4 md:py-8 shadow-lg">
-        <div className="flex gap-1 md:gap-4 items-end justify-center text-blue-600">
-          <div className="text-center min-w-[3rem]">
-            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
-              Days
-            </span>
-            <time
-              className="block text-2xl md:text-5xl font-bold tabular-nums"
-              dateTime={`P${timeLeft.days}D`}
-            >
-              {timeLeft.days.toString().padStart(3, "0")}
-            </time>
-          </div>
-          <span
-            className="text-2xl md:text-5xl font-bold mb-0.5"
-            aria-hidden="true"
-          >
-            :
-          </span>
-          <div className="text-center min-w-[3rem]">
-            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
-              Hour
-            </span>
-            <time
-              className="block text-2xl md:text-5xl font-bold tabular-nums"
-              dateTime={`PT${timeLeft.hours}H`}
-            >
-              {timeLeft.hours.toString().padStart(2, "0")}
-            </time>
-          </div>
-          <span
-            className="text-2xl md:text-5xl font-bold mb-0.5"
-            aria-hidden="true"
-          >
-            :
-          </span>
-          <div className="text-center min-w-[3rem]">
-            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
-              Minutes
-            </span>
-            <time
-              className="block text-2xl md:text-5xl font-bold tabular-nums"
-              dateTime={`PT${timeLeft.minutes}M`}
-            >
-              {timeLeft.minutes.toString().padStart(2, "0")}
-            </time>
-          </div>
-          <span
-            className="text-2xl md:text-5xl font-bold mb-0.5"
-            aria-hidden="true"
-          >
-            :
-          </span>
-          <div className="text-center min-w-[3rem]">
-            <span className="block text-xs md:text-sm font-bold mb-1 md:mb-3">
-              Seconds
-            </span>
-            <time
-              className="block text-2xl md:text-5xl font-bold tabular-nums"
-              dateTime={`PT${timeLeft.seconds}S`}
-            >
-              {timeLeft.seconds.toString().padStart(2, "0")}
-            </time>
-          </div>
-        </div>
+    <div className="relative w-[330px] md:w-[600px] lg:w-[630px] h-[142px] md:h-[154px] lg:h-[182px] bg-primary rounded-lg flex items-center justify-center shadow-[0_4px_6px_rgba(0,0,0,0.09)] overflow-hidden">
+      <div className="relative flex items-start gap-3 text-white">
+        <TimeLeft
+          value={timeLeft.days}
+          unit="Days"
+          duration={`P${timeLeft.days}D`}
+        />
+        <Divider />
+        <TimeLeft
+          value={timeLeft.hours}
+          unit="Hour"
+          duration={`PT${timeLeft.hours}H`}
+        />
+        <Divider />
+        <TimeLeft
+          value={timeLeft.minutes}
+          unit="Minutes"
+          duration={`PT${timeLeft.minutes}M`}
+        />
+        <Divider />
+        <TimeLeft
+          value={timeLeft.seconds}
+          unit="Seconds"
+          duration={`PT${timeLeft.seconds}S`}
+        />
       </div>
     </div>
   );
