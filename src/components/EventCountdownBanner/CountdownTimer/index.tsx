@@ -50,7 +50,7 @@ export function CountdownTimer() {
         <Divider />
         <TimeLeft
           value={timeLeft.hours}
-          unit="Hour"
+          unit="Hours"
           duration={`PT${timeLeft.hours}H`}
         />
         <Divider />
