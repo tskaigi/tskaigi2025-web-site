@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "TSKaigi 2025",
     url: "https://2025.tskaigi.org/",
     description:
-      "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。。",
+      "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
     type: "website",
     images: ["/banner.jpg"],
   },
