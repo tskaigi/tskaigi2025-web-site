@@ -9,16 +9,16 @@ export function GridBackground() {
             linear-gradient(90deg, hsl(var(--primary)) 2px, transparent 2px)
           `,
         mask: `radial-gradient(
-            ellipse 80% 50% at center 40%,
-            black 30%,
-            black 30%,
-            transparent 65%
+            ellipse 70% 60% at center,
+            black 20%,
+            black 20%,
+            transparent 60%
           )`,
         WebkitMask: `radial-gradient(
-            ellipse 80% 50% at center 40%,
-            black 30%,
-            black 30%,
-            transparent 65%
+            ellipse 70% 60% at center,
+            black 20%,
+            black 20%,
+            transparent 60%
           )`,
       }}
     />

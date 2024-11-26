@@ -3,7 +3,7 @@ import { GridBackground } from "./GridBackground";
 
 export function EventCountdownBanner() {
   return (
-    <div className="w-full h-[644px] lg:h-[850px]  relative flex flex-col items-center justify-center gap-10 text-center">
+    <div className="w-full h-[644px] lg:h-[850px]  relative flex flex-col items-center text-center">
       <GridBackground />
 
       <img
@@ -12,9 +12,11 @@ export function EventCountdownBanner() {
         alt="logo"
       />
 
-      <CountdownTimer />
+      <div className="mt-[178px] lg:mt-[248px]">
+        <CountdownTimer />
+      </div>
 
-      <div className="text-2xl font-semibold space-y-1">
+      <div className="mt-[52px] text-2xl font-semibold space-y-1">
         <time
           dateTime="2025-05-23"
           className="text-[28px] leading-[36px] tracking-[-.75%] semibold"
@@ -26,7 +28,7 @@ export function EventCountdownBanner() {
         </p>
       </div>
 
-      <h1 className="text-[59px] leading-[48px] tracking-[-1.2%] font-bold text-primary w-96 lg:w-full">
+      <h1 className="mt-[30px] lg:mt-[40px] text-[50px] lg:text-[59px] leading-[48px] tracking-[-1.2%] font-bold text-primary w-96 lg:w-full">
         TSKaigi 2025 Coming Soon
       </h1>
     </div>
