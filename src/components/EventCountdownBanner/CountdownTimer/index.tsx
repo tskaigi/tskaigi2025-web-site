@@ -64,6 +64,7 @@ export function CountdownTimer() {
           value={timeLeft.seconds}
           unit="Seconds"
           duration={`PT${timeLeft.seconds}S`}
+          isTabular={true}
         />
       </div>
     </div>
