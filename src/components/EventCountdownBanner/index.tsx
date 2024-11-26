@@ -4,7 +4,7 @@ import { GridBackground } from "./GridBackground";
 
 export function EventCountdownBanner() {
   return (
-    <div className="w-full h-[674px] lg:h-[850px]  relative flex flex-col items-center text-center">
+    <div className="w-full h-[674px] lg:h-[790px]  relative flex flex-col items-center text-center">
       <GridBackground />
 
       <img
