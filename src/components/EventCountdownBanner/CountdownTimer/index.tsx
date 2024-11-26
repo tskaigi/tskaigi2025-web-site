@@ -8,7 +8,7 @@ export function CountdownTimer() {
   const { timeLeft } = useCountdownTimer();
 
   return (
-    <div className="relative w-[330px] md:w-[600px] lg:w-[630px] h-[142px] md:h-[154px] lg:h-[182px] bg-primary rounded-lg flex items-center justify-center shadow-[0_4px_6px_rgba(0,0,0,0.09)] overflow-hidden">
+    <div className="relative w-[330px] md:w-[600px] lg:w-[630px] h-[142px] md:h-[154px] lg:h-[182px] bg-primary rounded-2xl flex items-center justify-center shadow-[0_4px_6px_rgba(0,0,0,0.09)] overflow-hidden">
       <div
         className="absolute -top-[130px] lg:-top-[90px] -left-[100px] lg:-left-[90px] w-40 h-40 bg-[#ED82B0] rotate-45"
         style={{
@@ -50,7 +50,7 @@ export function CountdownTimer() {
         <Divider />
         <TimeLeft
           value={timeLeft.hours}
-          unit="Hour"
+          unit="Hours"
           duration={`PT${timeLeft.hours}H`}
         />
         <Divider />
@@ -64,6 +64,7 @@ export function CountdownTimer() {
           value={timeLeft.seconds}
           unit="Seconds"
           duration={`PT${timeLeft.seconds}S`}
+          isTabular={true}
         />
       </div>
     </div>
