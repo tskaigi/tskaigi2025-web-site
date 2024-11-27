@@ -9,9 +9,10 @@ export function SeekingSponsorsSection() {
       <h2 className="text-[32px] lg:text-4xl leading-[48px] tracking-[-1.2%] font-bold text-center">
         スポンサー募集開始
       </h2>
-      <div className="px-10 font-normal text-m leading-[25px] tracking-[-0.75%]">
+      <div className="px-0 md:px-10 font-normal text-m leading-[25px] tracking-[-0.75%]">
         <p>
-          一緒にTypeScriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。スポンサーを希望される企業様はスポンサー向け資料をご確認の上、お申し込みください。
+          一緒にTypeScriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。
+          希望される企業様はスポンサー向け資料をご確認の上、お申し込みください。
         </p>
         <p className="mt-4 ">
           1次応募締め切りは
