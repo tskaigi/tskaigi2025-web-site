@@ -17,11 +17,16 @@ export function SeekingSponsorsSection() {
         asChild
         variant="default"
         size="lg"
-        className="rounded-full w-48 bg-blue-600 hover:bg-blue-700"
+        className="rounded-full w-[280px] h-[60px] fill-primary hover:bg-[#1854FF]"
       >
-        <Link href="#" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfZR2TQr0E6CJ9l9hy9L9xvO5o6Ep5GXcZo57zq-7b_TEt52g/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ont-bold text-base leading-6"
+        >
           抽選を申し込む
-          <ArrowRight className="h-4 w-4" />
+          <ArrowRight />
         </Link>
       </Button>
     </div>
