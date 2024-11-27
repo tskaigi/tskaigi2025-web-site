@@ -12,7 +12,7 @@ export function SeekingSponsorsSection() {
         </h2>
         <div className="px-0 md:px-10 font-normal text-m leading-[25px] tracking-[-0.75%]">
           <p>
-            一緒にTypeScriptコミュニティを盛り上げていただけるスポンサー企業を募集いたします。
+            TypeScriptコミュニティの発展に共に取り組んでいただけるスポンサー企業を募集いたします。
             希望される企業様はスポンサー向け資料をご確認の上、お申し込みください。
           </p>
           <p className="mt-4 ">
