@@ -44,6 +44,7 @@ export function SeekingSponsorsSection() {
           src="https://docs.google.com/presentation/d/e/2PACX-1vQADF22lFOs_BPlMsJWaJrVT03E-tK_sH03nJSCjRH-GlAl-GorCvlF5jND3iWLH7yubTgxeQrj1NCm/embed?start=false&loop=false&delayms=30000"
           className="aspect-[16/9] w-full"
           allowFullScreen
+          allow="fullscreen"
         />
       </BrowserMockup>
     </div>
