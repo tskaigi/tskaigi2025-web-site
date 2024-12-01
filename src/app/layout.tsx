@@ -37,8 +37,7 @@ export const metadata: Metadata = {
     "オンライン",
   ],
   publisher: "TSKaigi.org",
-  // TODO: 公開直前にindex, followに修正する
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   twitter: {
     title: "TSKaigi 2025",
     description:
