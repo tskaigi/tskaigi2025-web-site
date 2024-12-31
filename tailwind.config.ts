@@ -9,54 +9,98 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+        white: "hsl(var(--white))",
+        black: {
+          100: "hsl(var(--black-100))",
+          200: "hsl(var(--black-200))",
+          300: "hsl(var(--black-300))",
+          400: "hsl(var(--black-400))",
+          500: "hsl(var(--black-500))",
+          600: "hsl(var(--black-600))",
+          700: "hsl(var(--black-700))",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+        blue: {
+          purple: {
+            100: "hsl(var(--blue-purple-100))",
+            200: "hsl(var(--blue-purple-200))",
+            300: "hsl(var(--blue-purple-300))",
+            400: "hsl(var(--blue-purple-400))",
+            500: "hsl(var(--blue-purple-500))",
+            600: "hsl(var(--blue-purple-600))",
+            700: "hsl(var(--blue-purple-700))",
+          },
+          light: {
+            100: "hsl(var(--blue-light-100))",
+            200: "hsl(var(--blue-light-200))",
+            300: "hsl(var(--blue-light-300))",
+            400: "hsl(var(--blue-light-400))",
+            500: "hsl(var(--blue-light-500))",
+            600: "hsl(var(--blue-light-600))",
+            700: "hsl(var(--blue-light-700))",
+          },
         },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        pink: {
+          100: "hsl(var(--pink-100))",
+          200: "hsl(var(--pink-200))",
+          300: "hsl(var(--pink-300))",
+          400: "hsl(var(--pink-400))",
+          500: "hsl(var(--pink-500))",
+          600: "hsl(var(--pink-600))",
+          700: "hsl(var(--pink-700))",
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        orange: {
+          100: "hsl(var(--orange-100))",
+          200: "hsl(var(--orange-200))",
+          300: "hsl(var(--orange-300))",
+          400: "hsl(var(--orange-400))",
+          500: "hsl(var(--orange-500))",
+          600: "hsl(var(--orange-600))",
+          700: "hsl(var(--orange-700))",
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+        yellow: {
+          100: "hsl(var(--yellow-100))",
+          200: "hsl(var(--yellow-200))",
+          300: "hsl(var(--yellow-300))",
+          400: "hsl(var(--yellow-400))",
+          500: "hsl(var(--yellow-500))",
+          600: "hsl(var(--yellow-600))",
+          700: "hsl(var(--yellow-700))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+        red: {
+          100: "hsl(var(--red-100))",
+          200: "hsl(var(--red-200))",
+          300: "hsl(var(--red-300))",
+          400: "hsl(var(--red-400))",
+          500: "hsl(var(--red-500))",
+          600: "hsl(var(--red-600))",
+          700: "hsl(var(--red-700))",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        green: {
+          100: "hsl(var(--green-100))",
+          200: "hsl(var(--green-200))",
+          300: "hsl(var(--green-300))",
+          400: "hsl(var(--green-400))",
+          500: "hsl(var(--green-500))",
+          600: "hsl(var(--green-600))",
+          700: "hsl(var(--green-700))",
+        },
+        link: {
+          light: "hsl(var(--link-light))",
+          dark: "hsl(var(--link-dark))",
+        },
+        success: {
+          light: "hsl(var(--success-light))",
+          dark: "hsl(var(--success-dark))",
+        },
+        alert: {
+          light: "hsl(var(--alert-light))",
+          dark: "hsl(var(--alert-dark))",
+        },
+        font: {
+          basic: "hsl(var(--font-basic))",
+          caption: "hsl(var(--font-caption))",
         },
         border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ["var(--font-outfit)", "var(--font-noto)", "sans-serif"],
       },
     },
   },
