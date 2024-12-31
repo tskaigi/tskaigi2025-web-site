@@ -100,7 +100,7 @@ const config: Config = {
           basic: "var(--font-basic)",
           caption: "var(--font-caption)",
         },
-        border: "var(--border)",
+        border: "hsl(var(--border))",
       },
     },
   },
