@@ -94,3 +94,7 @@
     @apply bg-white text-font-basic;
   }
 }
+
+footer {
+  background: linear-gradient(180deg, #3a89c4 0%, #1071d3 100%);
+}
