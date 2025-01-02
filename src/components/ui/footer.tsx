@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
 
         <div className="flex flex-col gap-3 lg:w-72">
-          <p>公式アカウント</p>
+          <p className="font-bold">公式アカウント</p>
           <ul className="flex flex-col gap-2.5 pl-3">
             <li>公式X</li>
             <li>Blog</li>
