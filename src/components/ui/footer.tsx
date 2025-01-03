@@ -12,10 +12,7 @@ const Footer = () => {
         </div>
 
         <ul className="flex flex-col gap-2.5 lg:w-72">
-          <li>ミッション</li>
-          <li>プロポーザル募集</li>
           <li>スポンサー一覧</li>
-          <li>スタッフ</li>
         </ul>
 
         <div className="flex flex-col gap-3 lg:w-72">
