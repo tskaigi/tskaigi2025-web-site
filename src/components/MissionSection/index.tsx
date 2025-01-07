@@ -14,7 +14,9 @@ export function MissionSection() {
 
         <p className="text-blue-500 text-xl font-bold text-center mt-1 lg:mt-4 md:text-2xl lg:text-3xl">
           学び、繋がり、
-          <span className="text-2xl md:text-4xl lg:text-[42px] font-noto">”型”</span>
+          <span className="text-2xl md:text-4xl lg:text-[42px] font-noto">
+            ”型”
+          </span>
           を破ろう
         </p>
         <div className="flex justify-center mt-4 lg:mt-6">
