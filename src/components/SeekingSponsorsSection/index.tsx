@@ -1,7 +1,7 @@
 import { BrowserMockup } from "@/components/SeekingSponsorsSection/BrowserMockup";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+// import { Button } from "@/components/ui/button";
+// import { ArrowRight } from "lucide-react";
+// import Link from "next/link";
 
 export function SeekingSponsorsSection() {
   return (
@@ -16,12 +16,15 @@ export function SeekingSponsorsSection() {
             希望される企業様はスポンサー向け資料をご確認の上、お申し込みください。
           </p>
           <p className="mt-4 ">
-            1次応募締め切りは
-            <time className="font-bold tracking-wider">2025/1/7 17:00</time>
-            です。応募の状況によっては締め切り後にスポンサーの募集を継続する場合があります。
+            1次応募は
+            <time className="font-bold tracking-wider">2025/1/17 17:00</time>
+            をもって終了しました。たくさんのスポンサーのご応募ありがとうございました。
+          </p>
+          <p className="mt-4">
+            2次募集を行う場合は1月下旬頃に公式サイトやSNS等でアナウンス予定です。
           </p>
         </div>
-        <Button
+        {/* <Button
           asChild
           variant="default"
           size="lg"
@@ -36,7 +39,7 @@ export function SeekingSponsorsSection() {
             抽選を申し込む
             <ArrowRight />
           </Link>
-        </Button>
+        </Button> */}
       </div>
       <BrowserMockup className="w-full lg:w-[1024px] max-w-full">
         <iframe
