@@ -17,7 +17,7 @@ export function SeekingSponsorsSection() {
           </p>
           <p className="mt-4 ">
             1次応募は
-            <time className="font-bold tracking-wider">2025/1/17 17:00</time>
+            <time className="font-bold tracking-wider">2025/1/7 17:00</time>
             をもって終了しました。たくさんのスポンサーのご応募ありがとうございました。
           </p>
           <p className="mt-4">
