@@ -1,4 +1,3 @@
-import { ApplyToProposal } from "@/components/ApplyToProposal";
 import { EventCountdownBanner } from "@/components/EventCountdownBanner";
 import Footer from "@/components/Footer";
 import { SeekingSponsorsSection } from "@/components/SeekingSponsorsSection";
@@ -9,7 +8,6 @@ export default function Home() {
       <main className="w-full flex flex-col items-center">
         <EventCountdownBanner />
         <SeekingSponsorsSection />
-        <ApplyToProposal />
       </main>
       <Footer />
     </>
