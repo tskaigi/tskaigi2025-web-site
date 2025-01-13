@@ -1,6 +1,6 @@
+import { Header } from "../../components/Header";
 import { HeroSection } from "../../components/HeroSection";
 import { MissionSection } from "../../components/MissionSection";
-import { Header } from "../../components/ui/header";
 
 export default function Home() {
   return (
