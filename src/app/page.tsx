@@ -1,6 +1,6 @@
 import { EventCountdownBanner } from "@/components/EventCountdownBanner";
+import Footer from "@/components/Footer";
 import { SeekingSponsorsSection } from "@/components/SeekingSponsorsSection";
-import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
