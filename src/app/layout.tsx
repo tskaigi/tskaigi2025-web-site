@@ -6,11 +6,13 @@ import "./globals.css";
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
+  display: "swap",
 });
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-noto",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -64,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${outfit.variable} ${notoSansJP.variable} font-sans`}>
+      <body className={`${outfit.variable} ${notoSansJP.variable} font-noto`}>
         {children}
       </body>
     </html>

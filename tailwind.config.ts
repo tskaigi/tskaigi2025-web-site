@@ -102,6 +102,10 @@ const config: Config = {
         },
         border: "hsl(var(--border))",
       },
+      fontFamily: {
+        outfit: ["var(--font-outfit)"],
+        noto: ["var(--font-noto)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
