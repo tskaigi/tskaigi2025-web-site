@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-// TODO: position が整っていないので、整える
 export const ApplyToProposal = () => {
   return (
     <div className="bg-blue-light-400 flex items-center justify-center">
