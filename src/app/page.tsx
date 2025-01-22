@@ -1,5 +1,4 @@
 import { EventCountdownBanner } from "@/components/EventCountdownBanner";
-import Footer from "@/components/Footer";
 import { SeekingSponsorsSection } from "@/components/SeekingSponsorsSection";
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
         <EventCountdownBanner />
         <SeekingSponsorsSection />
       </main>
-      <Footer />
     </>
   );
 }
