@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 export const VenueInformation = () => {
   return (
@@ -13,13 +14,15 @@ export const VenueInformation = () => {
           </h2>
           <p>
             会場:
-            <a
+            <Link
               href="https://www.bellesalle.co.jp/shisetsu/tokyo/bs_kanda/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-link-light"
             >
               ベルサール神田
               <ExternalLink className="ml-2 text-link-light" />
-            </a>
+            </Link>
           </p>
         </div>
         <div className="w-full overflow-hidden">
