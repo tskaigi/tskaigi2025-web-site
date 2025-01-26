@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { HeroSection } from "../../components/HeroSection";
 import { MissionSection } from "../../components/MissionSection";
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <MissionSection />
       </main>
+      <Footer />
     </>
   );
 }
