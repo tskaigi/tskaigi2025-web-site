@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ApplyToProposalSection } from "../../components/ApplyToProposalSection";
 import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { HeroSection } from "../../components/HeroSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="pt-16">
         <HeroSection />
         <MissionSection />
+        <ApplyToProposalSection />
         <SponsorsBoardSection />
       </main>
       <Footer />
