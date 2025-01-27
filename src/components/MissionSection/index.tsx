@@ -1,4 +1,5 @@
 import { Decoration } from "../Decoration";
+import { VenueInformation } from "../VenueInformation";
 
 export function MissionSection() {
   return (
@@ -7,7 +8,7 @@ export function MissionSection() {
         background:
           "linear-gradient(180deg, rgba(133, 196, 255, 0.6) 0%, rgba(202, 230, 255, 0.6) 5.28%, rgba(233, 245, 255, 0.6) 8.92%)",
       }}
-      className="relative -mt-8 -z-10 md:-mt-16 lg:-mt-24"
+      className="relative -mt-8 z-10 md:-mt-16 lg:-mt-24"
     >
       <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-10">
         <h2 className="text-sm text-center md:text-lg">MISSION</h2>
@@ -33,6 +34,7 @@ export function MissionSection() {
             新型コロナウイルスが落ち着いた今、各所で蓄積されたノウハウが日の目を浴び、より生き生きとTSエンジニアが働ける世界を目指して、TSKaigiを開催します。
           </p>
         </div>
+        <VenueInformation />
       </div>
     </section>
   );
