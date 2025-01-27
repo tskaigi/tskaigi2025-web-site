@@ -1,6 +1,5 @@
-"use client";
-
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -12,15 +11,42 @@ const Footer = () => {
         </div>
 
         <ul className="flex flex-col gap-2.5 lg:w-72">
-          <li>スポンサー一覧</li>
+          {/* <li>スポンサー一覧</li> */}
         </ul>
 
         <div className="flex flex-col gap-3 lg:w-72">
           <p className="font-bold">公式アカウント</p>
           <ul className="flex flex-col gap-2.5 pl-3">
-            <li>公式X</li>
-            <li>Blog</li>
-            <li>公式Youtube</li>
+            <li>
+              <Link
+                href="https://x.com/tskaigi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                公式X
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://tskaigi.hatenablog.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.youtube.com/@tskaigi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                公式Youtube
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
