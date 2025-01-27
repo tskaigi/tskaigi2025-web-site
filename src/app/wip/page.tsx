@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { HeroSection } from "../../components/HeroSection";
 import { MissionSection } from "../../components/MissionSection";
+import { SponsorsBoardSection } from "../../components/SponsorsBoardSection";
 
 export const metadata: Metadata = {
   robots: "noindex, nofollow",
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="pt-16">
         <HeroSection />
         <MissionSection />
+        <SponsorsBoardSection />
       </main>
       <Footer />
     </>
