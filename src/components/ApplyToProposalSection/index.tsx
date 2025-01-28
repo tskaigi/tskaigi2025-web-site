@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const ApplyToProposal = () => {
+export const ApplyToProposalSection = () => {
   return (
     <div className="bg-blue-light-400 flex items-center justify-center">
-      <div className=" flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10 rounded-lg">
-        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-16 lg:px-10 flex flex-col items-center rounded-lg">
+      <div className="flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10 rounded-lg">
+        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-16 lg:px-10 flex flex-col items-center rounded-lg max-w-[940px]">
           <div className="flex flex-col items-center">
             <h1 className="lg:text-[32px] md:text-[28px] text-[24px] font-bold text-center pb-4">
               プロポーザル募集
