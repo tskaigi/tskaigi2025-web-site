@@ -16,11 +16,11 @@ export function SponsorsBoardSection() {
             Platinum Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-1 md:grid-cols-3 place-items-center">
+        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
           {sponsorList.platinum.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-[343px] md:w-[218px] lg:w-[389px] h-[162px] md:h-[192px] ${sponsor.addPadding ? "p-8" : "p-2"}`}
+              className={`w-full h-[192px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -37,11 +37,11 @@ export function SponsorsBoardSection() {
             Gold Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-2 md:grid-cols-4 place-items-center">
+        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center">
           {sponsorList.gold.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-[163px] md:w-[160px] lg:w-[288px] h-[144px] ${sponsor.addPadding ? "p-8" : "p-2"}`}
+              className={`w-full h-[144px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -58,11 +58,11 @@ export function SponsorsBoardSection() {
             Silver Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-3 md:grid-cols-5 place-items-center">
+        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
           {sponsorList.silver.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-[106px] md:w-[124px] lg:w-[227px] h-[112px] ${sponsor.addPadding ? "p-2" : "p-1"}`}
+              className={`w-full h-[112px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -79,11 +79,11 @@ export function SponsorsBoardSection() {
             Bronze Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-2 md:gap-4 grid-cols-4 md:grid-cols-6 place-items-center">
+        <div className="pt-6 px-4 md:px-0 grid gap-2 md:gap-4 grid-cols-4 md:grid-cols-5 lg:grid-cols-6 place-items-center">
           {sponsorList.bronze.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-[79px] md:w-[101px] lg:w-[186px] h-[96px] ${sponsor.addPadding ? "p-2" : "p-1"}`}
+              className={`w-full h-[96px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}

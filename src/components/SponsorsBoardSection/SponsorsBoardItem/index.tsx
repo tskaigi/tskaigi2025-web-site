@@ -19,7 +19,12 @@ export function SponsorsBoardItem({
   className,
 }: Props) {
   return (
-    <Link href={href} target="_blank" rel="noopener noreferrer">
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full h-full"
+    >
       <Image
         src={src}
         alt={alt}
