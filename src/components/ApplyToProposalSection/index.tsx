@@ -19,9 +19,11 @@ export const ApplyToProposalSection = () => {
               <p>
                 私たちの願いは、フロントエンドからバックエンド、インフラに至るまで、多様な分野のTypeScriptエンジニアたちが集い、普段は交流の少ないエンジニアたちが、それぞれの得意分野や最新の知見を交換し合う交流の場を創り出すことです。
               </p>
+              <br />
               <p>
                 あなたの発表が、誰かのキャリア、あるいはプロジェクトに新たな光をもたらすかもしれません。
               </p>
+              <br />
               <p>ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！</p>
             </div>
           </div>
@@ -38,7 +40,7 @@ export const ApplyToProposalSection = () => {
                 rel="noopener noreferrer"
                 className="font-bold text-[22px] flex items-center space-x-2"
               >
-                <span>申し込む</span>
+                <span>応募する</span>
                 <ArrowRight />
               </Link>
             </Button>
