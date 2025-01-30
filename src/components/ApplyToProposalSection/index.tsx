@@ -17,13 +17,7 @@ export const ApplyToProposalSection = () => {
           <div className="py-6 md:py-6 lg:py-10">
             <div className="text-[16px] md:text-[18px] text-left">
               <p>
-                TSKaigiは、節目となる発表の場を通じてエンジニアのアウトプットを促進し、日本のTypeScriptコミュニティを盛り上げるTypeScriptカンファレンスです！
-              </p>
-              <p>
                 私たちの願いは、フロントエンドからバックエンド、インフラに至るまで、多様な分野のTypeScriptエンジニアたちが集い、普段は交流の少ないエンジニアたちが、それぞれの得意分野や最新の知見を交換し合う交流の場を創り出すことです。
-              </p>
-              <p>
-                経験のある方も初めて登壇される方にとっても、このカンファレンスが人生の新たな節目になることを願っています。
               </p>
               <p>
                 あなたの発表が、誰かのキャリア、あるいはプロジェクトに新たな光をもたらすかもしれません。
@@ -44,7 +38,7 @@ export const ApplyToProposalSection = () => {
                 rel="noopener noreferrer"
                 className="font-bold text-[22px] flex items-center space-x-2"
               >
-                <span>抽選を申し込む</span>
+                <span>申し込む</span>
                 <ArrowRight />
               </Link>
             </Button>
