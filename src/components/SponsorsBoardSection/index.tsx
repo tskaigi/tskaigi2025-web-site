@@ -20,7 +20,7 @@ export function SponsorsBoardSection() {
           {sponsorList.platinum.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className="w-[343px] md:w-[218px] lg:w-[389px] h-[162px] md:h-[192px]"
+              className={`w-[343px] md:w-[218px] lg:w-[389px] h-[162px] md:h-[192px] ${sponsor.addPadding ? "p-8" : "p-2"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -38,10 +38,10 @@ export function SponsorsBoardSection() {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-2 md:grid-cols-4 place-items-center">
-          {sponsorList.gold.slice(0, 7).map((sponsor) => (
+          {sponsorList.gold.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className="w-[163px] md:w-[160px] lg:w-[288px] h-[144px]"
+              className={`w-[163px] md:w-[160px] lg:w-[288px] h-[144px] ${sponsor.addPadding ? "p-8" : "p-2"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -59,10 +59,10 @@ export function SponsorsBoardSection() {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-3 md:grid-cols-5 place-items-center">
-          {sponsorList.silver.slice(0, 6).map((sponsor) => (
+          {sponsorList.silver.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className="w-[106px] md:w-[124px] lg:w-[227px] h-[112px]"
+              className={`w-[106px] md:w-[124px] lg:w-[227px] h-[112px] ${sponsor.addPadding ? "p-2" : "p-1"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -70,94 +70,6 @@ export function SponsorsBoardSection() {
               height={112}
             />
           ))}
-        </div>
-      </div>
-
-      <div className="flex gap-3 md:gap-6">
-        <div className="w-1/2 pb-8 flex flex-col">
-          <SponsorsBoardTitle titleClassName="before:bg-black-400 after:bg-black-400">
-            <h3 className="text-black-400 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
-              Event Platform
-            </h3>
-          </SponsorsBoardTitle>
-          <div className="pt-6 px-3 md:px-0 grid place-items-center">
-            {sponsorList.eventPlatform.map((sponsor) => (
-              <SponsorsBoardItem
-                key={sponsor.id}
-                className="w-[157px] md:w-[306px] lg:w-[564px] h-[112px]"
-                src={sponsor.logoImage}
-                alt={sponsor.name}
-                href={sponsor.logoLink}
-                width={564}
-                height={112}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="w-1/2 pb-8 flex flex-col">
-          <SponsorsBoardTitle titleClassName="before:bg-black-400 after:bg-black-400">
-            <h3 className="text-black-400 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
-              Refreshment
-            </h3>
-          </SponsorsBoardTitle>
-          <div className="pt-6 px-3 md:px-0 grid place-items-center">
-            {sponsorList.refreshment.map((sponsor) => (
-              <SponsorsBoardItem
-                key={sponsor.id}
-                className="w-[157px] md:w-[306px] lg:w-[564px] h-[112px]"
-                src={sponsor.logoImage}
-                alt={sponsor.name}
-                href={sponsor.logoLink}
-                width={564}
-                height={112}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="flex gap-3 md:gap-6">
-        <div className="w-1/2 pb-8 flex flex-col">
-          <SponsorsBoardTitle titleClassName="before:bg-black-400 after:bg-black-400">
-            <h3 className="text-black-400 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
-              Coffee
-            </h3>
-          </SponsorsBoardTitle>
-          <div className="pt-6 px-3 md:px-0 grid place-items-center">
-            {sponsorList.coffee.map((sponsor) => (
-              <SponsorsBoardItem
-                key={sponsor.id}
-                className="w-[157px] md:w-[306px] lg:w-[564px] h-[112px]"
-                src={sponsor.logoImage}
-                alt={sponsor.name}
-                href={sponsor.logoLink}
-                width={564}
-                height={112}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="w-1/2 pb-8 flex flex-col">
-          <SponsorsBoardTitle titleClassName="before:bg-black-400 after:bg-black-400">
-            <h3 className="text-black-400 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
-              Beer
-            </h3>
-          </SponsorsBoardTitle>
-          <div className="pt-6 px-3 md:px-0 grid place-items-center">
-            {sponsorList.beer.map((sponsor) => (
-              <SponsorsBoardItem
-                key={sponsor.id}
-                className="w-[157px] md:w-[306px] lg:w-[564px] h-[112px]"
-                src={sponsor.logoImage}
-                alt={sponsor.name}
-                href={sponsor.logoLink}
-                width={564}
-                height={112}
-              />
-            ))}
-          </div>
         </div>
       </div>
 
@@ -171,7 +83,7 @@ export function SponsorsBoardSection() {
           {sponsorList.bronze.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className="w-[79px] md:w-[101px] lg:w-[186px] h-[96px]"
+              className={`w-[79px] md:w-[101px] lg:w-[186px] h-[96px] ${sponsor.addPadding ? "p-2" : "p-1"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}

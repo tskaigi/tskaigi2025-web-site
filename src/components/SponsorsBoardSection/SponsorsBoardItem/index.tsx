@@ -25,7 +25,7 @@ export function SponsorsBoardItem({
         alt={alt}
         width={width}
         height={height}
-        className={`object-cover rounded-[10px] bg-white ${className}`}
+        className={`object-contain rounded-[10px] bg-white ${className}`}
       />
     </Link>
   );
