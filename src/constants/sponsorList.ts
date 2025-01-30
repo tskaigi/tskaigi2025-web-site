@@ -33,7 +33,7 @@ export const sponsorList: SponsorList = {
       id: "P03",
       name: "AVITA株式会社",
       logoImage: "/logo.svg",
-      logoLink: "/",
+      logoLink: "/sponsors/AVITA_Logomark_Logotype.png",
       addPadding: false,
     },
     {
@@ -69,14 +69,14 @@ export const sponsorList: SponsorList = {
     {
       id: "G02",
       name: "KINTOテクノロジーズ株式会社",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/kinto_logoA.png",
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
     },
     {
       id: "G03",
       name: "株式会社サイバーエージェント",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/CyberAgent.png",
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
     },
@@ -90,7 +90,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G05",
       name: "カミナシ",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/presskit",
       addPadding: false,
     },
@@ -146,13 +146,6 @@ export const sponsorList: SponsorList = {
   ],
   silver: [
     {
-      id: "S01",
-      name: "ストックマーク株式会社",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
       id: "S02",
       name: "Theoria technologies 株式会社",
       logoImage: "/sponsors/theoria_logo_main.png",
@@ -188,31 +181,10 @@ export const sponsorList: SponsorList = {
       addPadding: false,
     },
     {
-      id: "S07",
-      name: "ファインディ株式会社",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
       id: "S08",
       name: "株式会社カケハシ",
       logoImage: "/logo.svg",
       logoLink: "https://hrmos.co/pages/kakehashi",
-      addPadding: false,
-    },
-    {
-      id: "S09",
-      name: "株式会社ナレッジワーク",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
-      id: "S10",
-      name: "株式会社kubell",
-      logoImage: "/logo.svg",
-      logoLink: "/",
       addPadding: false,
     },
     {
@@ -239,27 +211,13 @@ export const sponsorList: SponsorList = {
     {
       id: "S14",
       name: "株式会社TOKIUM",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
       logoLink: "https://corp.tokium.jp/",
       addPadding: false,
     },
     {
       id: "S15",
       name: "フリー株式会社",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
-      id: "S16",
-      name: "令和トラベル",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
-      id: "S17",
-      name: "コドモン",
       logoImage: "/logo.svg",
       logoLink: "/",
       addPadding: false,
@@ -272,28 +230,14 @@ export const sponsorList: SponsorList = {
       addPadding: true,
     },
     {
-      id: "S19",
-      name: "株式会社カサレアル",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
       id: "S20",
-      name: "株式会社スペースマーケット",
-      logoImage: "/logo.svg",
-      logoLink: "/",
+      name: "SPACEMARKET",
+      logoImage: "/sponsors/spacemarket_TypeB.png",
+      logoLink: "https://spacemarket.co.jp/",
       addPadding: false,
     },
   ],
   bronze: [
-    {
-      id: "B01",
-      name: "株式会社ZOZO",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
     {
       id: "B02",
       name: "株式会社Gemcook",
@@ -360,14 +304,14 @@ export const sponsorList: SponsorList = {
     {
       id: "B11",
       name: "株式会社mov（口コミコム）",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/mov_typo_navy_with_space.png",
       logoLink: "https://mov.am/",
       addPadding: false,
     },
     {
       id: "B12",
       name: "株式会社GENDA",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/GENDA_Logo_Positive.png",
       logoLink: "https://genda.jp/",
       addPadding: false,
     },
