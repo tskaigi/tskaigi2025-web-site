@@ -23,7 +23,6 @@ export const ApplyToProposalSection = () => {
               <p>
                 あなたの発表が、誰かのキャリア、あるいはプロジェクトに新たな光をもたらすかもしれません。
               </p>
-              <br />
               <p>ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！</p>
             </div>
           </div>
