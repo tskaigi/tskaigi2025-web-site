@@ -62,7 +62,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G01",
       name: "レバレジーズ株式会社",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/leverages.jpg",
       logoLink: "https://recruit.leverages.jp/recruit/engineer/",
       addPadding: false,
     },
@@ -112,13 +112,14 @@ export const sponsorList: SponsorList = {
       id: "G08",
       name: "株式会社CARTA HOLDINGS",
       logoImage: "/logo.svg",
-      logoLink: "/",
+      logoLink:
+        "https://cartaholdings.co.jp/engineering/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       addPadding: false,
     },
     {
       id: "G09",
       name: "キャディ株式会社",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/caddi_logo_primary_horizontal.png",
       logoLink: "https://caddi.com/",
       addPadding: false,
     },
@@ -139,7 +140,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G12",
       name: "匠技研工業株式会社",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/takumi_giken_logo.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
     },
@@ -169,7 +170,7 @@ export const sponsorList: SponsorList = {
     {
       id: "S05",
       name: "株式会社EARTHBRAIN",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/earthbrain_logo.png",
       logoLink:
         "https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd",
       addPadding: false,
@@ -177,7 +178,7 @@ export const sponsorList: SponsorList = {
     {
       id: "S06",
       name: "MOSH株式会社",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/MOSH_logo.png",
       logoLink: "https://mosh.jp/",
       addPadding: false,
     },
@@ -191,7 +192,7 @@ export const sponsorList: SponsorList = {
     {
       id: "S11",
       name: "株式会社メドレー",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/medley_rgb.png",
       logoLink: "https://www.medley.jp/",
       addPadding: false,
     },
@@ -270,7 +271,7 @@ export const sponsorList: SponsorList = {
     {
       id: "B06",
       name: "株式会社はてな",
-      logoImage: "/sponsors/logo_horizontal_primary.png",
+      logoImage: "/sponsors/hatena_logo_horizontal_primary.png",
       logoLink: "https://hatena.co.jp",
       addPadding: false,
     },
