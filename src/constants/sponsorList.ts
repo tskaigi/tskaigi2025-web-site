@@ -91,7 +91,7 @@ export const sponsorList: SponsorList = {
       id: "G05",
       name: "カミナシ",
       logoImage: "/sponsors/kaminashi_logo.png",
-      logoLink: "https://corp.kaminashi.jp/presskit",
+      logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
     },
     {
@@ -156,13 +156,6 @@ export const sponsorList: SponsorList = {
     {
       id: "S03",
       name: "株式会社Linc'well",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
-    },
-    {
-      id: "S04",
-      name: "アイザック株式会社",
       logoImage: "/logo.svg",
       logoLink: "/",
       addPadding: false,
@@ -284,7 +277,7 @@ export const sponsorList: SponsorList = {
     },
     {
       id: "B08",
-      name: "株式会社Rebase",
+      name: "インスタベース",
       logoImage: "/logo.svg",
       logoLink: "/",
       addPadding: false,
@@ -299,8 +292,8 @@ export const sponsorList: SponsorList = {
     {
       id: "B10",
       name: "株式会社Antway / システムアーキテクト部",
-      logoImage: "/logo.svg",
-      logoLink: "/",
+      logoImage: "/sponsors/Antway_logo.png",
+      logoLink: "https://antway.co.jp/",
       addPadding: false,
     },
     {
