@@ -20,7 +20,7 @@ export function SponsorsBoardSection() {
           {sponsorList.platinum.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-full h-[192px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
+              className={`w-full h-[162px] md:h-[192px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
