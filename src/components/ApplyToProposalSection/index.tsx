@@ -6,16 +6,16 @@ import Link from "next/link";
 export const ApplyToProposalSection = () => {
   return (
     <div className="bg-blue-light-400 flex items-center justify-center">
-      <div className="flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10 rounded-lg">
-        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-6 lg:px-10 flex flex-col items-center rounded-lg max-w-[940px]">
+      <div className="flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10">
+        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-6 lg:px-10 flex flex-col items-center rounded-lg  md:rounded-2xl max-w-[940px]">
           <div className="flex flex-col items-center">
-            <h1 className="lg:text-[32px] md:text-[28px] text-[24px] font-bold text-center pb-4">
+            <h2 className="lg:text-[32px] md:text-[28px] text-[24px] font-bold text-center pb-4">
               プロポーザル募集
-            </h1>
+            </h2>
             <Decoration />
           </div>
           <div className="py-6 md:py-6 lg:py-10">
-            <div className="text-[16px] md:text-[18px] text-left">
+            <div className="text-[16px] md:text-[18px] text-left leading-[1.8]">
               <p>
                 私たちの願いは、フロントエンドからバックエンド、インフラに至るまで、多様な分野のTypeScriptエンジニアたちが集い、普段は交流の少ないエンジニアたちが、それぞれの得意分野や最新の知見を交換し合う交流の場を創り出すことです。
               </p>

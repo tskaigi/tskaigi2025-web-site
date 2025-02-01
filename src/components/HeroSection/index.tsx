@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from "../../../public/hero.png";
+import HeroImage from "../../../public/hero.webp";
 
 export function HeroSection() {
   return (
