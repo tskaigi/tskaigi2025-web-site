@@ -10,7 +10,7 @@ export function MissionSection() {
       }}
       className="relative -mt-8 z-10 md:-mt-16 lg:-mt-24"
     >
-      <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-10">
+      <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-16">
         <h2 className="text-sm text-center md:text-lg">MISSION</h2>
 
         <p className="text-blue-500 text-xl font-bold text-center mt-1 lg:mt-4 md:text-2xl lg:text-3xl">
