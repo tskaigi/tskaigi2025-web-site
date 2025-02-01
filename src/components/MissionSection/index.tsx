@@ -23,7 +23,7 @@ export function MissionSection() {
         <div className="flex justify-center mt-4 lg:mt-6">
           <Decoration />
         </div>
-        <div className="mt-6 text-base leading-7 md:text-lg lg:mt-10">
+        <div className="mt-6 text-16 md:text-18 lg:mt-10 leading-[1.8]">
           <p>
             TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。
           </p>

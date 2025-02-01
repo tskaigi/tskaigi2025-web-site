@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const VenueInformation = () => {
   return (
-    <section className="flex flex-col items-center text-center mt-[24px] md:mt-[40px] lg:mt-[64px]">
-      <div className="py-[32px] rounded-xl bg-white px-[24px] md:px-[40px] lg:px-[40ox] w-full max-w-[740px]">
+    <section className="flex flex-col items-center text-center mt-[24px] md:mt-[40px] lg:mt-[64px] -mx-6 md:mx-0">
+      <div className="py-[32px] md:rounded-2xl bg-white px-[24px] md:px-[40px] lg:px-[40ox] w-full max-w-[740px]">
         <div className="space-y-1 mb-8 px-6">
           <h2>
             開催:
@@ -21,7 +21,10 @@ export const VenueInformation = () => {
               className="inline-flex items-center text-link-light font-bold hover:underline"
             >
               ベルサール神田
-              <ExternalLink className="ml-2 text-link-light" aria-hidden />
+              <ExternalLink
+                className="ml-2 text-link-light size-5"
+                aria-hidden
+              />
             </Link>
           </p>
         </div>
