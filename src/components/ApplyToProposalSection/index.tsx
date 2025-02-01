@@ -7,7 +7,7 @@ export const ApplyToProposalSection = () => {
   return (
     <div className="bg-blue-light-400 flex items-center justify-center">
       <div className="flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10 rounded-lg">
-        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-16 lg:px-10 flex flex-col items-center rounded-lg max-w-[940px]">
+        <div className="bg-white p-6 md:px-10 md:py-6 lg:py-6 lg:px-10 flex flex-col items-center rounded-lg max-w-[940px]">
           <div className="flex flex-col items-center">
             <h1 className="lg:text-[32px] md:text-[28px] text-[24px] font-bold text-center pb-4">
               プロポーザル募集
@@ -37,9 +37,9 @@ export const ApplyToProposalSection = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScKXPc8dLC3QSqu_pMTGJdED3LuuFi0QCVsCMWIrC6nPcxRnA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-[22px] flex items-center space-x-2"
+                className="font-bold flex items-center text-22 [&_svg]:size-6"
               >
-                <span>応募する</span>
+                <span className="text-18 md:text-22">応募する</span>
                 <ArrowRight />
               </Link>
             </Button>
