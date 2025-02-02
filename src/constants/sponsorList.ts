@@ -111,7 +111,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G08",
       name: "株式会社CARTA HOLDINGS",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/logo_carta_black.png",
       logoLink:
         "https://cartaholdings.co.jp/engineering/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       addPadding: false,
