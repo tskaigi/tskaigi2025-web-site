@@ -31,7 +31,7 @@ export const ApplyToProposalSection = () => {
               asChild
               variant="default"
               size="lg"
-              className="rounded-full w-[280px] h-[60px] fill-primary bg-blue-purple-500 hover:bg-blue-purple-600 text-white"
+              className="rounded-full h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white pl-10 pr-8"
             >
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLScKXPc8dLC3QSqu_pMTGJdED3LuuFi0QCVsCMWIrC6nPcxRnA/viewform"
@@ -39,7 +39,9 @@ export const ApplyToProposalSection = () => {
                 rel="noopener noreferrer"
                 className="font-bold flex items-center text-22 [&_svg]:size-6"
               >
-                <span className="text-18 md:text-22">応募する</span>
+                <span className="text-18 md:text-22 leading-[1.8]">
+                  応募する
+                </span>
                 <ArrowRight />
               </Link>
             </Button>

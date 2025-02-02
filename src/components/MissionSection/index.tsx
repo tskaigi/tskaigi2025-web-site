@@ -25,8 +25,8 @@ export function MissionSection() {
         </div>
         <div className="mt-6 text-16 md:text-18 lg:mt-10 leading-[1.8]">
           <p>
-            国内最大級の TypeScript カンファレンス、TSKaigi を 2025
-            年も開催します！
+            2024年に産声をあげ、大盛況のうちに幕を閉じた TSKaigi
+            を今年も開催します！
           </p>
           <br />
           <p>
@@ -38,7 +38,7 @@ export function MissionSection() {
           <br />
           <p>
             TypeScript
-            に関するあらゆるテーマを扱うカンファレンスとして、まさに「型破り」なイベントを目指し成長を続ける
+            に関するあらゆるテーマを扱う国内最大級のカンファレンスとして、まさに「型破り」なイベントを目指し成長を続ける
             TSKaigi にご期待ください。
           </p>
         </div>
