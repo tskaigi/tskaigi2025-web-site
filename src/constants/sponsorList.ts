@@ -236,8 +236,8 @@ export const sponsorList: SponsorList = {
     {
       id: "B02",
       name: "株式会社Gemcook",
-      logoImage: "/logo.svg",
-      logoLink: "/",
+      logoImage: "/sponsors/gemcook-logo-white.png",
+      logoLink: "https://gemcook.com",
       addPadding: false,
     },
     {
@@ -279,7 +279,7 @@ export const sponsorList: SponsorList = {
       id: "B08",
       name: "インスタベース",
       logoImage: "/sponsors/rebase_logo.png",
-      logoLink: "/",
+      logoLink: "https://rebase.co.jp/\n",
       addPadding: false,
     },
     {
