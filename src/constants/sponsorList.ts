@@ -40,7 +40,7 @@ export const sponsorList: SponsorList = {
       id: "P04",
       name: "Nstock株式会社",
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
-      logoLink: "",
+      logoLink: "https://nstock.co.jp/\n",
       addPadding: false,
     },
     {
@@ -257,7 +257,7 @@ export const sponsorList: SponsorList = {
     {
       id: "B05",
       name: "株式会社Hacobu",
-      logoImage: "/sponsors/Hacobu_Logo.jpg",
+      logoImage: "/sponsors/Hacobu_logo_rgb_black.png",
       logoLink: "https://hacobu.jp/",
       addPadding: false,
     },
