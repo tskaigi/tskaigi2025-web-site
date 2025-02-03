@@ -26,7 +26,7 @@ export const sponsorList: SponsorList = {
       id: "P02",
       name: "クラフトバンク株式会社",
       logoImage: "/sponsors/CraftBank_logo_cmyk_original.png",
-      logoLink: "/",
+      logoLink: "https://corp.craft-bank.com/",
       addPadding: false,
     },
     {
