@@ -26,7 +26,7 @@ export const sponsorList: SponsorList = {
       id: "P02",
       name: "クラフトバンク株式会社",
       logoImage: "/sponsors/CraftBank_logo_cmyk_original.png",
-      logoLink: "/",
+      logoLink: "https://corp.craft-bank.com/",
       addPadding: false,
     },
     {
@@ -40,7 +40,7 @@ export const sponsorList: SponsorList = {
       id: "P04",
       name: "Nstock株式会社",
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
-      logoLink: "",
+      logoLink: "https://nstock.co.jp/\n",
       addPadding: false,
     },
     {
@@ -97,7 +97,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G06",
       name: "GMO Flatt Security株式会社",
-      logoImage: "/sponsors/color_vertical_default.png",
+      logoImage: "/sponsors/gmo_color_horizontal_default.svg",
       logoLink: "https://flatt.tech/",
       addPadding: false,
     },
@@ -257,7 +257,7 @@ export const sponsorList: SponsorList = {
     {
       id: "B05",
       name: "株式会社Hacobu",
-      logoImage: "/sponsors/Hacobu_Logo.jpg",
+      logoImage: "/sponsors/Hacobu_logo_rgb_black.png",
       logoLink: "https://hacobu.jp/",
       addPadding: false,
     },
