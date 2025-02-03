@@ -192,8 +192,8 @@ export const sponsorList: SponsorList = {
     {
       id: "S12",
       name: "株式会社ドワンゴ",
-      logoImage: "/logo.svg",
-      logoLink: "/",
+      logoImage: "/sponsors/dwango_blue.png",
+      logoLink: "https://dwango.co.jp/",
       addPadding: false,
     },
     {
@@ -278,7 +278,7 @@ export const sponsorList: SponsorList = {
     {
       id: "B08",
       name: "インスタベース",
-      logoImage: "/logo.svg",
+      logoImage: "/sponsors/rebase_logo.png",
       logoLink: "/",
       addPadding: false,
     },
