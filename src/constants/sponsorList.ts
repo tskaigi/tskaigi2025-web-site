@@ -97,7 +97,7 @@ export const sponsorList: SponsorList = {
     {
       id: "G06",
       name: "GMO Flatt Security株式会社",
-      logoImage: "/sponsors/color_vertical_default.png",
+      logoImage: "/sponsors/gmo_color_horizontal_default.svg",
       logoLink: "https://flatt.tech/",
       addPadding: false,
     },
