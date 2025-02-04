@@ -31,7 +31,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://corp.craft-bank.com/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "P03",
@@ -39,8 +38,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/AVITA_Logomark_Logotype.png",
       logoLink: "https://www.wantedly.com/companies/avita",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "P04",
@@ -48,8 +46,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
       logoLink: "https://nstock.co.jp/\n",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "P05",
@@ -58,7 +55,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://recruit2024.dinii.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "P06",
@@ -67,7 +63,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://twogate.com/",
       addPadding: false,
       isTenantChecked: true,
-
     },
   ],
   gold: [
@@ -78,7 +73,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://recruit.leverages.jp/recruit/engineer/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G02",
@@ -86,8 +80,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kinto_logoA.png",
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "G03",
@@ -96,7 +89,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G04",
@@ -105,7 +97,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://corp.kepple.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G05",
@@ -113,8 +104,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "G06",
@@ -122,8 +112,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/gmo_color_horizontal_default.svg",
       logoLink: "https://flatt.tech/",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "G07",
@@ -132,7 +121,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://toggle.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G08",
@@ -142,7 +130,6 @@ export const sponsorList: SponsorList = {
         "https://cartaholdings.co.jp/engineering/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G09",
@@ -151,7 +138,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://caddi.com/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G10",
@@ -160,7 +146,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://stmn.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G11",
@@ -169,7 +154,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://ubie.life/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "G12",
@@ -177,7 +161,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/takumi_giken_logo.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
-        isTenantChecked: true,
+      isTenantChecked: true,
     },
   ],
   silver: [
@@ -188,7 +172,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://theoriatec.com/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S03",
@@ -196,7 +179,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/logo.svg",
       logoLink: "/",
       addPadding: false,
-        isTenantChecked: true,
+      isTenantChecked: false,
     },
     {
       id: "S05",
@@ -206,7 +189,6 @@ export const sponsorList: SponsorList = {
         "https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S06",
@@ -215,7 +197,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://mosh.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S08",
@@ -224,7 +205,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://hrmos.co/pages/kakehashi",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S11",
@@ -233,7 +213,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://www.medley.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S12",
@@ -242,7 +221,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://dwango.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S13",
@@ -251,7 +229,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://www.optim.co.jp/corporate/outline",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S14",
@@ -259,8 +236,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
       logoLink: "https://corp.tokium.jp/",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
     {
       id: "S15",
@@ -269,7 +245,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://corp.freee.co.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "S18",
@@ -278,7 +253,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://www.forcia.com/",
       addPadding: true,
       isTenantChecked: true,
-
     },
     {
       id: "S20",
@@ -286,8 +260,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/spacemarket_TypeB.png",
       logoLink: "https://spacemarket.co.jp/",
       addPadding: false,
-      isTenantChecked: true,
-
+      isTenantChecked: false,
     },
   ],
   bronze: [
@@ -298,7 +271,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://gemcook.com",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "B03",
@@ -307,7 +279,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://note.jp/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "B04",
@@ -316,7 +287,6 @@ export const sponsorList: SponsorList = {
       logoLink: "https://kickflow.com/",
       addPadding: false,
       isTenantChecked: true,
-
     },
     {
       id: "B05",
@@ -332,7 +302,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/hatena_logo_horizontal_primary.png",
       logoLink: "https://hatena.co.jp",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
     },
     {
       id: "B07",
@@ -372,7 +342,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/mov_typo_navy_with_space.png",
       logoLink: "https://mov.am/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
     },
     {
       id: "B12",

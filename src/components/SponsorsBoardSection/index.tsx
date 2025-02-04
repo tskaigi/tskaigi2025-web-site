@@ -8,17 +8,17 @@ type Props = {
 
 export function SponsorsBoardSection({ isTopPage }: Props) {
   const platinumSponsors = isTopPage
-    ? sponsorList.platinum
-    : sponsorList.platinum.filter((sponsor) => sponsor.isTenantChecked);
+    ? sponsorList.platinum.filter((sponsor) => sponsor.isTenantChecked)
+    : sponsorList.platinum;
   const goldSponsors = isTopPage
-    ? sponsorList.gold
-    : sponsorList.gold.filter((sponsor) => sponsor.isTenantChecked);
+    ? sponsorList.gold.filter((sponsor) => sponsor.isTenantChecked)
+    : sponsorList.gold;
   const silverSponsors = isTopPage
-    ? sponsorList.silver
-    : sponsorList.silver.filter((sponsor) => sponsor.isTenantChecked);
+    ? sponsorList.silver.filter((sponsor) => sponsor.isTenantChecked)
+    : sponsorList.silver;
   const bronzeSponsors = isTopPage
-    ? sponsorList.bronze
-    : sponsorList.bronze.filter((sponsor) => sponsor.isTenantChecked);
+    ? sponsorList.bronze.filter((sponsor) => sponsor.isTenantChecked)
+    : sponsorList.bronze;
   return (
     <section className="md:px-10 bg-blue-light-100">
       <h2 className="pt-10 pb-8 lg:pt-16 lg:pb-10 flex flex-col md:flex-row md:justify-center md:gap-2 text-24 md:text-32 leading-normal md:leading-[42px] text-center font-bold font-noto">
