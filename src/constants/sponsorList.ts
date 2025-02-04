@@ -342,7 +342,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/mov_typo_navy_with_space.png",
       logoLink: "https://mov.am/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
     },
     {
       id: "B12",
