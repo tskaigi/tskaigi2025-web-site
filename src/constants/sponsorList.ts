@@ -302,7 +302,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/hatena_logo_horizontal_primary.png",
       logoLink: "https://hatena.co.jp",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
     },
     {
       id: "B07",
