@@ -46,7 +46,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
       logoLink: "https://nstock.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
     },
     {
       id: "P05",
