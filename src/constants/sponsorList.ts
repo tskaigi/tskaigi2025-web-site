@@ -260,7 +260,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/spacemarket_TypeB.png",
       logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
     },
   ],
   bronze: [
