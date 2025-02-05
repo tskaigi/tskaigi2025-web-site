@@ -258,7 +258,7 @@ export const sponsorList: SponsorList = {
       id: "S20",
       name: "SPACEMARKET",
       logoImage: "/sponsors/spacemarket_TypeB.png",
-      logoLink: "https://spacemarket.co.jp/",
+      logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
       isTenantChecked: false,
     },
