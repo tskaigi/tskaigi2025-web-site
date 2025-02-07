@@ -235,7 +235,7 @@ export const sponsorList: SponsorList = {
       name: "株式会社TOKIUM",
       logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
       logoLink: "https://corp.tokium.jp/",
-      addPadding: false,
+      addPadding: true,
       isTenantChecked: false,
     },
     {
