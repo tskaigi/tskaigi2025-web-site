@@ -104,7 +104,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
     },
     {
       id: "G06",
