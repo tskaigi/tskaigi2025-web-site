@@ -1,33 +1,49 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowUpRightFromSquare } from "lucide-react";
 
-const Company = () => {
+export type CompanyProps = {
+  name: string;
+  links?: { title: string; href: string }[];
+};
+
+const Company = ({ name, links }: CompanyProps) => {
   return (
-    <>
+    <div className="p-6 flex flex-col gap-6">
       <Image
         src={"/"}
-        alt="会社名"
-        width={600}
-        height={400}
+        alt={name}
+        width={1280}
+        height={640}
         className="bg-gray-200"
       />
-      <p>一般社団法人 TSKaigi</p>
-      <p>こちらに紹介文が入ります</p>
+      <p className="font-bold text-xl">{name}</p>
+      <p className="text-base">こちらに紹介文が入ります</p>
       <p>
         こちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入ります
       </p>
-      <ul>
-        <li>
-          <Link href={"/"}>リンク</Link>
-        </li>
-        <li>
-          <Link href={"/"}>リンク</Link>
-        </li>
-        <li>
-          <Link href={"/"}>リンク</Link>
-        </li>
-      </ul>
-    </>
+
+      {links && (
+        <ul className="list-disc list-inside">
+          {links.map(({ title, href }) => {
+            return (
+              <li className="marker:text-xs">
+                <Link
+                  href={href}
+                  className="text-link-light underline underline-offset-2 decoration-1 decoration-link-light"
+                >
+                  {title}
+                  <ArrowUpRightFromSquare
+                    size={16}
+                    className="inline relative left-2"
+                  />
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
   );
 };
 
