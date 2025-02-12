@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
 import { ArrowUpRightFromSquare } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export type CompanyProps = {
   name: string;
@@ -9,7 +9,7 @@ export type CompanyProps = {
 
 const Company = ({ name, links }: CompanyProps) => {
   return (
-    <div className="p-6 flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
       <Image
         src={"/"}
         alt={name}
@@ -27,7 +27,7 @@ const Company = ({ name, links }: CompanyProps) => {
         <ul className="list-disc list-inside">
           {links.map(({ title, href }) => {
             return (
-              <li className="marker:text-xs">
+              <li key={title} className="marker:text-xs">
                 <Link
                   href={href}
                   className="text-link-light underline underline-offset-2 decoration-1 decoration-link-light"
