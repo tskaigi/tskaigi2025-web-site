@@ -1,4 +1,4 @@
-import { SponsorRole } from "../type";
+import type { SponsorRole } from "../type";
 
 const bgColor: { [key in SponsorRole]: string } = {
   Platinum: "bg-blue-purple-600",

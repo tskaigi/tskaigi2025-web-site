@@ -5,28 +5,21 @@ const companies: { [key in SponsorClass]: CompanyProps[] } = {
   Platinum: [
     {
       name: "一般社団法人 TSKaigi",
-      roles: [
-        "Platinum"
-      ],
+      roles: ["Platinum"],
       links: [
         { title: "リンク1", href: "/" },
         { title: "リンク2", href: "/" },
       ],
-      
     },
     {
       name: "一般社団法人 TSKaigi",
-      roles: [
-        "Platinum", "Coffee"
-      ],
+      roles: ["Platinum", "Coffee"],
     },
   ],
   Gold: [
     {
       name: "一般社団法人 TSKaigi",
-      roles: [
-        "Gold"
-      ],
+      roles: ["Gold"],
       links: [
         { title: "リンク1", href: "/" },
         { title: "リンク2", href: "/" },
@@ -36,9 +29,7 @@ const companies: { [key in SponsorClass]: CompanyProps[] } = {
   Silver: [
     {
       name: "一般社団法人 TSKaigi",
-      roles: [
-        "Silver"
-      ],
+      roles: ["Silver"],
       links: [
         { title: "リンク1", href: "/" },
         { title: "リンク2", href: "/" },
@@ -48,9 +39,7 @@ const companies: { [key in SponsorClass]: CompanyProps[] } = {
   Bronze: [
     {
       name: "一般社団法人 TSKaigi",
-      roles: [
-        "Bronze"
-      ],
+      roles: ["Bronze"],
       links: [
         { title: "リンク1", href: "/" },
         { title: "リンク2", href: "/" },

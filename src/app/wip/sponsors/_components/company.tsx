@@ -1,8 +1,8 @@
 import { ArrowUpRightFromSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { SponsorRole } from "../type";
 import RoleBadge from "./roleBadge";
-import { SponsorRole } from "../type";
 
 export type CompanyProps = {
   name: string;
