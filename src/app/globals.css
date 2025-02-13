@@ -116,3 +116,177 @@
 footer {
   background: linear-gradient(180deg, #3a89c4 0%, #1071d3 100%);
 }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes rippleLeftCircle1 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  66% {
+    r: 386;
+    opacity: 1;
+  }
+  100% {
+    r: 386;
+    opacity: 1;
+  }
+}
+
+@keyframes rippleLeftCircle2 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  22% {
+    r: 0;
+    opacity: 0;
+  }
+  95% {
+    r: 265;
+    opacity: 1;
+  }
+  100% {
+    r: 265;
+    opacity: 1;
+  }
+}
+
+@keyframes rippleLeftCircle3 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  35% {
+    r: 0;
+    opacity: 0;
+  }
+  100% {
+    r: 144;
+    opacity: 1;
+  }
+}
+
+@keyframes rippleRightCircle1 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  28% {
+    r: 0;
+    opacity: 0;
+  }
+  77% {
+    r: 390;
+    opacity: 1;
+  }
+  100% {
+    r: 390;
+    opacity: 1;
+  }
+}
+
+@keyframes rippleRightCircle2 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  44% {
+    r: 0;
+    opacity: 0;
+  }
+  95% {
+    r: 268;
+    opacity: 1;
+  }
+  100% {
+    r: 268;
+    opacity: 1;
+  }
+}
+
+@keyframes rippleRightCircle3 {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  60% {
+    r: 0;
+    opacity: 0;
+  }
+  100% {
+    r: 148;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.left-circle-1 {
+  animation: rippleLeftCircle1 1.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.left-circle-2 {
+  animation: rippleLeftCircle2 1.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.left-circle-3 {
+  animation: rippleLeftCircle3 1.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.right-circle-1 {
+  animation: rippleRightCircle1 1.6s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.right-circle-2 {
+  animation: rippleRightCircle2 1.6s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.right-circle-3 {
+  animation: rippleRightCircle3 1.6s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadein 1s 1.3s forwards;
+}
