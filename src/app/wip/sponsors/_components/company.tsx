@@ -1,58 +1,44 @@
-import { ArrowUpRightFromSquare } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import type { SponsorRole } from "../type";
+import type { CompanyProps } from "../type";
+import ExternalLink from "./externalLink";
 import RoleBadge from "./roleBadge";
 
-export type CompanyProps = {
-  name: string;
-  roles: SponsorRole[];
-  links?: { title: string; href: string }[];
-};
-
-const Company = ({ name, roles, links }: CompanyProps) => {
+const Company = ({ name, overview, roles, links }: CompanyProps) => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-x-8 gap-y-6 md:flex-row md:items-start">
       <Image
         src={"/"}
         alt={name}
         width={1280}
         height={640}
-        className="bg-gray-200"
+        className="bg-gray-200 w-1/3 flex-shrink-0"
       />
 
-      <div className="flex gap-2">
-        {roles.map((role) => {
-          return <RoleBadge key={role} variant={role} />;
-        })}
-      </div>
-
-      <p className="font-bold text-xl">{name}</p>
-      <p className="text-base">こちらに紹介文が入ります</p>
-      <p>
-        こちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入りますこちらに紹介文が入ります
-      </p>
-
-      {links && (
-        <ul className="list-disc list-inside">
-          {links.map(({ title, href }) => {
-            return (
-              <li key={title} className="marker:text-xs">
-                <Link
-                  href={href}
-                  className="text-link-light underline underline-offset-2 decoration-1 decoration-link-light"
-                >
-                  {title}
-                  <ArrowUpRightFromSquare
-                    size={16}
-                    className="inline relative left-2"
-                  />
-                </Link>
-              </li>
-            );
+      <div className="flex flex-col gap-6 text-base md:text-lg">
+        <div className="flex gap-2">
+          {roles.map((role) => {
+            return <RoleBadge key={role} variant={role} />;
           })}
-        </ul>
-      )}
+        </div>
+
+        <p className="font-bold text-xl md:text-2xl">{name}</p>
+
+        {overview.map((text) => (
+          <p key={text} className="whitespace-pre-wrap leading-8">
+            {text}
+          </p>
+        ))}
+
+        {links && (
+          <ul className="list-disc list-inside">
+            {links.map((link) => (
+              <li key={link.title} className="marker:text-xs">
+                <ExternalLink {...link} />
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };
