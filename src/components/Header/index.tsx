@@ -13,6 +13,10 @@ export function Header() {
           className="w-[78px] h-[28px] md:w-[98px] md:h-[36px]"
         />
       </Link>
+      {/* TODO: スポンサーページ公開のときに合わせて公開する */}
+      {/* <Link href="/sponsers" className="text-blue-purple-500 font-bold text-14">
+        スポンサー一覧
+      </Link> */}
     </header>
   );
 }
