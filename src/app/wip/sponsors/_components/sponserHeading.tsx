@@ -18,7 +18,9 @@ const SponsorHeading = ({ variant }: { variant: SponsorClass }) => {
   return (
     <div className="flex justify-center items-center gap-3">
       <hr className={`flex-1 border-t ${borderColor[variant]}`} />
-      <h2 className={`font-bold text-2xl ${textColor[variant]}`}>
+      <h2
+        className={`font-bold text-2xl ${textColor[variant]} md:text-3xl lg:text-3xl`}
+      >
         {variant} Sponsors
       </h2>
       <hr className={`flex-1 border-t ${borderColor[variant]}`} />

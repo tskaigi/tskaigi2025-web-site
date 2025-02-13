@@ -14,20 +14,23 @@ const SponsorsPage = () => {
           スポンサー一覧
         </h1>
 
-        <div className="bg-white p-6 flex flex-col gap-6 md:rounded-xl">
+        <div className="bg-white p-6 flex flex-col gap-10 max-w-screen-xl mx-auto md:rounded-xl lg:p-10">
           {Object.entries(companies).map(([key, value]) => {
             return (
-              <>
-                <SponsorHeading key={key} variant={key as SponsorClass} />
+              <div key={key} className="flex flex-col gap-12">
+                <SponsorHeading variant={key as SponsorClass} />
 
-                <ul key={key} className="flex flex-col gap-6">
-                  {value.map((company) => (
-                    <li key={company.name}>
+                <ul className="flex flex-col gap-6">
+                  {value.map((company, idx, value) => (
+                    <li key={company.name} className="flex flex-col gap-6">
                       <Company {...company} />
+                      {idx !== value.length - 1 && (
+                        <hr className="border-t-2 border-black-200" />
+                      )}
                     </li>
                   ))}
                 </ul>
-              </>
+              </div>
             );
           })}
         </div>
