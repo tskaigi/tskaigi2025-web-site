@@ -1,13 +1,13 @@
 import type { SponsorClass } from "../type";
 
-const borderColor = {
+const borderColor: { [key in SponsorClass]: string } = {
   Platinum: "border-blue-purple-600",
   Gold: "border-yellow-600",
   Silver: "border-blue-light-500",
   Bronze: "border-orange-600",
 };
 
-const textColor = {
+const textColor: { [key in SponsorClass]: string } = {
   Platinum: "text-blue-purple-600",
   Gold: "text-yellow-600",
   Silver: "text-blue-light-500",

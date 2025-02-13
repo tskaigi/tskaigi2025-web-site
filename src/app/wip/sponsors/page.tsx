@@ -17,17 +17,17 @@ const SponsorsPage = () => {
         <div className="bg-white p-6 flex flex-col gap-6">
           {Object.entries(companies).map(([key, value]) => {
             return (
-              <div key={key}>
-                <SponsorHeading variant={key as SponsorClass} />
+              <>
+                <SponsorHeading key={key} variant={key as SponsorClass} />
 
-                <ul>
+                <ul key={key} className="flex flex-col gap-6">
                   {value.map((company) => (
                     <li key={company.name}>
                       <Company {...company} />
                     </li>
                   ))}
                 </ul>
-              </div>
+              </>
             );
           })}
         </div>

@@ -1,13 +1,16 @@
 import { ArrowUpRightFromSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import RoleBadge from "./roleBadge";
+import { SponsorRole } from "../type";
 
 export type CompanyProps = {
   name: string;
+  roles: SponsorRole[];
   links?: { title: string; href: string }[];
 };
 
-const Company = ({ name, links }: CompanyProps) => {
+const Company = ({ name, roles, links }: CompanyProps) => {
   return (
     <div className="flex flex-col gap-6">
       <Image
@@ -17,6 +20,13 @@ const Company = ({ name, links }: CompanyProps) => {
         height={640}
         className="bg-gray-200"
       />
+
+      <div className="flex gap-2">
+        {roles.map((role) => {
+          return <RoleBadge key={role} variant={role} />;
+        })}
+      </div>
+
       <p className="font-bold text-xl">{name}</p>
       <p className="text-base">こちらに紹介文が入ります</p>
       <p>
