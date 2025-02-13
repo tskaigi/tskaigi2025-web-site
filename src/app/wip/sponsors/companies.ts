@@ -61,6 +61,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
   Gold: [
     {
       name: "一般社団法人 TSKaigi",
+      imageSrc: "/",
       overview: [],
       roles: ["Gold"],
       links: [
@@ -72,6 +73,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
   Silver: [
     {
       name: "一般社団法人 TSKaigi",
+      imageSrc: "/",
       overview: [],
       roles: ["Silver"],
       links: [
@@ -83,6 +85,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
   Bronze: [
     {
       name: "一般社団法人 TSKaigi",
+      imageSrc: "/",
       overview: [],
       roles: ["Bronze"],
       links: [

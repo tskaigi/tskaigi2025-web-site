@@ -7,7 +7,7 @@ const Company = ({ name, imageSrc, overview, roles, links }: CompanyProps) => {
   return (
     <div className="flex flex-col gap-y-6 md:flex-row md:items-start md:gap-x-8 lg:gap-x-10">
       <Image
-        src={imageSrc || "/"}
+        src={imageSrc}
         alt={name}
         width={1280}
         height={640}
