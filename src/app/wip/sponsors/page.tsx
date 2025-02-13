@@ -1,9 +1,14 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
+import type { Metadata } from "next";
 import Company from "./_components/company";
 import SponsorHeading from "./_components/sponserHeading";
 import companies from "./companies";
 import type { SponsorClass } from "./type";
+
+export const metadata: Metadata = {
+  robots: "noindex, nofollow",
+};
 
 const SponsorsPage = () => {
   return (
