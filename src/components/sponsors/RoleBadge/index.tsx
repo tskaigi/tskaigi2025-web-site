@@ -1,4 +1,4 @@
-import type { SponsorRole } from "../type";
+import type { SponsorRole } from "@/app/wip/sponsors/type";
 
 const bgColor: { [key in SponsorRole]: string } = {
   Platinum: "bg-blue-purple-600",

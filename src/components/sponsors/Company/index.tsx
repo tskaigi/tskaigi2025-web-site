@@ -1,7 +1,7 @@
+import type { CompanyProps } from "@/app/wip/sponsors/type";
 import Image from "next/image";
-import type { CompanyProps } from "../type";
-import ExternalLink from "./externalLink";
-import RoleBadge from "./roleBadge";
+import ExternalLink from "../ExternalLink";
+import RoleBadge from "../RoleBadge";
 
 const Company = ({ name, imageSrc, overview, roles, links }: CompanyProps) => {
   return (

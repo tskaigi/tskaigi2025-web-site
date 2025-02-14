@@ -1,4 +1,4 @@
-import type { SponsorClass } from "../type";
+import type { SponsorClass } from "@/app/wip/sponsors/type";
 
 const borderColor: { [key in SponsorClass]: string } = {
   Platinum: "border-blue-purple-600",

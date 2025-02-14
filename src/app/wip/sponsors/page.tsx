@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Company from "./_components/company";
-import SponsorHeading from "./_components/sponserHeading";
+import Company from "@/components/sponsors/Company";
+import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import companies from "./companies";
 import type { SponsorClass } from "./type";
 

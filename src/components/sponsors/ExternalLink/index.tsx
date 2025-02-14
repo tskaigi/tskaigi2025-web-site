@@ -1,6 +1,6 @@
+import type { ExternalLinkProps } from "@/app/wip/sponsors/type";
 import { ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
-import type { ExternalLinkProps } from "../type";
 
 const ExternalLink = ({ title, href }: ExternalLinkProps) => {
   return (
