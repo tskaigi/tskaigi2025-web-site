@@ -1,4 +1,4 @@
-type ExternalLinkProps = { title: string; href: string };
+export type ExternalLinkProps = { title: string; href: string };
 export type SponsorClass = "platinum" | "gold" | "silver" | "bronze";
 export type SponsorRole = SponsorClass;
 
