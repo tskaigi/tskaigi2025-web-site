@@ -4,6 +4,7 @@ import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   robots: "noindex, nofollow",
@@ -24,16 +25,32 @@ const SponsorsPage = () => {
               <div key={key} className="flex flex-col gap-12">
                 <SponsorHeading variant={key as SponsorClass} />
 
-                <ul className="flex flex-col gap-6">
-                  {value.map((company, idx, value) => (
-                    <li key={company.name} className="flex flex-col gap-6">
-                      <Company {...company} />
-                      {idx !== value.length - 1 && (
-                        <hr className="border-t-2 border-black-200" />
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                {key !== "bronze" ? (
+                  <ul className="flex flex-col gap-6">
+                    {value.map((company, idx, value) => (
+                      <li key={company.name} className="flex flex-col gap-6">
+                        <Company {...company} />
+                        {idx !== value.length - 1 && (
+                          <hr className="border-t-2 border-black-200" />
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul className="grid grid-cols-2 gap-4 md:grid-cols-5">
+                    {value.map((company, idx, value) => (
+                      <li key={company.name}>
+                        <Image
+                          src={company.logoImage}
+                          alt={company.name}
+                          width={1280}
+                          height={640}
+                          className="object-contain aspect-video"
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             );
           })}
