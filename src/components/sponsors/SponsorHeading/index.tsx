@@ -1,17 +1,17 @@
-import type { SponsorClass } from "@/app/wip/sponsors/type";
+import type { SponsorClass } from "@/constants/sponsorList";
 
 const borderColor: { [key in SponsorClass]: string } = {
-  Platinum: "border-blue-purple-600",
-  Gold: "border-yellow-600",
-  Silver: "border-blue-light-500",
-  Bronze: "border-orange-600",
+  platinum: "border-blue-purple-600",
+  gold: "border-yellow-600",
+  silver: "border-blue-light-500",
+  bronze: "border-orange-600",
 };
 
 const textColor: { [key in SponsorClass]: string } = {
-  Platinum: "text-blue-purple-600",
-  Gold: "text-yellow-600",
-  Silver: "text-blue-light-500",
-  Bronze: "text-orange-600",
+  platinum: "text-blue-purple-600",
+  gold: "text-yellow-600",
+  silver: "text-blue-light-500",
+  bronze: "text-orange-600",
 };
 
 const SponsorHeading = ({ variant }: { variant: SponsorClass }) => {
@@ -21,7 +21,7 @@ const SponsorHeading = ({ variant }: { variant: SponsorClass }) => {
       <h2
         className={`font-bold text-2xl ${textColor[variant]} md:text-3xl lg:text-3xl`}
       >
-        {variant} Sponsors
+        {`${variant[0].toUpperCase()}${variant.slice(1)}`} Sponsors
       </h2>
       <hr className={`flex-1 border-t ${borderColor[variant]}`} />
     </div>

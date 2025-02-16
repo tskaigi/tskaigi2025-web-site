@@ -1,30 +1,30 @@
-import type { CompanyProps } from "@/app/wip/sponsors/type";
+import type { Sponsor } from "@/constants/sponsorList";
 import Image from "next/image";
 import ExternalLink from "../ExternalLink";
 import RoleBadge from "../RoleBadge";
 
-const Company = ({ name, imageSrc, overview, roles, links }: CompanyProps) => {
+const Company = ({ name, logoImage, overview, roles, links }: Sponsor) => {
   return (
     <div className="flex flex-col gap-y-3 md:flex-row md:items-start md:gap-x-8 lg:gap-x-10">
       <Image
-        src={imageSrc}
+        src={logoImage}
         alt={name}
         width={1280}
         height={640}
-        className="flex-shrink-0 md:w-1/3 lg:w-1/4 md:aspect-video lg:aspect-video object-contain"
+        className="flex-shrink-0 md:w-1/3 lg:w-1/4 aspect-video lg:aspect-video object-contain"
       />
 
       <div className="flex flex-col gap-y-3">
         <div className="flex gap-2">
-          {roles.map((role) => {
-            return <RoleBadge key={role} variant={role} />;
+          {roles?.map((role) => {
+            return <RoleBadge key={role} role={role} />;
           })}
         </div>
 
         <div className="flex flex-col gap-y-6 text-base md:text-lg">
           <p className="font-bold text-xl md:text-2xl lg:text-[28px]">{name}</p>
 
-          {overview.map((text) => (
+          {overview?.map((text) => (
             <p key={text} className="whitespace-pre-wrap leading-8">
               {text}
             </p>

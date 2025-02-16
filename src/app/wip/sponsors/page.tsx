@@ -2,8 +2,7 @@ import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
-import companies from "./companies";
-import type { SponsorClass } from "./type";
+import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
 
 const SponsorsPage = () => {
   return (
@@ -15,7 +14,7 @@ const SponsorsPage = () => {
         </h1>
 
         <div className="bg-white p-6 flex flex-col gap-10 max-w-screen-xl mx-auto md:rounded-xl lg:p-10">
-          {Object.entries(companies).map(([key, value]) => {
+          {Object.entries(sponsorList).map(([key, value]) => {
             return (
               <div key={key} className="flex flex-col gap-12">
                 <SponsorHeading variant={key as SponsorClass} />

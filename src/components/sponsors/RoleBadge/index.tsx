@@ -1,19 +1,18 @@
-import type { SponsorRole } from "@/app/wip/sponsors/type";
+import type { SponsorRole } from "@/constants/sponsorList";
 
 const bgColor: { [key in SponsorRole]: string } = {
-  Platinum: "bg-blue-purple-600",
-  Gold: "bg-yellow-600",
-  Silver: "bg-blue-light-500",
-  Bronze: "bg-orange-600",
-  Coffee: "bg-black-500",
+  platinum: "bg-blue-purple-600",
+  gold: "bg-yellow-600",
+  silver: "bg-blue-light-500",
+  bronze: "bg-orange-600",
 };
 
-const roleBadge = ({ variant }: { variant: SponsorRole }) => {
+const roleBadge = ({ role }: { role: SponsorRole }) => {
   return (
     <span
-      className={`font-bold text-sm text-white px-3 py-1 rounded-s rounded-e ${bgColor[variant]}`}
+      className={`font-bold text-sm text-white px-3 py-1 rounded-s rounded-e ${bgColor[role]}`}
     >
-      {variant}
+      {`${role[0].toUpperCase()}${role.slice(1)}`}
     </span>
   );
 };
