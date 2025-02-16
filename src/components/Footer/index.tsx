@@ -10,9 +10,17 @@ const Footer = () => {
           <p>一般社団法人 TSKaigi Association</p>
         </div>
 
-        <ul className="flex flex-col gap-2.5 lg:w-72">
-          {/* <li>スポンサー一覧</li> */}
-        </ul>
+        <div className="flex flex-col gap-3 lg:w-72">
+          {/* TODO: スポンサーページ公開時にあわせて公開する */}
+          {/* <p className="font-bold">ページ一覧</p>
+          <ul className="flex flex-col gap-2.5 pl-3">
+            <li>
+              <Link href="/sponsors" className="hover:underline">
+                スポンサー一覧
+              </Link>
+            </li>
+          </ul> */}
+        </div>
 
         <div className="flex flex-col gap-3 lg:w-72">
           <p className="font-bold">公式アカウント</p>

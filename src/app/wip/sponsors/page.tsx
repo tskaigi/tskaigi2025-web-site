@@ -2,7 +2,12 @@ import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
-import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
+import { SponsorClass, sponsorList } from "@/constants/sponsorList";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: "noindex, nofollow",
+};
 
 const SponsorsPage = () => {
   return (

@@ -472,9 +472,9 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     {
       id: "S03",
       name: "株式会社Linc'well",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
+      logoImage: "/sponsors/lincwell.png",
+      logoLink: "https://linc-well.com/",
+      addPadding: true,
       isTenantChecked: false,
       overview: [
         `Linc'wellは「テクノロジーを通じて、医療を一歩前へ」をミッションに掲げ、医療を効率化し患者の利便性と医療の質の向上を目指した事業展開を行っています。
