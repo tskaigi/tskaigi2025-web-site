@@ -106,7 +106,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     },
     {
       id: "P05",
-      name: "ダイニー",
+      name: "株式会社ダイニー",
       logoImage: "/sponsors/dinii_v1.png",
       logoLink: "https://recruit2024.dinii.jp/",
       addPadding: false,
@@ -239,7 +239,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     },
     {
       id: "G05",
-      name: "カミナシ",
+      name: "株式会社カミナシ",
       logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
@@ -729,7 +729,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     },
     {
       id: "S20",
-      name: "SPACEMARKET",
+      name: "株式会社スペースマーケット",
       logoImage: "/sponsors/spacemarket_TypeB.png",
       logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
