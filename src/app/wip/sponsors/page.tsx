@@ -1,10 +1,10 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SponsorsBoardItem } from "@/components/SponsorsBoardSection/SponsorsBoardItem";
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   robots: "noindex, nofollow",
@@ -40,12 +40,14 @@ const SponsorsPage = () => {
                   <ul className="grid grid-cols-2 gap-4 md:grid-cols-5">
                     {value.map((company, idx, value) => (
                       <li key={company.name}>
-                        <Image
+                        <SponsorsBoardItem
+                          key={company.id}
+                          className={`w-full h-[96px] ${company.addPadding ? "p-4" : "p-2"}`}
                           src={company.logoImage}
                           alt={company.name}
-                          width={1280}
-                          height={640}
-                          className="object-contain aspect-video"
+                          href={company.logoLink}
+                          width={211}
+                          height={96}
                         />
                       </li>
                     ))}
