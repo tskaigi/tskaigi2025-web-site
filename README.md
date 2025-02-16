@@ -24,12 +24,9 @@ pnpm check:fix
 ```
 
 ## 本番リリース
-mainブランチにpushすると、自動的に本番リリースされます。
+mainブランチが変更されると自動的に本番リリースされます。
+1. main <- developのPRを作成
+2. 最低1人のレビューをもらう
+3. PRをマージする
 
-```bash
-git chechout develop
-git pull origin develop
-git checkout main
-git merge develop
-git push origin main
-```
+https://github.com/tskaigi/tskaigi2025-web-site/compare/main...develop
