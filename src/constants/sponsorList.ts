@@ -176,9 +176,9 @@ export const sponsorList: SponsorList = {
     {
       id: "S03",
       name: "株式会社Linc'well",
-      logoImage: "/logo.svg",
-      logoLink: "/",
-      addPadding: false,
+      logoImage: "/sponsors/lincwell.png",
+      logoLink: "https://linc-well.com/",
+      addPadding: true,
       isTenantChecked: false,
     },
     {
