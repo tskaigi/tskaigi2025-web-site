@@ -18,7 +18,7 @@ export default function Home() {
         <HeroSectionWithMotion />
         <MissionSection />
         <ApplyToProposalSection />
-        <SponsorsBoardSection isTopPage={false} />
+        <SponsorsBoardSection />
       </main>
       <Footer />
     </>

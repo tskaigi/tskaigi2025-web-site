@@ -2,23 +2,7 @@ import { sponsorList } from "../../constants/sponsorList";
 import { SponsorsBoardItem } from "./SponsorsBoardItem";
 import { SponsorsBoardTitle } from "./SponsorsBoardTitle";
 
-type Props = {
-  isTopPage: boolean;
-};
-
-export function SponsorsBoardSection({ isTopPage }: Props) {
-  const platinumSponsors = isTopPage
-    ? sponsorList.platinum.filter((sponsor) => sponsor.isTenantChecked)
-    : sponsorList.platinum;
-  const goldSponsors = isTopPage
-    ? sponsorList.gold.filter((sponsor) => sponsor.isTenantChecked)
-    : sponsorList.gold;
-  const silverSponsors = isTopPage
-    ? sponsorList.silver.filter((sponsor) => sponsor.isTenantChecked)
-    : sponsorList.silver;
-  const bronzeSponsors = isTopPage
-    ? sponsorList.bronze.filter((sponsor) => sponsor.isTenantChecked)
-    : sponsorList.bronze;
+export function SponsorsBoardSection() {
   return (
     <section className="md:px-10 bg-blue-light-100">
       <h2 className="pt-10 pb-8 lg:pt-16 lg:pb-10 flex flex-col md:flex-row md:justify-center md:gap-2 text-24 md:text-32 leading-normal md:leading-[42px] text-center font-bold font-noto">
@@ -33,7 +17,7 @@ export function SponsorsBoardSection({ isTopPage }: Props) {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
-          {platinumSponsors.map((sponsor) => (
+          {sponsorList.platinum.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
               className={`w-full h-[162px] md:h-[192px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
@@ -54,7 +38,7 @@ export function SponsorsBoardSection({ isTopPage }: Props) {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center">
-          {goldSponsors.map((sponsor) => (
+          {sponsorList.gold.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
               className={`w-full h-[144px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
@@ -75,7 +59,7 @@ export function SponsorsBoardSection({ isTopPage }: Props) {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
-          {silverSponsors.map((sponsor) => (
+          {sponsorList.silver.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
               className={`w-full h-[112px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
@@ -96,7 +80,7 @@ export function SponsorsBoardSection({ isTopPage }: Props) {
           </h3>
         </SponsorsBoardTitle>
         <div className="pt-6 px-4 md:px-0 grid gap-2 md:gap-4 grid-cols-4 md:grid-cols-5 lg:grid-cols-6 place-items-center">
-          {bronzeSponsors.map((sponsor) => (
+          {sponsorList.bronze.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
               className={`w-full h-[96px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
