@@ -13,7 +13,7 @@ export default function Home() {
         <HeroSection />
         <MissionSection />
         <ApplyToProposalSection />
-        <SponsorsBoardSection isTopPage={true} />
+        <SponsorsBoardSection />
       </main>
       <Footer />
     </>
