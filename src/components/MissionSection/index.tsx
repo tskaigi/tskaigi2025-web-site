@@ -8,7 +8,7 @@ export function MissionSection() {
         background:
           "linear-gradient(180deg, rgba(133, 196, 255, 0.6) 0%, rgba(202, 230, 255, 0.6) 5.28%, rgba(233, 245, 255, 0.6) 8.92%)",
       }}
-      className="relative -mt-8 z-10 md:-mt-16 lg:-mt-24"
+      className="relative z-10"
     >
       <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-16">
         <h2 className="text-sm text-center md:text-lg">MISSION</h2>
