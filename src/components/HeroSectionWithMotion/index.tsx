@@ -61,7 +61,7 @@ export function HeroSectionWithMotion() {
     );
     const opacity = 1 - opacityProgress;
     leftRippleSvg.current.style.opacity = opacity.toString();
-  }, []); // 依存関係に必要な値があればここに追加
+  }, []);
 
   const updateRightRipples = useCallback(() => {
     if (
@@ -132,134 +132,10 @@ export function HeroSectionWithMotion() {
     };
   }, [onChangeResizeOrScroll]);
 
-  // const updateLeftRipples = () => {
-  //   if (
-  //     !mvWrapperRef ||
-  //     !leftRippleSvg.current ||
-  //     !leftRippleSvgCircle1.current ||
-  //     !leftRippleSvgCircle2.current ||
-  //     !leftRippleSvgCircle3.current
-  //   )
-  //     return;
-
-  //   const scrollY = window.scrollY;
-
-  //   if (scrollY >= window.innerHeight) return;
-  //   const maxScroll =
-  //     document.documentElement.scrollHeight - window.innerHeight;
-  //   const progress = Math.min(scrollY / maxScroll, 1);
-
-  //   const baseWidth = 880;
-  //   const currentWidth = window.innerWidth;
-
-  //   const scaleFactor = baseWidth / currentWidth;
-
-  //   const adjustedScaleFactor = Math.min(Math.max(scaleFactor, 0.3), 1.6);
-
-  //   const easingInner = progress ** 2.6;
-  //   const easingMiddle = progress ** 2.1;
-  //   const easingOuter = progress ** 1.96;
-
-  //   leftRippleSvgCircle1.current.setAttribute(
-  //     "r",
-  //     (386 + easingOuter * 1.5 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-  //   leftRippleSvgCircle2.current.setAttribute(
-  //     "r",
-  //     (264 + easingMiddle * 1.35 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-  //   leftRippleSvgCircle3.current.setAttribute(
-  //     "r",
-  //     (144 + easingInner * 1.2 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-
-  //   const opacityProgress = Math.min(
-  //     scrollY /
-  //       (mvWrapperRef.current?.clientHeight ?? window.innerHeight) /
-  //       1.4,
-  //     1,
-  //   );
-  //   const opacity = 1 - opacityProgress;
-
-  //   leftRippleSvg.current.style.opacity = opacity.toString();
-  // };
-
-  // const updateRightRipples = () => {
-  //   if (
-  //     !mvWrapperRef ||
-  //     !rightRippleSvg.current ||
-  //     !rightRippleSvgCircle1.current ||
-  //     !rightRippleSvgCircle2.current ||
-  //     !rightRippleSvgCircle3.current
-  //   )
-  //     return;
-
-  //   const scrollY = window.scrollY;
-
-  //   if (scrollY >= window.innerHeight) return;
-  //   const maxScroll =
-  //     document.documentElement.scrollHeight - window.innerHeight;
-  //   const progress = Math.min(scrollY / maxScroll, 1);
-
-  //   const baseWidth = 1280;
-  //   const currentWidth = window.innerWidth;
-
-  //   const scaleFactor = baseWidth / currentWidth;
-
-  //   const adjustedScaleFactor = Math.min(Math.max(scaleFactor, 0.3), 1.6);
-
-  //   const easingInner = progress ** 2.9;
-  //   const easingMiddle = progress ** 2.5;
-  //   const easingOuter = progress ** 2.3;
-
-  //   rightRippleSvgCircle1.current.setAttribute(
-  //     "r",
-  //     (390 + easingOuter * 1.5 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-  //   rightRippleSvgCircle2.current.setAttribute(
-  //     "r",
-  //     (268 + easingMiddle * 1.35 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-  //   rightRippleSvgCircle3.current.setAttribute(
-  //     "r",
-  //     (148 + easingInner * 1 * adjustedScaleFactor * maxScroll).toString(),
-  //   );
-
-  //   const opacityProgress = Math.min(
-  //     scrollY /
-  //       (mvWrapperRef.current?.clientHeight ?? window.innerHeight) /
-  //       1.2,
-  //     1,
-  //   );
-  //   const opacity = 1 - opacityProgress;
-
-  //   rightRippleSvg.current.style.opacity = opacity.toString();
-  // };
-
-  // const onChangeResizeOrScroll = () => {
-  //   updateLeftRipples();
-  //   updateRightRipples();
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", onChangeResizeOrScroll);
-  //   window.addEventListener("resize", onChangeResizeOrScroll);
-
-  //   setTimeout(() => {
-  //     // 初期状態を設定
-  //     onChangeResizeOrScroll();
-  //   }, 1600);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", onChangeResizeOrScroll);
-  //     window.removeEventListener("resize", onChangeResizeOrScroll);
-  //   };
-  // }, []);
-
   return (
     <div
       ref={mvWrapperRef}
-      className="relative max-w-[1280px] mx-auto pt-[45%]"
+      className="relative max-w-[1280px] mx-auto aspect-[16/9]"
     >
       <img
         className="fadein absolute top-[20.4%] left-[87.95%] w-[11.5%] h-auto origin-bottom-left"
@@ -342,7 +218,7 @@ export function HeroSectionWithMotion() {
         </svg>
       </div>
 
-      <div className="absolute top-0 left-[53%] w-[53%] pt-[53%] origin-center">
+      <div className="absolute top-0 left-[53%] w-[46%] pt-[53%] origin-center">
         <svg
           className="w-full h-full absolute top-0 left-0 overflow-visible"
           ref={rightRippleSvg}
