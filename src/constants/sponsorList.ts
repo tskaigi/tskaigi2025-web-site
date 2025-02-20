@@ -6,6 +6,7 @@ export type Sponsor = {
   id: string;
   name: string;
   logoImage: string;
+  logoImageForSponsorsPage?: string;
   logoLink: string;
   addPadding: boolean;
   isTenantChecked: boolean;
@@ -265,6 +266,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
       id: "G06",
       name: "GMO Flatt Security株式会社",
       logoImage: "/sponsors/gmo_color_horizontal_default.svg",
+      logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
       isTenantChecked: true,
