@@ -259,6 +259,10 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
           title: "採用情報",
           href: "https://careers.kaminashi.jp",
         },
+        {
+          title: "カミナシ エンジニアブログ",
+          href:"https://kaminashi-developer.hatenablog.jp"
+        }
       ],
       roles: ["gold"],
     },
