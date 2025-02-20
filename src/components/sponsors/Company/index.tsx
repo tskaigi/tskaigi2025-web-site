@@ -3,11 +3,18 @@ import Image from "next/image";
 import ExternalLink from "../ExternalLink";
 import RoleBadge from "../RoleBadge";
 
-const Company = ({ name, logoImage, overview, roles, links }: Sponsor) => {
+const Company = ({
+  name,
+  logoImage,
+  logoImageForSponsorsPage,
+  overview,
+  roles,
+  links,
+}: Sponsor) => {
   return (
     <div className="flex flex-col gap-y-3 md:flex-row md:items-start md:gap-x-8 lg:gap-x-10">
       <Image
-        src={logoImage}
+        src={logoImageForSponsorsPage || logoImage}
         alt={name}
         width={1280}
         height={640}

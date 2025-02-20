@@ -6,6 +6,7 @@ export type Sponsor = {
   id: string;
   name: string;
   logoImage: string;
+  logoImageForSponsorsPage?: string;
   logoLink: string;
   addPadding: boolean;
   isTenantChecked: boolean;
@@ -258,6 +259,10 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
           title: "採用情報",
           href: "https://careers.kaminashi.jp",
         },
+        {
+          title: "カミナシ エンジニアブログ",
+          href: "https://kaminashi-developer.hatenablog.jp",
+        },
       ],
       roles: ["gold"],
     },
@@ -265,6 +270,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
       id: "G06",
       name: "GMO Flatt Security株式会社",
       logoImage: "/sponsors/gmo_color_horizontal_default.svg",
+      logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
       isTenantChecked: true,
@@ -602,7 +608,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
       addPadding: false,
       isTenantChecked: true,
       overview: [
-        `ドワンゴは "ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。" をコーポレートメッセージとして、学校法人角川ドワンゴ学園が運営するネットに特化した通信制高校「N高等学校・S高等学校」とオンライン学習アプリ「N予備校」、ネットの双方向性を最大限に動画や生放送に取り込んだ「ニコニコ」、ネットとリアルの融合をテーマにした巨大イベント「ニコニコ超会議」など、新しい価値を創り出し、それを事業として成立させていくことに挑戦しつづける企業です。`,
+        `ドワンゴは "ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。" をコーポレートメッセージとして、学校法人角川ドワンゴ学園が運営するネットに特化した通信制高校「N高等学校・S高等学校・R高等学校」、学校法人日本財団ドワンゴ学園が運営する通信制大学「ZEN大学」、オンライン学習アプリ「ZEN Study（旧N予備校）」、ネットの双方向性を最大限に動画や生放送に取り込んだ「ニコニコ」、ネットとリアルの融合をテーマにした巨大イベント「ニコニコ超会議」など、新しい価値を創り出し、それを事業として成立させていくことに挑戦しつづける企業です。`,
       ],
       links: [
         {
@@ -610,7 +616,8 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
           href: "https://www.nnn.ed.nico",
         },
         {
-          title: "N高等学校・S高等学校プロジェクト採用 | 株式会社ドワンゴ",
+          title:
+            "N高等学校・S高等学校・R高等学校プロジェクト採用 | 株式会社ドワンゴ",
           href: "https://www.nnn.ed.nico/recruit",
         },
         {
@@ -841,7 +848,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     {
       id: "B11",
       name: "株式会社mov（口コミコム）",
-      logoImage: "/sponsors/mov_typo_navy_with_space.png",
+      logoImage: "/sponsors/mov_logo.svg",
       logoLink: "https://mov.am/",
       addPadding: false,
       isTenantChecked: true,
