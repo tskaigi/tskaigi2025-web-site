@@ -843,7 +843,7 @@ AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表
     {
       id: "B11",
       name: "株式会社mov（口コミコム）",
-      logoImage: "/sponsors/mov_typo_navy_with_space.png",
+      logoImage: "/sponsors/mov_logo.svg",
       logoLink: "https://mov.am/",
       addPadding: false,
       isTenantChecked: true,
