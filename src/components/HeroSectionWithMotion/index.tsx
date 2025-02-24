@@ -135,7 +135,7 @@ export function HeroSectionWithMotion() {
   return (
     <div
       ref={mvWrapperRef}
-      className="relative max-w-[1280px] mx-auto aspect-[16/9]"
+      className="relative max-w-[1280px] mx-auto aspect-[32/15]"
     >
       <img
         className="fadein absolute top-[20.4%] left-[87.95%] w-[11.5%] h-auto origin-bottom-left"
@@ -218,7 +218,7 @@ export function HeroSectionWithMotion() {
         </svg>
       </div>
 
-      <div className="absolute top-0 left-[53%] w-[46%] pt-[53%] origin-center">
+      <div className="absolute top-0 left-[53%] w-[53%] pt-[53%] origin-center ">
         <svg
           className="w-full h-full absolute top-0 left-0 overflow-visible"
           ref={rightRippleSvg}

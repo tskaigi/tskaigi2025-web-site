@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-8">
+      <main className="pt-8 overflow-x-hidden">
         <HeroSectionWithMotion />
         <MissionSection />
         <ApplyToProposalSection />
