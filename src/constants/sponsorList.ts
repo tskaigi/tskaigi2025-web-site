@@ -60,7 +60,7 @@ export const sponsorList: SponsorList = {
       ],
       links: [
         {
-          title: "",
+          title: "クラフトバンク採用情報",
           href: "https://craftbank.notion.site/5fc97cc6a23044b8b4e2ba67766063bc",
         },
       ],
