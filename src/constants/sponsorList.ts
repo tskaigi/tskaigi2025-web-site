@@ -247,6 +247,24 @@ TypeScriptはReact, Next.js でのフロントエンドの開発でも利用以�
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
       isTenantChecked: true,
+      overview: [
+        "サイバーエージェントはインターネットを軸に、メディア&IP事業、インターネット広告事業、ゲーム事業と主に3つの事業を展開しています。新しい未来のテレビ「ABEMA」、「Amebaブログ」や「アメーバピグ」などを展開する国内最大級のメディア「Ameba」、競輪・オートレースの投票サービス「WINTICKET（ウィンチケット）」など多様なプロダクトでTypeScriptを活用しているのが特長です。",
+        "当社の強みは、TypeScriptを利用してフロントエンドやバックエンド、ネイティブなど技術領域に関わらず型の恩恵を享受していることです。型によってバグの早期発見や可読性の向上に繋がり、サービス品質の改善や運用コストの低減を実現しています。当社に興味を持ってくださった方は、ぜひコーポレートサイトや採用情報、Developers Blogをご覧ください。",
+      ],
+      links: [
+        {
+          title: "サイバーエージェント コーポレートサイト",
+          href: "https://www.cyberagent.co.jp/",
+        },
+        {
+          title: "サイバーエージェントグループ採用情報",
+          href: "https://hrmos.co/pages/cyberagent-group/jobs",
+        },
+        {
+          title: "CyberAgent Developers Blog",
+          href: "https://developers.cyberagent.co.jp/blog/",
+        },
+      ],
       roles: ["gold"],
     },
     {
