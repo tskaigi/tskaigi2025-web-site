@@ -219,6 +219,25 @@ TypeScriptはReact, Next.js でのフロントエンドの開発でも利用以�
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
       isTenantChecked: true,
+      overview: [
+        "KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。",
+        "トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。",
+        "また、弊社はモダンな技術を積極的に採用する文化があります。各種AWSサービスを活用しており、良質なUI・UXを実現するために新しいWeb技術も取り入れています。エンジニアがボトムアップで特定技術の利用を提案し、採用された事例も数多くあります。\n安定した経営環境とベンチャーマインドを持ち合わせ、新しいチャレンジができる会社です！",
+      ],
+      links: [
+        {
+          title: "コーポレートサイト",
+          href: "https://www.kinto-technologies.com",
+        },
+        {
+          title: "KINTO Tech Blog",
+          href: "https://blog.kinto-technologies.com",
+        },
+        {
+          title: "X (＠KintoTech_Dev)",
+          href: "https://x.com/KintoTech_Dev",
+        },
+      ],
       roles: ["gold"],
     },
     {
