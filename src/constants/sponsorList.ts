@@ -28,6 +28,24 @@ export const sponsorList: SponsorList = {
       logoLink: "https://www.ascendlogi.co.jp/",
       addPadding: false,
       isTenantChecked: true,
+      overview: [
+        '■「日本で最もデジタル化の遅れた物流産業で、最高の業務体験を創る」\nアセンド株式会社は日本の物流DXを目指すスタートアップです。\n"物流業界は20兆円の巨大市場でありながら、クラウド利用率は全産業で最低でありデジタル化の遅れ故に2024年問題をはじめとして社会課題を抱える業界です。アセンドはVertical SaaS「ロジックス」を全国の運送会社へ開発提供し、現場業務のデジタル化と経営の高度化を同時に図り、物流業界の変革を推進しています。',
+        "■ アセンドとTypeScript\nアセンドは社会課題を解決するプロダクトエンジニア組織を目指して、Frontend/Backend/IaC/DataPipelineの全てをTypeScriptで統一しました。TSでの言語統一により、全エンジニアがフルスタックに開発し、顧客業務やドメインに深く寄り添いプロダクト価値に拘った開発を進めています。開発生産性は6deploys/dayと高い環境であり、少数チームでありながらサービスは案件管理や労務・車両管理といった多岐にわたる複数プロダクトを展開し、運送会社の全ての業務のデジタル化を推進しています。2023年12月にはシリーズAの資金調達を実施し、より多くの運送会社に更なる機能・価値を届けるため、仲間を募集しています。\nTypeScriptを駆使して社会課題解決に挑むプロダクトエンジニアを積極募集中です。お気軽にご連絡ください！",
+      ],
+      links: [
+        {
+          title: "アセンド株式会社",
+          href: "https://www.ascendlogi.co.jp/",
+        },
+        {
+          title: "エンジニア採用サイト",
+          href: "https://product.career.ascendlogi.co.jp/",
+        },
+        {
+          title: "プロダクトエンジニアに関して",
+          href: "https://note.com/niwa_takeru/n/n0ae4acf2964d",
+        },
+      ],
       roles: ["platinum"],
     },
     {
@@ -42,7 +60,7 @@ export const sponsorList: SponsorList = {
       ],
       links: [
         {
-          title: "",
+          title: "クラフトバンク採用情報",
           href: "https://craftbank.notion.site/5fc97cc6a23044b8b4e2ba67766063bc",
         },
       ],
@@ -201,6 +219,25 @@ TypeScriptはReact, Next.js でのフロントエンドの開発でも利用以�
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
       isTenantChecked: true,
+      overview: [
+        "KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。",
+        "トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。",
+        "また、弊社はモダンな技術を積極的に採用する文化があります。各種AWSサービスを活用しており、良質なUI・UXを実現するために新しいWeb技術も取り入れています。エンジニアがボトムアップで特定技術の利用を提案し、採用された事例も数多くあります。\n安定した経営環境とベンチャーマインドを持ち合わせ、新しいチャレンジができる会社です！",
+      ],
+      links: [
+        {
+          title: "コーポレートサイト",
+          href: "https://www.kinto-technologies.com",
+        },
+        {
+          title: "KINTO Tech Blog",
+          href: "https://blog.kinto-technologies.com",
+        },
+        {
+          title: "X (＠KintoTech_Dev)",
+          href: "https://x.com/KintoTech_Dev",
+        },
+      ],
       roles: ["gold"],
     },
     {
@@ -210,6 +247,24 @@ TypeScriptはReact, Next.js でのフロントエンドの開発でも利用以�
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
       isTenantChecked: true,
+      overview: [
+        "サイバーエージェントはインターネットを軸に、メディア&IP事業、インターネット広告事業、ゲーム事業と主に3つの事業を展開しています。新しい未来のテレビ「ABEMA」、「Amebaブログ」や「アメーバピグ」などを展開する国内最大級のメディア「Ameba」、競輪・オートレースの投票サービス「WINTICKET（ウィンチケット）」など多様なプロダクトでTypeScriptを活用しているのが特長です。",
+        "当社の強みは、TypeScriptを利用してフロントエンドやバックエンド、ネイティブなど技術領域に関わらず型の恩恵を享受していることです。型によってバグの早期発見や可読性の向上に繋がり、サービス品質の改善や運用コストの低減を実現しています。当社に興味を持ってくださった方は、ぜひコーポレートサイトや採用情報、Developers Blogをご覧ください。",
+      ],
+      links: [
+        {
+          title: "サイバーエージェント コーポレートサイト",
+          href: "https://www.cyberagent.co.jp/",
+        },
+        {
+          title: "サイバーエージェントグループ採用情報",
+          href: "https://hrmos.co/pages/cyberagent-group/jobs",
+        },
+        {
+          title: "CyberAgent Developers Blog",
+          href: "https://developers.cyberagent.co.jp/blog/",
+        },
+      ],
       roles: ["gold"],
     },
     {

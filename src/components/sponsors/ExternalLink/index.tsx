@@ -6,6 +6,7 @@ const ExternalLink = ({ title, href }: ExternalLinkProps) => {
   return (
     <Link
       href={href}
+      target="_blank"
       className="text-link-light underline underline-offset-2 decoration-1 decoration-link-light"
     >
       {title}
