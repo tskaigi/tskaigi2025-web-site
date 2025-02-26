@@ -74,10 +74,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       overview: [
-        `≪累計約19億円の資金調達に成功≫ アバター＆生成AIで人類をアップデート！
-AVITAは、大阪大学基礎工学研究科の教授である石黒浩が代表を務める大学発のスタートアップ企業です。
-弊社では、フロントエンド開発においてTypeScriptを統一的に使用しており、アバターのリモート接客における利用者間のリアルタイム通信処理やVRMアバターの表示制御においても、TypeScriptの型の恩恵を最大限享受しています。
-TypeScriptはReact, Next.js でのフロントエンドの開発でも利用以外にもAPIとの通信での型生成やデザイントークンでも活用をしていて、バックエンドでは一部 Cloudflare Workers や Hono でも利用しています。`,
+        "≪累計約19億円の資金調達に成功≫ アバター＆生成AIで人類をアップデート！\nAVITAは、大阪大学基礎工学研究科の教授・石黒浩が代表を務める大学発のスタートアップ企業です。\n弊社ではフロントエンド開発においてTypeScriptを統一的に使用しており、アバターのリモート接客における利用者間のリアルタイム通信処理やVRMアバターの表示制御にも、TypeScriptの型の恩恵を最大限活用しています。\nまた、TypeScriptはReactやNext.jsによるフロントエンド開発のみならず、APIとの通信における型生成やデザイントークンにも活用しています。バックエンドでは一部Cloudflare WorkersやHonoでもTypeScriptを利用しています。",
       ],
       links: [
         {
