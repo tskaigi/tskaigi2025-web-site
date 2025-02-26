@@ -1,6 +1,6 @@
 export type ExternalLinkProps = { title: string; href: string };
 export type SponsorClass = "platinum" | "gold" | "silver" | "bronze";
-export type SponsorRole = SponsorClass | "coffee" | "beer";
+export type SponsorRole = SponsorClass | "coffee" | "beer" | "naming-rights";
 
 export type Sponsor = {
   id: string;
@@ -46,7 +46,7 @@ export const sponsorList: SponsorList = {
           href: "https://note.com/niwa_takeru/n/n0ae4acf2964d",
         },
       ],
-      roles: ["platinum"],
+      roles: ["platinum", "naming-rights"],
     },
     {
       id: "P02",
@@ -207,7 +207,7 @@ export const sponsorList: SponsorList = {
           href: "https://tech.leverages.jp",
         },
       ],
-      roles: ["gold"],
+      roles: ["gold", "naming-rights"],
     },
     {
       id: "G02",
