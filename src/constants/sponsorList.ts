@@ -1,6 +1,6 @@
 export type ExternalLinkProps = { title: string; href: string };
 export type SponsorClass = "platinum" | "gold" | "silver" | "bronze";
-export type SponsorRole = SponsorClass;
+export type SponsorRole = SponsorClass | "coffee" | "beer";
 
 export type Sponsor = {
   id: string;
@@ -148,7 +148,7 @@ export const sponsorList: SponsorList = {
           href: "https://speakerdeck.com/diniiofficial/dinii-company-deck-for-engineering-2025ver",
         },
       ],
-      roles: ["platinum"],
+      roles: ["platinum", "beer"],
     },
     {
       id: "P06",
@@ -624,7 +624,7 @@ export const sponsorList: SponsorList = {
           href: "https://hrmos.co/pages/kakehashi",
         },
       ],
-      roles: ["silver"],
+      roles: ["silver", "coffee"],
     },
     {
       id: "S11",

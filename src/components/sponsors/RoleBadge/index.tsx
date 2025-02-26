@@ -5,6 +5,8 @@ const bgColor: { [key in SponsorRole]: string } = {
   gold: "bg-yellow-600",
   silver: "bg-blue-light-500",
   bronze: "bg-orange-600",
+  coffee: "bg-black-500",
+  beer: "bg-black-500",
 };
 
 const roleBadge = ({ role }: { role: SponsorRole }) => {
