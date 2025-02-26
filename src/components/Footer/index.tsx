@@ -11,15 +11,19 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-3 lg:w-72">
-          {/* TODO: スポンサーページ公開時にあわせて公開する */}
-          {/* <p className="font-bold">ページ一覧</p>
+          <p className="font-bold">ページ一覧</p>
           <ul className="flex flex-col gap-2.5 pl-3">
             <li>
-              <Link href="/sponsors" className="hover:underline">
-                スポンサー一覧
+              <Link href="/" className="hover:underline">
+                Home
               </Link>
             </li>
-          </ul> */}
+            <li>
+              <Link href="/sponsors" className="hover:underline">
+                スポンサー
+              </Link>
+            </li>
+          </ul>
         </div>
 
         <div className="flex flex-col gap-3 lg:w-72">
