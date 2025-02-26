@@ -496,7 +496,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/takumi_giken_logo.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       roles: ["gold"],
     },
   ],
