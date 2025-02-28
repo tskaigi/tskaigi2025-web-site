@@ -33,7 +33,7 @@ export function JudgesSection() {
             >
               <img
                 src={image}
-                alt=""
+                alt={`${name} アイコン`}
                 className="w-full h-auto rounded-full overflow-hidden"
               />
               <p className="text-lg font-bold">{name}</p>

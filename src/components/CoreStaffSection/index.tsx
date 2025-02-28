@@ -38,7 +38,7 @@ export function CoreStaffSection() {
             >
               <img
                 src={image}
-                alt=""
+                alt={`${name} アイコン`}
                 className="w-full h-auto rounded-full overflow-hidden"
               />
               <p className="text-16 leading-7">{name}</p>
