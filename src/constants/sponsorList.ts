@@ -497,6 +497,25 @@ export const sponsorList: SponsorList = {
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
       isTenantChecked: false,
+      overview: [
+        "匠技研工業は、ものづくり現場に特化したSaaSと培ったデータを活用して、製造業界にまたとないDXを届けるスタートアップです！",
+        "日本の製造業界の99%を占める中小サプライヤー企業に私たちは着目し、SMBから業界変革を起こす逆説的な事業戦略を描いています。中小サプライヤー企業に深く入り込むインフラとなるSaaSを開発し、培ったデータとAI技術を活用して、一気通貫で製造業界にDXおよびAX（AI-Transformation）を届ける挑戦をしています。",
+        "技術スタックは、FE/BEともにFull-TypeScriptで、サーバレスも多く活用した構成となっています。プロダクトエンジニア、リードエンジニア、SRE、QAエンジニアなど全方位積極採用中です。製造業DXを実現するコンパウンドプロダクトの1→10や新規立ち上げを一緒に行う仲間募集しています！",
+      ],
+      links: [
+        {
+          title: "匠フォース - サービスサイト",
+          href: "https://takumi-force.jp/",
+        },
+        {
+          title: "匠技研工業株式会社 - 会社HP",
+          href: "https://takumi-giken.co.jp/",
+        },
+        {
+          title: "匠技研工業株式会社 - 採用サイト",
+          href: "https://recruit.takumi-giken.co.jp/",
+        },
+      ],
       roles: ["gold"],
     },
   ],
