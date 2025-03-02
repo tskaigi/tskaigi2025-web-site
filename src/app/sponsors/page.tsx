@@ -22,16 +22,14 @@ const SponsorsPage = () => {
 
                 {key !== "bronze" ? (
                   <ul className="flex flex-col gap-6">
-                    {value
-                      .filter((company) => company.isTenantChecked) // TODO: すべての企業チェック後に削除する
-                      .map((company, idx, value) => (
-                        <li key={company.name} className="flex flex-col gap-6">
-                          <Company {...company} />
-                          {idx !== value.length - 1 && (
-                            <hr className="border-t-2 border-black-200" />
-                          )}
-                        </li>
-                      ))}
+                    {value.map((company, idx, value) => (
+                      <li key={company.name} className="flex flex-col gap-6">
+                        <Company {...company} />
+                        {idx !== value.length - 1 && (
+                          <hr className="border-t-2 border-black-200" />
+                        )}
+                      </li>
+                    ))}
                   </ul>
                 ) : (
                   <ul className="grid grid-cols-2 gap-4 md:grid-cols-5">
