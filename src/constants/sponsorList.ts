@@ -496,7 +496,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/takumi_giken_logo.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "匠技研工業は、ものづくり現場に特化したSaaSと培ったデータを活用して、製造業界にまたとないDXを届けるスタートアップです！",
         "日本の製造業界の99%を占める中小サプライヤー企業に私たちは着目し、SMBから業界変革を起こす逆説的な事業戦略を描いています。中小サプライヤー企業に深く入り込むインフラとなるSaaSを開発し、培ったデータとAI技術を活用して、一気通貫で製造業界にDXおよびAX（AI-Transformation）を届ける挑戦をしています。",
