@@ -1,3 +1,5 @@
+import { CoreStaffSection } from "@/components/CoreStaffSection";
+import { JudgesSection } from "@/components/JudgesSection";
 import type { Metadata } from "next";
 import { ApplyToProposalSection } from "../../components/ApplyToProposalSection";
 import Footer from "../../components/Footer";
@@ -19,6 +21,8 @@ export default function Home() {
         <MissionSection />
         <ApplyToProposalSection />
         <SponsorsBoardSection />
+        <JudgesSection />
+        <CoreStaffSection />
       </main>
       <Footer />
     </>
