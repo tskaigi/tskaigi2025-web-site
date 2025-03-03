@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export default async function SponserDetailPage({
   params,
-}: { params: Promise<{id: string}> }) {
+}: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const sponsor = getSponsor(id);
 
@@ -24,8 +24,8 @@ export default async function SponserDetailPage({
         <div className="bg-white p-6 flex flex-col gap-10 max-w-screen-xl mx-auto md:rounded-xl lg:p-10">
           <div>
             <img
-              width='800'
-              height='400'
+              width="800"
+              height="400"
               className="w-full max-w-[800px] mx-auto"
               src={sponsor.logoImage}
               alt="logo"
@@ -33,13 +33,15 @@ export default async function SponserDetailPage({
           </div>
 
           <div className="flex flex-col gap-6">
-            <div className='flex gap-2'>
+            <div className="flex gap-2">
               {sponsor.roles.map((role) => (
                 <RoleBadge key={role} role={role} />
               ))}
             </div>
 
-            <p className="font-bold text-xl md:text-2xl lg:text-[28px]">{sponsor.name}</p>
+            <p className="font-bold text-xl md:text-2xl lg:text-[28px]">
+              {sponsor.name}
+            </p>
 
             {sponsor.overview?.map((overview) => (
               <p key={overview}>{overview}</p>
