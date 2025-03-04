@@ -943,5 +943,4 @@ export const sponsorId = [
   ...sponsorList.platinum.map((sponsor) => ({ id: sponsor.id })),
   ...sponsorList.gold.map((sponsor) => ({ id: sponsor.id })),
   ...sponsorList.silver.map((sponsor) => ({ id: sponsor.id })),
-  ...sponsorList.bronze.map((sponsor) => ({ id: sponsor.id })),
 ];
