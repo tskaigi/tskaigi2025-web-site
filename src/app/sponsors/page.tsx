@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Company from "@/components/Sponsors/Company";
-import SponsorHeading from "@/components/Sponsors/SponsorHeading";
 import { SponsorsBoardItem } from "@/components/SponsorsBoardSection/SponsorsBoardItem";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
+import SponsorHeading from "@/components/sponsors/SponsorHeading";
+import Company from "@/components/sponsors/Company";
 
 const SponsorsPage = () => {
   return (

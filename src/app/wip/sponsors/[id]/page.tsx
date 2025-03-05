@@ -1,8 +1,7 @@
-import ExternalLink from "@/components/Sponsors/ExternalLink";
-import RoleBadge from "@/components/Sponsors/RoleBadge";
-
 import { sponsorId } from "@/constants/sponsorList";
 import { getSponsor } from "@/utils/getSponsor";
+import ExternalLink from "@/components/sponsors/ExternalLink";
+import RoleBadge from "@/components/sponsors/RoleBadge";
 
 export async function generateStaticParams() {
   return sponsorId;
