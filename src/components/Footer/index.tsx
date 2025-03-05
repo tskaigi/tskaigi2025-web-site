@@ -23,6 +23,11 @@ const Footer = () => {
                 スポンサー
               </Link>
             </li>
+            <li>
+              <Link href="/code-of-conduct" className="hover:underline">
+                行動規範
+              </Link>
+            </li>
           </ul>
         </div>
 
