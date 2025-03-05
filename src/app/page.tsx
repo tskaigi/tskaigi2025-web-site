@@ -1,7 +1,9 @@
 import { ApplyToProposalSection } from "@/components/ApplyToProposalSection";
+import { CoreStaffSection } from "@/components/CoreStaffSection";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSectionWithMotion } from "@/components/HeroSectionWithMotion";
+import { JudgesSection } from "@/components/JudgesSection";
 import { MissionSection } from "@/components/MissionSection";
 import { SponsorsBoardSection } from "@/components/SponsorsBoardSection";
 
@@ -14,6 +16,8 @@ export default function Home() {
         <MissionSection />
         <ApplyToProposalSection />
         <SponsorsBoardSection />
+        <JudgesSection />
+        <CoreStaffSection />
       </main>
       <Footer />
     </>
