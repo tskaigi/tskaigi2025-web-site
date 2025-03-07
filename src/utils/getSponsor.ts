@@ -9,7 +9,7 @@ import type { Sponsor } from "@/constants/sponsorList";
 export function getSponsor(id: string): Sponsor {
   const sponsor = Object.values(sponsorList)
     .flat()
-    .find((sponsor) => sponsor.id === id);
+    .find((sponsor) => sponsor.detailPageId === id);
 
   if (!sponsor) {
     throw new Error(`スポンサーが見つかりませんでした。id: ${id}`);
