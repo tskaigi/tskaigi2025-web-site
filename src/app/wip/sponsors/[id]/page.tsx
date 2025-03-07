@@ -25,7 +25,7 @@ export default async function SponserDetailPage({
             <img
               width="800"
               height="400"
-              className="w-full max-w-[800px] mx-auto"
+              className="w-full max-w-[800px] h-auto max-h-[400px] mx-auto object-contain"
               src={sponsor.logoImage}
               alt="logo"
             />
