@@ -28,6 +28,11 @@ const Footer = () => {
                 行動規範
               </Link>
             </li>
+            <li>
+              <Link href="/specific-commercial" className="hover:underline">
+                特定商取引法に基づく表記
+              </Link>
+            </li>
           </ul>
         </div>
 
