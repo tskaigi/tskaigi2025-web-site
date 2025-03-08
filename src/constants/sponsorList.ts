@@ -13,6 +13,7 @@ export type Sponsor = {
   overview?: string[];
   links?: ExternalLinkProps[];
   roles: SponsorRole[];
+  detailPageId?: string;
 };
 
 type SponsorList = {
@@ -47,6 +48,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum", "naming-rights"],
+      detailPageId: "ascend",
     },
     {
       id: "P02",
@@ -65,6 +67,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "craft-bank",
     },
     {
       id: "P03",
@@ -87,6 +90,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "avita",
     },
     {
       id: "P04",
@@ -120,6 +124,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "nstock",
     },
     {
       id: "P05",
@@ -149,6 +154,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum", "beer"],
+      detailPageId: "dinii",
     },
     {
       id: "P06",
@@ -174,6 +180,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "twogate",
     },
   ],
   gold: [
@@ -208,6 +215,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold", "naming-rights"],
+      detailPageId: "leverages",
     },
     {
       id: "G02",
@@ -236,6 +244,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kinto-technologies",
     },
     {
       id: "G03",
@@ -263,6 +272,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "cyberagent",
     },
     {
       id: "G04",
@@ -290,6 +300,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kepple",
     },
     {
       id: "G05",
@@ -318,6 +329,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kaminashi",
     },
     {
       id: "G06",
@@ -347,6 +359,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "gmo-flatt-security",
     },
     {
       id: "G07",
@@ -375,6 +388,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "toggle",
     },
     {
       id: "G08",
@@ -399,6 +413,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "carta",
     },
     {
       id: "G09",
@@ -433,6 +448,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "caddi",
     },
     {
       id: "G10",
@@ -461,6 +477,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "stmn",
     },
     {
       id: "G11",
@@ -489,6 +506,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "ubie",
     },
     {
       id: "G12",
@@ -517,6 +535,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "takumi-giken",
     },
   ],
   silver: [
@@ -546,6 +565,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "theoria-technologies",
     },
     {
       id: "S03",
@@ -573,6 +593,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "linc-well",
     },
     {
       id: "S05",
@@ -597,6 +618,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "earthbrain",
     },
     {
       id: "S06",
@@ -625,6 +647,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "mosh",
     },
     {
       id: "S08",
@@ -644,6 +667,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver", "coffee"],
+      detailPageId: "kakehashi",
     },
     {
       id: "S11",
@@ -671,6 +695,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "medley",
     },
     {
       id: "S12",
@@ -698,6 +723,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "dwango",
     },
     {
       id: "S13",
@@ -726,6 +752,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "optim",
     },
     {
       id: "S14",
@@ -749,6 +776,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "tokium",
     },
     {
       id: "S15",
@@ -776,6 +804,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "freee",
     },
     {
       id: "S18",
@@ -805,6 +834,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "forcia",
     },
     {
       id: "S20",
@@ -833,6 +863,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "spacemarket",
     },
   ],
   bronze: [
@@ -937,3 +968,10 @@ export const sponsorList: SponsorList = {
     },
   ],
 };
+
+// スポンサー詳細ページで使用するスポンサーIDのリスト
+export const sponsorId = [
+  ...sponsorList.platinum.map((sponsor) => ({ id: sponsor.detailPageId })),
+  ...sponsorList.gold.map((sponsor) => ({ id: sponsor.detailPageId })),
+  ...sponsorList.silver.map((sponsor) => ({ id: sponsor.detailPageId })),
+];
