@@ -1,4 +1,3 @@
-import { ApplyToProposalSection } from "@/components/ApplyToProposalSection";
 import { CoreStaffSection } from "@/components/CoreStaffSection";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -14,7 +13,6 @@ export default function Home() {
       <main className="pt-8 overflow-x-hidden">
         <HeroSectionWithMotion />
         <MissionSection />
-        <ApplyToProposalSection />
         <SponsorsBoardSection />
         <JudgesSection />
         <CoreStaffSection />
