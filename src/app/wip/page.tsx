@@ -1,16 +1,11 @@
 import { CoreStaffSection } from "@/components/CoreStaffSection";
 import { JudgesSection } from "@/components/JudgesSection";
-import type { Metadata } from "next";
 import { ApplyToProposalSection } from "../../components/ApplyToProposalSection";
 import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { HeroSectionWithMotion } from "../../components/HeroSectionWithMotion";
 import { MissionSection } from "../../components/MissionSection";
 import { SponsorsBoardSection } from "../../components/SponsorsBoardSection";
-
-export const metadata: Metadata = {
-  robots: "noindex, nofollow",
-};
 
 export default function Home() {
   return (
