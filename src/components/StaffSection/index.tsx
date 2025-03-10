@@ -6,7 +6,7 @@ export function StaffSection() {
       <h2 className="text-24 md:text-28 leading-normal md:leading-[42px] text-center font-bold pb-8 md:pb-10">
         スタッフ一覧
       </h2>
-      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-10">
+      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,120px)] lg:grid-cols-[repeat(5,120px)] justify-center gap-x-14 gap-y-8 px-10">
         {staffList.map(({ name, image, href }) => (
           <li key={name}>
             <a
