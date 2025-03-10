@@ -16,13 +16,18 @@ const Company = ({
   roles,
   links,
   detailPageId,
+  isTenantChecked,
   isWip,
 }: Props) => {
   return (
     <div className="flex flex-col gap-y-3 md:flex-row md:items-start md:gap-x-8 lg:gap-x-10">
-      {isWip ? (
+      {isTenantChecked || isWip ? (
         <Link
-          href={`/wip/sponsors/${detailPageId}`}
+          href={
+            isWip
+              ? `/wip/sponsors/${detailPageId}`
+              : `/sponsors/${detailPageId}`
+          }
           className="flex-shrink-0 md:w-1/3 lg:w-1/4"
         >
           <Image
