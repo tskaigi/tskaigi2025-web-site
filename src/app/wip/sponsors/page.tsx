@@ -25,7 +25,7 @@ const SponsorsPage = () => {
                 <ul className="flex flex-col gap-6">
                   {value.map((company, idx, value) => (
                     <li key={company.name} className="flex flex-col gap-6">
-                      <Company {...company} />
+                      <Company isWip={true} {...company} />
                       {idx !== value.length - 1 && (
                         <hr className="border-t-2 border-black-200" />
                       )}
