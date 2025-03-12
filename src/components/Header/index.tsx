@@ -13,6 +13,10 @@ const links: {
     href: "/sponsors",
     label: "スポンサー",
   },
+  {
+    href: "/code-of-conduct",
+    label: "行動規範",
+  },
 ];
 
 export function Header() {
@@ -31,7 +35,7 @@ export function Header() {
       </Link>
 
       {/* PC 用ナビゲーション */}
-      <nav className="hidden md:block">
+      <nav className="hidden md:flex space-x-6">
         {links.map(({ href, label }) => (
           <Link
             key={href}
