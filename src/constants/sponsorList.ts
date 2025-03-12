@@ -278,7 +278,8 @@ export const sponsorList: SponsorList = {
       id: "G04",
       name: "株式会社ケップル",
       logoImage: "/sponsors/kepple_logo.png",
-      logoLink: "https://corp.kepple.co.jp/",
+      logoLink:
+        "https://corp.kepple.co.jp/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi_2025_sponsor&utm_id=tskaigi2025",
       addPadding: false,
       isTenantChecked: false,
       overview: [
@@ -288,7 +289,7 @@ export const sponsorList: SponsorList = {
       links: [
         {
           title: "コーポレートサイト",
-          href: "https://corp.kepple.co.jp",
+          href: "https://corp.kepple.co.jp/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi_2025_sponsor&utm_id=tskaigi2025",
         },
         {
           title: "開発組織 紹介サイト",
