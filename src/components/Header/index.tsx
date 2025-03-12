@@ -61,9 +61,9 @@ export function Header() {
           <Menu size={24} />
         </SheetTrigger>
         <SheetContent side="right" className="w-[80%] sm:w-[350px]">
-          <SheetHeader className="hidden">
-            <SheetTitle />
-            <SheetDescription />
+          <SheetHeader className="sr-only">
+            <SheetTitle>メニュー</SheetTitle>
+            <SheetDescription>TSKaigi のメニュー</SheetDescription>
           </SheetHeader>
           <nav className="pt-12 px-4">
             <ul className="space-y-6">
