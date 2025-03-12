@@ -28,7 +28,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/ascend.png",
       logoLink: "https://www.ascendlogi.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         '■「日本で最もデジタル化の遅れた物流産業で、最高の業務体験を創る」\nアセンド株式会社は日本の物流DXを目指すスタートアップです。\n"物流業界は20兆円の巨大市場でありながら、クラウド利用率は全産業で最低でありデジタル化の遅れ故に2024年問題をはじめとして社会課題を抱える業界です。アセンドはVertical SaaS「ロジックス」を全国の運送会社へ開発提供し、現場業務のデジタル化と経営の高度化を同時に図り、物流業界の変革を推進しています。',
         "■ アセンドとTypeScript\nアセンドは社会課題を解決するプロダクトエンジニア組織を目指して、Frontend/Backend/IaC/DataPipelineの全てをTypeScriptで統一しました。TSでの言語統一により、全エンジニアがフルスタックに開発し、顧客業務やドメインに深く寄り添いプロダクト価値に拘った開発を進めています。開発生産性は6deploys/dayと高い環境であり、少数チームでありながらサービスは案件管理や労務・車両管理といった多岐にわたる複数プロダクトを展開し、運送会社の全ての業務のデジタル化を推進しています。2023年12月にはシリーズAの資金調達を実施し、より多くの運送会社に更なる機能・価値を届けるため、仲間を募集しています。\nTypeScriptを駆使して社会課題解決に挑むプロダクトエンジニアを積極募集中です。お気軽にご連絡ください！",
@@ -56,7 +56,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/CraftBank_logo_cmyk_original.png",
       logoLink: "https://corp.craft-bank.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "クラフトバンク株式会社は「世界に誇れる建設職人と建設会社がもっと儲かる仕組みをつくる」をビジョンに掲げ、オールインワンの経営管理システム「CraftBank office」を運営する会社です。 弊社プロダクトはノーコードで柔軟にカスタマイズできることが最大の特徴で、Frontend開発にTypescriptを採用し、コードの拡張性・堅牢性を高めることに大きく寄与しています。 Frontendを一緒に開発する仲間を絶賛募集中ですのでぜひお話しさせてください！",
       ],
@@ -75,7 +75,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/AVITA_Logomark_Logotype.png",
       logoLink: "https://avita.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "≪累計約19億円の資金調達に成功≫ アバター＆生成AIで人類をアップデート！\nAVITAは、大阪大学基礎工学研究科の教授・石黒浩が代表を務める大学発のスタートアップ企業です。\n弊社ではフロントエンド開発においてTypeScriptを統一的に使用しており、アバターのリモート接客における利用者間のリアルタイム通信処理やVRMアバターの表示制御にも、TypeScriptの型の恩恵を最大限活用しています。\nまた、TypeScriptはReactやNext.jsによるフロントエンド開発のみならず、APIとの通信における型生成やデザイントークンにも活用しています。バックエンドでは一部Cloudflare WorkersやHonoでもTypeScriptを利用しています。",
       ],
@@ -98,7 +98,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
       logoLink: "https://nstock.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `Nstockは、「スタートアップエコシステムをブーストし、日本からGoogle級の会社を生み出す」ことをミッションに掲げ、スタートアップが大きく育つための様々なプロダクトを提供しています。
 現在は下記2つの事業でミッション実現のために一緒に事業をブーストさせるメンバーを募集しています。`,
@@ -132,7 +132,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/dinii_v1.png",
       logoLink: "https://recruit2024.dinii.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `株式会社ダイニーは、「”飲食"をもっと楽しくおもしろく。」をミッションに掲げ、すべての人の飲食のインフラとなることをめざし、飲食店に特化した All in  One  Restaurant  Cloud.を開発・提供しています。
 モバイルオーダーやID-POSから、売上向上のためのCRM、従業員の管理ツール、そしてモバイル決済まで、飲食店経営のあらゆる課題を解決していきます。
@@ -162,7 +162,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/twogate_logo.svg",
       logoLink: "https://twogate.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `TwoGateは「心地良いデジタル体験の創出と普及」をミッションに掲げ、エンターテインメント領域を中心に複数のサービスを展開しています。
 例えば、整理券・グッズ販売などライブイベントの体験を向上させるアプリの構築サービス「Caravan」や、アーティスト独自のチケット販売サイトを構築できる「TRIPLE」、タイムラインや生配信などファンコミュニケーションに特化したアプリを開発するための「CRAYON」など、推し活を多彩に支えるサービスを提供しています。`,
@@ -190,7 +190,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/leverages.jpg",
       logoLink: "https://recruit.leverages.jp/recruit/engineer/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `レバレジーズ株式会社では、こんなエンジニアを求めています！ピンと来たらぜひご応募ください。
 ・新規事業や業務改善の提案など、ビジネスからエンジニアリングまで一気通貫でやっていきたい方
@@ -223,7 +223,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kinto_logoA.png",
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。",
         "トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。",
@@ -252,7 +252,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/CyberAgent.png",
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "サイバーエージェントはインターネットを軸に、メディア&IP事業、インターネット広告事業、ゲーム事業と主に3つの事業を展開しています。新しい未来のテレビ「ABEMA」、「Amebaブログ」や「アメーバピグ」などを展開する国内最大級のメディア「Ameba」、競輪・オートレースの投票サービス「WINTICKET（ウィンチケット）」など多様なプロダクトでTypeScriptを活用しているのが特長です。",
         "当社の強みは、TypeScriptを利用してフロントエンドやバックエンド、ネイティブなど技術領域に関わらず型の恩恵を享受していることです。型によってバグの早期発見や可読性の向上に繋がり、サービス品質の改善や運用コストの低減を実現しています。当社に興味を持ってくださった方は、ぜひコーポレートサイトや採用情報、Developers Blogをご覧ください。",
@@ -281,7 +281,7 @@ export const sponsorList: SponsorList = {
       logoLink:
         "https://corp.kepple.co.jp/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi_2025_sponsor&utm_id=tskaigi2025",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `ケップルグループは、「Create New Industries（世界に新たな産業を）」をミッションに掲げ、スタートアップエコシステムの発展に貢献するための様々な事業を展開しています。代表的なものとして、スタートアップエコシステムを可視化するスタートアップメディア「KEPPLE」や、イノベーションを促進するためのスタートアップデータベース「KEPPLE DB」、VC・事業会社向けの未上場株式管理ツール「KEPPLE CRM」等を運営。技術スタックとしては、フロントエンド・バックエンド・インフラなど様々な領域で TypeScript を活用。生成 AI も積極的に活用しながら、事業の価値創出に取り組んでいます。
 エンジニアを積極的に採用していますので、開発組織の紹介ページをぜひご覧ください。`,
@@ -309,7 +309,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "「ノンデスクワーカーの才能を解き放つ」をミッションに掲げるスタートアップ、カミナシは、ホリゾンタルSaaSの現場DXプラットフォームを提供しています。 PCやデスクのない現場で働く約3,900万人のノンデスクワーカーの働き方を、現場のムダを削減し利益を生む現場づくりを実現する「現場DXプラットフォーム」のカミナシで解決します。 2023年3月にシリーズBで約30億円の資金調達を行い、カミナシはオールインワンSaaSとして、現場のEmployeeやCommunication領域のDXに拡大していきます。",
         `カミナシではPCの管理画面やモバイルアプリのフロントエンド開発を主として、全てのプロダクトでTypeScriptを採用しており、コードの拡張性・堅牢性を高めることに大きく寄与しています。
@@ -339,7 +339,7 @@ export const sponsorList: SponsorList = {
       logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `GMO Flatt Securityは"エンジニアの背中を預かる"をミッションに掲げ、ソフトウェアの開発組織とそこで働くエンジニアにとって最適なセキュリティサービスを提供する、GMOインターネットグループのスタートアップ企業です。`,
         "脆弱性診断を主軸としてクラウド基盤からアプリケーションまで、プロダクト全体の堅牢化を支援します。",
@@ -368,7 +368,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/toggle_logo.png",
       logoLink: "https://toggle.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `トグルホールディングスは、「すべてのまちと、まちをつくる人たちのために」というミッションを基に、「不動産」「建築」「金融」の3つの業界をひとつの産業インフラへと統合することを目指しています。
 日本の不動産業界はIT資本投資で米国の1/10に留まり、テクノロジーの活用が遅れています。 このギャップは「新しい仕組みで業界変革できる余地が多い」ということでもあり、エンジニアにとって大きなチャンスがあります。
@@ -398,7 +398,7 @@ export const sponsorList: SponsorList = {
       logoLink:
         "https://cartaholdings.co.jp/engineering/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "CARTA HOLDINGSは、デジタルを通じ、多様で新しいサービスやコンテンツを生み出しています。「時代の進化を創る」という目的のもと、企業・産業の進化を推進する「進化推進業」を目指してまいります。デジタル・マーケティング事業およびインターネット関連事業を軸とした多事業展開を行っています。",
         "当日は神ゲー攻略やKaubelを運営するLighthouse Studio のエンジニア横沢がランチタイムスポンサーセッションに登壇いたします。是非お越しください。",
@@ -422,7 +422,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/caddi_logo_primary_horizontal.png",
       logoLink: "https://caddi.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `キャディは「モノづくり産業のポテンシャル解放」を目指し、「製造業AIデータプラットフォーム CADDi」を世界中に提供しているスタートアップ企業です。
 既に大手メーカーから加工会社のお客様にまで活用いただいており、事業はT2D3を大きく上回るスピードで急激に成長を続けています。`,
@@ -457,7 +457,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/stmn_logo.png",
       logoLink: "https://stmn.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "株式会社スタメンは、「一人でも多くの人に、感動を届け、幸せを広める。」を経営理念に、2016年に創業しました。その後順調な事業拡大により2020年12月に東証グロース市場に株式上場。",
         "エンゲージメントプラットフォーム「TUNAG（ツナグ）」をはじめとした、複数のサービスを自社で開発・運営しています。2023年2月には、新規事業として、SaaS型サービスである情報漏洩対策ツール「Watchy（ウォッチー）」を正式にリリースしています。",
@@ -486,7 +486,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/Ubie_logo_horizon_color.jpg",
       logoLink: "https://ubie.life/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "「テクノロジーで人々を適切な医療に案内する」をミッションに掲げ、医師とエンジニアが2017年5月に創業したヘルステックスタートアップです。AIをコア技術とし、症状から適切な医療へ案内する「ユビー」と、診療の質向上を支援する医療機関向けサービスパッケージ「ユビーメディカルナビ」等を開発・提供し、誰もが自分にあった医療にアクセスできる社会づくりを進めています。",
         "症状検索エンジン「ユビー」は、気になる症状から関連する病名と適切な受診先を調べることができ、月間1,200万人以上が利用しています。「ユビーメディカルナビ」のうち、問診業務効率化を図る「ユビーAI問診」は全国47都道府県・1,800以上の医療機関で導入されております。",
@@ -515,7 +515,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/takumi_giken_logo.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "匠技研工業は、ものづくり現場に特化したSaaSと培ったデータを活用して、製造業界にまたとないDXを届けるスタートアップです！",
         "日本の製造業界の99%を占める中小サプライヤー企業に私たちは着目し、SMBから業界変革を起こす逆説的な事業戦略を描いています。中小サプライヤー企業に深く入り込むインフラとなるSaaSを開発し、培ったデータとAI技術を活用して、一気通貫で製造業界にDXおよびAX（AI-Transformation）を届ける挑戦をしています。",
@@ -546,7 +546,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/theoria_logo_main.png",
       logoLink: "https://theoriatec.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `Theoria technologiesは、2023年9月に製薬会社エーザイの子会社として設立されました。「認知症との向き合い方を、テクノロジーで変えていく。」をミッションに掲げ、様々なバックグラウンドを持つメンバーが集まり、認知症プラットフォームの実現に向けて日々挑戦しています。解決したい社会課題や取り組みたいプロジェクトが多数あり、新たな仲間を募集中です。あなたの技術と情熱で、共に社会課題の解決に挑みませんか？
 まずはカジュアルに話を聞いてみてください。ご連絡お待ちしています！`,
@@ -574,7 +574,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/lincwell.png",
       logoLink: "https://linc-well.com/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `Linc'wellは「テクノロジーを通じて、医療を一歩前へ」をミッションに掲げ、医療を効率化し患者の利便性と医療の質の向上を目指した事業展開を行っています。
 オンライン・オフラインで医療従事者・患者をつなぐヘルスケアプラットフォーム事業を主力としており、「オンライン診療システム提供サービス」「クリニックDX支援サービス」「ヘルスケアECサービス」の3つのサービスを提供しています。`,
@@ -603,7 +603,7 @@ export const sponsorList: SponsorList = {
       logoLink:
         "https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "EARTHBRAINは、建設現場のデジタル革命で新たな世界を創ることをビジョンに掲げ、2021年に創業したジョイントベンチャーです。建設現場の見える化、施工の最適化のためのプロダクトを複数開発しており、既に世界20カ国以上で利用されています。",
         "EARTHBRAINは現在、さまざまな職種のエンジニアを募集しています。建設現場のデジタル革命を通じて、次の10年、20年後の世界を一緒に創っていきませんか。",
@@ -627,7 +627,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/MOSH_logo.png",
       logoLink: "https://mosh.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「MOSH」を開発・運営しています。",
         "サイト作成、予約、決済、顧客管理など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。",
@@ -656,7 +656,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/kakehashi.png",
       logoLink: "https://hrmos.co/pages/kakehashi",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `株式会社カケハシは日本の医療システムの再構築を目指すヘルステックスタートアップ企業です。テクノロジーを駆使し、患者さんにとってより良い医療を医療現場にとって持続可能な形で実現します。
 薬局体験アシスタント「Musubi」のほか、複数プロダクトを開発・提供し、国内の薬局の1万店舗超をカバー。服薬期間中の患者フォローによる治療効果最大化や医薬品の市中在庫可視化・安定供給などをサポートします。薬局や医療機関をはじめとしたステークホルダーとともに、より良い医療を実現するプラットフォームを構築していきます。`,
@@ -676,7 +676,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/medley_rgb.png",
       logoLink: "https://www.medley.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `メドレーは、「医療ヘルスケアの未来をつくる」ミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、医療ヘルスケア分野の課題を解決していきます。それにより、病院や行政による「持続可能な医療」の実現と、患者さんやそのご家族にとって「納得できる医療」の実現を目指しています。
 医療ヘルスケア領域の成果報酬型人材採用システム「ジョブメドレー」、オンライン動画研修サービス「ジョブメドレーアカデミー」、オンライン診療・服薬指導アプリ「CLINICS」などを運営しています。`,
@@ -704,7 +704,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/dwango_blue.png",
       logoLink: "https://dwango.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `ドワンゴは "ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。" をコーポレートメッセージとして、ネットに特化した通信制高校「N高等学校・S高等学校・R高等学校」、ネットとリアルを融合したオンライン大学「ZEN大学」、オンライン学習アプリ「ZEN Study」、ネットの双方向性を最大限に動画や生放送に取り込んだ「ニコニコ」、ネットとリアルの融合をテーマにした巨大イベント「ニコニコ超会議」など、新しい価値を創り出し、それを事業として成立させていくことに挑戦しつづける企業です。`,
       ],
@@ -732,7 +732,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/OPTiM_corp_logo.jpg",
       logoLink: "https://www.optim.co.jp/corporate/outline",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `OPTiMは「ネットを空気に変える」というコンセプトをもとに、AI・IoT・Cloud・Mobile・Robotics技術を土台とし、あらゆる業界のDXを実現させていく企業です。
 日本No1シェアのデバイス管理サービスや、農業分野ではドローン農薬散布サービス、建設分野ではスマートフォンで簡単に測量できるサービス、AIによる契約書・電子帳簿管理サービスなどを自社開発しています。`,
@@ -761,7 +761,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
       logoLink: "https://corp.tokium.jp/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "株式会社TOKIUMは、「未来へつながる時を生む」を志に、企業の支出にまつわる課題の解決を実現するDXサービスを提供しています。",
         "主なサービスとして、請求書受領クラウド「TOKIUMインボイス」、経費精算クラウド「TOKIUM経費精算」、文書管理クラウド「TOKIUM電子帳簿保存」、契約管理クラウド「TOKIUM契約管理」を提供しています。最適なテクノロジーと常識にとらわれない自由な発想、泥臭さもいとわない行動力で支出の最適化を実現し、人と事業を未来へ向けて加速させていきます。",
@@ -785,7 +785,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/freee_logo_corporate_logo.png",
       logoLink: "https://corp.freee.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "freeeは「スモールビジネスを、世界の主役に。」というミッションのもと、誰もが自由に経営できる統合型経営プラットフォームを実現する企業です。freee会計、freee人事労務、freee販売など、あらゆる業務課題を解決するプロダクトを展開し、個人事業主から上場企業まで幅広く利用されています。",
         "freeeではほとんどのプロダクトのフロントエンドでTypeScriptとReactを採用しています。TypeScriptの型の恩恵によって大規模なコードベースでも安心して開発をすることを可能にしています。",
@@ -813,7 +813,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/FORCIA_logo.png",
       logoLink: "https://www.forcia.com/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `フォルシアは、社員の半数近くをフルスタックエンジニアが占める技術者集団です。
 膨大・複雑なデータを高速かつ正確に処理できる技術を強みとし、独自の技術基盤を用いたプロダクト開発や、旅行・観光業界のオンライン販売を支援するSaaS型サービスの提供などを行っています。
@@ -843,7 +843,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/spacemarket_TypeB.png",
       logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `「スペースシェアをあたりまえに」をミッションに掲げ、あらゆるスペースを時間単位で貸し借りするプラットフォームなどを運営する企業です。
 生活のあらゆるシーンにおける考え方や選択肢が多様化していく社会の中で、 日々スペースでは様々な一歩が生まれています。
