@@ -31,7 +31,7 @@ export function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-white bg-opacity-90 z-50 flex items-center justify-between shadow-[0px_3px_16px_0px_rgba(0,143,238,0.05)] p-4 md:px-6">
+    <header className="fixed top-0 w-full bg-white opacity-90 z-50 flex items-center justify-between shadow-[0px_3px_16px_0px_rgba(0,143,238,0.05)] p-4 md:px-6">
       <Link href="/" className="text-blue-600 font-bold text-xl">
         <Image
           src="/logo.svg"
