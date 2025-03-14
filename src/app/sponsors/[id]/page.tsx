@@ -12,6 +12,33 @@ export const metadata: Metadata = {
   robots: "noindex, nofollow",
 };
 
+export async function generateMetadata({
+  params,
+}: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const sponsor = getSponsor(id);
+
+  return {
+    robots: "noindex, nofollow",
+    twitter: {
+      title: sponsor.name,
+      images: [
+        {
+          url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
+        },
+      ],
+    },
+    openGraph: {
+      title: sponsor.name,
+      images: [
+        {
+          url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
+        },
+      ],
+    },
+  };
+}
+
 export default async function SponserDetailPage({
   params,
 }: { params: Promise<{ id: string }> }) {
