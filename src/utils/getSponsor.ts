@@ -1,5 +1,6 @@
 import { sponsorList } from "@/constants/sponsorList";
 import type { Sponsor } from "@/constants/sponsorList";
+import { notFound } from "next/navigation";
 
 /**
  * IDを元にスポンサー情報を取得する
@@ -12,9 +13,7 @@ export function getSponsor(id: string): Sponsor {
     .flat()
     .find((sponsor) => sponsor.detailPageId === id && sponsor.isTenantChecked);
 
-  if (!sponsor) {
-    throw new Error(`スポンサーが見つかりませんでした。id: ${id}`);
-  }
+  if (!sponsor) notFound();
 
   return sponsor;
 }
@@ -30,9 +29,7 @@ export function getWipSponsor(id: string): Sponsor {
     .flat()
     .find((sponsor) => sponsor.detailPageId === id);
 
-  if (!sponsor) {
-    throw new Error(`スポンサーが見つかりませんでした。id: ${id}`);
-  }
+  if (!sponsor) notFound();
 
   return sponsor;
 }
