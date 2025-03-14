@@ -2,9 +2,36 @@ import ExternalLink from "@/components/sponsors/ExternalLink";
 import RoleBadge from "@/components/sponsors/RoleBadge";
 import { sponsorId } from "@/constants/sponsorList";
 import { getSponsor } from "@/utils/getSponsor";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return sponsorId;
+}
+
+export async function generateMetadata({
+  params,
+}: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const sponsor = getSponsor(id);
+
+  return {
+    twitter: {
+      title: sponsor.name,
+      images: [
+        {
+          url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
+        },
+      ],
+    },
+    openGraph: {
+      title: sponsor.name,
+      images: [
+        {
+          url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
+        },
+      ],
+    },
+  };
 }
 
 export default async function SponserDetailPage({
