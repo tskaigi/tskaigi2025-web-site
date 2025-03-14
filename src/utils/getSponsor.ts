@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 /**
  * IDを元にスポンサー情報を取得する
+ * WIPではないスポンサー詳細ページで使用するため、テナントのチェックが必要
  * @param id - スポンサーのID
  * @returns スポンサー情報
  */
