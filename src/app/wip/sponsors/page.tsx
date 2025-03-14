@@ -2,11 +2,6 @@ import { SponsorsBoardItem } from "@/components/SponsorsBoardSection/SponsorsBoa
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  robots: "noindex, nofollow",
-};
 
 const SponsorsPage = () => {
   return (
