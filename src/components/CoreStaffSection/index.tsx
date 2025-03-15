@@ -24,7 +24,7 @@ const coreStaffList = [
 export function CoreStaffSection() {
   return (
     <section className="pb-10 md:pb-20 bg-blue-light-100">
-      <h2 className="text-24 md:text-28 leading-normal md:leading-[42px] text-center font-bold pb-8 md:pb-10">
+      <h2 className="text-24 lg:text-28 leading-normal text-center font-bold pb-8 md:pb-10">
         コアスタッフ
       </h2>
       <ul className="grid grid-cols-[repeat(2,120px)] md:grid-cols-[repeat(2,144px)] lg:grid-cols-[repeat(4,144px)] justify-center gap-x-14 gap-y-8 px-10">
