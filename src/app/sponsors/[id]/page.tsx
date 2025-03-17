@@ -1,17 +1,22 @@
 import ExternalLink from "@/components/sponsors/ExternalLink";
 import RoleBadge from "@/components/sponsors/RoleBadge";
 import { sponsorId } from "@/constants/sponsorList";
-import { getWipSponsor } from "@/utils/getSponsor";
+import { getSponsor } from "@/utils/getSponsor";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return sponsorId;
 }
 
+export const metadata: Metadata = {
+  robots: "noindex, nofollow",
+};
+
 export default async function SponserDetailPage({
   params,
 }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const sponsor = getWipSponsor(id);
+  const sponsor = getSponsor(id);
 
   return (
     <main>
