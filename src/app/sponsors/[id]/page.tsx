@@ -8,10 +8,6 @@ export async function generateStaticParams() {
   return sponsorId;
 }
 
-export const metadata: Metadata = {
-  robots: "noindex, nofollow",
-};
-
 export async function generateMetadata({
   params,
 }: { params: Promise<{ id: string }> }): Promise<Metadata> {
