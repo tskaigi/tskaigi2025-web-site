@@ -871,7 +871,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/utoniq.png",
       logoLink: "https://about.utoniq.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `「日本のエンタメをエンパワーメントするデジタルインフラを」をミッションに掲げ、エンタメ業界が抱える課題を解決すべく、ファン向けオリジナルアプリ構築インフラ「UDom(ユーダム)」の開発・運用を行っています。
 フロントエンドとバックエンドはどちらもTypeScriptが採用され、モダンな技術スタックで構成されています。
@@ -986,7 +986,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/bengo4.png",
       logoLink: "https://www.bengo4.com/corporate/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `弁護士ドットコム株式会社について<br>
 「プロフェッショナル・テックで、次の常識をつくる。」をミッションとして、人々と専門家をつなぐポータルサイト『弁護士ドットコム』『BUISINESS LAWYERS』『税理士ドットコム』、契約マネジメントプラットフォーム『クラウドサイン』を提供しています。`,
@@ -1124,7 +1124,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/layerx.png",
       logoLink: "https://layerx.co.jp/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       roles: ["bronze"],
     },
     {
@@ -1133,7 +1133,7 @@ export const sponsorList: SponsorList = {
       logoImage: "", // TODO: ロゴ画像を追加
       logoLink: "https://enechange.co.jp/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       roles: ["bronze"],
     },
     {
@@ -1142,7 +1142,7 @@ export const sponsorList: SponsorList = {
       logoImage: "", // TODO: ロゴ画像を追加
       logoLink: "", // TODO: リンク先を追加
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       roles: ["bronze"],
     },
     {
@@ -1160,7 +1160,7 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/smarthr.png",
       logoLink: "https://hello-world.smarthr.co.jp/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       roles: ["bronze"],
     },
   ],
