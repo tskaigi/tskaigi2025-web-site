@@ -865,6 +865,149 @@ export const sponsorList: SponsorList = {
       roles: ["silver"],
       detailPageId: "spacemarket",
     },
+    {
+      id: "S21",
+      name: "株式会社ユートニック",
+      logoImage: "/sponsors/utoniq.png",
+      logoLink: "https://about.utoniq.com/",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `「日本のエンタメをエンパワーメントするデジタルインフラを」をミッションに掲げ、エンタメ業界が抱える課題を解決すべく、ファン向けオリジナルアプリ構築インフラ「UDom(ユーダム)」の開発・運用を行っています。
+フロントエンドとバックエンドはどちらもTypeScriptが採用され、モダンな技術スタックで構成されています。
+プロダクトも軌道に乗り、会社の成長を実感しながら開発できる楽しいフェーズに差し掛かっている今、ぜひ一緒にエンタメ業界を盛り上げませんか？
+カジュアル面談でお待ちしております！`,
+      ],
+      links: [
+        {
+          title: "株式会社ユートニック",
+          href: "https://about.utoniq.com",
+        },
+        {
+          title: "Utoniq Tech Blog",
+          href: "https://note.com/utoniq/m/m0f61d96a8fb6",
+        },
+        {
+          title: "採用情報",
+          href: "https://jobs.utoniq.com",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "utoniq",
+    },
+    {
+      id: "S22",
+      name: "any株式会社",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "https://anyinc.jp",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `anyは「個の幸福と組織の実利を両立する」をパーパスに、組織全体のパフォーマンスの最大化を目指すナレッジプラットフォーム「Qast」を提供しています。
+自社プロダクト「Qast」の開発には、バックエンドからフロントエンドまでTypeScriptを採用しており、LLMを活用したRAGなどの分野をプロダクトに積極的に取り込んでいます。
+プロダクトの価値向上に一緒に向き合えるエンジニアを絶賛募集しておりますので、ぜひカジュアル面談でお話ししましょう！`,
+      ],
+      links: [
+        {
+          title: "会社HP",
+          href: "https://anyinc.jp",
+        },
+        {
+          title: "エンジニア向け会社紹介",
+          href: "https://speakerdeck.com/any_tech/engineer-culture-deck-v3-dot-0",
+        },
+        {
+          title: "Zenn",
+          href: "https://zenn.dev/p/any_dev",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "anyinc",
+    },
+    {
+      id: "S23",
+      name: "合同会社DMM.com",
+      logoImage: "/sponsors/dmm.png",
+      logoLink: "https://dmm-corp.com/",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `会員数4,507万人（2024年2月時点）を誇る総合サービスサイト「DMM.com」を運営しています。
+現在は60以上のサービスを運営し、動画配信や電子書籍、アニメなどのエンタメサービスに加え、3DプリントやEV充電などのハードウェア分野、AIといった最先端のテクノロジーを取り入れた事業など、様々な事業を手掛けています。
+2022年にはサブスクリプション会員システムの「DMMプレミアム」を立ち上げ、あらゆるエンタメ体験をシームレスにつなぐ「マルチエンタメ・プラットフォーム」の創造を目指しています。`,
+      ],
+      links: [
+        {
+          title: "コーポレートサイト",
+          href: "https://dmm-corp.com/",
+        },
+        {
+          title: "採用情報",
+          href: "https://dmm-corp.com/recruit/",
+        },
+        {
+          title: "DMM Developers Blog",
+          href: "https://developersblog.dmm.com/",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "dmm",
+    },
+    {
+      id: "S27",
+      name: "BASE株式会社",
+      logoImage: "/sponsors/base.png",
+      logoLink: "https://binc.jp",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        "2012年12月創業。「Payment to the People, Power to the People.」を企業ミッションに、EC・決済・金融の簡易化を主軸に個人・スモールチームのエンパワーメントに取り組み、国内最大級のネットショップ作成サービス「BASE（ベイス）」、購入者向けショッピングサービス「Pay ID（ペイ アイディー）」、資金調達サービス「YELL BANK（エール バンク）」を運営。2019年10月に東証マザーズ（現：東証グロース）市場に上場。",
+      ],
+      links: [
+        {
+          title: "BASE株式会社 コーポレートサイト",
+          href: "https://binc.jp",
+        },
+        {
+          title: "BASE株式会社 採用情報",
+          href: "https://binc.jp/jobs",
+        },
+        {
+          title: "テックブログ",
+          href: "https://devblog.thebase.in",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "base",
+    },
+    {
+      id: "S28",
+      name: "弁護士ドットコム株式会社",
+      logoImage: "/sponsors/bengo4.png",
+      logoLink: "https://www.bengo4.com/corporate/",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `弁護士ドットコム株式会社について<br>
+「プロフェッショナル・テックで、次の常識をつくる。」をミッションとして、人々と専門家をつなぐポータルサイト『弁護士ドットコム』『BUISINESS LAWYERS』『税理士ドットコム』、契約マネジメントプラットフォーム『クラウドサイン』を提供しています。`,
+      ],
+      links: [
+        {
+          title: "弁護士ドットコム CREATOR'S(@bengo4_creators)",
+          href: "https://x.com/bengo4_creators",
+        },
+        {
+          title: "弁護士ドットコム株式会社 CREATORS' BLOG",
+          href: "https://creators.bengo4.com/",
+        },
+        {
+          title: "エンジニア採用ページ",
+          href: "https://hrmos.co/pages/bengo4/jobs/00009103",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "bengo4",
+    },
   ],
   bronze: [
     {
@@ -962,6 +1105,60 @@ export const sponsorList: SponsorList = {
       name: "株式会社GENDA",
       logoImage: "/sponsors/GENDA_Logo_Positive.png",
       logoLink: "https://genda.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B13",
+      name: "株式会社ビットキー",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "https://bitkey.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B14",
+      name: "株式会社LayerX",
+      logoImage: "/sponsors/layerx.png",
+      logoLink: "https://layerx.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B15",
+      name: "ENECHANGE株式会社",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "https://enechange.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B16",
+      name: "株式会社プログリット",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "", // TODO: リンク先を追加
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B18",
+      name: "BABY JOB株式会社",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "https://baby-job.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+    },
+    {
+      id: "B19",
+      name: "株式会社SmartHR",
+      logoImage: "/sponsors/smarthr.png",
+      logoLink: "https://hello-world.smarthr.co.jp/",
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
