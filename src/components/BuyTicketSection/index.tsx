@@ -51,7 +51,7 @@ export const BuyTicketSection = () => {
                 rel="noopener noreferrer"
                 className="font-bold flex items-center text-22 [&_svg]:size-6"
               >
-                <span className="text-18 leading-[1.8]">現地参加</span>
+                <span className="text-18 leading-[1.8]">現地参加はこちら</span>
                 <ArrowRight />
               </Link>
             </Button>
@@ -67,7 +67,9 @@ export const BuyTicketSection = () => {
                 rel="noopener noreferrer"
                 className="font-bold flex items-center text-22 [&_svg]:size-6"
               >
-                <span className="text-18 leading-[1.8]">オンライン</span>
+                <span className="text-18 leading-[1.8]">
+                  オンライン参加はこちら
+                </span>
                 <ArrowRight />
               </Link>
             </Button>
