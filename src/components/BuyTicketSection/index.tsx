@@ -11,7 +11,7 @@ const BuyTicketPageLink = {
 
 export const BuyTicketSection = () => {
   return (
-    <SectionGradation classNames="">
+    <SectionGradation>
       <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-16">
         <div className="bg-white p-6 md:px-10 md:py-6 lg:py-10 lg:px-16 flex flex-col items-center rounded-lg  md:rounded-2xl max-w-[940px]">
           <div className="flex flex-col items-center md:px-6 self-stretch">
