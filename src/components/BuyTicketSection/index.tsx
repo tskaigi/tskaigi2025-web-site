@@ -11,17 +11,17 @@ const BuyTicketPageLink = {
 
 export const BuyTicketSection = () => {
   return (
-    <SectionGradation>
-      <div className="flex flex-col items-center justify-center md:p-10 lg:p-16 px-6 py-10">
+    <SectionGradation classNames="">
+      <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-16">
         <div className="bg-white p-6 md:px-10 md:py-6 lg:py-10 lg:px-16 flex flex-col items-center rounded-lg  md:rounded-2xl max-w-[940px]">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center md:px-6 self-stretch">
             <h2 className="lg:text-[32px] md:text-[28px] text-[24px] font-bold text-center pb-4">
-              チケット購入
+              チケットを購入
             </h2>
             <Decoration />
           </div>
-          <div className="py-6 md:py-6 lg:py-10">
-            <div className="text-[16px] md:text-[18px] text-left leading-[1.8]">
+          <div className="flex py-6 lg:py-10">
+            <div className="text-[16px] md:text-[18px] text-left leading-[1.8] self-stretch">
               <p>
                 日本最大級のTypeScriptをテーマとした技術カンファレンス「TSKaigi
                 2025」開催決定！
@@ -44,7 +44,7 @@ export const BuyTicketSection = () => {
               asChild
               variant="default"
               size="lg"
-              className="rounded-full h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white pl-10 pr-8"
+              className="rounded-full h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 self-stretch"
             >
               <Link
                 href={BuyTicketPageLink.offline}
@@ -62,7 +62,7 @@ export const BuyTicketSection = () => {
               asChild
               variant="default"
               size="lg"
-              className="rounded-full h-[60px] bg-white hover:bg-blue-purple-600 text-blue-purple-500 pl-10 pr-8 border-[2px] border-black-500"
+              className="rounded-full h-[60px] bg-white hover:bg-blue-purple-600 text-blue-purple-500 pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 border-[2px] border-black-500 self-stretch"
             >
               <Link
                 href={BuyTicketPageLink.online}
