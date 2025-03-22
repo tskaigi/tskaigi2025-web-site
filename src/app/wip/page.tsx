@@ -13,8 +13,8 @@ export default function Home() {
       <Header />
       <main className="pt-8 overflow-x-hidden">
         <HeroSectionWithMotion />
-        <MissionSection />
         <BuyTicketSection />
+        <MissionSection isFirstSection={false} />
         <SponsorsBoardSection />
         <JudgesSection />
         <CoreStaffSection />
