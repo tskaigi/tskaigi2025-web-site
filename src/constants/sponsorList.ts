@@ -690,7 +690,7 @@ export const sponsorList: SponsorList = {
           href: "https://developer.medley.jp",
         },
         {
-          title: "メドレー ディベロッパー公式 (@medley_dev)",
+          title: "メドレー ディベロッパー公式X (@medley_dev)",
           href: "https://twitter.com/medley_dev",
         },
       ],
