@@ -39,5 +39,5 @@ type Talk = {
   track: Track;
   talkType: TalkType;
   title: string;
-  speaker: string;
+  speakerName: string;
 };
