@@ -954,6 +954,30 @@ export const sponsorList: SponsorList = {
       detailPageId: "dmm",
     },
     {
+      id: "S24",
+      name: "株式会社ミツモア",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "", // TODO: ロゴリンクを追加
+      addPadding: false,
+      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+      overview: [], // TODO: 概要を追加
+      links: [], // TODO: リンクを追加
+      roles: ["silver"],
+      detailPageId: "meetsmore",
+    },
+    {
+      id: "S25",
+      name: "ウォンテッドリー株式会社",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "", // TODO: ロゴリンクを追加
+      addPadding: false,
+      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+      overview: [], // TODO: 概要を追加
+      links: [], // TODO: リンクを追加
+      roles: ["silver"],
+      detailPageId: "wantedlyinc",
+    },
+    {
       id: "S27",
       name: "BASE株式会社",
       logoImage: "/sponsors/base.png",
