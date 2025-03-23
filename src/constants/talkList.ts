@@ -1,8 +1,8 @@
-const EVENT_DATE = {
+export const EVENT_DATE = {
   DAY1: "2025-03-23",
   DAY2: "2025-03-24",
 } as const;
-type EventDate = keyof typeof EVENT_DATE;
+export type EventDate = keyof typeof EVENT_DATE;
 
 const TRACK = {
   TRACK1: {
