@@ -15,7 +15,7 @@ export default function Home() {
       <main className="pt-8 overflow-x-hidden">
         <HeroSectionWithMotion />
         <BuyTicketSection />
-        <MissionSection isFirstSection={false} />
+        <MissionSection />
         <SponsorsBoardSection />
         <JudgesSection />
         <CoreStaffSection />
