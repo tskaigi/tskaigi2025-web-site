@@ -898,7 +898,7 @@ export const sponsorList: SponsorList = {
     {
       id: "S22",
       name: "any株式会社",
-      logoImage: "", // TODO: ロゴ画像を追加
+      logoImage: "/sponsors/any.png",
       logoLink: "https://anyinc.jp",
       addPadding: false,
       isTenantChecked: false,
@@ -1112,7 +1112,7 @@ export const sponsorList: SponsorList = {
     {
       id: "B13",
       name: "株式会社ビットキー",
-      logoImage: "", // TODO: ロゴ画像を追加
+      logoImage: "/sponsors/bitkey.png",
       logoLink: "https://bitkey.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1139,16 +1139,25 @@ export const sponsorList: SponsorList = {
     {
       id: "B16",
       name: "株式会社プログリット",
-      logoImage: "", // TODO: ロゴ画像を追加
+      logoImage: "/sponsors/progrit.png",
       logoLink: "", // TODO: リンク先を追加
       addPadding: false,
       isTenantChecked: false,
       roles: ["bronze"],
     },
     {
+      id: "B17",
+      name: "株式会社LabBase",
+      logoImage: "", // TODO: ロゴ画像を追加
+      logoLink: "", // TODO: リンク先を追加
+      addPadding: false,
+      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+      roles: ["bronze"],
+    },
+    {
       id: "B18",
       name: "BABY JOB株式会社",
-      logoImage: "", // TODO: ロゴ画像を追加
+      logoImage: "/sponsors/baby-job.png",
       logoLink: "https://baby-job.co.jp/",
       addPadding: false,
       isTenantChecked: true,
