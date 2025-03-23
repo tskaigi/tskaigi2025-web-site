@@ -35,7 +35,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function SponserDetailPage({
+export default async function SponsorDetailPage({
   params,
 }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -71,7 +71,9 @@ export default async function SponserDetailPage({
             </p>
 
             {sponsor.overview?.map((overview) => (
-              <p key={overview}>{overview}</p>
+              <p key={overview} className="whitespace-pre-wrap">
+                {overview}
+              </p>
             ))}
           </div>
 
