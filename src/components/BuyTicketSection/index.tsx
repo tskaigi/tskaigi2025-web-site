@@ -62,7 +62,7 @@ export const BuyTicketSection = () => {
               asChild
               variant="default"
               size="lg"
-              className="rounded-full h-[60px] bg-white hover:bg-blue-purple-600 text-blue-purple-500 pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 border-[2px] border-black-500 self-stretch"
+              className="rounded-full h-[60px] bg-white hover:bg-black-100 text-blue-purple-500 pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 border-[2px] border-black-500 self-stretch"
             >
               <Link
                 href={BuyTicketPageLink.online}

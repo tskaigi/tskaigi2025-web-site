@@ -1,6 +1,5 @@
 import { Decoration } from "../Decoration";
 import { VenueInformation } from "../VenueInformation";
-import { SectionGradation } from "../ui/sectionGradation";
 
 function MissionSessionContent() {
   return (
@@ -41,16 +40,8 @@ function MissionSessionContent() {
   );
 }
 
-export type MissionSectionProps = {
-  isFirstSection: boolean;
-};
-
-export function MissionSection(props: MissionSectionProps) {
-  return props.isFirstSection ? (
-    <SectionGradation>
-      <MissionSessionContent />
-    </SectionGradation>
-  ) : (
+export function MissionSection() {
+  return (
     <section className="bg-blue-light-100">
       <MissionSessionContent />
     </section>
