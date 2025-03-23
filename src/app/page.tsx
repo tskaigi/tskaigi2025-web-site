@@ -1,3 +1,4 @@
+import { BuyTicketSection } from "@/components/BuyTicketSection";
 import { CoreStaffSection } from "@/components/CoreStaffSection";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main className="pt-8 overflow-x-hidden">
         <HeroSectionWithMotion />
+        <BuyTicketSection />
         <MissionSection />
         <SponsorsBoardSection />
         <JudgesSection />
