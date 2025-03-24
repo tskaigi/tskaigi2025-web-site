@@ -6,7 +6,7 @@ import { HeroSectionWithMotion } from "@/components/HeroSectionWithMotion";
 import { JudgesSection } from "@/components/JudgesSection";
 import { MissionSection } from "@/components/MissionSection";
 import { SponsorsBoardSection } from "@/components/SponsorsBoardSection";
-// import { StaffSection } from "@/components/StaffSection";
+import { StaffSection } from "@/components/StaffSection";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <SponsorsBoardSection />
         <JudgesSection />
         <CoreStaffSection />
-        {/* <StaffSection /> */}
+        <StaffSection />
       </main>
       <Footer />
     </>

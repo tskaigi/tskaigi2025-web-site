@@ -13,14 +13,14 @@ export function StaffSection() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2"
+              className="flex flex-col items-center gap-2 aspect-square"
             >
               <img
                 src={image}
                 alt={`${name} アイコン`}
-                className="w-full h-auto rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden"
               />
-              <p className="text-16 leading-7">{name}</p>
+              <p className="text-16 leading-7 text-center">{name}</p>
             </a>
           </li>
         ))}

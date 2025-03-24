@@ -23,7 +23,9 @@ export function EventDateTab({ currentDate, onTabChange }: Props) {
               className={cn(
                 "px-6 py-2 text-sm font-medium transition-colors",
                 isActive
-                  ? "bg-blue-light-500 text-white"
+                  ? date === "DAY2"
+                    ? "bg-pink-500 text-white"
+                    : "bg-blue-light-500 text-white"
                   : "bg-black-300 text-white",
               )}
             >
