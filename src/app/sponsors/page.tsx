@@ -18,17 +18,19 @@ const SponsorsPage = () => {
 
               {key !== "bronze" ? (
                 <ul className="flex flex-col gap-6">
-                  {value.map((company, idx, value) => (
-                    <li key={company.name} className="flex flex-col gap-6">
-                      {/* 企業確認済みかつロゴ画像がある場合のみコンポーネントを表示 */}
-                      {company.isTenantChecked && company.logoImage && (
-                        <Company isWip={false} {...company} />
-                      )}
-                      {idx !== value.length - 1 && (
-                        <hr className="border-t-2 border-black-200" />
-                      )}
-                    </li>
-                  ))}
+                  {value.map(
+                    (company, idx, value) =>
+                      // 企業確認済みかつロゴ画像がある場合のみアイテムを表示
+                      company.isTenantChecked &&
+                      company.logoImage && (
+                        <li key={company.name} className="flex flex-col gap-6">
+                          {<Company isWip={false} {...company} />}
+                          {idx !== value.length - 1 && (
+                            <hr className="border-t-2 border-black-200" />
+                          )}
+                        </li>
+                      )
+                  )}
                 </ul>
               ) : (
                 <ul className="grid grid-cols-2 gap-4 md:grid-cols-5">
@@ -50,7 +52,7 @@ const SponsorsPage = () => {
                             height={96}
                           />
                         </li>
-                      ),
+                      )
                   )}
                 </ul>
               )}
