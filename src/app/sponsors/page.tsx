@@ -24,12 +24,12 @@ const SponsorsPage = () => {
                       company.isTenantChecked &&
                       company.logoImage && (
                         <li key={company.name} className="flex flex-col gap-6">
-                          {<Company isWip={false} {...company} />}
+                          <Company isWip={false} {...company} />
                           {idx !== value.length - 1 && (
                             <hr className="border-t-2 border-black-200" />
                           )}
                         </li>
-                      )
+                      ),
                   )}
                 </ul>
               ) : (
@@ -52,7 +52,7 @@ const SponsorsPage = () => {
                             height={96}
                           />
                         </li>
-                      )
+                      ),
                   )}
                 </ul>
               )}
