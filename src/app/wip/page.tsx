@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSectionWithMotion />
         <BuyTicketSection />
         <MissionSection />
-        <SponsorsBoardSection />
+        <SponsorsBoardSection isWip />
         <JudgesSection />
         <CoreStaffSection />
       </main>
