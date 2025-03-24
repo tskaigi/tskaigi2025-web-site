@@ -27,7 +27,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   key={sponsor.id}
                   className={cn(
                     "w-full h-[162px] md:h-[192px]",
-                    sponsor.addPadding ? "p-8" : "p-4"
+                    sponsor.addPadding ? "p-8" : "p-4",
                   )}
                   src={sponsor.logoImage}
                   alt={sponsor.name}
@@ -35,7 +35,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   width={389}
                   height={192}
                 />
-              )
+              ),
           )}
         </div>
       </div>
@@ -56,7 +56,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   key={sponsor.id}
                   className={cn(
                     "w-full h-[144px]",
-                    sponsor.addPadding ? "p-8" : "p-4"
+                    sponsor.addPadding ? "p-8" : "p-4",
                   )}
                   src={sponsor.logoImage}
                   alt={sponsor.name}
@@ -64,7 +64,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   width={288}
                   height={144}
                 />
-              )
+              ),
           )}
         </div>
       </div>
@@ -85,7 +85,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   key={sponsor.id}
                   className={cn(
                     "w-full h-[112px]",
-                    sponsor.addPadding ? "p-4" : "p-2"
+                    sponsor.addPadding ? "p-4" : "p-2",
                   )}
                   src={sponsor.logoImage}
                   alt={sponsor.name}
@@ -93,7 +93,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   width={227}
                   height={112}
                 />
-              )
+              ),
           )}
         </div>
       </div>
@@ -114,7 +114,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   key={sponsor.id}
                   className={cn(
                     "w-full h-[96px]",
-                    sponsor.addPadding ? "p-4" : "p-2"
+                    sponsor.addPadding ? "p-4" : "p-2",
                   )}
                   src={sponsor.logoImage}
                   alt={sponsor.name}
@@ -122,7 +122,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                   width={186}
                   height={96}
                 />
-              )
+              ),
           )}
         </div>
       </div>
