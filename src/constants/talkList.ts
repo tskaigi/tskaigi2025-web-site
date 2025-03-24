@@ -1,10 +1,10 @@
-const EVENT_DATE = {
+export const EVENT_DATE = {
   DAY1: "2025-03-23",
   DAY2: "2025-03-24",
 } as const;
-type EventDate = keyof typeof EVENT_DATE;
+export type EventDate = keyof typeof EVENT_DATE;
 
-const TRACK = {
+export const TRACK = {
   TRACK1: {
     name: "トグルホールディングストラック",
   },
@@ -14,8 +14,8 @@ const TRACK = {
   TRACK3: {
     name: "レジレジーズトラック",
   },
-};
-type Track = keyof typeof TRACK;
+} as const;
+export type Track = keyof typeof TRACK;
 
 const TalkType = {
   SESSION: {
