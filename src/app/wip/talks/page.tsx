@@ -1,6 +1,8 @@
 "use client";
 
+import { CommonTrackEvent } from "@/components/talks/CommonTrackEvent";
 import { EventDateTab } from "@/components/talks/EventDateTab";
+import { EventWrapper } from "@/components/talks/EventWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { TrackToggle } from "@/components/talks/TrackToggle";
 import { type EventDate, TRACK, type Track } from "@/constants/talkList";
@@ -102,16 +104,10 @@ const TalksPage = () => {
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
             <TimeSlot timeText="10:00" />
-            {getVisibleTrackCount() > 0 && (
-              <div
-                className="bg-white p-5 h-32 flex items-center justify-center text-black-700"
-                style={{
-                  gridColumn: `span ${getVisibleTrackCount()}`,
-                }}
-              >
-                開場
-              </div>
-            )}
+            <CommonTrackEvent
+              eventText="開場"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
           </div>
 
           {/* 10:50~11:00の行 */}
@@ -121,19 +117,11 @@ const TalksPage = () => {
           >
             <TimeSlot timeText="10:50 ~ 11:00" />
             {visibleTracks.TRACK1 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                オープニングトーク
-              </div>
+              <EventWrapper>オープニングトーク</EventWrapper>
             )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                サテライト
-              </div>
-            )}
+            {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
             {visibleTracks.TRACK3 && (
-              <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
-                クローズ
-              </div>
+              <EventWrapper color="gray">クローズ</EventWrapper>
             )}
           </div>
 
@@ -141,88 +129,88 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <TimeSlot timeText="10:50 ~ 11:00" />
-            {visibleTracks.TRACK1 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                オープニングトーク
-              </div>
-            )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                サテライト
-              </div>
-            )}
-            {visibleTracks.TRACK3 && (
-              <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
-                クローズ
-              </div>
-            )}
+            <TimeSlot timeText="11:40 ~ 11:50" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
           </div>
 
           <div
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <TimeSlot timeText="10:50 ~ 11:00" />
-            {visibleTracks.TRACK1 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                オープニングトーク
-              </div>
-            )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                サテライト
-              </div>
-            )}
-            {visibleTracks.TRACK3 && (
-              <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
-                クローズ
-              </div>
-            )}
+            <TimeSlot timeText="12:20" />
+            <CommonTrackEvent
+              eventText="ランチ配布"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
           </div>
 
           <div
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <TimeSlot timeText="10:50 ~ 11:00" />
-            {visibleTracks.TRACK1 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                オープニングトーク
-              </div>
-            )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                サテライト
-              </div>
-            )}
-            {visibleTracks.TRACK3 && (
-              <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
-                クローズ
-              </div>
-            )}
+            <TimeSlot timeText="13:30 ~ 13:40" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
           </div>
 
           <div
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <TimeSlot timeText="10:50 ~ 11:00" />
-            {visibleTracks.TRACK1 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                オープニングトーク
-              </div>
-            )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
-                サテライト
-              </div>
-            )}
-            {visibleTracks.TRACK3 && (
-              <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
-                クローズ
-              </div>
-            )}
+            <TimeSlot timeText="14:10 ~ 14:20" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="14:50 ~ 15:00" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="15:30 ~ 15:50" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="16:20 ~ 16:30" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="17:00 ~ 17:10" />
+            <CommonTrackEvent
+              eventText="休憩"
+              visibleTrackCount={getVisibleTrackCount()}
+            />
           </div>
         </div>
       </div>
