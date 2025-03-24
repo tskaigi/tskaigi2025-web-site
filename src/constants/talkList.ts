@@ -6,7 +6,7 @@ export type EventDate = keyof typeof EVENT_DATE;
 
 export const TRACK = {
   TRACK1: {
-    name: "トグルホールディングストラック",
+    name: "トグルルーム",
   },
   TRACK2: {
     name: "アセンドトラック",

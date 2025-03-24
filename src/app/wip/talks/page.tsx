@@ -2,7 +2,7 @@
 
 import { EventDateTab } from "@/components/talks/EventDateTab";
 import { TrackToggle } from "@/components/talks/TrackToggle";
-import type { EventDate, Track } from "@/constants/talkList";
+import { type EventDate, TRACK, type Track } from "@/constants/talkList";
 import { useState } from "react";
 
 const TalksPage = () => {
@@ -30,6 +30,16 @@ const TalksPage = () => {
     }));
   };
 
+  const getGridTemplateColumns = () => {
+    let template = "auto "; // 時間列は常に表示
+
+    if (visibleTracks.TRACK1) template += "1fr ";
+    if (visibleTracks.TRACK2) template += "1fr ";
+    if (visibleTracks.TRACK3) template += "1fr";
+
+    return template;
+  };
+
   return (
     <main className="bg-blue-light-100 mt-16 py-10 px-1 md:py-16 md:px-3 lg:px-10">
       <h1 className="text-2xl font-bold text-blue-light-500 text-center md:text-3xl lg:text-4xl">
@@ -43,6 +53,27 @@ const TalksPage = () => {
           visibleTracks={visibleTracks}
           onToggleTrack={handleToggleTrack}
         />
+      </div>
+      <div
+        className="grid gap-1 mt-10"
+        style={{ gridTemplateColumns: getGridTemplateColumns() }}
+      >
+        <div className="w-[125px]" />
+        {visibleTracks.TRACK1 && (
+          <div className="bg-[#0CF8C0] p-2 text-center font-bold">
+            {TRACK.TRACK1.name}
+          </div>
+        )}
+        {visibleTracks.TRACK2 && (
+          <div className="bg-[#005FAA] p-2 text-center text-white font-bold">
+            {TRACK.TRACK2.name}
+          </div>
+        )}
+        {visibleTracks.TRACK3 && (
+          <div className="bg-[#000000] p-2 text-center text-white font-bold">
+            {TRACK.TRACK3.name}
+          </div>
+        )}
       </div>
     </main>
   );
