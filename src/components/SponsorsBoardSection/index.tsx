@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { sponsorList } from "../../constants/sponsorList";
 import { SponsorsBoardItem } from "./SponsorsBoardItem";
 import { SponsorsBoardTitle } from "./SponsorsBoardTitle";
@@ -10,6 +11,7 @@ export function SponsorsBoardSection() {
         <span>スポンサー各社</span>
       </h2>
 
+      {/* プラチナスポンサー */}
       <div className="pb-8 flex flex-col">
         <SponsorsBoardTitle titleClassName="before:bg-blue-purple-600 after:bg-blue-purple-600">
           <h3 className="text-blue-purple-600 text-22 md:text-28 leading-normal md:leading-[42px] font-bold font-noto">
@@ -20,7 +22,10 @@ export function SponsorsBoardSection() {
           {sponsorList.platinum.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-full h-[162px] md:h-[192px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
+              className={cn(
+                "w-full h-[162px] md:h-[192px]",
+                sponsor.addPadding ? "p-8" : "p-4",
+              )}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -31,6 +36,7 @@ export function SponsorsBoardSection() {
         </div>
       </div>
 
+      {/* ゴールドスポンサー */}
       <div className="pb-8 flex flex-col">
         <SponsorsBoardTitle titleClassName="before:bg-yellow-600 after:bg-yellow-600">
           <h3 className="text-yellow-600 text-22 md:text-28 leading-normal md:leading-[42px] font-bold font-noto">
@@ -41,7 +47,10 @@ export function SponsorsBoardSection() {
           {sponsorList.gold.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-full h-[144px] ${sponsor.addPadding ? "p-8" : "p-4"}`}
+              className={cn(
+                "w-full h-[144px]",
+                sponsor.addPadding ? "p-8" : "p-4",
+              )}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -52,6 +61,7 @@ export function SponsorsBoardSection() {
         </div>
       </div>
 
+      {/* シルバースポンサー */}
       <div className="pb-8 flex flex-col">
         <SponsorsBoardTitle titleClassName="before:bg-blue-light-500 after:bg-blue-light-500">
           <h3 className="text-blue-light-500 text-22 md:text-28 leading-normal md:leading-[42px] font-bold font-noto">
@@ -62,7 +72,10 @@ export function SponsorsBoardSection() {
           {sponsorList.silver.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-full h-[112px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
+              className={cn(
+                "w-full h-[112px]",
+                sponsor.addPadding ? "p-4" : "p-2",
+              )}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
@@ -73,6 +86,7 @@ export function SponsorsBoardSection() {
         </div>
       </div>
 
+      {/* ブロンズスポンサー */}
       <div className="pb-8 flex flex-col">
         <SponsorsBoardTitle titleClassName="before:bg-orange-600 after:bg-orange-600">
           <h3 className="text-orange-600 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
@@ -83,7 +97,10 @@ export function SponsorsBoardSection() {
           {sponsorList.bronze.map((sponsor) => (
             <SponsorsBoardItem
               key={sponsor.id}
-              className={`w-full h-[96px] ${sponsor.addPadding ? "p-4" : "p-2"}`}
+              className={cn(
+                "w-full h-[96px]",
+                sponsor.addPadding ? "p-4" : "p-2",
+              )}
               src={sponsor.logoImage}
               alt={sponsor.name}
               href={sponsor.logoLink}
