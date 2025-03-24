@@ -1,16 +1,18 @@
 import ExternalLink from "@/components/sponsors/ExternalLink";
 import RoleBadge from "@/components/sponsors/RoleBadge";
-import { sponsorId } from "@/constants/sponsorList";
+import { sponsorIds } from "@/constants/sponsorList";
 import { getWipSponsor } from "@/utils/getSponsor";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
-  return sponsorId;
+  return sponsorIds;
 }
 
 export async function generateMetadata({
   params,
-}: { params: Promise<{ id: string }> }): Promise<Metadata> {
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
   const { id } = await params;
   const sponsor = getWipSponsor(id);
 
@@ -36,7 +38,9 @@ export async function generateMetadata({
 
 export default async function SponserDetailPage({
   params,
-}: { params: Promise<{ id: string }> }) {
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const sponsor = getWipSponsor(id);
 

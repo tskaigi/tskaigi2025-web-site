@@ -9,7 +9,7 @@ export type Sponsor = {
   logoImageForSponsorsPage?: string;
   logoLink: string;
   addPadding: boolean;
-  isTenantChecked: boolean;
+  isTenantChecked: boolean; // 企業による掲載確認済みかどうかのフラグ、falseの場合はwipページのみに表示
   overview?: string[];
   links?: ExternalLinkProps[];
   roles: SponsorRole[];
@@ -1200,8 +1200,7 @@ export const sponsorList: SponsorList = {
 };
 
 // スポンサー詳細ページで使用するスポンサーIDのリスト
-export const sponsorId = [
-  ...sponsorList.platinum.map((sponsor) => ({ id: sponsor.detailPageId })),
-  ...sponsorList.gold.map((sponsor) => ({ id: sponsor.detailPageId })),
-  ...sponsorList.silver.map((sponsor) => ({ id: sponsor.detailPageId })),
-];
+export const sponsorIds = Object.values(sponsorList)
+  .flat()
+  .map((sponsor) => sponsor.detailPageId)
+  .filter((sponsorId) => sponsorId !== undefined);
