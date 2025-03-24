@@ -1012,7 +1012,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       overview: [
-        `弁護士ドットコム株式会社について<br>
+        `弁護士ドットコム株式会社について
 「プロフェッショナル・テックで、次の常識をつくる。」をミッションとして、人々と専門家をつなぐポータルサイト『弁護士ドットコム』『BUISINESS LAWYERS』『税理士ドットコム』、契約マネジメントプラットフォーム『クラウドサイン』を提供しています。`,
       ],
       links: [
