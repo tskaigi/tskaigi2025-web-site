@@ -2,6 +2,7 @@ import { SponsorsBoardItem } from "@/components/SponsorsBoardSection/SponsorsBoa
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
+import { cn } from "@/lib/utils";
 
 const SponsorsPage = () => {
   return (
@@ -29,7 +30,7 @@ const SponsorsPage = () => {
                             <hr className="border-t-2 border-black-200" />
                           )}
                         </li>
-                      ),
+                      )
                   )}
                 </ul>
               ) : (
@@ -42,9 +43,10 @@ const SponsorsPage = () => {
                         <li key={company.name}>
                           <SponsorsBoardItem
                             key={company.id}
-                            className={`w-full h-[96px] ${
+                            className={cn(
+                              "w-full h-[96px]",
                               company.addPadding ? "p-4" : "p-2"
-                            }`}
+                            )}
                             src={company.logoImage}
                             alt={company.name}
                             href={company.logoLink}
@@ -52,7 +54,7 @@ const SponsorsPage = () => {
                             height={96}
                           />
                         </li>
-                      ),
+                      )
                   )}
                 </ul>
               )}
