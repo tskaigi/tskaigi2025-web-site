@@ -31,7 +31,7 @@ const TalksPage = () => {
   };
 
   return (
-    <main className="bg-blue-light-100 mt-16 py-16 px-10">
+    <main className="bg-blue-light-100 mt-16 py-10 px-1 md:py-16 md:px-3 lg:px-10">
       <h1 className="text-2xl font-bold text-blue-light-500 text-center md:text-3xl lg:text-4xl">
         タイムテーブル
       </h1>
