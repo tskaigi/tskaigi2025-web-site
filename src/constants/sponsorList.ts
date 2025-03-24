@@ -13,7 +13,7 @@ export type Sponsor = {
   overview?: string[];
   links?: ExternalLinkProps[];
   roles: SponsorRole[];
-  detailPageId?: string;
+  detailPageId: string;
 };
 
 type SponsorList = {
@@ -1042,6 +1042,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "gemcook",
     },
     {
       id: "B03",
@@ -1051,6 +1052,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "note",
     },
     {
       id: "B04",
@@ -1060,6 +1062,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "kickflow",
     },
     {
       id: "B05",
@@ -1069,6 +1072,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "hacobu",
     },
     {
       id: "B06",
@@ -1078,6 +1082,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "hatena",
     },
     {
       id: "B07",
@@ -1087,6 +1092,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "mescius",
     },
     {
       id: "B08",
@@ -1096,6 +1102,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "rebase",
     },
     {
       id: "B09",
@@ -1105,6 +1112,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "route06",
     },
     {
       id: "B10",
@@ -1114,6 +1122,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "antway",
     },
     {
       id: "B11",
@@ -1123,6 +1132,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "mov",
     },
     {
       id: "B12",
@@ -1132,6 +1142,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "genda",
     },
     {
       id: "B13",
@@ -1141,6 +1152,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "bitkey",
     },
     {
       id: "B14",
@@ -1150,6 +1162,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: false,
       roles: ["bronze"],
+      detailPageId: "layerx",
     },
     {
       id: "B15",
@@ -1159,6 +1172,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: false,
       roles: ["bronze"],
+      detailPageId: "enechange",
     },
     {
       id: "B16",
@@ -1168,6 +1182,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: false,
       roles: ["bronze"],
+      detailPageId: "progrit",
     },
     {
       id: "B17",
@@ -1177,6 +1192,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
       roles: ["bronze"],
+      detailPageId: "labbase",
     },
     {
       id: "B18",
@@ -1186,6 +1202,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "baby-job",
     },
     {
       id: "B19",
@@ -1195,6 +1212,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: false,
       roles: ["bronze"],
+      detailPageId: "smarthr",
     },
   ],
 };
@@ -1202,5 +1220,4 @@ export const sponsorList: SponsorList = {
 // スポンサー詳細ページで使用するスポンサーIDのリスト
 export const sponsorIds = Object.values(sponsorList)
   .flat()
-  .map((sponsor) => sponsor.detailPageId)
-  .filter((sponsorId) => sponsorId !== undefined);
+  .map((sponsor) => sponsor.detailPageId);
