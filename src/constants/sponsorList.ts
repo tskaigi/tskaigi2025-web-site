@@ -350,11 +350,11 @@ export const sponsorList: SponsorList = {
           href: "https://flatt.tech/assessment",
         },
         {
-          title: "Shisho Cloud - 自動脆弱性診断",
+          title: "Shisho Cloud byGMO - 自動脆弱性診断",
           href: "https://shisho.dev/ja",
         },
         {
-          title: "KENRO - セキュアコーディング研修",
+          title: "KENRO byGMO - セキュアコーディング研修",
           href: "https://flatt.tech/kenro",
         },
       ],
