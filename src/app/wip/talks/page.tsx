@@ -1,6 +1,7 @@
 "use client";
 
 import { EventDateTab } from "@/components/talks/EventDateTab";
+import { TimeSlot } from "@/components/talks/TimeSlot";
 import { TrackToggle } from "@/components/talks/TrackToggle";
 import { type EventDate, TRACK, type Track } from "@/constants/talkList";
 import { useState } from "react";
@@ -40,6 +41,11 @@ const TalksPage = () => {
     return template;
   };
 
+  // 表示されているトラック数を計算
+  const getVisibleTrackCount = () => {
+    return Object.values(visibleTracks).filter(Boolean).length;
+  };
+
   return (
     <main className="bg-blue-light-100 mt-16 py-10 px-1 md:py-16 md:px-3 lg:px-10">
       <h1 className="text-2xl font-bold text-blue-light-500 text-center md:text-3xl lg:text-4xl">
@@ -72,6 +78,45 @@ const TalksPage = () => {
         {visibleTracks.TRACK3 && (
           <div className="bg-[#000000] p-2 text-center text-white font-bold">
             {TRACK.TRACK3.name}
+          </div>
+        )}
+      </div>
+
+      <div
+        className="grid gap-1 mt-2"
+        style={{ gridTemplateColumns: getGridTemplateColumns() }}
+      >
+        <TimeSlot timeText="10:00" />
+        {getVisibleTrackCount() > 0 && (
+          <div
+            className="bg-white p-5 h-32 flex items-center justify-center text-black-700"
+            style={{
+              gridColumn: `span ${getVisibleTrackCount()}`,
+            }}
+          >
+            開場
+          </div>
+        )}
+      </div>
+
+      <div
+        className="grid gap-1 mt-2"
+        style={{ gridTemplateColumns: getGridTemplateColumns() }}
+      >
+        <TimeSlot timeText="10:50 ~ 11:00" />
+        {visibleTracks.TRACK1 && (
+          <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
+            オープニングトーク
+          </div>
+        )}
+        {visibleTracks.TRACK2 && (
+          <div className="bg-white p-5 h-32 flex items-center justify-center text-black-700">
+            サテライト
+          </div>
+        )}
+        {visibleTracks.TRACK3 && (
+          <div className="bg-gray-200 p-5 h-32 flex items-center justify-center text-black-700">
+            クローズ
           </div>
         )}
       </div>
