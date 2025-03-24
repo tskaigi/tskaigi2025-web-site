@@ -151,6 +151,20 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
+            <TimeSlot timeText="10:50 ~ 11:00" />
+            {visibleTracks.TRACK1 && (
+              <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
+                ランチ
+              </EventWrapper>
+            )}
+            {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
+            {visibleTracks.TRACK3 && <EventWrapper>ランチ</EventWrapper>}
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
             <TimeSlot timeText="13:30 ~ 13:40" />
             <CommonTrackEvent
               eventText="休憩"

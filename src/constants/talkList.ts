@@ -17,7 +17,7 @@ export const TRACK = {
 } as const;
 export type Track = keyof typeof TRACK;
 
-const TalkType = {
+export const TALK_TYPE = {
   SESSION: {
     name: "セッション",
   },
@@ -31,7 +31,7 @@ const TalkType = {
     name: "スポンサーLT",
   },
 };
-type TalkType = keyof typeof TalkType;
+export type TalkType = keyof typeof TALK_TYPE;
 
 type Talk = {
   id: string;
