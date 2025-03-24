@@ -24,7 +24,7 @@ export function EventDateTab({ currentDate, onTabChange }: Props) {
                 "px-6 py-2 text-sm font-medium transition-colors",
                 isActive
                   ? "bg-blue-light-500 text-white"
-                  : "bg-black-300 text-white hover:bg-blue-light-400 ",
+                  : "bg-black-300 text-white",
               )}
             >
               {dateText}
