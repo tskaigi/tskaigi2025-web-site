@@ -1,9 +1,9 @@
 "use client";
 
 import { EventDateTab } from "@/components/talks/EventDateTab";
-import { useState } from "react";
-import type { EventDate, Track } from "@/constants/talkList";
 import { TrackToggle } from "@/components/talks/TrackToggle";
+import type { EventDate, Track } from "@/constants/talkList";
+import { useState } from "react";
 
 const TalksPage = () => {
   const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
