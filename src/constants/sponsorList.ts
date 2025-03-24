@@ -1220,4 +1220,4 @@ export const sponsorList: SponsorList = {
 // スポンサー詳細ページで使用するスポンサーIDのリスト
 export const sponsorIds = Object.values(sponsorList)
   .flat()
-  .map((sponsor) => sponsor.detailPageId);
+  .map((sponsor) => ({ id: sponsor.detailPageId }));
