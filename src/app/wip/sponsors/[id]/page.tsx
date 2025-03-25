@@ -36,7 +36,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function SponserDetailPage({
+export default async function SponsorDetailPage({
   params,
 }: {
   params: Promise<{ id: string }>;
