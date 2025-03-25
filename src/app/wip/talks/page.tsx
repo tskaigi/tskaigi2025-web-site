@@ -129,11 +129,61 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
+            <TimeSlot timeText="11:00 ~ 11:30" />
+            {visibleTracks.TRACK1 && (
+              <EventWrapper talkType="KEYNOTE" textAlign="left">
+                基調講演
+              </EventWrapper>
+            )}
+            {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
+            {visibleTracks.TRACK3 && (
+              <EventWrapper color="gray">クローズ</EventWrapper>
+            )}
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
             <TimeSlot timeText="11:40 ~ 11:50" />
             <CommonTrackEvent
               eventText="休憩"
               visibleTrackCount={getVisibleTrackCount()}
             />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="11:00 ~ 11:30" />
+            {visibleTracks.TRACK1 && (
+              <EventWrapper talkType="SESSION" textAlign="left">
+                <div className="flex flex-col gap-1">
+                  <p className="text-16">checker.ts に対して真剣に向き合う</p>
+                  <p className="text-14">kkk4oru</p>
+                </div>
+              </EventWrapper>
+            )}
+            {visibleTracks.TRACK2 && (
+              <EventWrapper talkType="SESSION" textAlign="left">
+                <div className="flex flex-col gap-1">
+                  <p className="text-16">高度な型付け、どう教える？</p>
+                  <p className="text-14">progfay</p>
+                </div>
+              </EventWrapper>
+            )}
+            {visibleTracks.TRACK3 && (
+              <EventWrapper talkType="SESSION" textAlign="left">
+                <div className="flex flex-col gap-1">
+                  <p className="text-16">
+                    Full-Stack TypeScript x
+                    GraphQLで実現する漸進的アーキテクチャ
+                  </p>
+                  <p className="text-14">Sohei Takeno</p>
+                </div>
+              </EventWrapper>
+            )}
           </div>
 
           <div
