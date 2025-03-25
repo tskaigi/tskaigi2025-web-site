@@ -27,7 +27,15 @@ export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
             <button
               type="button"
               key={trackId}
-              onClick={() => onToggleTrack(trackId)}
+              onClick={() => {
+                if (
+                  isVisible &&
+                  Object.values(visibleTracks).filter(Boolean).length <= 1
+                ) {
+                  return;
+                }
+                onToggleTrack(trackId);
+              }}
               className={cn(
                 "px-6 py-1 text-sm font-medium transition-colors flex items-center gap-2",
                 isVisible
