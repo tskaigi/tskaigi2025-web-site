@@ -953,30 +953,32 @@ export const sponsorList: SponsorList = {
       roles: ["silver"],
       detailPageId: "dmm",
     },
-    {
-      id: "S24",
-      name: "株式会社ミツモア",
-      logoImage: "", // TODO: ロゴ画像を追加
-      logoLink: "", // TODO: ロゴリンクを追加
-      addPadding: false,
-      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-      overview: [], // TODO: 概要を追加
-      links: [], // TODO: リンクを追加
-      roles: ["silver"],
-      detailPageId: "meetsmore",
-    },
-    {
-      id: "S25",
-      name: "ウォンテッドリー株式会社",
-      logoImage: "", // TODO: ロゴ画像を追加
-      logoLink: "", // TODO: ロゴリンクを追加
-      addPadding: false,
-      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-      overview: [], // TODO: 概要を追加
-      links: [], // TODO: リンクを追加
-      roles: ["silver"],
-      detailPageId: "wantedlyinc",
-    },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "S24",
+    //   name: "株式会社ミツモア",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: ロゴリンクを追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   overview: [], // TODO: 概要を追加
+    //   links: [], // TODO: リンクを追加
+    //   roles: ["silver"],
+    //   detailPageId: "meetsmore",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "S25",
+    //   name: "ウォンテッドリー株式会社",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: ロゴリンクを追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   overview: [], // TODO: 概要を追加
+    //   links: [], // TODO: リンクを追加
+    //   roles: ["silver"],
+    //   detailPageId: "wantedlyinc",
+    // },
     {
       id: "S27",
       name: "BASE株式会社",
@@ -1164,36 +1166,39 @@ export const sponsorList: SponsorList = {
       roles: ["bronze"],
       detailPageId: "layerx",
     },
-    {
-      id: "B15",
-      name: "ENECHANGE株式会社",
-      logoImage: "", // TODO: ロゴ画像を追加
-      logoLink: "https://enechange.co.jp/",
-      addPadding: false,
-      isTenantChecked: false,
-      roles: ["bronze"],
-      detailPageId: "enechange",
-    },
-    {
-      id: "B16",
-      name: "株式会社プログリット",
-      logoImage: "/sponsors/progrit.png",
-      logoLink: "", // TODO: リンク先を追加
-      addPadding: false,
-      isTenantChecked: false,
-      roles: ["bronze"],
-      detailPageId: "progrit",
-    },
-    {
-      id: "B17",
-      name: "株式会社LabBase",
-      logoImage: "", // TODO: ロゴ画像を追加
-      logoLink: "", // TODO: リンク先を追加
-      addPadding: false,
-      isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-      roles: ["bronze"],
-      detailPageId: "labbase",
-    },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B15",
+    //   name: "ENECHANGE株式会社",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "https://enechange.co.jp/",
+    //   addPadding: false,
+    //   isTenantChecked: false,
+    //   roles: ["bronze"],
+    //   detailPageId: "enechange",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B16",
+    //   name: "株式会社プログリット",
+    //   logoImage: "/sponsors/progrit.png",
+    //   logoLink: "", // TODO: リンク先を追加
+    //   addPadding: false,
+    //   isTenantChecked: false,
+    //   roles: ["bronze"],
+    //   detailPageId: "progrit",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B17",
+    //   name: "株式会社LabBase",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: リンク先を追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   roles: ["bronze"],
+    //   detailPageId: "labbase",
+    // },
     {
       id: "B18",
       name: "BABY JOB株式会社",
