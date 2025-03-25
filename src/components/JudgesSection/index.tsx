@@ -20,7 +20,7 @@ export function JudgesSection() {
   return (
     <section className="pt-10 md:pt-20 pb-10 md:pb-20 bg-blue-light-100">
       <h2 className="text-24 md:text-32 leading-normal md:leading-[48px] text-center font-bold pb-8 md:pb-10">
-        トーク&LT審査員
+        プロポーザル選考委員
       </h2>
       <ul className="grid grid-cols-[repeat(auto-fit,192px)] md:grid-cols-[repeat(auto-fit,224px)] justify-center gap-x-14 gap-y-8 px-10">
         {judgesList.map(({ name, image, href }) => (
