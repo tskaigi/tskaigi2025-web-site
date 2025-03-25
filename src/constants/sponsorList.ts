@@ -79,7 +79,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/AVITA_Logomark_Logotype.png",
       logoLink: "https://avita.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "≪累計約19億円の資金調達に成功≫ アバター＆生成AIで人類をアップデート！\nAVITAは、大阪大学基礎工学研究科の教授・石黒浩が代表を務める大学発のスタートアップ企業です。\n弊社ではフロントエンド開発においてTypeScriptを統一的に使用しており、アバターのリモート接客における利用者間のリアルタイム通信処理やVRMアバターの表示制御にも、TypeScriptの型の恩恵を最大限活用しています。\nまた、TypeScriptはReactやNext.jsによるフロントエンド開発のみならず、APIとの通信における型生成やデザイントークンにも活用しています。バックエンドでは一部Cloudflare WorkersやHonoでもTypeScriptを利用しています。",
       ],
@@ -227,7 +227,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/kinto_logoA.png",
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。",
         "トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。",
@@ -256,7 +256,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/CyberAgent.png",
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "サイバーエージェントはインターネットを軸に、メディア&IP事業、インターネット広告事業、ゲーム事業と主に3つの事業を展開しています。新しい未来のテレビ「ABEMA」、「Amebaブログ」や「アメーバピグ」などを展開する国内最大級のメディア「Ameba」、競輪・オートレースの投票サービス「WINTICKET（ウィンチケット）」など多様なプロダクトでTypeScriptを活用しているのが特長です。",
         "当社の強みは、TypeScriptを利用してフロントエンドやバックエンド、ネイティブなど技術領域に関わらず型の恩恵を享受していることです。型によってバグの早期発見や可読性の向上に繋がり、サービス品質の改善や運用コストの低減を実現しています。当社に興味を持ってくださった方は、ぜひコーポレートサイトや採用情報、Developers Blogをご覧ください。",
@@ -312,7 +312,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/kaminashi_logo.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "「ノンデスクワーカーの才能を解き放つ」をミッションに掲げるスタートアップ、カミナシは、ホリゾンタルSaaSの現場DXプラットフォームを提供しています。 PCやデスクのない現場で働く約3,900万人のノンデスクワーカーの働き方を、現場のムダを削減し利益を生む現場づくりを実現する「現場DXプラットフォーム」のカミナシで解決します。 2023年3月にシリーズBで約30億円の資金調達を行い、カミナシはオールインワンSaaSとして、現場のEmployeeやCommunication領域のDXに拡大していきます。",
         `カミナシではPCの管理画面やモバイルアプリのフロントエンド開発を主として、全てのプロダクトでTypeScriptを採用しており、コードの拡張性・堅牢性を高めることに大きく寄与しています。
@@ -577,7 +577,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/lincwell.png",
       logoLink: "https://linc-well.com/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `Linc'wellは「テクノロジーを通じて、医療を一歩前へ」をミッションに掲げ、医療を効率化し患者の利便性と医療の質の向上を目指した事業展開を行っています。
 オンライン・オフラインで医療従事者・患者をつなぐヘルスケアプラットフォーム事業を主力としており、「オンライン診療システム提供サービス」「クリニックDX支援サービス」「ヘルスケアECサービス」の3つのサービスを提供しています。`,
@@ -679,7 +679,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/medley_rgb.png",
       logoLink: "https://www.medley.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `メドレーは、「医療ヘルスケアの未来をつくる」ミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、医療ヘルスケア分野の課題を解決していきます。それにより、病院や行政による「持続可能な医療」の実現と、患者さんやそのご家族にとって「納得できる医療」の実現を目指しています。
 医療ヘルスケア領域の成果報酬型人材採用システム「ジョブメドレー」、オンライン動画研修サービス「ジョブメドレーアカデミー」、オンライン診療・服薬指導アプリ「CLINICS」などを運営しています。`,
@@ -707,7 +707,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/dwango_blue.png",
       logoLink: "https://dwango.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `ドワンゴは "ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。" をコーポレートメッセージとして、ネットに特化した通信制高校「N高等学校・S高等学校・R高等学校」、ネットとリアルを融合したオンライン大学「ZEN大学」、オンライン学習アプリ「ZEN Study」、ネットの双方向性を最大限に動画や生放送に取り込んだ「ニコニコ」、ネットとリアルの融合をテーマにした巨大イベント「ニコニコ超会議」など、新しい価値を創り出し、それを事業として成立させていくことに挑戦しつづける企業です。`,
       ],
@@ -764,7 +764,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
       logoLink: "https://corp.tokium.jp/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "株式会社TOKIUMは、「未来へつながる時を生む」を志に、企業の支出にまつわる課題の解決を実現するDXサービスを提供しています。",
         "主なサービスとして、請求書受領クラウド「TOKIUMインボイス」、経費精算クラウド「TOKIUM経費精算」、文書管理クラウド「TOKIUM電子帳簿保存」、契約管理クラウド「TOKIUM契約管理」を提供しています。最適なテクノロジーと常識にとらわれない自由な発想、泥臭さもいとわない行動力で支出の最適化を実現し、人と事業を未来へ向けて加速させていきます。",
@@ -816,7 +816,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/FORCIA_logo.png",
       logoLink: "https://www.forcia.com/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `フォルシアは、社員の半数近くをフルスタックエンジニアが占める技術者集団です。
 膨大・複雑なデータを高速かつ正確に処理できる技術を強みとし、独自の技術基盤を用いたプロダクト開発や、旅行・観光業界のオンライン販売を支援するSaaS型サービスの提供などを行っています。
@@ -846,7 +846,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/spacemarket_TypeB.png",
       logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `「スペースシェアをあたりまえに」をミッションに掲げ、あらゆるスペースを時間単位で貸し借りするプラットフォームなどを運営する企業です。
 生活のあらゆるシーンにおける考え方や選択肢が多様化していく社会の中で、 日々スペースでは様々な一歩が生まれています。
