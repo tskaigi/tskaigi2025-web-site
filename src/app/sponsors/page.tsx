@@ -2,6 +2,7 @@ import { SponsorsBoardItem } from "@/components/SponsorsBoardSection/SponsorsBoa
 import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
+import { cn } from "@/lib/utils";
 
 const SponsorsPage = () => {
   return (
@@ -18,30 +19,43 @@ const SponsorsPage = () => {
 
               {key !== "bronze" ? (
                 <ul className="flex flex-col gap-6">
-                  {value.map((company, idx, value) => (
-                    <li key={company.name} className="flex flex-col gap-6">
-                      <Company isWip={false} {...company} />
-                      {idx !== value.length - 1 && (
-                        <hr className="border-t-2 border-black-200" />
-                      )}
-                    </li>
-                  ))}
+                  {value.map(
+                    (company, idx, value) =>
+                      // 企業確認済みかつロゴ画像がある場合のみアイテムを表示
+                      company.isTenantChecked &&
+                      company.logoImage && (
+                        <li key={company.name} className="flex flex-col gap-6">
+                          <Company isWip={false} {...company} />
+                          {idx !== value.length - 1 && (
+                            <hr className="border-t-2 border-black-200" />
+                          )}
+                        </li>
+                      ),
+                  )}
                 </ul>
               ) : (
                 <ul className="grid grid-cols-2 gap-4 md:grid-cols-5">
-                  {value.map((company, idx, value) => (
-                    <li key={company.name}>
-                      <SponsorsBoardItem
-                        key={company.id}
-                        className={`w-full h-[96px] ${company.addPadding ? "p-4" : "p-2"}`}
-                        src={company.logoImage}
-                        alt={company.name}
-                        href={company.logoLink}
-                        width={211}
-                        height={96}
-                      />
-                    </li>
-                  ))}
+                  {value.map(
+                    (company, idx, value) =>
+                      // 企業確認済みかつロゴ画像がある場合のみアイテムを表示
+                      company.isTenantChecked &&
+                      company.logoImage && (
+                        <li key={company.name}>
+                          <SponsorsBoardItem
+                            key={company.id}
+                            className={cn(
+                              "w-full h-[96px]",
+                              company.addPadding ? "p-4" : "p-2",
+                            )}
+                            src={company.logoImage}
+                            alt={company.name}
+                            href={company.logoLink}
+                            width={211}
+                            height={96}
+                          />
+                        </li>
+                      ),
+                  )}
                 </ul>
               )}
             </div>
