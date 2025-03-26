@@ -934,7 +934,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       name: "合同会社DMM.com",
       logoImage: "/sponsors/dmm.png",
       logoLink: "https://dmm-corp.com/",
-      addPadding: false,
+      addPadding: true,
       isTenantChecked: false,
       overview: [
         `会員数4,507万人（2024年2月時点）を誇る総合サービスサイト「DMM.com」を運営しています。
