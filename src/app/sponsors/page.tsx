@@ -8,7 +8,7 @@ const SponsorsPage = () => {
   return (
     <main className="bg-blue-light-100 pt-16 py-10 md:px-8">
       <h1 className="text-2xl font-bold text-blue-light-500 text-center py-10 md:py-16 md:text-3xl lg:text-4xl">
-        スポンサー一覧
+        スポンサー
       </h1>
 
       <div className="bg-white p-6 flex flex-col gap-10 max-w-screen-xl mx-auto md:rounded-xl lg:p-10">
@@ -30,7 +30,7 @@ const SponsorsPage = () => {
                             <hr className="border-t-2 border-black-200" />
                           )}
                         </li>
-                      ),
+                      )
                   )}
                 </ul>
               ) : (
@@ -45,7 +45,7 @@ const SponsorsPage = () => {
                             key={company.id}
                             className={cn(
                               "w-full h-[96px]",
-                              company.addPadding ? "p-4" : "p-2",
+                              company.addPadding ? "p-4" : "p-2"
                             )}
                             src={company.logoImage}
                             alt={company.name}
@@ -54,7 +54,7 @@ const SponsorsPage = () => {
                             height={96}
                           />
                         </li>
-                      ),
+                      )
                   )}
                 </ul>
               )}
