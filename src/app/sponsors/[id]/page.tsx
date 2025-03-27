@@ -48,7 +48,7 @@ export default async function SponsorDetailPage({
   return (
     <main>
       <h1 className="text-2xl font-bold text-blue-light-500 text-center py-10 md:py-16 md:text-3xl lg:text-4xl">
-        スポンサー詳細
+        スポンサー
       </h1>
 
       {sponsor && (

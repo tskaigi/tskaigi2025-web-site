@@ -1171,28 +1171,26 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       roles: ["bronze"],
       detailPageId: "layerx",
     },
-    // TODO:情報が揃い次第コメントアウトを解除
-    // {
-    //   id: "B15",
-    //   name: "ENECHANGE株式会社",
-    //   logoImage: "", // TODO: ロゴ画像を追加
-    //   logoLink: "https://enechange.co.jp/",
-    //   addPadding: false,
-    //   isTenantChecked: false,
-    //   roles: ["bronze"],
-    //   detailPageId: "enechange",
-    // },
-    // TODO:情報が揃い次第コメントアウトを解除
-    // {
-    //   id: "B16",
-    //   name: "株式会社プログリット",
-    //   logoImage: "/sponsors/progrit.png",
-    //   logoLink: "", // TODO: リンク先を追加
-    //   addPadding: false,
-    //   isTenantChecked: false,
-    //   roles: ["bronze"],
-    //   detailPageId: "progrit",
-    // },
+    {
+      id: "B15",
+      name: "ENECHANGE株式会社",
+      logoImage: "/sponsors/enechange.png",
+      logoLink: "https://enechange.co.jp/",
+      addPadding: true,
+      isTenantChecked: false,
+      roles: ["bronze"],
+      detailPageId: "enechange",
+    },
+    {
+      id: "B16",
+      name: "株式会社プログリット",
+      logoImage: "/sponsors/progrit.png",
+      logoLink: "https://www.progrit.co.jp/",
+      addPadding: true,
+      isTenantChecked: false,
+      roles: ["bronze"],
+      detailPageId: "progrit",
+    },
     // TODO:情報が揃い次第コメントアウトを解除
     // {
     //   id: "B17",
