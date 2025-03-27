@@ -9,10 +9,11 @@ export type Sponsor = {
   logoImageForSponsorsPage?: string;
   logoLink: string;
   addPadding: boolean;
-  isTenantChecked: boolean;
+  isTenantChecked: boolean; // 企業による掲載確認済みかどうかのフラグ、falseの場合はwipページのみに表示
   overview?: string[];
   links?: ExternalLinkProps[];
   roles: SponsorRole[];
+  detailPageId: string;
 };
 
 type SponsorList = {
@@ -29,8 +30,12 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       overview: [
-        '■「日本で最もデジタル化の遅れた物流産業で、最高の業務体験を創る」\nアセンド株式会社は日本の物流DXを目指すスタートアップです。\n"物流業界は20兆円の巨大市場でありながら、クラウド利用率は全産業で最低でありデジタル化の遅れ故に2024年問題をはじめとして社会課題を抱える業界です。アセンドはVertical SaaS「ロジックス」を全国の運送会社へ開発提供し、現場業務のデジタル化と経営の高度化を同時に図り、物流業界の変革を推進しています。',
-        "■ アセンドとTypeScript\nアセンドは社会課題を解決するプロダクトエンジニア組織を目指して、Frontend/Backend/IaC/DataPipelineの全てをTypeScriptで統一しました。TSでの言語統一により、全エンジニアがフルスタックに開発し、顧客業務やドメインに深く寄り添いプロダクト価値に拘った開発を進めています。開発生産性は6deploys/dayと高い環境であり、少数チームでありながらサービスは案件管理や労務・車両管理といった多岐にわたる複数プロダクトを展開し、運送会社の全ての業務のデジタル化を推進しています。2023年12月にはシリーズAの資金調達を実施し、より多くの運送会社に更なる機能・価値を届けるため、仲間を募集しています。\nTypeScriptを駆使して社会課題解決に挑むプロダクトエンジニアを積極募集中です。お気軽にご連絡ください！",
+        `■「日本で最もデジタル化の遅れた物流産業で、最高の業務体験を創る」
+アセンド株式会社は日本の物流DXを目指すスタートアップです。
+物流業界は20兆円の巨大市場でありながら、クラウド利用率は全産業で最低でありデジタル化の遅れ故に2024年問題をはじめとして社会課題を抱える業界です。アセンドはVertical SaaS「ロジックス」を全国の運送会社へ開発提供し、現場業務のデジタル化と経営の高度化を同時に図り、物流業界の変革を推進しています。`,
+        `■ アセンドとTypeScript
+アセンドは社会課題を解決するプロダクトエンジニア組織を目指して、Frontend/Backend/IaC/DataPipelineの全てをTypeScriptで統一しました。TSでの言語統一により、全エンジニアがフルスタックに開発し、顧客業務やドメインに深く寄り添いプロダクト価値に拘った開発を進めています。開発生産性は6deploys/dayと高い環境であり、少数チームでありながらサービスは案件管理や労務・車両管理といった多岐にわたる複数プロダクトを展開し、運送会社の全ての業務のデジタル化を推進しています。2023年12月にはシリーズAの資金調達を実施し、より多くの運送会社に更なる機能・価値を届けるため、仲間を募集しています。
+TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニアを積極募集中です。お気軽にご連絡ください！`,
       ],
       links: [
         {
@@ -47,6 +52,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum", "naming-rights"],
+      detailPageId: "ascend",
     },
     {
       id: "P02",
@@ -65,6 +71,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "craft-bank",
     },
     {
       id: "P03",
@@ -87,6 +94,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "avita",
     },
     {
       id: "P04",
@@ -94,14 +102,14 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
       logoLink: "https://nstock.co.jp/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       overview: [
         `Nstockは、「スタートアップエコシステムをブーストし、日本からGoogle級の会社を生み出す」ことをミッションに掲げ、スタートアップが大きく育つための様々なプロダクトを提供しています。
 現在は下記2つの事業でミッション実現のために一緒に事業をブーストさせるメンバーを募集しています。`,
         `▼株式報酬SaaS事業
-株式報酬が持つ本来のポテンシャルを最大限に引き出すSaaSです。株式報酬が持つ運用の課題を解決し、企業が成長する起爆剤になります。
-▼セカンダリー事業
-スタートアップのための、非上場株式の取引所です。非上場でもSOを行使し換金できることで、役員・社員の経済的成功を実現し、企業の採用競争力を強化します。`,
+株式報酬が持つ本来のポテンシャルを最大限に引き出すSaaSです。株式報酬が持つ運用の課題を解決し、企業が成長する起爆剤になります。`,
+        `▼セカンダリー事業
+スタートアップのための、非上場株式の取引所を準備中です。非上場時点でストックオプションを行使し換金できることで、役職員の経済的成功を実現し、企業の採用競争力を強化します。`,
         "すべてのプロダクトのフロントエンドでTypeScript & Reactを採用しています。また、CursorやDevinといった生成AI系の開発ツールも積極的に活用しており、事業を支えるエンジニアリングの新しい形を模索しています。",
         "Nstockのミッションに共感し、共にスタートアップ業界を盛り上げてくれる仲間を募集しています。ぜひ会場でお話ししましょう！",
       ],
@@ -120,6 +128,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "nstock",
     },
     {
       id: "P05",
@@ -149,6 +158,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum", "beer"],
+      detailPageId: "dinii",
     },
     {
       id: "P06",
@@ -174,6 +184,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["platinum"],
+      detailPageId: "twogate",
     },
   ],
   gold: [
@@ -208,6 +219,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold", "naming-rights"],
+      detailPageId: "leverages",
     },
     {
       id: "G02",
@@ -236,6 +248,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kinto-technologies",
     },
     {
       id: "G03",
@@ -263,6 +276,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "cyberagent",
     },
     {
       id: "G04",
@@ -290,6 +304,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kepple",
     },
     {
       id: "G05",
@@ -318,6 +333,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "kaminashi",
     },
     {
       id: "G06",
@@ -326,7 +342,7 @@ export const sponsorList: SponsorList = {
       logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
-      isTenantChecked: true,
+      isTenantChecked: false,
       overview: [
         `GMO Flatt Securityは"エンジニアの背中を預かる"をミッションに掲げ、ソフトウェアの開発組織とそこで働くエンジニアにとって最適なセキュリティサービスを提供する、GMOインターネットグループのスタートアップ企業です。`,
         "脆弱性診断を主軸としてクラウド基盤からアプリケーションまで、プロダクト全体の堅牢化を支援します。",
@@ -338,15 +354,16 @@ export const sponsorList: SponsorList = {
           href: "https://flatt.tech/assessment",
         },
         {
-          title: "Shisho Cloud - 自動脆弱性診断",
+          title: "Shisho Cloud byGMO - 自動脆弱性診断",
           href: "https://shisho.dev/ja",
         },
         {
-          title: "KENRO - セキュアコーディング研修",
+          title: "KENRO byGMO - セキュアコーディング研修",
           href: "https://flatt.tech/kenro",
         },
       ],
       roles: ["gold"],
+      detailPageId: "gmo-flatt-security",
     },
     {
       id: "G07",
@@ -375,6 +392,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "toggle",
     },
     {
       id: "G08",
@@ -399,6 +417,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "carta",
     },
     {
       id: "G09",
@@ -433,6 +452,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "caddi",
     },
     {
       id: "G10",
@@ -461,6 +481,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "stmn",
     },
     {
       id: "G11",
@@ -489,6 +510,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "ubie",
     },
     {
       id: "G12",
@@ -517,6 +539,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["gold"],
+      detailPageId: "takumi-giken",
     },
   ],
   silver: [
@@ -546,6 +569,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "theoria-technologies",
     },
     {
       id: "S03",
@@ -573,6 +597,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "linc-well",
     },
     {
       id: "S05",
@@ -597,6 +622,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "earthbrain",
     },
     {
       id: "S06",
@@ -625,6 +651,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "mosh",
     },
     {
       id: "S08",
@@ -644,6 +671,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver", "coffee"],
+      detailPageId: "kakehashi",
     },
     {
       id: "S11",
@@ -666,11 +694,12 @@ export const sponsorList: SponsorList = {
           href: "https://developer.medley.jp",
         },
         {
-          title: "メドレー ディベロッパー公式 (@medley_dev)",
+          title: "メドレー ディベロッパー公式X (@medley_dev)",
           href: "https://twitter.com/medley_dev",
         },
       ],
       roles: ["silver"],
+      detailPageId: "medley",
     },
     {
       id: "S12",
@@ -698,6 +727,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "dwango",
     },
     {
       id: "S13",
@@ -726,6 +756,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "optim",
     },
     {
       id: "S14",
@@ -749,6 +780,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "tokium",
     },
     {
       id: "S15",
@@ -776,6 +808,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "freee",
     },
     {
       id: "S18",
@@ -805,6 +838,7 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "forcia",
     },
     {
       id: "S20",
@@ -833,6 +867,176 @@ export const sponsorList: SponsorList = {
         },
       ],
       roles: ["silver"],
+      detailPageId: "spacemarket",
+    },
+    {
+      id: "S21",
+      name: "株式会社ユートニック",
+      logoImage: "/sponsors/utoniq.png",
+      logoLink: "https://about.utoniq.com/",
+      addPadding: false,
+      isTenantChecked: true,
+      overview: [
+        `「日本のエンタメをエンパワーメントするデジタルインフラを」をミッションに掲げ、エンタメ業界が抱える課題を解決すべく、ファン向けオリジナルアプリ構築インフラ「UDom(ユーダム)」の開発・運用を行っています。
+フロントエンドとバックエンドはどちらもTypeScriptが採用され、モダンな技術スタックで構成されています。
+プロダクトも軌道に乗り、会社の成長を実感しながら開発できる楽しいフェーズに差し掛かっている今、ぜひ一緒にエンタメ業界を盛り上げませんか？
+カジュアル面談でお待ちしております！`,
+      ],
+      links: [
+        {
+          title: "株式会社ユートニック",
+          href: "https://about.utoniq.com",
+        },
+        {
+          title: "Utoniq Tech Blog",
+          href: "https://note.com/utoniq/m/m0f61d96a8fb6",
+        },
+        {
+          title: "採用情報",
+          href: "https://jobs.utoniq.com",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "utoniq",
+    },
+    {
+      id: "S22",
+      name: "any株式会社",
+      logoImage: "/sponsors/any.png",
+      logoLink: "https://anyinc.jp",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `anyは「個の幸福と組織の実利を両立する」をパーパスに、組織全体のパフォーマンスの最大化を目指すナレッジプラットフォーム「Qast」を提供しています。
+自社プロダクト「Qast」の開発には、バックエンドからフロントエンドまでTypeScriptを採用しており、LLMを活用したRAGなどの分野をプロダクトに積極的に取り込んでいます。
+プロダクトの価値向上に一緒に向き合えるエンジニアを絶賛募集しておりますので、ぜひカジュアル面談でお話ししましょう！`,
+      ],
+      links: [
+        {
+          title: "会社HP",
+          href: "https://anyinc.jp",
+        },
+        {
+          title: "エンジニア向け会社紹介",
+          href: "https://speakerdeck.com/any_tech/engineer-culture-deck-v3-dot-0",
+        },
+        {
+          title: "Zenn",
+          href: "https://zenn.dev/p/any_dev",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "anyinc",
+    },
+    {
+      id: "S23",
+      name: "合同会社DMM.com",
+      logoImage: "/sponsors/dmm.png",
+      logoLink: "https://dmm-corp.com/",
+      addPadding: true,
+      isTenantChecked: true,
+      overview: [
+        `会員数4,507万人（2024年2月時点）を誇る総合サービスサイト「DMM.com」を運営しています。
+現在は60以上のサービスを運営し、動画配信や電子書籍、アニメなどのエンタメサービスに加え、3DプリントやEV充電などのハードウェア分野、AIといった最先端のテクノロジーを取り入れた事業など、様々な事業を手掛けています。
+2022年にはサブスクリプション会員システムの「DMMプレミアム」を立ち上げ、あらゆるエンタメ体験をシームレスにつなぐ「マルチエンタメ・プラットフォーム」の創造を目指しています。`,
+      ],
+      links: [
+        {
+          title: "コーポレートサイト",
+          href: "https://dmm-corp.com/",
+        },
+        {
+          title: "採用情報",
+          href: "https://dmm-corp.com/recruit/",
+        },
+        {
+          title: "DMM Developers Blog",
+          href: "https://developersblog.dmm.com/",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "dmm",
+    },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "S24",
+    //   name: "株式会社ミツモア",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: ロゴリンクを追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   overview: [], // TODO: 概要を追加
+    //   links: [], // TODO: リンクを追加
+    //   roles: ["silver"],
+    //   detailPageId: "meetsmore",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "S25",
+    //   name: "ウォンテッドリー株式会社",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: ロゴリンクを追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   overview: [], // TODO: 概要を追加
+    //   links: [], // TODO: リンクを追加
+    //   roles: ["silver"],
+    //   detailPageId: "wantedlyinc",
+    // },
+    {
+      id: "S27",
+      name: "BASE株式会社",
+      logoImage: "/sponsors/base.png",
+      logoLink: "https://binc.jp",
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        "2012年12月創業。「Payment to the People, Power to the People.」を企業ミッションに、EC・決済・金融の簡易化を主軸に個人・スモールチームのエンパワーメントに取り組み、国内最大級のネットショップ作成サービス「BASE（ベイス）」、購入者向けショッピングサービス「Pay ID（ペイ アイディー）」、資金調達サービス「YELL BANK（エール バンク）」を運営。2019年10月に東証マザーズ（現：東証グロース）市場に上場。",
+      ],
+      links: [
+        {
+          title: "BASE株式会社 コーポレートサイト",
+          href: "https://binc.jp",
+        },
+        {
+          title: "BASE株式会社 採用情報",
+          href: "https://binc.jp/jobs",
+        },
+        {
+          title: "テックブログ",
+          href: "https://devblog.thebase.in",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "base",
+    },
+    {
+      id: "S28",
+      name: "弁護士ドットコム株式会社",
+      logoImage: "/sponsors/bengo4.png",
+      logoLink: "https://www.bengo4.com/corporate/",
+      addPadding: false,
+      isTenantChecked: true,
+      overview: [
+        `弁護士ドットコム株式会社について
+「プロフェッショナル・テックで、次の常識をつくる。」をミッションとして、人々と専門家をつなぐポータルサイト『弁護士ドットコム』『BUISINESS LAWYERS』『税理士ドットコム』、契約マネジメントプラットフォーム『クラウドサイン』を提供しています。`,
+      ],
+      links: [
+        {
+          title: "弁護士ドットコム CREATOR'S(@bengo4_creators)",
+          href: "https://x.com/bengo4_creators",
+        },
+        {
+          title: "弁護士ドットコム株式会社 CREATORS' BLOG",
+          href: "https://creators.bengo4.com/",
+        },
+        {
+          title: "エンジニア採用ページ",
+          href: "https://hrmos.co/pages/bengo4/jobs/00009103",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "bengo4",
     },
   ],
   bronze: [
@@ -844,6 +1048,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "gemcook",
     },
     {
       id: "B03",
@@ -853,6 +1058,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "note",
     },
     {
       id: "B04",
@@ -862,6 +1068,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "kickflow",
     },
     {
       id: "B05",
@@ -871,6 +1078,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "hacobu",
     },
     {
       id: "B06",
@@ -880,6 +1088,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "hatena",
     },
     {
       id: "B07",
@@ -889,6 +1098,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "mescius",
     },
     {
       id: "B08",
@@ -898,6 +1108,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "rebase",
     },
     {
       id: "B09",
@@ -907,6 +1118,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "route06",
     },
     {
       id: "B10",
@@ -916,6 +1128,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "antway",
     },
     {
       id: "B11",
@@ -925,6 +1138,7 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "mov",
     },
     {
       id: "B12",
@@ -934,6 +1148,85 @@ export const sponsorList: SponsorList = {
       addPadding: false,
       isTenantChecked: true,
       roles: ["bronze"],
+      detailPageId: "genda",
+    },
+    {
+      id: "B13",
+      name: "株式会社ビットキー",
+      logoImage: "/sponsors/bitkey.png",
+      logoLink: "https://bitkey.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+      detailPageId: "bitkey",
+    },
+    {
+      id: "B14",
+      name: "株式会社LayerX",
+      logoImage: "/sponsors/layerx.png",
+      logoLink: "https://layerx.co.jp/",
+      addPadding: false,
+      isTenantChecked: false,
+      roles: ["bronze"],
+      detailPageId: "layerx",
+    },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B15",
+    //   name: "ENECHANGE株式会社",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "https://enechange.co.jp/",
+    //   addPadding: false,
+    //   isTenantChecked: false,
+    //   roles: ["bronze"],
+    //   detailPageId: "enechange",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B16",
+    //   name: "株式会社プログリット",
+    //   logoImage: "/sponsors/progrit.png",
+    //   logoLink: "", // TODO: リンク先を追加
+    //   addPadding: false,
+    //   isTenantChecked: false,
+    //   roles: ["bronze"],
+    //   detailPageId: "progrit",
+    // },
+    // TODO:情報が揃い次第コメントアウトを解除
+    // {
+    //   id: "B17",
+    //   name: "株式会社LabBase",
+    //   logoImage: "", // TODO: ロゴ画像を追加
+    //   logoLink: "", // TODO: リンク先を追加
+    //   addPadding: false,
+    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
+    //   roles: ["bronze"],
+    //   detailPageId: "labbase",
+    // },
+    {
+      id: "B18",
+      name: "BABY JOB株式会社",
+      logoImage: "/sponsors/baby-job.png",
+      logoLink: "https://baby-job.co.jp/",
+      addPadding: false,
+      isTenantChecked: true,
+      roles: ["bronze"],
+      detailPageId: "baby-job",
+    },
+    {
+      id: "B19",
+      name: "株式会社SmartHR",
+      logoImage: "/sponsors/smarthr.png",
+      logoLink: "https://hello-world.smarthr.co.jp/",
+      addPadding: false,
+      isTenantChecked: false,
+      roles: ["bronze"],
+      detailPageId: "smarthr",
     },
   ],
 };
+
+// スポンサー詳細ページで使用するスポンサーIDのリスト
+export const sponsorIds = Object.values(sponsorList)
+  .flat()
+  .map((sponsor) => ({ id: sponsor.detailPageId }));

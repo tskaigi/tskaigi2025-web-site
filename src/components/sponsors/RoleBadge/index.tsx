@@ -11,7 +11,7 @@ const bgColor: { [key in SponsorRole]: string } = {
   "naming-rights": "bg-black-500",
 };
 
-const roleBadge = ({ role }: { role: SponsorRole }) => {
+const RoleBadge = ({ role }: { role: SponsorRole }) => {
   return (
     <span
       className={`font-bold text-sm text-white px-3 py-1 rounded-s rounded-e ${bgColor[role]}`}
@@ -21,4 +21,4 @@ const roleBadge = ({ role }: { role: SponsorRole }) => {
   );
 };
 
-export default roleBadge;
+export default RoleBadge;
