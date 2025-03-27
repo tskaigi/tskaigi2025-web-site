@@ -30,7 +30,7 @@ const SponsorsPage = () => {
                             <hr className="border-t-2 border-black-200" />
                           )}
                         </li>
-                      )
+                      ),
                   )}
                 </ul>
               ) : (
@@ -45,7 +45,7 @@ const SponsorsPage = () => {
                             key={company.id}
                             className={cn(
                               "w-full h-[96px]",
-                              company.addPadding ? "p-4" : "p-2"
+                              company.addPadding ? "p-4" : "p-2",
                             )}
                             src={company.logoImage}
                             alt={company.name}
@@ -54,7 +54,7 @@ const SponsorsPage = () => {
                             height={96}
                           />
                         </li>
-                      )
+                      ),
                   )}
                 </ul>
               )}
