@@ -935,7 +935,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/dmm.png",
       logoLink: "https://dmm-corp.com/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `会員数4,507万人（2024年2月時点）を誇る総合サービスサイト「DMM.com」を運営しています。
 現在は60以上のサービスを運営し、動画配信や電子書籍、アニメなどのエンタメサービスに加え、3DプリントやEV充電などのハードウェア分野、AIといった最先端のテクノロジーを取り入れた事業など、様々な事業を手掛けています。
