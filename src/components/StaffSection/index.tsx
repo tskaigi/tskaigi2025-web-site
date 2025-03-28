@@ -1,13 +1,32 @@
 import { type Staff, staffList } from "@/constants/staffList";
+import { useMemo } from "react";
 
 export function StaffSection() {
+  const sortedStaffList = useMemo(() => {
+    const alphabetStaff: Staff[] = [];
+    const japaneseStaff: Staff[] = [];
+
+    for (const staff of staffList) {
+      if (/^[a-zA-Z]/.test(staff.name)) {
+        alphabetStaff.push(staff);
+      } else {
+        japaneseStaff.push(staff);
+      }
+    }
+
+    alphabetStaff.sort((a, b) => a.name.localeCompare(b.name, "en"));
+    japaneseStaff.sort((a, b) => a.name.localeCompare(b.name, "ja"));
+
+    return [...alphabetStaff, ...japaneseStaff];
+  }, []);
+
   return (
     <section className="pb-10 md:pb-20 bg-blue-light-100">
       <h2 className="text-24 lg:text-28 leading-normal text-center font-bold pb-8 md:pb-10">
         スタッフ一覧
       </h2>
       <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,120px)] lg:grid-cols-[repeat(5,120px)] justify-center gap-x-14 gap-y-14 md:gap-y-8 px-4">
-        {staffList.map(({ name, image, href }) => (
+        {sortedStaffList.map(({ name, image, href }) => (
           <li key={name}>
             <LinkOrBox href={href}>
               <img
