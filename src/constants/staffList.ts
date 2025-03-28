@@ -1,7 +1,7 @@
-type Staff = {
+export type Staff = {
   name: string;
   image: string;
-  href: string;
+  href: `http://${string}` | `https://${string}` | "";
 };
 
 export const staffList: Staff[] = [
