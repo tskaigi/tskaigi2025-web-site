@@ -1166,7 +1166,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/layerx.png",
       logoLink: "https://layerx.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       roles: ["bronze"],
       detailPageId: "layerx",
     },
