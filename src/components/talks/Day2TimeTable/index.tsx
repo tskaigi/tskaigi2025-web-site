@@ -122,7 +122,9 @@ export function Day2TimeTable({
       >
         <TimeSlot timeText="12:10 ~ 13:00" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper>ランチ + スポンサーセッション*4</EventWrapper>
+          <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
+            ランチ + スポンサーセッション * 4
+          </EventWrapper>
         )}
         {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
         {visibleTracks.TRACK3 && <EventWrapper>ランチ</EventWrapper>}
@@ -236,9 +238,45 @@ export function Day2TimeTable({
         style={{ gridTemplateColumns: getGridTemplateColumns() }}
       >
         <TimeSlot timeText="16:10 ~ 16:40" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("69")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("61")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("59")} />}
+        {visibleTracks.TRACK1 && (
+          <LtWrapper
+            talks={[getTalk("69"), getTalk("51"), getTalk("54"), getTalk("52")]}
+          />
+        )}
+        {visibleTracks.TRACK2 && (
+          <LtWrapper
+            talks={[getTalk("56"), getTalk("61"), getTalk("63"), getTalk("62")]}
+          />
+        )}
+        {visibleTracks.TRACK3 && (
+          <LtWrapper
+            talks={[getTalk("59"), getTalk("60"), getTalk("66"), getTalk("55")]}
+          />
+        )}
+      </div>
+
+      <div
+        className="grid gap-1 mt-2"
+        style={{ gridTemplateColumns: getGridTemplateColumns() }}
+      >
+        <TimeSlot timeText="17:00 ~ 18:00" />
+        {visibleTracks.TRACK1 && <EventWrapper>懇親会準備</EventWrapper>}
+        {visibleTracks.TRACK2 && <EventWrapper>参加者体験企画</EventWrapper>}
+        {visibleTracks.TRACK3 && <EventWrapper>参加者体験企画</EventWrapper>}
+      </div>
+
+      <div
+        className="grid gap-1 mt-2"
+        style={{ gridTemplateColumns: getGridTemplateColumns() }}
+      >
+        <TimeSlot timeText="18:00 ~ 20:10" />
+        {visibleTracks.TRACK1 && <EventWrapper>懇親会</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper color="gray">クローズ</EventWrapper>
+        )}
+        {visibleTracks.TRACK3 && (
+          <EventWrapper color="gray">クローズ</EventWrapper>
+        )}
       </div>
     </>
   );
