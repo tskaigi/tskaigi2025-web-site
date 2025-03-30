@@ -204,11 +204,31 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
+            <TimeSlot timeText="13:40 ~ 14:10" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("16")} />}
+            {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("1")} />}
+            {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("3")} />}
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
             <TimeSlot timeText="14:10 ~ 14:20" />
             <CommonTrackEvent
               eventText="休憩"
               visibleTrackCount={getVisibleTrackCount()}
             />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="14:20 ~ 14:50" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("9")} />}
+            {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("15")} />}
+            {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("17")} />}
           </div>
 
           <div
@@ -237,11 +257,31 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
+            <TimeSlot timeText="15:50 ~ 16:20" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("11")} />}
+            {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("4")} />}
+            {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("12")} />}
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
             <TimeSlot timeText="16:20 ~ 16:30" />
             <CommonTrackEvent
               eventText="休憩"
               visibleTrackCount={getVisibleTrackCount()}
             />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="16:30 ~ 17:00" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("8")} />}
+            {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("13")} />}
+            {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("5")} />}
           </div>
 
           <div
