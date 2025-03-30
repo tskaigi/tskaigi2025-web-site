@@ -4,6 +4,10 @@
 
 @layer base {
   :root {
+    --track-toggle: #0cf8c0;
+    --track-ascend: #005faa;
+    --track-leverages: #000000;
+
     --white: #ffffff;
 
     --black-100: #fafafe;

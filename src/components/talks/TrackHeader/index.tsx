@@ -21,11 +21,26 @@ export function TrackHeader({ track }: Props) {
     }
   };
 
+  const getBgColorClass = () => {
+    switch (track) {
+      case "TRACK1":
+        return "bg-track-toggle";
+      case "TRACK2":
+        return "bg-track-ascend";
+      case "TRACK3":
+        return "bg-track-leverages";
+      default:
+        return track satisfies never;
+    }
+  };
+
+  const getTextColorClass = () => {
+    return track === "TRACK1" ? "text-black" : "text-white";
+  };
+
   return (
-    <div className={`bg-[${TRACK[track].color}] p-2 text-center`}>
-      <span
-        className={`font-bold ${track === "TRACK1" ? "text-black" : "text-white"}`}
-      >
+    <div className={`${getBgColorClass()} p-2 text-center`}>
+      <span className={`font-bold ${getTextColorClass()}`}>
         {TRACK[track].name}
       </span>
       <div className="hidden md:flex justify-center mt-2">

@@ -16,6 +16,22 @@ export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
       <div className="inline-flex rounded-md overflow-hidden">
         {(Object.keys(TRACK) as Track[]).map((trackId) => {
           const isVisible = visibleTracks[trackId];
+          const getBgColorClass = () => {
+            switch (trackId) {
+              case "TRACK1":
+                return "bg-track-toggle";
+              case "TRACK2":
+                return "bg-track-ascend";
+              case "TRACK3":
+                return "bg-track-leverages";
+              default:
+                return trackId satisfies never;
+            }
+          };
+
+          const getTextColorClass = () => {
+            return trackId === "TRACK1" ? "text-black" : "text-white";
+          };
 
           return (
             <button
@@ -33,7 +49,7 @@ export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
               className={cn(
                 "px-4 md:px-6 py-1 text-sm font-medium transition-colors flex items-center justify-center",
                 isVisible
-                  ? `bg-[${TRACK[trackId].color}] ${TRACK[trackId].textColor}`
+                  ? `${getBgColorClass()} ${getTextColorClass()}`
                   : "bg-black-300 text-white",
               )}
             >
