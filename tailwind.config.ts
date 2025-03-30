@@ -9,6 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        track: {
+          toggle: "var(--track-toggle)",
+          ascend: "var(--track-ascend)",
+          leverages: "var(--track-leverages)",
+        },
         white: "var(--white)",
         black: {
           100: "var(--black-100)",
