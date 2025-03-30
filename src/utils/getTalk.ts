@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
 import { type Talk, talkList } from "@/constants/talkList";
+import { notFound } from "next/navigation";
 
 /**
  * IDを元にトーク情報を取得する

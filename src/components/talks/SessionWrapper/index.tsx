@@ -1,5 +1,5 @@
-import type { Talk } from "@/constants/talkList";
 import { EventWrapper } from "@/components/talks/EventWrapper";
+import type { Talk } from "@/constants/talkList";
 
 type Props = {
   talk: Talk;
