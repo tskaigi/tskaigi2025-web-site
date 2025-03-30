@@ -8,7 +8,7 @@ export function TalkTypeLabel({ talkType }: Props) {
   const colors = {
     KEYNOTE: "border-green-500 text-green-500",
     SESSION: "border-blue-light-500 text-blue-light-500",
-    LT: "border-orange-500 text-orange-700",
+    LT: "border-yellow-600 text-yellow-600",
     SPONSOR_LT: "border-yellow-600 text-yellow-600",
   };
 
