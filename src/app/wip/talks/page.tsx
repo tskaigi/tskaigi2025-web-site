@@ -3,12 +3,13 @@
 import { CommonTrackEvent } from "@/components/talks/CommonTrackEvent";
 import { EventDateTab } from "@/components/talks/EventDateTab";
 import { EventWrapper } from "@/components/talks/EventWrapper";
+import { LtWrapper } from "@/components/talks/LtWrapper";
+import { SessionWrapper } from "@/components/talks/SessionWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { TrackToggle } from "@/components/talks/TrackToggle";
 import { type EventDate, TRACK, type Track } from "@/constants/talkList";
-import { useState } from "react";
-import { SessionWrapper } from "@/components/talks/SessionWrapper";
 import { getTalk } from "@/utils/getTalk";
+import { useState } from "react";
 
 const TalksPage = () => {
   const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
@@ -182,7 +183,7 @@ const TalksPage = () => {
             <TimeSlot timeText="10:50 ~ 11:00" />
             {visibleTracks.TRACK1 && (
               <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
-                ランチ
+                ランチ + スポンサーセッション * 4
               </EventWrapper>
             )}
             {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
@@ -246,6 +247,34 @@ const TalksPage = () => {
             className="grid gap-1 mt-2"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
+            <TimeSlot timeText="15:00 ~ 15:30" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("14")} />}
+            {visibleTracks.TRACK2 && (
+              <LtWrapper
+                talks={[
+                  getTalk("18"),
+                  getTalk("19"),
+                  getTalk("33"),
+                  getTalk("31"),
+                ]}
+              />
+            )}
+            {visibleTracks.TRACK3 && (
+              <LtWrapper
+                talks={[
+                  getTalk("29"),
+                  getTalk("32"),
+                  getTalk("22"),
+                  getTalk("20"),
+                ]}
+              />
+            )}
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
             <TimeSlot timeText="15:30 ~ 15:50" />
             <CommonTrackEvent
               eventText="休憩"
@@ -293,6 +322,34 @@ const TalksPage = () => {
               eventText="休憩"
               visibleTrackCount={getVisibleTrackCount()}
             />
+          </div>
+
+          <div
+            className="grid gap-1 mt-2"
+            style={{ gridTemplateColumns: getGridTemplateColumns() }}
+          >
+            <TimeSlot timeText="17:10 ~ 17:40" />
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("10")} />}
+            {visibleTracks.TRACK2 && (
+              <LtWrapper
+                talks={[
+                  getTalk("28"),
+                  getTalk("26"),
+                  getTalk("27"),
+                  getTalk("25"),
+                ]}
+              />
+            )}
+            {visibleTracks.TRACK3 && (
+              <LtWrapper
+                talks={[
+                  getTalk("23"),
+                  getTalk("21"),
+                  getTalk("24"),
+                  getTalk("30"),
+                ]}
+              />
+            )}
           </div>
         </div>
       </div>

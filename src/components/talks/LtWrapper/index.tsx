@@ -1,0 +1,21 @@
+import type { Talk } from "@/constants/talkList";
+import { EventWrapper } from "@/components/talks/EventWrapper";
+
+type Props = {
+  talks: Talk[];
+};
+
+export function LtWrapper({ talks }: Props) {
+  return (
+    <EventWrapper talkType="LT" textAlign="left">
+      <div className="flex flex-col gap-5">
+        {talks.map((talk) => (
+          <div key={talk.id} className="flex flex-col gap-1">
+            <p className="text-16">{talk.title}</p>
+            <p className="text-14">{talk.speakerName}</p>
+          </div>
+        ))}
+      </div>
+    </EventWrapper>
+  );
+}
