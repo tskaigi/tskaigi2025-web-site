@@ -1,9 +1,9 @@
-import { EventWrapper } from "@/components/talks/EventWrapper";
-import { TimeSlot } from "@/components/talks/TimeSlot";
 import { CommonTrackEvent } from "@/components/talks/CommonTrackEvent";
-import { SessionWrapper } from "@/components/talks/SessionWrapper";
-import { getTalk } from "@/utils/getTalk";
+import { EventWrapper } from "@/components/talks/EventWrapper";
 import { LtWrapper } from "@/components/talks/LtWrapper";
+import { SessionWrapper } from "@/components/talks/SessionWrapper";
+import { TimeSlot } from "@/components/talks/TimeSlot";
+import { getTalk } from "@/utils/getTalk";
 
 type Props = {
   getGridTemplateColumns: () => string;
