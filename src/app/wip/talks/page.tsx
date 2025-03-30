@@ -2,13 +2,13 @@
 import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
 import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { EventDateTab } from "@/components/talks/EventDateTab";
+import { TrackHeader } from "@/components/talks/TrackHeader";
 import { TrackToggle } from "@/components/talks/TrackToggle";
-import { type EventDate, TRACK, type Track } from "@/constants/talkList";
+import type { EventDate, Track } from "@/constants/talkList";
 import { useState } from "react";
 
 const TalksPage = () => {
   const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
-
   const handleTabChange = (date: EventDate) => {
     setCurrentDate(date);
     // 必要に応じて他のロジックを追加
@@ -32,11 +32,11 @@ const TalksPage = () => {
   };
 
   const getGridTemplateColumns = () => {
-    let template = "125px "; // 時間列は常に表示
+    let template = "auto "; // 時間列は常に表示
 
-    if (visibleTracks.TRACK1) template += "1fr ";
-    if (visibleTracks.TRACK2) template += "1fr ";
-    if (visibleTracks.TRACK3) template += "1fr";
+    if (visibleTracks.TRACK1) template += "minmax(214px, 1fr) ";
+    if (visibleTracks.TRACK2) template += "minmax(214px, 1fr) ";
+    if (visibleTracks.TRACK3) template += "minmax(214px, 1fr)";
 
     return template;
   };
@@ -44,15 +44,6 @@ const TalksPage = () => {
   // 表示されているトラック数を計算
   const getVisibleTrackCount = () => {
     return Object.values(visibleTracks).filter(Boolean).length;
-  };
-
-  // 最小幅の計算（各トラックのセルを最低200pxの幅で確保）
-  const getMinWidth = () => {
-    const timeColumnWidth = 125; // 時間列の幅
-    const trackColumnWidth = 200; // 各トラックの最小幅
-    const visibleTrackCount = getVisibleTrackCount();
-
-    return timeColumnWidth + visibleTrackCount * trackColumnWidth;
   };
 
   return (
@@ -70,30 +61,16 @@ const TalksPage = () => {
         />
       </div>
 
-      {/* タイムテーブル全体を横スクロール可能なコンテナで囲む */}
       <div className="overflow-x-auto mt-10">
-        <div style={{ minWidth: `${getMinWidth()}px` }}>
-          {/* ヘッダー行 - トラック名 */}
+        <div className="min-w-full">
           <div
             className="grid gap-1"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <div className="w-[125px]" />
-            {visibleTracks.TRACK1 && (
-              <div className="bg-[#0CF8C0] p-2 text-center font-bold">
-                {TRACK.TRACK1.name}
-              </div>
-            )}
-            {visibleTracks.TRACK2 && (
-              <div className="bg-[#005FAA] p-2 text-center text-white font-bold">
-                {TRACK.TRACK2.name}
-              </div>
-            )}
-            {visibleTracks.TRACK3 && (
-              <div className="bg-[#000000] p-2 text-center text-white font-bold">
-                {TRACK.TRACK3.name}
-              </div>
-            )}
+            <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
+            {visibleTracks.TRACK1 && <TrackHeader track={"TRACK1"} />}
+            {visibleTracks.TRACK2 && <TrackHeader track={"TRACK2"} />}
+            {visibleTracks.TRACK3 && <TrackHeader track={"TRACK3"} />}
           </div>
 
           {currentDate === "DAY1" ? (
