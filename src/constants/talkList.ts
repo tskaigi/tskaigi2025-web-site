@@ -7,12 +7,24 @@ export type EventDate = keyof typeof EVENT_DATE;
 export const TRACK = {
   TRACK1: {
     name: "トグルルーム",
+    shortName: "トグル",
+    color: "#0CF8C0",
+    textColor: "text-black",
+    tag: "#tskaigi_toggle",
   },
   TRACK2: {
     name: "アセンドトラック",
+    shortName: "アセンド",
+    color: "#005FAA",
+    textColor: "text-white",
+    tag: "#tskaigi_ascend",
   },
   TRACK3: {
     name: "レジレジーズトラック",
+    shortName: "レジレジーズ",
+    color: "#000000",
+    textColor: "text-white",
+    tag: "#tskaigi_leverages",
   },
 } as const;
 export type Track = keyof typeof TRACK;

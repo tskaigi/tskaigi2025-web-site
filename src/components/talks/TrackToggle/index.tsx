@@ -33,15 +33,16 @@ export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
               className={cn(
                 "px-4 md:px-6 py-1 text-sm font-medium transition-colors flex items-center justify-center",
                 isVisible
-                  ? trackId === "TRACK1"
-                    ? "bg-[#0CF8C0] text-black"
-                    : trackId === "TRACK2"
-                      ? "bg-[#005FAA] text-white"
-                      : "bg-[#000000] text-white"
+                  ? `bg-[${TRACK[trackId].color}] ${TRACK[trackId].textColor}`
                   : "bg-black-300 text-white",
               )}
             >
-              {trackId}
+              <span className={"hidden md:inline ld:inline"}>
+                {TRACK[trackId].name}
+              </span>
+              <span className={"md:hidden lg:hidden"}>
+                {TRACK[trackId].shortName}
+              </span>
             </button>
           );
         })}
