@@ -1,7 +1,7 @@
-type Staff = {
+export type Staff = {
   name: string;
   image: string;
-  href: string;
+  href: `http://${string}` | `https://${string}` | "";
 };
 
 export const staffList: Staff[] = [
@@ -151,5 +151,74 @@ export const staffList: Staff[] = [
     name: "Keisuke Ikeda",
     image: "/staff/keisuke_ikeda.png",
     href: "https://x.com/ike_keichan",
+  },
+  {
+    name: "Yuto Nagai",
+    image: "/staff/yutonagai.png",
+    href: "https://x.com/yut0naga1",
+  },
+  {
+    name: "hisayuki",
+    image: "/staff/hisayuki_mori.jpg",
+    href: "https://x.com/hisayuki_mori",
+  },
+  { name: "JI23", image: "/staff/ji23.jpg", href: "https://x.com/JJ_1123_I" },
+  { name: "マナティ", image: "/staff/mana-kinoshita.JPG", href: "" },
+  {
+    name: "magcho",
+    image: "/staff/magcho.png",
+    href: "https://x.com/magcho0527",
+  },
+  {
+    name: "bebeken",
+    image: "/staff/bebeken.png",
+    href: "https://x.com/bebeken_2",
+  },
+  {
+    name: "かがみもち",
+    image: "/staff/omotidaisukijp.jpg",
+    href: "https://x.com/omotidaisukijp",
+  },
+  { name: "Cma", image: "/staff/cma.png", href: "https://x.com/cma2819" },
+  {
+    name: "honchang",
+    image: "/staff/honchang.jpg",
+    href: "https://x.com/honchang_",
+  },
+  {
+    name: "ぶっかん",
+    image: "/staff/bukkan.jpg",
+    href: "https://x.com/bukkan817",
+  },
+  {
+    name: "susiyaki",
+    image: "/staff/susiyaki.jpg",
+    href: "https://x.com/susiyaki_dev",
+  },
+  {
+    name: "ningen",
+    image: "/staff/ningen.jpg",
+    href: "https://x.com/dot__ningen__",
+  },
+  {
+    name: "ひがき",
+    image: "/staff/higaki_program.jpg",
+    href: "https://x.com/higaki_program",
+  },
+  {
+    name: "tokuda109",
+    image: "/staff/tokuda109.png",
+    href: "https://x.com/tokuda109",
+  },
+  { name: "ジン", image: "/staff/jin.jpg", href: "https://x.com/Jin_pro_01" },
+  {
+    name: "あさひ",
+    image: "/staff/asahi.jpg",
+    href: "https://x.com/asahiXXXXXXXXX",
+  },
+  {
+    name: "ミカイ",
+    image: "/staff/mikai.jpeg",
+    href: "https://x.com/miumitempe",
   },
 ];
