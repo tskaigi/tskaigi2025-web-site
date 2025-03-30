@@ -43,7 +43,7 @@ export function TrackHeader({ track }: Props) {
       <span className={`font-bold ${getTextColorClass()}`}>
         {TRACK[track].name}
       </span>
-      <div className="hidden md:flex justify-center mt-2">
+      <div className="flex justify-center mt-2">
         <Button
           onClick={() => copyToClipboard(TRACK[track].tag)}
           className="rounded-full bg-white text-black hover:bg-gray-100 px-4 py-1 text-sm font-medium h-auto flex items-center gap-2"
