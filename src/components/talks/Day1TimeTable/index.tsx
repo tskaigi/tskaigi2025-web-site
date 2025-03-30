@@ -34,7 +34,6 @@ export function Day1TimeTable({
         />
       </div>
 
-      {/* 10:50~11:00の行 */}
       <div
         className="grid gap-1 mt-2"
         style={{ gridTemplateColumns: getGridTemplateColumns() }}
