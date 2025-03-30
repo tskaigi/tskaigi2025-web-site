@@ -1,7 +1,6 @@
 import { TRACK } from "@/constants/talkList";
 import type { Track } from "@/constants/talkList";
 import { cn } from "@/lib/utils";
-import { Eye, EyeOff } from "lucide-react";
 
 type Props = {
   visibleTracks: {
@@ -12,16 +11,11 @@ type Props = {
 
 export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex items-center justify-center gap-3 md:gap-4">
+      <p className="text-sm font-bold">絞り込み:</p>
       <div className="inline-flex rounded-md overflow-hidden">
         {(Object.keys(TRACK) as Track[]).map((trackId) => {
           const isVisible = visibleTracks[trackId];
-          const displayTrackId =
-            trackId === "TRACK1"
-              ? "track1"
-              : trackId === "TRACK2"
-                ? "track2"
-                : "track3";
 
           return (
             <button
@@ -37,22 +31,18 @@ export function TrackToggle({ visibleTracks, onToggleTrack }: Props) {
                 onToggleTrack(trackId);
               }}
               className={cn(
-                "px-6 py-1 text-sm font-medium transition-colors flex items-center gap-2",
+                "px-4 md:px-6 py-1 text-sm font-medium transition-colors flex items-center justify-center",
                 isVisible
-                  ? trackId === "TRACK1"
-                    ? "bg-[#0CF8C0] text-black"
-                    : trackId === "TRACK2"
-                      ? "bg-[#005FAA] text-white"
-                      : "bg-[#000000] text-white"
+                  ? `bg-[${TRACK[trackId].color}] ${TRACK[trackId].textColor}`
                   : "bg-black-300 text-white",
               )}
             >
-              {displayTrackId}
-              {isVisible ? (
-                <Eye className="h-5 w-5" />
-              ) : (
-                <EyeOff className="h-5 w-5" />
-              )}
+              <span className={"hidden md:inline ld:inline"}>
+                {TRACK[trackId].name}
+              </span>
+              <span className={"md:hidden lg:hidden"}>
+                {TRACK[trackId].shortName}
+              </span>
             </button>
           );
         })}
