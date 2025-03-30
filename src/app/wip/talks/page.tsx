@@ -32,11 +32,11 @@ const TalksPage = () => {
   };
 
   const getGridTemplateColumns = () => {
-    let template = "125px "; // 時間列は常に表示
+    let template = "auto "; // 時間列は常に表示
 
-    if (visibleTracks.TRACK1) template += "1fr ";
-    if (visibleTracks.TRACK2) template += "1fr ";
-    if (visibleTracks.TRACK3) template += "1fr";
+    if (visibleTracks.TRACK1) template += "minmax(214px, 1fr) ";
+    if (visibleTracks.TRACK2) template += "minmax(214px, 1fr) ";
+    if (visibleTracks.TRACK3) template += "minmax(214px, 1fr)";
 
     return template;
   };
@@ -44,15 +44,6 @@ const TalksPage = () => {
   // 表示されているトラック数を計算
   const getVisibleTrackCount = () => {
     return Object.values(visibleTracks).filter(Boolean).length;
-  };
-
-  // 最小幅の計算（各トラックのセルを最低200pxの幅で確保）
-  const getMinWidth = () => {
-    const timeColumnWidth = 125; // 時間列の幅
-    const trackColumnWidth = 200; // 各トラックの最小幅
-    const visibleTrackCount = getVisibleTrackCount();
-
-    return timeColumnWidth + visibleTrackCount * trackColumnWidth;
   };
 
   return (
@@ -72,13 +63,13 @@ const TalksPage = () => {
 
       {/* タイムテーブル全体を横スクロール可能なコンテナで囲む */}
       <div className="overflow-x-auto mt-10">
-        <div style={{ minWidth: `${getMinWidth()}px` }}>
+        <div className="min-w-full">
           {/* ヘッダー行 - トラック名 */}
           <div
             className="grid gap-1"
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
-            <div className="w-[125px]" />
+            <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
             {visibleTracks.TRACK1 && (
               <div className="bg-[#0CF8C0] p-2 text-center font-bold">
                 {TRACK.TRACK1.name}
