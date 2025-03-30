@@ -33,7 +33,7 @@ export const TALK_TYPE = {
 };
 export type TalkType = keyof typeof TALK_TYPE;
 
-type Talk = {
+export type Talk = {
   id: string;
   eventDate: EventDate;
   track: Track;

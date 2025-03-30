@@ -7,6 +7,8 @@ import { TimeSlot } from "@/components/talks/TimeSlot";
 import { TrackToggle } from "@/components/talks/TrackToggle";
 import { type EventDate, TRACK, type Track } from "@/constants/talkList";
 import { useState } from "react";
+import { SessionWrapper } from "@/components/talks/SessionWrapper";
+import { getTalk } from "@/utils/getTalk";
 
 const TalksPage = () => {
   const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
@@ -157,33 +159,9 @@ const TalksPage = () => {
             style={{ gridTemplateColumns: getGridTemplateColumns() }}
           >
             <TimeSlot timeText="11:00 ~ 11:30" />
-            {visibleTracks.TRACK1 && (
-              <EventWrapper talkType="SESSION" textAlign="left">
-                <div className="flex flex-col gap-1">
-                  <p className="text-16">checker.ts に対して真剣に向き合う</p>
-                  <p className="text-14">kkk4oru</p>
-                </div>
-              </EventWrapper>
-            )}
-            {visibleTracks.TRACK2 && (
-              <EventWrapper talkType="SESSION" textAlign="left">
-                <div className="flex flex-col gap-1">
-                  <p className="text-16">高度な型付け、どう教える？</p>
-                  <p className="text-14">progfay</p>
-                </div>
-              </EventWrapper>
-            )}
-            {visibleTracks.TRACK3 && (
-              <EventWrapper talkType="SESSION" textAlign="left">
-                <div className="flex flex-col gap-1">
-                  <p className="text-16">
-                    Full-Stack TypeScript x
-                    GraphQLで実現する漸進的アーキテクチャ
-                  </p>
-                  <p className="text-14">Sohei Takeno</p>
-                </div>
-              </EventWrapper>
-            )}
+            {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("2")} />}
+            {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("6")} />}
+            {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("7")} />}
           </div>
 
           <div
