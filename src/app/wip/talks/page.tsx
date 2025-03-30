@@ -1,5 +1,6 @@
 "use client";
 import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
+import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { EventDateTab } from "@/components/talks/EventDateTab";
 import { TrackToggle } from "@/components/talks/TrackToggle";
 import { type EventDate, TRACK, type Track } from "@/constants/talkList";
@@ -95,11 +96,19 @@ const TalksPage = () => {
             )}
           </div>
 
-          <Day1TimeTable
-            getGridTemplateColumns={getGridTemplateColumns}
-            getVisibleTrackCount={getVisibleTrackCount}
-            visibleTracks={visibleTracks}
-          />
+          {currentDate === "DAY1" ? (
+            <Day1TimeTable
+              getGridTemplateColumns={getGridTemplateColumns}
+              getVisibleTrackCount={getVisibleTrackCount}
+              visibleTracks={visibleTracks}
+            />
+          ) : (
+            <Day2TimeTable
+              getGridTemplateColumns={getGridTemplateColumns}
+              getVisibleTrackCount={getVisibleTrackCount}
+              visibleTracks={visibleTracks}
+            />
+          )}
         </div>
       </div>
     </main>
