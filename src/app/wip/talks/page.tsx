@@ -56,11 +56,13 @@ const TalksPage = () => {
 
       <div className="overflow-x-auto mt-10">
         <div className="min-w-full">
-          <div className="grid gap-1 grid-cols-[auto_minmax(214px,1fr)_minmax(214px,1fr)_minmax(214px,1fr)]">
+          <div className="grid gap-1 grid-cols-[auto_1fr] md:grid-cols-[auto_minmax(214px,1fr)_minmax(214px,1fr)_minmax(214px,1fr)]">
             <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
-            <TrackHeader track={"TRACK1"} />
-            <TrackHeader track={"TRACK2"} />
-            <TrackHeader track={"TRACK3"} />
+            <div className="md:contents block space-y-1 md:space-y-0">
+              <TrackHeader track={"TRACK1"} />
+              <TrackHeader track={"TRACK2"} />
+              <TrackHeader track={"TRACK3"} />
+            </div>
           </div>
 
           {currentDate === "DAY1" ? (
