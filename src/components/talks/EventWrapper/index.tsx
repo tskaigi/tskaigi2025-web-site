@@ -2,7 +2,7 @@ import type { TalkType } from "@/constants/talkList";
 import type { Track } from "@/constants/talkList";
 import type React from "react";
 import type { CSSProperties } from "react";
-import { TalkTypeLabel } from "../TalkTypeLabel";
+import { TalkTypeLabel } from "./TalkTypeLabel";
 
 type Props = {
   children: React.ReactNode;
