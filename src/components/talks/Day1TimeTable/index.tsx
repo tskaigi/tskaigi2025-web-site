@@ -1,256 +1,117 @@
-import { CommonTrackEvent } from "@/components/talks/CommonTrackEvent";
+import { CommonTrackWrapper } from "@/components/talks/CommonTrackWrapper";
 import { EventWrapper } from "@/components/talks/EventWrapper";
+import { GridWrapper } from "@/components/talks/GridWrapper";
 import { LtWrapper } from "@/components/talks/LtWrapper";
 import { SessionWrapper } from "@/components/talks/SessionWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { getTalk } from "@/utils/getTalk";
 
-type Props = {
-  getGridTemplateColumns: () => string;
-  getVisibleTrackCount: () => number;
-  visibleTracks: {
-    TRACK1: boolean;
-    TRACK2: boolean;
-    TRACK3: boolean;
-  };
-};
-
-export function Day1TimeTable({
-  getGridTemplateColumns,
-  getVisibleTrackCount,
-  visibleTracks,
-}: Props) {
+export function Day1TimeTable() {
   return (
     <>
-      {/* 10:00の行 - 開場 */}
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="10:00" />
-        <CommonTrackEvent
-          eventText="開場"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="10:00" eventText="開場" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="10:50 ~ 11:00" />
-        {visibleTracks.TRACK1 && (
-          <EventWrapper>オープニングトーク</EventWrapper>
-        )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
-        {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
-        )}
-      </div>
+        <EventWrapper track="TRACK1">オープニングトーク</EventWrapper>
+        <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        <EventWrapper track="TRACK3" color="gray">
+          クローズ
+        </EventWrapper>
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="11:00 ~ 11:30" />
-        {visibleTracks.TRACK1 && (
-          <EventWrapper talkType="KEYNOTE" textAlign="left">
-            基調講演
-          </EventWrapper>
-        )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
-        {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
-        )}
-      </div>
+        <EventWrapper track="TRACK1" talkType="KEYNOTE" textAlign="left">
+          基調講演
+        </EventWrapper>
+        <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        <EventWrapper track="TRACK3" color="gray">
+          クローズ
+        </EventWrapper>
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="11:40 ~ 11:50" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="11:40 ~ 11:50" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="11:00 ~ 11:30" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("2")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("6")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("7")} />}
-      </div>
+        <SessionWrapper talk={getTalk("2")} />
+        <SessionWrapper talk={getTalk("6")} />
+        <SessionWrapper talk={getTalk("7")} />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="12:20" />
-        <CommonTrackEvent
-          eventText="ランチ配布"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="12:20" eventText="ランチ配布" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="10:50 ~ 11:00" />
-        {visibleTracks.TRACK1 && (
-          <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
-            ランチ + スポンサーセッション * 4
-          </EventWrapper>
-        )}
-        {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
-        {visibleTracks.TRACK3 && <EventWrapper>ランチ</EventWrapper>}
-      </div>
+        <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
+          ランチ + スポンサーセッション * 4
+        </EventWrapper>
+        <EventWrapper track="TRACK2">ランチ</EventWrapper>
+        <EventWrapper track="TRACK3">ランチ</EventWrapper>
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="13:30 ~ 13:40" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="13:30 ~ 13:40" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="13:40 ~ 14:10" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("16")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("1")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("3")} />}
-      </div>
+        <SessionWrapper talk={getTalk("16")} />
+        <SessionWrapper talk={getTalk("1")} />
+        <SessionWrapper talk={getTalk("3")} />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="14:10 ~ 14:20" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="14:10 ~ 14:20" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="14:20 ~ 14:50" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("9")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("15")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("17")} />}
-      </div>
+        <SessionWrapper talk={getTalk("9")} />
+        <SessionWrapper talk={getTalk("15")} />
+        <SessionWrapper talk={getTalk("17")} />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="14:50 ~ 15:00" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="14:50 ~ 15:00" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="15:00 ~ 15:30" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("14")} />}
-        {visibleTracks.TRACK2 && (
-          <LtWrapper
-            talks={[getTalk("18"), getTalk("19"), getTalk("33"), getTalk("31")]}
-          />
-        )}
-        {visibleTracks.TRACK3 && (
-          <LtWrapper
-            talks={[getTalk("29"), getTalk("32"), getTalk("22"), getTalk("20")]}
-          />
-        )}
-      </div>
-
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="15:30 ~ 15:50" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
+        <SessionWrapper talk={getTalk("14")} />
+        <LtWrapper
+          talks={[getTalk("18"), getTalk("19"), getTalk("33"), getTalk("31")]}
         />
-      </div>
+        <LtWrapper
+          talks={[getTalk("29"), getTalk("32"), getTalk("22"), getTalk("20")]}
+        />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <CommonTrackWrapper timeText="15:30 ~ 15:50" eventText="休憩" />
+
+      <GridWrapper>
         <TimeSlot timeText="15:50 ~ 16:20" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("11")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("4")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("12")} />}
-      </div>
+        <SessionWrapper talk={getTalk("11")} />
+        <SessionWrapper talk={getTalk("4")} />
+        <SessionWrapper talk={getTalk("12")} />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="16:20 ~ 16:30" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="16:20 ~ 16:30" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="16:30 ~ 17:00" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("8")} />}
-        {visibleTracks.TRACK2 && <SessionWrapper talk={getTalk("13")} />}
-        {visibleTracks.TRACK3 && <SessionWrapper talk={getTalk("5")} />}
-      </div>
+        <SessionWrapper talk={getTalk("8")} />
+        <SessionWrapper talk={getTalk("13")} />
+        <SessionWrapper talk={getTalk("5")} />
+      </GridWrapper>
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
-        <TimeSlot timeText="17:00 ~ 17:10" />
-        <CommonTrackEvent
-          eventText="休憩"
-          visibleTrackCount={getVisibleTrackCount()}
-        />
-      </div>
+      <CommonTrackWrapper timeText="17:00 ~ 17:10" eventText="休憩" />
 
-      <div
-        className="grid gap-1 mt-2"
-        style={{ gridTemplateColumns: getGridTemplateColumns() }}
-      >
+      <GridWrapper>
         <TimeSlot timeText="17:10 ~ 17:40" />
-        {visibleTracks.TRACK1 && <SessionWrapper talk={getTalk("10")} />}
-        {visibleTracks.TRACK2 && (
-          <LtWrapper
-            talks={[getTalk("28"), getTalk("26"), getTalk("27"), getTalk("25")]}
-          />
-        )}
-        {visibleTracks.TRACK3 && (
-          <LtWrapper
-            talks={[getTalk("23"), getTalk("21"), getTalk("24"), getTalk("30")]}
-          />
-        )}
-      </div>
+        <SessionWrapper talk={getTalk("10")} />
+        <LtWrapper
+          talks={[getTalk("28"), getTalk("26"), getTalk("27"), getTalk("25")]}
+        />
+        <LtWrapper
+          talks={[getTalk("23"), getTalk("21"), getTalk("24"), getTalk("30")]}
+        />
+      </GridWrapper>
     </>
   );
 }
