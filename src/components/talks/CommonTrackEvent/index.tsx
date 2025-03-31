@@ -8,7 +8,7 @@ export function CommonTrackEvent({ eventText, visibleTrackCount }: Props) {
     <div
       className="bg-white p-5 h-32 flex items-center justify-center text-black-700"
       style={{
-        gridColumn: `span ${visibleTrackCount}`,
+        gridColumn: "span 3",
       }}
     >
       {eventText}

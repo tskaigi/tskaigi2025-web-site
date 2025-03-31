@@ -2,6 +2,7 @@
 import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
 import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { EventDateTab } from "@/components/talks/EventDateTab";
+import { GridWrapper } from "@/components/talks/GridWrapper";
 import { TrackHeader } from "@/components/talks/TrackHeader";
 import type { EventDate, Track } from "@/constants/talkList";
 import { useState } from "react";
@@ -56,19 +57,15 @@ const TalksPage = () => {
 
       <div className="overflow-x-auto mt-10">
         <div className="min-w-full">
-          <div className="grid gap-1 grid-cols-[1fr] md:grid-cols-[auto_minmax(210px,1fr)_minmax(210px,1fr)_minmax(210px,1fr)]">
+          <GridWrapper>
             <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
             <TrackHeader track={"TRACK1"} />
             <TrackHeader track={"TRACK2"} />
             <TrackHeader track={"TRACK3"} />
-          </div>
+          </GridWrapper>
 
           {currentDate === "DAY1" ? (
-            <Day1TimeTable
-              getGridTemplateColumns={getGridTemplateColumns}
-              getVisibleTrackCount={getVisibleTrackCount}
-              visibleTracks={visibleTracks}
-            />
+            <Day1TimeTable />
           ) : (
             <Day2TimeTable
               getGridTemplateColumns={getGridTemplateColumns}
