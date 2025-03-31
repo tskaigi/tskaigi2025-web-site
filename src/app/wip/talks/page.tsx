@@ -33,9 +33,9 @@ const TalksPage = () => {
   const getGridTemplateColumns = () => {
     let template = "auto "; // 時間列は常に表示
 
-    if (visibleTracks.TRACK1) template += "minmax(214px, 1fr) ";
-    if (visibleTracks.TRACK2) template += "minmax(214px, 1fr) ";
-    if (visibleTracks.TRACK3) template += "minmax(214px, 1fr)";
+    if (visibleTracks.TRACK1) template += "minmax(210px, 1fr) ";
+    if (visibleTracks.TRACK2) template += "minmax(210px, 1fr) ";
+    if (visibleTracks.TRACK3) template += "minmax(210px, 1fr)";
 
     return template;
   };
@@ -56,13 +56,11 @@ const TalksPage = () => {
 
       <div className="overflow-x-auto mt-10">
         <div className="min-w-full">
-          <div className="grid gap-1 grid-cols-[auto_1fr] md:grid-cols-[auto_minmax(214px,1fr)_minmax(214px,1fr)_minmax(214px,1fr)]">
+          <div className="grid gap-1 grid-cols-[1fr] md:grid-cols-[auto_minmax(210px,1fr)_minmax(210px,1fr)_minmax(210px,1fr)]">
             <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
-            <div className="md:contents block space-y-1 md:space-y-0">
-              <TrackHeader track={"TRACK1"} />
-              <TrackHeader track={"TRACK2"} />
-              <TrackHeader track={"TRACK3"} />
-            </div>
+            <TrackHeader track={"TRACK1"} />
+            <TrackHeader track={"TRACK2"} />
+            <TrackHeader track={"TRACK3"} />
           </div>
 
           {currentDate === "DAY1" ? (
