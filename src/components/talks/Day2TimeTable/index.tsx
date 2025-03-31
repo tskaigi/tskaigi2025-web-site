@@ -39,11 +39,15 @@ export function Day2TimeTable({
       >
         <TimeSlot timeText="9:50 ~ 10:00" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper>オープニングトーク</EventWrapper>
+          <EventWrapper track="TRACK1">オープニングトーク</EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        )}
         {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK3" color="gray">
+            クローズ
+          </EventWrapper>
         )}
       </div>
 
@@ -53,13 +57,17 @@ export function Day2TimeTable({
       >
         <TimeSlot timeText="10:00 ~ 10:30" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper talkType="KEYNOTE" textAlign="left">
+          <EventWrapper track="TRACK1" talkType="KEYNOTE" textAlign="left">
             基調講演
           </EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        )}
         {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK3" color="gray">
+            クローズ
+          </EventWrapper>
         )}
       </div>
 
@@ -122,12 +130,16 @@ export function Day2TimeTable({
       >
         <TimeSlot timeText="12:10 ~ 13:00" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
+          <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
             ランチ + スポンサーセッション * 4
           </EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
-        {visibleTracks.TRACK3 && <EventWrapper>ランチ</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">ランチ</EventWrapper>
+        )}
+        {visibleTracks.TRACK3 && (
+          <EventWrapper track="TRACK3">ランチ</EventWrapper>
+        )}
       </div>
 
       <div
@@ -260,9 +272,15 @@ export function Day2TimeTable({
         style={{ gridTemplateColumns: getGridTemplateColumns() }}
       >
         <TimeSlot timeText="17:00 ~ 18:00" />
-        {visibleTracks.TRACK1 && <EventWrapper>懇親会準備</EventWrapper>}
-        {visibleTracks.TRACK2 && <EventWrapper>参加者体験企画</EventWrapper>}
-        {visibleTracks.TRACK3 && <EventWrapper>参加者体験企画</EventWrapper>}
+        {visibleTracks.TRACK1 && (
+          <EventWrapper track="TRACK1">懇親会準備</EventWrapper>
+        )}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">参加者体験企画</EventWrapper>
+        )}
+        {visibleTracks.TRACK3 && (
+          <EventWrapper track="TRACK3">参加者体験企画</EventWrapper>
+        )}
       </div>
 
       <div
@@ -270,12 +288,18 @@ export function Day2TimeTable({
         style={{ gridTemplateColumns: getGridTemplateColumns() }}
       >
         <TimeSlot timeText="18:00 ~ 20:10" />
-        {visibleTracks.TRACK1 && <EventWrapper>懇親会</EventWrapper>}
+        {visibleTracks.TRACK1 && (
+          <EventWrapper track="TRACK1">懇親会</EventWrapper>
+        )}
         {visibleTracks.TRACK2 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK2" color="gray">
+            クローズ
+          </EventWrapper>
         )}
         {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK3" color="gray">
+            クローズ
+          </EventWrapper>
         )}
       </div>
     </>

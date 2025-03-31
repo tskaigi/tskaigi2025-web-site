@@ -7,7 +7,7 @@ type Props = {
 
 export function LtWrapper({ talks }: Props) {
   return (
-    <EventWrapper talkType="LT" textAlign="left">
+    <EventWrapper talkType="LT" textAlign="left" track={talks[0]?.track}>
       <div className="flex flex-col gap-5">
         {talks.map((talk) => (
           <div key={talk.id} className="flex flex-col gap-1">

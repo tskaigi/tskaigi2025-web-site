@@ -40,11 +40,15 @@ export function Day1TimeTable({
       >
         <TimeSlot timeText="10:50 ~ 11:00" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper>オープニングトーク</EventWrapper>
+          <EventWrapper track="TRACK1">オープニングトーク</EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        )}
         {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK3" color="gray">
+            クローズ
+          </EventWrapper>
         )}
       </div>
 
@@ -54,13 +58,17 @@ export function Day1TimeTable({
       >
         <TimeSlot timeText="11:00 ~ 11:30" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper talkType="KEYNOTE" textAlign="left">
+          <EventWrapper track="TRACK1" talkType="KEYNOTE" textAlign="left">
             基調講演
           </EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>サテライト</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">サテライト</EventWrapper>
+        )}
         {visibleTracks.TRACK3 && (
-          <EventWrapper color="gray">クローズ</EventWrapper>
+          <EventWrapper track="TRACK3" color="gray">
+            クローズ
+          </EventWrapper>
         )}
       </div>
 
@@ -102,12 +110,16 @@ export function Day1TimeTable({
       >
         <TimeSlot timeText="10:50 ~ 11:00" />
         {visibleTracks.TRACK1 && (
-          <EventWrapper talkType={"SPONSOR_LT"} textAlign="left">
+          <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
             ランチ + スポンサーセッション * 4
           </EventWrapper>
         )}
-        {visibleTracks.TRACK2 && <EventWrapper>ランチ</EventWrapper>}
-        {visibleTracks.TRACK3 && <EventWrapper>ランチ</EventWrapper>}
+        {visibleTracks.TRACK2 && (
+          <EventWrapper track="TRACK2">ランチ</EventWrapper>
+        )}
+        {visibleTracks.TRACK3 && (
+          <EventWrapper track="TRACK3">ランチ</EventWrapper>
+        )}
       </div>
 
       <div
