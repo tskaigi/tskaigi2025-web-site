@@ -1,49 +1,17 @@
 "use client";
+
 import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
 import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { EventDateTab } from "@/components/talks/EventDateTab";
+import { GridWrapper } from "@/components/talks/GridWrapper";
 import { TrackHeader } from "@/components/talks/TrackHeader";
-import { TrackToggle } from "@/components/talks/TrackToggle";
-import type { EventDate, Track } from "@/constants/talkList";
+import type { EventDate } from "@/constants/talkList";
 import { useState } from "react";
 
 const TalksPage = () => {
   const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
   const handleTabChange = (date: EventDate) => {
     setCurrentDate(date);
-    // 必要に応じて他のロジックを追加
-  };
-
-  // トラックの表示状態を管理
-  const [visibleTracks, setVisibleTracks] = useState<{
-    [key in Track]: boolean;
-  }>({
-    TRACK1: true,
-    TRACK2: true,
-    TRACK3: true,
-  });
-
-  // トラックの表示/非表示を切り替える処理
-  const handleToggleTrack = (trackId: Track) => {
-    setVisibleTracks((prev) => ({
-      ...prev,
-      [trackId]: !prev[trackId],
-    }));
-  };
-
-  const getGridTemplateColumns = () => {
-    let template = "auto "; // 時間列は常に表示
-
-    if (visibleTracks.TRACK1) template += "minmax(214px, 1fr) ";
-    if (visibleTracks.TRACK2) template += "minmax(214px, 1fr) ";
-    if (visibleTracks.TRACK3) template += "minmax(214px, 1fr)";
-
-    return template;
-  };
-
-  // 表示されているトラック数を計算
-  const getVisibleTrackCount = () => {
-    return Object.values(visibleTracks).filter(Boolean).length;
   };
 
   return (
@@ -54,38 +22,17 @@ const TalksPage = () => {
       <div className="text-center mt-8">
         <EventDateTab currentDate={currentDate} onTabChange={handleTabChange} />
       </div>
-      <div className="text-center mt-6">
-        <TrackToggle
-          visibleTracks={visibleTracks}
-          onToggleTrack={handleToggleTrack}
-        />
-      </div>
 
       <div className="overflow-x-auto mt-10">
         <div className="min-w-full">
-          <div
-            className="grid gap-1"
-            style={{ gridTemplateColumns: getGridTemplateColumns() }}
-          >
+          <GridWrapper>
             <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
-            {visibleTracks.TRACK1 && <TrackHeader track={"TRACK1"} />}
-            {visibleTracks.TRACK2 && <TrackHeader track={"TRACK2"} />}
-            {visibleTracks.TRACK3 && <TrackHeader track={"TRACK3"} />}
-          </div>
+            <TrackHeader track={"TRACK1"} />
+            <TrackHeader track={"TRACK2"} />
+            <TrackHeader track={"TRACK3"} />
+          </GridWrapper>
 
-          {currentDate === "DAY1" ? (
-            <Day1TimeTable
-              getGridTemplateColumns={getGridTemplateColumns}
-              getVisibleTrackCount={getVisibleTrackCount}
-              visibleTracks={visibleTracks}
-            />
-          ) : (
-            <Day2TimeTable
-              getGridTemplateColumns={getGridTemplateColumns}
-              getVisibleTrackCount={getVisibleTrackCount}
-              visibleTracks={visibleTracks}
-            />
-          )}
+          {currentDate === "DAY1" ? <Day1TimeTable /> : <Day2TimeTable />}
         </div>
       </div>
     </main>
