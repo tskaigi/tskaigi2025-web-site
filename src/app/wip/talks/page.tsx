@@ -3,7 +3,6 @@ import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
 import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { EventDateTab } from "@/components/talks/EventDateTab";
 import { TrackHeader } from "@/components/talks/TrackHeader";
-import { TrackToggle } from "@/components/talks/TrackToggle";
 import type { EventDate, Track } from "@/constants/talkList";
 import { useState } from "react";
 
@@ -53,12 +52,6 @@ const TalksPage = () => {
       </h1>
       <div className="text-center mt-8">
         <EventDateTab currentDate={currentDate} onTabChange={handleTabChange} />
-      </div>
-      <div className="text-center mt-6">
-        <TrackToggle
-          visibleTracks={visibleTracks}
-          onToggleTrack={handleToggleTrack}
-        />
       </div>
 
       <div className="overflow-x-auto mt-10">
