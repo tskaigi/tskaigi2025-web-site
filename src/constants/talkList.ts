@@ -14,7 +14,7 @@ export const TRACK = {
     tag: "#tskaigi_ascend",
   },
   TRACK3: {
-    name: "レジレジーズトラック",
+    name: "レバレジーズトラック",
     tag: "#tskaigi_leverages",
   },
 } as const;
