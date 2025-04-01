@@ -25,12 +25,14 @@ const TalksPage = () => {
 
       <div className="overflow-x-auto mt-10">
         <div className="min-w-full">
-          <GridWrapper>
-            <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
-            <TrackHeader track={"TRACK1"} />
-            <TrackHeader track={"TRACK2"} />
-            <TrackHeader track={"TRACK3"} />
-          </GridWrapper>
+          <div className="hidden md:block">
+            <GridWrapper>
+              <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
+              <TrackHeader track={"TRACK1"} />
+              <TrackHeader track={"TRACK2"} />
+              <TrackHeader track={"TRACK3"} />
+            </GridWrapper>
+          </div>
 
           {currentDate === "DAY1" ? <Day1TimeTable /> : <Day2TimeTable />}
         </div>
