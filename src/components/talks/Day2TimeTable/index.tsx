@@ -21,7 +21,7 @@ export function Day2TimeTable() {
       </GridWrapper>
 
       <GridWrapper>
-        <TimeSlot timeText="10:00 ~ 10:30" />
+        <TimeSlot timeText="10:00 ~ 10:40" />
         <EventWrapper track="TRACK1" talkType="KEYNOTE" textAlign="left">
           基調講演
         </EventWrapper>
@@ -52,7 +52,7 @@ export function Day2TimeTable() {
       <CommonTrackWrapper timeText="12:00 ~ 12:10" eventText="ランチ配布" />
 
       <GridWrapper>
-        <TimeSlot timeText="12:10 ~ 13:00" />
+        <TimeSlot timeText="12:10 ~ 13:10" />
         <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
           ランチ + スポンサーセッション * 4
         </EventWrapper>
@@ -60,7 +60,7 @@ export function Day2TimeTable() {
         <EventWrapper track="TRACK3">ランチ</EventWrapper>
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="13:00 ~ 13:20" eventText="休憩" />
+      <CommonTrackWrapper timeText="13:10 ~ 13:20" eventText="休憩" />
 
       <GridWrapper>
         <TimeSlot timeText="13:20 ~ 13:50" />
@@ -91,10 +91,10 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("42")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="15:10 ~ 15:20" eventText="休憩" />
+      <CommonTrackWrapper timeText="15:10 ~ 15:30" eventText="休憩" />
 
       <GridWrapper>
-        <TimeSlot timeText="15:20 ~ 16:00" />
+        <TimeSlot timeText="15:30 ~ 16:00" />
         <SessionWrapper talk={getTalk("40")} />
         <SessionWrapper talk={getTalk("39")} />
         <SessionWrapper talk={getTalk("38")} />
@@ -103,7 +103,7 @@ export function Day2TimeTable() {
       <CommonTrackWrapper timeText="16:00 ~ 16:10" eventText="休憩" />
 
       <GridWrapper>
-        <TimeSlot timeText="16:10 ~ 16:40" />
+        <TimeSlot timeText="16:10 ~ 16:50" />
         <LtWrapper
           talks={[getTalk("69"), getTalk("51"), getTalk("54"), getTalk("52")]}
         />

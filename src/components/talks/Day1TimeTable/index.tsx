@@ -34,16 +34,16 @@ export function Day1TimeTable() {
       <CommonTrackWrapper timeText="11:40 ~ 11:50" eventText="休憩" />
 
       <GridWrapper>
-        <TimeSlot timeText="11:00 ~ 11:30" />
+        <TimeSlot timeText="11:50 ~ 12:20" />
         <SessionWrapper talk={getTalk("2")} />
         <SessionWrapper talk={getTalk("6")} />
         <SessionWrapper talk={getTalk("7")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="12:20" eventText="ランチ配布" />
+      <CommonTrackWrapper timeText="12:20 ~ 12:30" eventText="ランチ配布" />
 
       <GridWrapper>
-        <TimeSlot timeText="10:50 ~ 11:00" />
+        <TimeSlot timeText="12:30 ~ 13:30" />
         <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
           ランチ + スポンサーセッション * 4
         </EventWrapper>
