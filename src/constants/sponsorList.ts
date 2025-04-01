@@ -102,7 +102,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/nstock_logo_black_horizontal.png",
       logoLink: "https://nstock.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `Nstockは、「スタートアップエコシステムをブーストし、日本からGoogle級の会社を生み出す」ことをミッションに掲げ、スタートアップが大きく育つための様々なプロダクトを提供しています。
 現在は下記2つの事業でミッション実現のために一緒に事業をブーストさせるメンバーを募集しています。`,
@@ -343,7 +343,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `GMO Flatt Securityは"エンジニアの背中を預かる"をミッションに掲げ、ソフトウェアの開発組織とそこで働くエンジニアにとって最適なセキュリティサービスを提供する、GMOインターネットグループのスタートアップ企業です。`,
         "脆弱性診断を主軸としてクラウド基盤からアプリケーションまで、プロダクト全体の堅牢化を支援します。",
@@ -906,7 +906,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/any.png",
       logoLink: "https://anyinc.jp",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `anyは「個の幸福と組織の実利を両立する」をパーパスに、組織全体のパフォーマンスの最大化を目指すナレッジプラットフォーム「Qast」を提供しています。
 自社プロダクト「Qast」の開発には、バックエンドからフロントエンドまでTypeScriptを採用しており、LLMを活用したRAGなどの分野をプロダクトに積極的に取り込んでいます。
@@ -990,7 +990,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/base.png",
       logoLink: "https://binc.jp",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         "2012年12月創業。「Payment to the People, Power to the People.」を企業ミッションに、EC・決済・金融の簡易化を主軸に個人・スモールチームのエンパワーメントに取り組み、国内最大級のネットショップ作成サービス「BASE（ベイス）」、購入者向けショッピングサービス「Pay ID（ペイ アイディー）」、資金調達サービス「YELL BANK（エール バンク）」を運営。2019年10月に東証マザーズ（現：東証グロース）市場に上場。",
       ],
@@ -1218,7 +1218,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/smarthr.png",
       logoLink: "https://hello-world.smarthr.co.jp/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       roles: ["bronze"],
       detailPageId: "smarthr",
     },
