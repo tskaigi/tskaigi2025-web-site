@@ -957,32 +957,62 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       roles: ["silver"],
       detailPageId: "dmm",
     },
-    // TODO:情報が揃い次第コメントアウトを解除
-    // {
-    //   id: "S24",
-    //   name: "株式会社ミツモア",
-    //   logoImage: "", // TODO: ロゴ画像を追加
-    //   logoLink: "", // TODO: ロゴリンクを追加
-    //   addPadding: false,
-    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-    //   overview: [], // TODO: 概要を追加
-    //   links: [], // TODO: リンクを追加
-    //   roles: ["silver"],
-    //   detailPageId: "meetsmore",
-    // },
-    // TODO:情報が揃い次第コメントアウトを解除
-    // {
-    //   id: "S25",
-    //   name: "ウォンテッドリー株式会社",
-    //   logoImage: "", // TODO: ロゴ画像を追加
-    //   logoLink: "", // TODO: ロゴリンクを追加
-    //   addPadding: false,
-    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-    //   overview: [], // TODO: 概要を追加
-    //   links: [], // TODO: リンクを追加
-    //   roles: ["silver"],
-    //   detailPageId: "wantedlyinc",
-    // },
+    {
+      id: "S24",
+      name: "株式会社ミツモア",
+      logoImage: "/sponsors/meetsmore.png",
+      logoLink: "", // TODO: ロゴリンクを追加
+      addPadding: false,
+      isTenantChecked: false,
+      overview: [
+        `ミツモアは「日本のGDPを増やし 明日がもっといい日になる と思える社会に」というミッションを掲げ、 見積もりプラットフォーム「ミツモア」や現場業界特化型オールインワン業務支援SaaS「プロワン」を開発・提供しています。
+社員の35%が開発組織に所属し、その半数が外国籍エンジニアというグローバルな開発環境です！フロント・バックエンドを全てTypeScriptで開発し、インフラ管理もCDKTF等を活用してTypeScriptを利用しています。高い技術力を通じて一緒に日本の社会課題を解決しましょう！`,
+      ],
+      links: [
+        {
+          title: "ミツモア採用情報",
+          href: "https://corp.meetsmore.com/",
+        },
+        {
+          title: "会社説明資料",
+          href: "https://speakerdeck.com/meetsmore/about-meetsmore",
+        },
+        {
+          title: "ミツモアテックブログ",
+          href: "https://engineering.meetsmore.com/",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "meetsmore",
+    },
+    {
+      id: "S25",
+      name: "ウォンテッドリー株式会社",
+      logoImage: "/sponsors/wantedlyinc.png",
+      logoLink: "https://wantedlyinc.com/ja",
+      addPadding: false,
+      isTenantChecked: true,
+      overview: [
+        `ウォンテッドリーは「究極の適材適所により、シゴトでココロオドルひとをふやす」をミッションにプロダクトを開発しています。
+自律・共感・挑戦のある適材適所を構造的に生み出し続けることにより、あらゆる人がシゴトに没頭し成果を上げ、その結果成長を実感できるような「はたらくすべての人のインフラ」を構築していきます。`,
+      ],
+      links: [
+        {
+          title: "採用情報",
+          href: "https://wantedly.engineering/",
+        },
+        {
+          title: "カジュアル面談",
+          href: "https://www.wantedly.com/projects/1159802",
+        },
+        {
+          title: "テックブログ",
+          href: "https://www.wantedly.com/stories/s/wantedly_engineers",
+        },
+      ],
+      roles: ["silver"],
+      detailPageId: "wantedlyinc",
+    },
     {
       id: "S27",
       name: "BASE株式会社",
@@ -1190,17 +1220,6 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       roles: ["bronze"],
       detailPageId: "progrit",
     },
-    // TODO:情報が揃い次第コメントアウトを解除
-    // {
-    //   id: "B17",
-    //   name: "株式会社LabBase",
-    //   logoImage: "", // TODO: ロゴ画像を追加
-    //   logoLink: "", // TODO: リンク先を追加
-    //   addPadding: false,
-    //   isTenantChecked: true, // TODO: テナントチェックを行うかどうかは要確認
-    //   roles: ["bronze"],
-    //   detailPageId: "labbase",
-    // },
     {
       id: "B18",
       name: "BABY JOB株式会社",
