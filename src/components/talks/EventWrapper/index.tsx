@@ -43,7 +43,7 @@ export function EventWrapper({
 
   return (
     <div
-      className={`${color === "gray" ? "bg-gray-200" : "bg-white"} p-5 min-h-32 flex flex-col gap-2 items-${textAlign === "center" ? "center" : "start"} justify-center text-black-700 relative`}
+      className={`${color === "gray" ? "bg-gray-200" : "bg-white"} p-5 min-h-32 flex flex-col gap-2 items-${textAlign === "center" ? "center" : "start"} justify-center ${talkType ? "lg:justify-start" : "lg:justify-center"} text-black-700 relative`}
     >
       {track && <div style={getTriangleStyle()} />}
       {talkType && <TalkTypeLabel talkType={talkType} />}
