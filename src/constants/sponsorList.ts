@@ -961,7 +961,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       id: "S24",
       name: "株式会社ミツモア",
       logoImage: "/sponsors/meetsmore.png",
-      logoLink: "", // TODO: ロゴリンクを追加
+      logoLink: "https://corp.meetsmore.com/",
       addPadding: false,
       isTenantChecked: false,
       overview: [
