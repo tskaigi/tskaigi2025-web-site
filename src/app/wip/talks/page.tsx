@@ -6,12 +6,22 @@ import { EventDateTab } from "@/components/talks/EventDateTab";
 import { GridWrapper } from "@/components/talks/GridWrapper";
 import { TrackHeader } from "@/components/talks/TrackHeader";
 import type { EventDate } from "@/constants/talkList";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 const TalksPage = () => {
-  const [currentDate, setCurrentDate] = useState<EventDate>("DAY1");
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [currentDate, setCurrentDate] = useState<EventDate>(
+    searchParams.get("day") === "2" ? "DAY2" : "DAY1",
+  );
+
   const handleTabChange = (date: EventDate) => {
     setCurrentDate(date);
+    const day = date === "DAY1" ? "1" : "2";
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("day", day);
+    router.replace(`?${params.toString()}`);
   };
 
   return (
