@@ -21,7 +21,7 @@ export function Day1TimeTable() {
       </GridWrapper>
 
       <GridWrapper>
-        <TimeSlot timeText="11:00 ~ 11:30" />
+        <TimeSlot timeText="11:00 ~ 11:40" />
         <EventWrapper track="TRACK1">Coming Soon...</EventWrapper>
         <EventWrapper track="TRACK2">サテライト</EventWrapper>
         <EventWrapper track="TRACK3" color="gray">
