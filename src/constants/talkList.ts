@@ -76,7 +76,7 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "SESSION",
     title:
-      "AWS LambdaをTypeScriptで動かしてみかった、Node.jsのTypeScriptサポートの利点と課題",
+      "AWS LambdaをTypeScriptで動かして分かった、Node.jsのTypeScriptサポートの利点と課題",
     speakerName: "Masaki Suzuki",
   },
   {
@@ -225,7 +225,7 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "LT",
     title:
-      "転生したらTypeScriptのEnumだった件〜型安全性とエコシステムの変化で挫けそうになっているんだが〜",
+      "転生したらTypeScriptのEnumだった件～型安全性とエコシステムの変化で挫けそうになっているんだが～",
     speakerName: "yamanoku",
   },
   {
@@ -267,7 +267,7 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "LT",
     title:
-      "型パズルを好きになるために、弱プロを型システムだけで解いてみることにした",
+      "型パズルを好きになるために、競プロを型システムだけで解いてみることにした",
     speakerName: "いまいまい",
   },
   {
@@ -400,7 +400,7 @@ export const talkList: Talk[] = [
     eventDate: "DAY2",
     track: "TRACK3",
     talkType: "SESSION",
-    title: "Web Streams APIの基本と実装、TypeScriptでの活用法",
+    title: "Web Streams APIの基本と実践、TypeScriptでの活用法",
     speakerName: "tasshi",
   },
   {
@@ -474,7 +474,7 @@ export const talkList: Talk[] = [
     eventDate: "DAY2",
     track: "TRACK1",
     talkType: "LT",
-    title: "Panda-CSSはどのように型安全にしているのか",
+    title: "Panda-CSS はどのように型安全にしているのか",
     speakerName: "Kato.work",
   },
   {
@@ -549,7 +549,7 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "LT",
     title: "コンパイルオプションで変わる型世界",
-    speakerName: "池田 敦祐",
+    speakerName: "池田 敬祐",
   },
   {
     id: "62",
@@ -557,7 +557,7 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "LT",
     title: "Project Referencesを活用した実行環境ごとのtsconfig最適化",
-    speakerName: "板井 俊樹",
+    speakerName: "板井俊樹",
   },
   {
     id: "63",
@@ -565,7 +565,7 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "LT",
     title: "TypeScriptのmoduleオプションを改めて整理する",
-    speakerName: "大石 真則 (bicstone)",
+    speakerName: "大石 貴則 (bicstone)",
   },
   {
     id: "64",
@@ -582,7 +582,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title:
       "これは型破り？型安全？真実はいつもひとつ！（じゃないかもしれない）TypeScriptクイズ〜〜〜〜！！！！！",
-    speakerName: "君田 祥",
+    speakerName: "君田 祥一",
   },
   {
     id: "66",
@@ -606,7 +606,7 @@ export const talkList: Talk[] = [
     eventDate: "DAY2",
     track: "TRACK2",
     talkType: "LT",
-    title: "型推論の扉を開く ―集合論と構造的型制約で理解する中級へのステップ",
+    title: "型推論の扉を開く―集合論と構造的型制約で理解する中級へのステップ",
     speakerName: "栃川晃佑",
   },
   {
