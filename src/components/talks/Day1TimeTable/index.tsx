@@ -22,9 +22,7 @@ export function Day1TimeTable() {
 
       <GridWrapper>
         <TimeSlot timeText="11:00 ~ 11:30" />
-        <EventWrapper track="TRACK1" talkType="KEYNOTE" textAlign="left">
-          基調講演
-        </EventWrapper>
+        <EventWrapper track="TRACK1">Coming Soon...</EventWrapper>
         <EventWrapper track="TRACK2">サテライト</EventWrapper>
         <EventWrapper track="TRACK3" color="gray">
           クローズ
