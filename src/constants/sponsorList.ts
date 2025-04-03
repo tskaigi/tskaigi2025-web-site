@@ -1217,7 +1217,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/progrit.png",
       logoLink: "https://www.progrit.co.jp/",
       addPadding: true,
-      isTenantChecked: false,
+      isTenantChecked: true,
       roles: ["bronze"],
       detailPageId: "progrit",
     },
