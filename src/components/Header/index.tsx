@@ -18,6 +18,10 @@ const links: {
   label: string;
 }[] = [
   {
+    href: "/talks",
+    label: "タイムテーブル",
+  },
+  {
     href: "/sponsors",
     label: "スポンサー",
   },
