@@ -116,8 +116,8 @@ export function Day2TimeTable() {
       <GridWrapper>
         <TimeSlot timeText="17:00 ~ 18:00" />
         <EventWrapper track="TRACK1">懇親会準備</EventWrapper>
-        <EventWrapper track="TRACK2">参加者体験企画</EventWrapper>
-        <EventWrapper track="TRACK3">参加者体験企画</EventWrapper>
+        <EventWrapper track="TRACK2">Coming Soon...</EventWrapper>
+        <EventWrapper track="TRACK3">OST</EventWrapper>
       </GridWrapper>
 
       <GridWrapper>
