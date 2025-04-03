@@ -19,6 +19,11 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link href="/talks" className="hover:underline">
+                タイムテーブル
+              </Link>
+            </li>
+            <li>
               <Link href="/sponsors" className="hover:underline">
                 スポンサー
               </Link>
