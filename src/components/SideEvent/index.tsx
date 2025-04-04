@@ -25,7 +25,7 @@ const SideEvent = ({
       <h2 className="text-2xl font-bold">{date}</h2>
       <hr className="border border-black-200" />
       <div className="flex flex-col gap-5">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <h3 className="text-xl font-bold underline underline-offset-2 inline align-middle">
             {name}
           </h3>
@@ -36,9 +36,9 @@ const SideEvent = ({
         <p className="leading-7">{detail} </p>
         {tags && (
           <div className="flex gap-2 flex-wrap">
-            {tags.map((tag, i) => (
+            {tags.map((tag) => (
               <div
-                key={i}
+                key={tag}
                 className="bg-blue-light-500 text-xs px-3 py-1 text-white rounded-md"
               >
                 # {tag}

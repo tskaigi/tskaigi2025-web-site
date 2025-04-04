@@ -1,4 +1,4 @@
-import { SideEventProps } from "@/components/SideEvent";
+import type { SideEventProps } from "@/components/SideEvent";
 
 export const sideEventList: SideEventProps[] = [
   {

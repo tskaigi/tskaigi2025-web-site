@@ -17,8 +17,8 @@ const SideEventsPage = () => {
             <br />※ 正確な情報は各イベントページをご確認ください。
           </p>
 
-          {sideEventList.map((event, i) => (
-            <SideEvent key={i} {...event} />
+          {sideEventList.map((event) => (
+            <SideEvent key={event.name} {...event} />
           ))}
         </div>
       </main>
