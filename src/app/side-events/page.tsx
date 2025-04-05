@@ -7,19 +7,21 @@ const SideEventsPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="bg-blue-light-100 pt-16 flex-1">
-        <h1 className="text-2xl font-bold text-blue-light-500 text-center py-10">
+      <main className="bg-blue-light-100 pt-16 flex-1 md:px-8">
+        <h1 className="text-2xl font-bold text-blue-light-500 text-center py-10 md:py-16">
           サイドイベント
         </h1>
-        <div className="bg-white p-6 flex flex-col gap-6">
-          <p>
+        <div className="bg-white p-6 flex flex-col gap-6 md:rounded-xl md:p-8">
+          <p className="md:text-lg">
             TSKaigiのスポンサー企業によって実施される、TSKaigiのサイドイベントをご紹介します。ご参加お待ちしております！
             <br />※ 正確な情報は各イベントページをご確認ください。
           </p>
 
-          {sideEventList.map((event) => (
-            <SideEvent key={event.name} {...event} />
-          ))}
+          <div className="flex flex-col gap-6 md:gap-0">
+            {sideEventList.map((event) => (
+              <SideEvent key={event.name} {...event} />
+            ))}
+          </div>
         </div>
       </main>
       <Footer />
