@@ -3,8 +3,9 @@ import Image from "next/image";
 
 export type SideEventProps = {
   date: string;
-  link: string;
   name: string;
+  link: string;
+  isClosed?: boolean;
   thumbnail: string;
   detail: string;
   tags?: string[];
@@ -13,8 +14,9 @@ export type SideEventProps = {
 
 const SideEvent = ({
   date,
-  link,
   name,
+  link,
+  isClosed = false,
   thumbnail,
   detail,
   tags,
@@ -29,33 +31,56 @@ const SideEvent = ({
       </h2>
       <hr className="border border-black-200 block h-auto" />
       <div className="flex flex-col gap-5 pb-8 md:pb-24">
-        <a href={link} target="_blank" rel="noreferrer">
-          <h3 className="text-xl font-bold underline underline-offset-2 inline align-middle">
+        <h3>
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="text-xl font-bold underline underline-offset-2 inline align-middle"
+          >
             {name}
-          </h3>
-          <ExternalLink className="inline size-5 mx-1 mt-1 align-middle" />
-        </a>
-        <Image
-          src={thumbnail}
-          alt={name}
-          width={800}
-          height={600}
-          className="w-full md:max-w-xl"
-        />
-        <p className="leading-7 md:text-lg md:leading-8">{detail}</p>
-        {tags && (
-          <div className="flex gap-2 flex-wrap">
-            {tags.map((tag) => (
-              <p
-                key={tag}
-                className="bg-blue-light-500 text-xs font-bold px-3 py-1 text-white rounded-md"
-              >
-                # {tag}
-              </p>
-            ))}
+            <ExternalLink className="inline size-5 ml-2 align-middle" />
+          </a>
+          {isClosed && (
+            <span className="bg-black-400 text-white px-3 py-1 text-xs font-bold rounded-md align-middle ml-2 mt-1 inline-block">
+              終了済み
+            </span>
+          )}
+        </h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:gap-6">
+          <div className="flex flex-col gap-5">
+            <Image
+              src={thumbnail}
+              alt={name}
+              width={800}
+              height={600}
+              className="w-full md:max-w-xl lg:min-w-96"
+            />
+            <p className="leading-7 md:text-lg md:leading-8 lg:hidden">
+              {detail}
+            </p>
+            {tags && (
+              <div className="flex gap-2 flex-wrap">
+                {tags.map((tag) => (
+                  <p
+                    key={tag}
+                    className="bg-blue-light-500 text-xs font-bold px-3 py-1 text-white rounded-md"
+                  >
+                    # {tag}
+                  </p>
+                ))}
+              </div>
+            )}
           </div>
-        )}
-        <p className="md:text-lg">スポンサー: {sponsors.join("、 ")}</p>
+          <div className="flex flex-col gap-5">
+            <p className="leading-7 md:text-lg md:leading-8 hidden lg:inline">
+              {detail}
+            </p>
+            <p className="md:text-lg lg:text-base lg:text-right">
+              スポンサー: {sponsors.join("、 ")}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,14 @@
 import type { SideEventProps } from "@/components/SideEvent";
 
+/**
+ * サイドイベントの情報を格納する配列
+ * ※ dateは日付と曜日の間に半角スペースを入れること
+ */
 export const sideEventList: SideEventProps[] = [
   {
     date: "08/06 (火)",
-    link: "https://example.com",
     name: "TSKaigi Mashup #1 フロントエンド",
+    link: "https://example.com",
     thumbnail: "/sideEvents/event1.png",
     detail: `TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！
 オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。
@@ -21,8 +25,9 @@ export const sideEventList: SideEventProps[] = [
   },
   {
     date: "08/06 (火)",
-    link: "https://example.com",
     name: "TSKaigi Mashup #1 フロントエンド",
+    link: "https://example.com",
+    isClosed: true,
     thumbnail: "/sideEvents/event1.png",
     detail: `TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！
 オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。
