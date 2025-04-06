@@ -57,7 +57,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "P02",
       name: "クラフトバンク株式会社",
-      logoImage: "/sponsors/CraftBank_logo_cmyk_original.png",
+      logoImage: "/sponsors/craft-bank.png",
       logoLink: "https://corp.craft-bank.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -76,7 +76,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "P03",
       name: "AVITA株式会社",
-      logoImage: "/sponsors/AVITA_Logomark_Logotype.png",
+      logoImage: "/sponsors/avita.png",
       logoLink: "https://avita.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -99,7 +99,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "P04",
       name: "Nstock株式会社",
-      logoImage: "/sponsors/nstock_logo_black_horizontal.png",
+      logoImage: "/sponsors/nstock.png",
       logoLink: "https://nstock.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -133,12 +133,12 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "P05",
       name: "株式会社ダイニー",
-      logoImage: "/sponsors/dinii_v1.png",
+      logoImage: "/sponsors/dinii.png",
       logoLink: "https://recruit2024.dinii.jp/",
       addPadding: false,
       isTenantChecked: true,
       overview: [
-        `株式会社ダイニーは、「”飲食"をもっと楽しくおもしろく。」をミッションに掲げ、すべての人の飲食のインフラとなることをめざし、飲食店に特化した All in  One  Restaurant  Cloud.を開発・提供しています。
+        `株式会社ダイニーは、「"飲食"をもっと楽しくおもしろく。」をミッションに掲げ、すべての人の飲食のインフラとなることをめざし、飲食店に特化した All in  One  Restaurant  Cloud.を開発・提供しています。
 モバイルオーダーやID-POSから、売上向上のためのCRM、従業員の管理ツール、そしてモバイル決済まで、飲食店経営のあらゆる課題を解決していきます。
 飲食業界に入り込み、店舗や従業員、顧客を深く理解したプロダクト開発により、テクノロジーの力で飲食店の経営をサポートし、お客様の飲食店での体験価値を劇的に変えていきます。
 ダイニーでは、フロントエンド、ネイティブアプリ、バックエンドまですべての利用言語を TypeScript に統一してプロダクト開発を行っています。TypeScript を用いることで、さまざまな領域の一連の機能改修までをフルスタックに担当できるため、TypeScript は複数のプロダクトを展開するダイニーにとって必要不可欠なツールです。`,
@@ -163,7 +163,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "P06",
       name: "株式会社TwoGate",
-      logoImage: "/sponsors/twogate_logo.svg",
+      logoImage: "/sponsors/twogate.svg",
       logoLink: "https://twogate.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -191,7 +191,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G01",
       name: "レバレジーズ株式会社",
-      logoImage: "/sponsors/leverages.jpg",
+      logoImage: "/sponsors/leverages.png",
       logoLink: "https://recruit.leverages.jp/recruit/engineer/",
       addPadding: false,
       isTenantChecked: true,
@@ -224,7 +224,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G02",
       name: "KINTOテクノロジーズ株式会社",
-      logoImage: "/sponsors/kinto_logoA.png",
+      logoImage: "/sponsors/kinto-technologies.png",
       logoLink: "https://www.kinto-technologies.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -253,7 +253,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G03",
       name: "株式会社サイバーエージェント",
-      logoImage: "/sponsors/CyberAgent.png",
+      logoImage: "/sponsors/cyberagent.png",
       logoLink: "https://www.cyberagent.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -281,7 +281,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G04",
       name: "株式会社ケップル",
-      logoImage: "/sponsors/kepple_logo.png",
+      logoImage: "/sponsors/kepple.png",
       logoLink: "https://corp.kepple.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -309,7 +309,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G05",
       name: "株式会社カミナシ",
-      logoImage: "/sponsors/kaminashi_logo.png",
+      logoImage: "/sponsors/kaminashi.png",
       logoLink: "https://corp.kaminashi.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -338,7 +338,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G06",
       name: "GMO Flatt Security株式会社",
-      logoImage: "/sponsors/gmo_color_horizontal_default.svg",
+      logoImage: "/sponsors/gmo-flatt-security.svg",
       logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
@@ -368,7 +368,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G07",
       name: "トグルホールディングス株式会社",
-      logoImage: "/sponsors/toggle_logo.png",
+      logoImage: "/sponsors/toggle.png",
       logoLink: "https://toggle.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -397,7 +397,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G08",
       name: "株式会社CARTA HOLDINGS",
-      logoImage: "/sponsors/logo_carta_black.png",
+      logoImage: "/sponsors/carta.png",
       logoLink:
         "https://cartaholdings.co.jp/engineering/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       addPadding: false,
@@ -422,7 +422,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G09",
       name: "キャディ株式会社",
-      logoImage: "/sponsors/caddi_logo_primary_horizontal.png",
+      logoImage: "/sponsors/caddi.png",
       logoLink: "https://caddi.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -447,7 +447,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
         },
         {
           title:
-            "3年で数十個”のハイグロースなプロダクト開発に挑むキャディの開発組織",
+            '"3年で数十個"のハイグロースなプロダクト開発に挑むキャディの開発組織',
           href: "https://www.fastgrow.jp/articles/caddi-tech-session",
         },
       ],
@@ -457,7 +457,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G10",
       name: "株式会社スタメン",
-      logoImage: "/sponsors/stmn_logo.png",
+      logoImage: "/sponsors/stmn.png",
       logoLink: "https://stmn.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -486,7 +486,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G11",
       name: "Ubie株式会社",
-      logoImage: "/sponsors/Ubie_logo_horizon_color.jpg",
+      logoImage: "/sponsors/ubie.jpg",
       logoLink: "https://ubie.life/",
       addPadding: false,
       isTenantChecked: true,
@@ -515,7 +515,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G12",
       name: "匠技研工業株式会社",
-      logoImage: "/sponsors/takumi_giken_logo.png",
+      logoImage: "/sponsors/takumi-giken.png",
       logoLink: "https://takumi-force.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -546,7 +546,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S02",
       name: "Theoria technologies 株式会社",
-      logoImage: "/sponsors/theoria_logo_main.png",
+      logoImage: "/sponsors/theoria-technologies.png",
       logoLink: "https://theoriatec.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -574,7 +574,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S03",
       name: "株式会社Linc'well",
-      logoImage: "/sponsors/lincwell.png",
+      logoImage: "/sponsors/linc-well.png",
       logoLink: "https://linc-well.com/",
       addPadding: true,
       isTenantChecked: true,
@@ -602,7 +602,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S05",
       name: "株式会社EARTHBRAIN",
-      logoImage: "/sponsors/earthbrain_logo.png",
+      logoImage: "/sponsors/earthbrain.png",
       logoLink:
         "https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd",
       addPadding: false,
@@ -627,7 +627,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S06",
       name: "MOSH株式会社",
-      logoImage: "/sponsors/MOSH_logo.png",
+      logoImage: "/sponsors/mosh.png",
       logoLink: "https://mosh.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -676,7 +676,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S11",
       name: "株式会社メドレー",
-      logoImage: "/sponsors/medley_rgb.png",
+      logoImage: "/sponsors/medley.png",
       logoLink: "https://www.medley.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -704,7 +704,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S12",
       name: "株式会社ドワンゴ",
-      logoImage: "/sponsors/dwango_blue.png",
+      logoImage: "/sponsors/dwango.png",
       logoLink: "https://dwango.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -732,7 +732,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S13",
       name: "株式会社オプティム",
-      logoImage: "/sponsors/OPTiM_corp_logo.jpg",
+      logoImage: "/sponsors/optim.jpg",
       logoLink: "https://www.optim.co.jp/corporate/outline",
       addPadding: false,
       isTenantChecked: true,
@@ -761,7 +761,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S14",
       name: "株式会社TOKIUM",
-      logoImage: "/sponsors/cmyk_tokiumlogo_p.jpg",
+      logoImage: "/sponsors/tokium.jpg",
       logoLink: "https://corp.tokium.jp/",
       addPadding: true,
       isTenantChecked: true,
@@ -785,7 +785,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S15",
       name: "フリー株式会社",
-      logoImage: "/sponsors/freee_logo_corporate_logo.png",
+      logoImage: "/sponsors/freee.png",
       logoLink: "https://corp.freee.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -813,7 +813,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S18",
       name: "フォルシア株式会社",
-      logoImage: "/sponsors/FORCIA_logo.png",
+      logoImage: "/sponsors/forcia.png",
       logoLink: "https://www.forcia.com/",
       addPadding: true,
       isTenantChecked: true,
@@ -843,7 +843,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S20",
       name: "株式会社スペースマーケット",
-      logoImage: "/sponsors/spacemarket_TypeB.png",
+      logoImage: "/sponsors/spacemarket.png",
       logoLink: "https://spacemarket.co.jp/recruit/engineer/",
       addPadding: false,
       isTenantChecked: true,
@@ -902,7 +902,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S22",
       name: "any株式会社",
-      logoImage: "/sponsors/any.png",
+      logoImage: "/sponsors/anyinc.png",
       logoLink: "https://anyinc.jp",
       addPadding: false,
       isTenantChecked: true,
@@ -931,7 +931,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "S23",
       name: "合同会社DMM.com",
-      logoImage: "/sponsors/dmm.png",
+      logoImage: "/sponsors/dmm-com.png",
       logoLink: "https://dmm-corp.com/",
       addPadding: true,
       isTenantChecked: true,
@@ -1073,7 +1073,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B02",
       name: "株式会社Gemcook",
-      logoImage: "/sponsors/gemcook-logo-white.png",
+      logoImage: "/sponsors/gemcook.png",
       logoLink: "https://gemcook.com",
       addPadding: false,
       isTenantChecked: true,
@@ -1083,7 +1083,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B03",
       name: "note株式会社",
-      logoImage: "/sponsors/note_logo.png",
+      logoImage: "/sponsors/note.png",
       logoLink: "https://note.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1093,7 +1093,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B04",
       name: "株式会社kickflow",
-      logoImage: "/sponsors/kickflow_logo.png",
+      logoImage: "/sponsors/kickflow.png",
       logoLink: "https://kickflow.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -1103,7 +1103,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B05",
       name: "株式会社Hacobu",
-      logoImage: "/sponsors/Hacobu_logo_rgb_black.png",
+      logoImage: "/sponsors/hacobu.png",
       logoLink: "https://hacobu.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1113,7 +1113,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B06",
       name: "株式会社はてな",
-      logoImage: "/sponsors/hatena_logo_horizontal_primary.png",
+      logoImage: "/sponsors/hatena.png",
       logoLink: "https://hatena.co.jp",
       addPadding: false,
       isTenantChecked: true,
@@ -1123,7 +1123,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B07",
       name: "メシウス株式会社（旧：グレープシティ）",
-      logoImage: "/sponsors/MESCIUS_Logo.png",
+      logoImage: "/sponsors/mescius.png",
       logoLink: "https://developer.mescius.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1133,7 +1133,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B08",
       name: "インスタベース",
-      logoImage: "/sponsors/rebase_logo.png",
+      logoImage: "/sponsors/rebase.png",
       logoLink: "https://rebase.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1143,7 +1143,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B09",
       name: "株式会社ROUTE06",
-      logoImage: "/sponsors/route06_logo-ptn2_primary.jpg",
+      logoImage: "/sponsors/route06.jpg",
       logoLink: "https://route06.com/",
       addPadding: false,
       isTenantChecked: true,
@@ -1153,7 +1153,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B10",
       name: "株式会社Antway / システムアーキテクト部",
-      logoImage: "/sponsors/Antway_logo.png",
+      logoImage: "/sponsors/antway.png",
       logoLink: "https://antway.co.jp/",
       addPadding: false,
       isTenantChecked: true,
@@ -1163,7 +1163,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B11",
       name: "株式会社mov（口コミコム）",
-      logoImage: "/sponsors/mov_logo.svg",
+      logoImage: "/sponsors/mov.svg",
       logoLink: "https://mov.am/",
       addPadding: false,
       isTenantChecked: true,
@@ -1173,7 +1173,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "B12",
       name: "株式会社GENDA",
-      logoImage: "/sponsors/GENDA_Logo_Positive.png",
+      logoImage: "/sponsors/genda.png",
       logoLink: "https://genda.jp/",
       addPadding: false,
       isTenantChecked: true,
