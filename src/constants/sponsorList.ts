@@ -339,7 +339,8 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       id: "G06",
       name: "GMO Flatt Security株式会社",
       logoImage: "/sponsors/gmo-flatt-security.svg",
-      logoImageForSponsorsPage: "/sponsors/gmo_logo_vertical.png",
+      logoImageForSponsorsPage:
+        "/sponsors/gmo-flatt-security-for-sponsors-page.png",
       logoLink: "https://flatt.tech/",
       addPadding: false,
       isTenantChecked: true,
