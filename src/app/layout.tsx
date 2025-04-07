@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Outfit } from "next/font/google";
 import type React from "react";
+import { Suspense } from "react";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -73,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={`${outfit.variable} ${notoSansJP.variable} font-noto`}>
-        {children}
+        <Suspense>{children}</Suspense>
       </body>
     </html>
   );
