@@ -191,7 +191,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     {
       id: "G01",
       name: "レバレジーズ株式会社",
-      logoImage: "/sponsors/leverages.png",
+      logoImage: "/sponsors/leverages.jpg",
       logoLink: "https://recruit.leverages.jp/recruit/engineer/",
       addPadding: false,
       isTenantChecked: true,
