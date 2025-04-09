@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Outfit } from "next/font/google";
 import type React from "react";
+import { Suspense } from "react";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -73,7 +76,13 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={`${outfit.variable} ${notoSansJP.variable} font-noto`}>
-        {children}
+        <Suspense>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Suspense>
       </body>
     </html>
   );
