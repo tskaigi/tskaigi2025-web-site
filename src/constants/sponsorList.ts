@@ -964,7 +964,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoImage: "/sponsors/meetsmore.png",
       logoLink: "https://corp.meetsmore.com/",
       addPadding: false,
-      isTenantChecked: false,
+      isTenantChecked: true,
       overview: [
         `ミツモアは「日本のGDPを増やし 明日がもっといい日になる と思える社会に」というミッションを掲げ、 見積もりプラットフォーム「ミツモア」や現場業界特化型オールインワン業務支援SaaS「プロワン」を開発・提供しています。
 社員の35%が開発組織に所属し、その半数が外国籍エンジニアというグローバルな開発環境です！フロント・バックエンドを全てTypeScriptで開発し、インフラ管理もCDKTF等を活用してTypeScriptを利用しています。高い技術力を通じて一緒に日本の社会課題を解決しましょう！`,
