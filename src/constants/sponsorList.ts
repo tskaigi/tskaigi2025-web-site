@@ -282,7 +282,8 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       id: "G04",
       name: "株式会社ケップル",
       logoImage: "/sponsors/kepple.png",
-      logoLink: "https://corp.kepple.co.jp/",
+      logoLink:
+        "https://corp.kepple.co.jp/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi_2025_sponsor&utm_id=tskaigi2025",
       addPadding: false,
       isTenantChecked: true,
       overview: [
@@ -292,7 +293,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       links: [
         {
           title: "コーポレートサイト",
-          href: "https://corp.kepple.co.jp",
+          href: "https://corp.kepple.co.jp/?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi_2025_sponsor&utm_id=tskaigi2025",
         },
         {
           title: "開発組織 紹介サイト",
