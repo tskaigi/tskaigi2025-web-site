@@ -5,7 +5,7 @@ export async function generateStaticParams() {
   return talkIds;
 }
 
-export default async function TaklDetailPage({
+export default async function TalkDetailPage({
   params,
 }: {
   params: Promise<{ id: string }>;
