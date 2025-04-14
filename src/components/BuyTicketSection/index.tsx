@@ -39,6 +39,16 @@ export const BuyTicketSection = () => {
               <p>チケットの購入は以下より行えます。</p>
             </div>
           </div>
+
+          <div className="w-full border-l-4 border-yellow-500 bg-yellow-100 p-6 rounded-r-lg mb-6">
+            <h3 className="text-22 font-bold text-red-500 mb-2">
+              現地参加チケット完売のお知らせ
+            </h3>
+            <p className="text-16 md:text-18 text-black-500 leading-[1.8]">
+              多数のお申し込みをいただき、現地参加チケットは完売いたしました。引き続きオンライン参加チケットはお申し込みいただけますので、ぜひご検討ください。
+            </p>
+          </div>
+
           <div className="flex flex-col justify-center gap-5 md:flex-col lg:flex-row p-[10px] flex-1">
             <Button
               asChild
