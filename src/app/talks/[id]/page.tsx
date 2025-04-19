@@ -1,9 +1,28 @@
 import { talkIds } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import type { ComponentProps } from "react";
+
+import Markdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 
 export async function generateStaticParams() {
   return talkIds;
 }
+
+const components: ComponentProps<typeof Markdown>["components"] = {
+  h1: ({ node, ...props }) => (
+    <h1 className="text-2xl font-bold text-blue-light-500" {...props} />
+  ),
+  h2: ({ node, ...props }) => (
+    <h2 className="text-xl font-bold text-blue-light-500" {...props} />
+  ),
+  h3: ({ node, ...props }) => (
+    <h3 className="text-lg font-bold text-blue-light-500" {...props} />
+  ),
+  pre: ({ node, ...props }) => (
+    <pre className="bg-gray-100 p-4 rounded-lg text-wrap" {...props} />
+  ),
+};
 
 export default async function TalkDetailPage({
   params,
@@ -32,12 +51,12 @@ export default async function TalkDetailPage({
         </div>
 
         {/* トーク説明文 */}
-        <div className="px-6 md:px-8 lg:px-10 gap-6 flex flex-col">
-          {talk.overview?.map((overview) => (
-            <p key={overview} className="whitespace-pre-wrap md:text-lg">
-              {overview}
-            </p>
-          ))}
+        <div className="px-6 md:px-8 lg:px-10 gap-6 flex flex-col md:text-lg">
+          {talk.overview && (
+            <Markdown components={components} remarkPlugins={[remarkBreaks]}>
+              {talk.overview}
+            </Markdown>
+          )}
         </div>
 
         {/* スピーカー情報 */}
