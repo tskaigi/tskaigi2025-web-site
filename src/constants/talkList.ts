@@ -42,7 +42,7 @@ export type Talk = {
   track: Track;
   talkType: TalkType;
   title: string;
-  overview?: string;
+  overview: string;
   speakerName: string;
 };
 
@@ -66,6 +66,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "checker.tsに対して真剣に向き合う",
+    overview:
+      "トークの主題\nTypeScript//src/compiler/checker.ts でどういう処理を行なっているかを時間の限りでどういう風に調べたのか、どういう風に処理を調べると良いのか悪いのか、 checker.ts の中身の処理について話す。\n題材を選んだ理由\nTypeScript//src/compiler/checker.ts が行数が多いというのは有名だがちゃんと読んだことがある人は自分自身を含めて少ないのではというのが理由でこの機会を通して自分自身も checker.ts についての理解を深めたい為。\n発表内容\nTypeScript//src/compiler/checker.ts が何をしているのか、どの辺にどういう処理が書かれているのか。\nTypeScriptのコンパイラの処理の中で TypeScript//src/compiler/checker.ts が他のファイルとの依存関係。",
     speakerName: "kkk4oru",
   },
   {
@@ -74,6 +76,8 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "SESSION",
     title: "SignalとObservable―新たなデータモデルを解きほぐす",
+    overview:
+      "近年Webフロントエンドの文脈で台頭しつつある Signal（シグナル）という概念をご存知ですか？ECMAScriptへの標準化の提案も出ているほどですが、実はSignalの歴史は長く、その文脈は数十年前から存在します。それがなぜ最近になって注目されているのでしょうか。また、同じくWeb標準には Observable という概念も組み込まれつつあります。おなじみの Promise との間にどのような関係があるのでしょうか。これらをWebフロントエンド開発におけるReactivity（リアクティビティ）をキーワードにしながら考えていきます。題材として具体的なライブラリ・フレームワークの内容にも触れますが、予備知識は必要ありません。\n\n**対象**\n\n- GUIプログラミングの話題が好きな人\n- Webフロントエンドの話題が好きな人\n\n**アウトライン**\n\n- Signalとは何か\n- ReactivityとSignal\n- Observableとは何か\n- ObservableとPromise\n- ObservableとSignal",
     speakerName: "lacolaco",
   },
   {
@@ -83,6 +87,8 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title:
       "AWS LambdaをTypeScriptで動かして分かった、Node.jsのTypeScriptサポートの利点と課題",
+    overview:
+      "Node.jsがv23.6.0からTypeScriptを標準でサポートするようになり、おそらくv24.xにて正式展開されることと思います。\nまた現在、クラウド（特にサーバーレス）でAWS LambdaやAzure FunctionsなどのFaaS(Function as a Service)を使用するケースも多いと思いますし、FaaSにTypeScriptを採用することでトランスパイルやモジュールシステム(ESM/CJS)の問題から解放されることが想定されますが、本当にTypeScriptを直接実行することで何の問題もなくなるのでしょうか？\n\nそこで本セッションでは、AWS Lambdaでカスタムランタイムを使いTypeScriptを直接実行した経験を元に、Node.jsでTypeScriptを直接実行することの利点、及び課題や問題点について紹介したいと思います。また実際にFaasにTypeScriptを採用した場合の問題点についても、私の実体験を元にAWS Lambdaを例に説明したいと思います。",
     speakerName: "Masaki Suzuki",
   },
   {
@@ -92,6 +98,8 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title:
       "Valibot Schema Driven UI - ノーコードWebサイトビルダーを実装してみよう！",
+    overview:
+      "近年 Bubble や Webflow、日本だと STUDIO などのノーコードプラットフォームが注目を集めています。これらのツールは、プログラミングの知識がなくてもユーザーが思い思いの UI を構築できる機能を提供し、アプリケーション開発の民主化に貢献しています。\n\nこのようなノーコードでユーザーが自由に UI を組み立てる仕組みはどのように構築されているのでしょうか。一見複雑に見えますが、基本的な考え方を理解すれば独自のエディタを構築することは難しくありません。アーキテクチャの中核となるのは、動的な UI コンポーネントを表現するスキーマ定義と、それを実際の UI 要素に変換する仕組みです。\n\n本発表では、スキーマバリデーションライブラリであるValibotとReactを利用し、型の力を最大限に活用して動的なUIを作る仕組みを紹介します。\n具体的には、Text, Button, Imageなどの複数のUI要素の表現・要素間の親子関係の定義・スタイリングの実現・JavaScript実行までを取り扱います。\n\n題材を選んだ理由は、例に挙げたノーコードプラットフォームでなくとも近年のUI実装はどんどん複雑化しており、どのようなプロダクトでもこうした動的UI実装が必要になるケースは増えています。とはいえこの実装方法が紹介されることは少ないです。そうした中で一つのきっかけとなれたらと思い今回発表できたらと考えています。\n",
     speakerName: "Miyagi Hirotaka",
   },
   {
@@ -100,6 +108,8 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "SESSION",
     title: "高度な型付け、どう教える？",
+    overview:
+      "TypeScript の高度な型付けを導入すると型システムの恩恵を受けられる一方で、複雑さが増して可読性や学習コストの課題が生じます。チームの全員が型の専門家でなくとも最低限のレビューやメンテナンスができることは、プロジェクトの健全な運用に不可欠です。本セッションでは高度な型を導入する際に直面した課題や、それをチームにどう伝え理解を促すかについて発表者の試行錯誤を交えて紹介します。高度な型付けの学習ハードルをどうすれば下げられるか、どんな説明や工夫が有効なのかを考察し実践的な知見を共有します。",
     speakerName: "progfay",
   },
   {
@@ -108,6 +118,8 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "SESSION",
     title: "Full-Stack TypeScript x GraphQLで実現する漸進的アーキテクチャ",
+    overview:
+      "自社プロダクトの本格スケールに向け、ノーコードで3年開発・運用してきた150画面・1500カラムの大規模システムを移行元システムの開発を継続しながら1年半でフルリプレイスした経験から、TypeScript を軸にした漸進的に進化可能なアーキテクチャのポイントを紹介します。\n\n本システムでは GraphQL Schema / Prisma Schema という2種類のスキーマを組み合わせることで、通信スキーマと型情報を一貫管理し、安定した開発フローと型による堅牢性を実現。複雑なビジネスロジックを Union 型で表現して排他チェックで仕様追加に対応するなど、コードベース全体を型で貫くことで TypeScript の威力が活きるケースが多数ありました。\nまた、フロントエンドは Next.js を、バックエンドは GraphQL を採用しながら、単一の Node.js プロセスにまとめることで、立ち上げ期に求められるシンプルな開発と運用を実現しています。\n\n「フロントとバックで同じ言語を使うと開発者が学ぶことが減って楽になる」という TypeScript のメリットはよく挙げられますが、事業やサービスの高度化に伴って必ずしもそれだけでは解決できない課題も生じます。UI/UX やサーバーサイドアーキテクチャなど、必要な知識は両者で大きく異なるからです。さらにネイティブアプリや外部連携が始まると、さまざまな言語・技術が混在していく可能性も高いでしょう。\n\nそこで GraphQL SDL を取り入れた Full-Stack TypeScript からスタートすることで、開発初期のスモールスタートから拡大フェーズへと漸進的に切り替えていけるということが、本発表で強調したいポイントです。TypeScript の技術的特性がどのようにそれを可能にし、開発を支えているのか。変化し続ける実サービスで TypeScript を使う魅力をお伝えしたいと思います。",
     speakerName: "Sohei Takeno",
   },
   {
@@ -116,6 +128,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "TypeScriptとは何であって何でなく、誰のもので、どこへ向かうのか",
+    overview:
+      "TypeScriptは特殊なプログラミング言語です。TypeScriptコードをそのまま解釈して実行できる主要な処理系は存在せず、実際には高級な動的型付け言語であるJavaScriptへコンパイルしてから実行されています。\n\nこのコンパイル処理は、型に関する構文を取り除くという単純な仕組みであり、TypeScript CompilerやBabel、SWC、esbuild、oxcなど、さまざまなコンパイラ実装が存在します。一方、実際の型チェックは複雑で、現状ではMicrosoftが開発するTypeScript Compiler以外には事実上まともに対応できる実装はありません。\n\nこうした状況の中、Node.jsがTypeScriptを公式にサポートするようになったり、JavaScriptの標準化委員会であるTC39でType Annotationが提案されたり、Biomeなどのリンターがtype-aware lintingの実現に取り組むなど、TypeScriptにまつわる議論が活発化しています。\n\n本セッションでは、こうしたTypeScriptの言語特性を踏まえながらエコシステムの現状を整理し、今後TypeScriptとその周辺がどのように発展し、それが私たちTypeScriptプログラマーにどのような影響を与えるのかを考察します。",
     speakerName: "Sosuke Suzuki",
   },
   {
@@ -124,6 +138,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "堅牢なデザインシステムをつくるためのTypeScript活用",
+    overview:
+      "本セッションでは、TypeScriptを活用してFigmaのデザインデータ資産を効率的にコードへ反映させ、デザインシステムを堅牢に構築・運営する手法を紹介します。\nFigma APIやStyle DictionaryなどのツールとTypeScriptを組み合わせて活用することでデザイントークンやコンポーネントを利用する際の型安全性を確保でき、これによりデザインシステムのルールを自然なかたちで強制することができます。\nさらに生成AIドキュメント自動生成や、Figma APIを利用したコンポーネント情報の自動取り込みなど、実際の開発現場で役立つ具体的な事例を交えて解説します。\nこの題材を選んだ理由は、デザインと実装の橋渡しをよりシンプルかつ堅牢に行うことで、チーム全体の生産性向上に直結するソリューションを提供できると確信しているからです。\n参加者には、TypeScriptの静的型チェックを活かした実践的な技術と運用ノウハウを体感していただき、より一層のUI品質向上を目指すヒントを得ていただきたいと考えています。",
     speakerName: "takanorip",
   },
   {
@@ -132,6 +148,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "Rust製JavaScript/TypeScript LinterにおけるPluginシステム実装の裏側",
+    overview:
+      "この発表では、Rust製JavaScript/TypeScript LinterがPluginシステムの実装について話します。\n\nESLintはそのPluginシステムによって、さまざまなLintルールが生まれ、コミュニティを拡大させました。一方ここ数年でRust製JS/TS Linterの採用は増えつつあります。BiomeはGritQLによるPluginシステムを2.0でリリースしようとしています。deno lintではv2.2.0以上で実験的機能としてJS/TSによるPlugin Ruleを書くことが可能です。\n\n本LTでは主にBiomeとDeno LintのPluginシステム実装の裏側に着目し、整理・共有することを目指します。",
     speakerName: "unvalley",
   },
   {
@@ -140,6 +158,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "TypeScriptとReactで、WAI-ARIAの属性を正しく利用する",
+    overview:
+      "WAI-ARIAは、スクリーンリーダーなどの支援技術とWebコンテンツを連携させるための仕様です。複雑なWebアプリケーションのアクセシビリティを高めるためには、時としてWAI-ARIAの提供する role 属性や aria-* 属性を使わなければなりません。WAI-ARIAの仕様では、利用できる属性の組み合わせに制約がありますが、現在のTypeScript (tsx) + React の環境では、残念ながらこの制約に対するサポートは不十分です。このセッションではTypeScriptによるWAI-ARIA属性へのサポートの現状を紹介し、型安全性によってWAI-ARIAを正しく利用できるようにするための具体的な実装について解説します",
     speakerName: "ymrl",
   },
   {
@@ -148,6 +168,8 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "SESSION",
     title: "TypeScriptエンジニアがAndroid開発の世界に飛び込んだ話",
+    overview:
+      "Webフロントエンド開発とAndroidネイティブ開発は一見まったく異なる世界に思えますが、TypeScriptとKotlin、Web FrontendにとAndroid Appには驚くほど多くの共通点があります。本セッションでは、バックエンドおよびフロントエンド開発を15年経験し複数の言語環境を経験してきたエンジニアが、Androidアプリ開発に挑戦した経験を共有します。複数の言語パラダイムを渡り歩いてきた視点から、両言語の類似パターン、設計思想の共通点、そして相違点から学んだ貴重な教訓を紹介し、Web Frontend領域のエンジニアにAndroidアプリ開発の敷居を下げられるようなお話をします。",
     speakerName: "yui_tang / Yui Sakamoto",
   },
   {
@@ -157,6 +179,8 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title:
       "fast-checkとneverthrowのPBT+Result型で堅牢なビジネスロジックを実現する",
+    overview:
+      "# fast-checkとneverthrowのPBT+Result型で堅牢なビジネスロジックを実現する\n\n## トークの主題\n\n本セッションでは、サーバーサイドTypeScript開発におけるビジネスロジックの堅牢性向上を目指し、fast-checkによるプロパティベーステスト(PBT)と、neverthrowのResult型を組み合わせた手法について解説いたします。従来のテストに比べて幅広いパターンをテストしつつ、Result型で確実にエラー処理を強制する方法をコードを交えてお話しします。\n\n## トークの背景\n\nWeb開発において、ビジネスロジックのテストやエラーハンドリングは、信頼性を高める上で重要な要素です。\n元々バックエンドの開発言語としてPythonを採用していましたが、TypeScriptへの移行を検討し、TypeScriptの型システムを活用して、ビジネスロジックの品質保証を強化する方法を模索しています。\nTypescriptの柔軟かつ強力な型システムはビジネスロジックの信頼性を高めるための有力なツールとなり、動的言語であるRubyやPythonに比べて、型レベルでの品質保証が可能となります。\n今回はTypescriptによるビジネスロジックの品質保証をさらに強力にするのPropetry-based Testing(PBT)とResult型を組み合わせた手法を紹介します。\nfast-checkを用いたPBTは、多種多様な入力ケースを自動生成することで、隠れた不具合を網羅的に検出する効果が期待されます。一方、neverthrowのResult型を導入することで、エラー処理を明確にし、例外処理の乱雑さを解消できます。\n\n## トーク内容\n\n- fast-checkとPBT\n    - PBTと従来のテスト手法との比較\n    - fast-checkの概要と基本的な使用方法\n- neverthorwとResult型\n    - Result型によるRailway Oriented Programmingの概念\n    - neverthrowのResult型の活用\n    - エラー分岐や例外処理を明確にするための実装パターン\n- fast-checkとneverthrowを組み合わせた具体的なコード例\n- 今後の展望とさらなる応用可能性の検討",
     speakerName: "上田慶祐",
   },
   {
@@ -165,6 +189,8 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "AI Agents Enablement in TypeScript",
+    overview:
+      "私が所属するユビーでは、Full-Stack TypeScriptのコードベースにおいて、CursorやDevinをはじめとするAI Agentを活用した開発をいち早く実践してきました。その中で、人間のエンジニアと同様にAI Agentをイネーブルメントする重要性が見えてきました。\n本発表では、Full-Stack TypeScript環境でAI Agentを最大限に活用するためのイネーブルメント戦略をお伝えします。\n\nまず、エンジニア（人）による開発とAI Agentによる開発を比較しながら、AI Agentの特性とイネーブルメントの重要性を理解します。\n\n次に、具体的なイネーブルメント戦略をご紹介します。実感できるようにデモを交える予定です（AIのデモはドキドキしますね！）。例えば次のようなテーマを含みます。\n\n- AIが解釈しやすいアーキテクチャ\n- 静的解析・自動テストによるAIの自走\n- デザインシステムによる「コーディング」以外の支援\n\n最後に、TypeScriptエコシステムとAI Agentの親和性、およびエコシステムの進化を見据えた展望をお話します。\n\n本発表を通じて、皆さんがよりAI Agentを使いこなす手助けになればと思うと同時に、TypeScriptにフォーカスしたAI Agent活用の議論がより盛り上がるきっかけになることを期待します。",
     speakerName: "小谷 優空",
   },
   {
@@ -173,6 +199,8 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "SESSION",
     title: "Language Serverと喋ろう",
+    overview:
+      "普段開発で何気なく使っている「コード補完」「Go to Definition」「変数リネーム」のような機能を、エディタ操作以外で呼び出したいと思ったことはありませんか。このような機能は、コア機能を提供する「Language Server」とエディタ拡張がやりとりすることで実現されている言語が多いです。Language Server Protocol (LSP)はそのプロトコルであり、様々な言語機能について、言語やエディタに依存しない汎用的なインターフェースが規定されています。本来LSPは、エディタごと・言語ごとに言語サポートを実装する労力を省くためのものですが、エディタ外で前述の機能をprogrammaticに呼び出すことにも利用できます。\n\n私はアプリケーションの挙動やコードを精査して脆弱性を探す業務をサポートするツールとして、セキュリティ的に怪しいコードに対し、その呼び出し元のチェーンを洗い出すことで影響範囲を調べるツールを開発しています。\nTSに特化した処理をするならCompiler APIも良い選択肢ですが、それと違って様々な言語に適用できる点でLSPに注目しています。\n\nセッションでは以下について話す予定です。\n- LSPでどんなことができるか (どのようなメソッドがあるか)\n- LSPを使った自作ツールの紹介\n- Language Serverとやりとりするサンプルコードと仕組みの解説\n- Compiler APIとLSPの比較",
     speakerName: "ぴざきゃっと",
   },
   {
@@ -182,6 +210,8 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title:
       "TypeScriptで実践するクリーンアーキテクチャ ― WebからもCLIからも使えるアプリ設計",
+    overview:
+      "本セッションでは、TypeScriptの型安全性と柔軟なモジュール設計を活かし、Web（Next.js）とCLI（inquirer.js）の両方から操作できるスクラム管理アプリをサンプルとした実践例を紹介します。\n\nTypeScriptを選んだ理由は、強力な型システムとバックエンドとフロントエンドのどちらでも一貫して使えるため、フレームワーク非依存の設計と相性が良いからです。\n\nクリーンアーキテクチャは「詳細に依存せず抽象に依存する」ことを基本理念とする設計方針です。TypeScriptを用いて重要なビジネスロジックを分離することを紹介します。\n\n・フレームワークに依存しないアプリケーションの構築方法\n・TypeScriptの型システムを活かしたドメインロジックの実装\n・Next.jsとCLIの両方で動作するそれぞれのPresentation層の設計\n\n本セッションを通じて、フロントエンドとバックエンドの関係を再考し、TypeScriptで変更に強い柔軟なアプリ設計を実現する方法を紹介します。\n\n本発表は以下の記事に即した内容です。\n「TypeScriptでクリーンアーキテクチャを実践する - WebでもCLIでも使えるアプリケーションの作り方」\nhttps://zenn.dev/panda_program/articles/clean-architecture-application",
     speakerName: "プログラミングをするパンダ",
   },
   {
@@ -190,6 +220,8 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "SESSION",
     title: "TSConfigからTypeScriptの世界を覗く",
+    overview:
+      "TSConfigはプロジェクトのTypeScriptの振る舞いを規定するものです。\nしかしながら、TSConfigのオプションは無数に存在していることや、一度設定してしまえば特に問題なく動作することからしばしばその存在を軽視されがちです。\nTSConfigを理解し、適切に設定すれば、TypeScriptそれ自体の理解を深めることやソフトウェア開発の安全性の向上に繋がります。\nまた、TypeScriptのアップデートに伴い、設定可能なオプションも追加され続けているため、キャッチアップも重要になります。\n\n本セッションは、TypeScript初級・中級者を対象にしています。\nTypeScript初級者には「TypeScriptはJavaScriptに型システムを追加して拡張した言語である」ということを主要なオプション（target, module, libなど）を通して理解できることを目標にします。\nまた、中級者にはType Checking系のオプションやProject Referencesを通して、改めてTSConfigを見直す契機としていただくことと、ここ数年のアップデート（Version 5.0 - 5.8）で追加されたオプションの紹介を通して最新情報をキャッチアップでき、今後も最新情報を把握することの重要性を理解できることを目標とします。",
     speakerName: "らいと",
   },
   {
@@ -377,6 +409,11 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK3",
     talkType: "SESSION",
     title: "feature flag 自動お掃除のための TypeScript メタプログラミング",
+    overview: `feature ブランチの寿命を短く保ったり、特定ユーザ向けに機能をリリースして反応を見る A/B テストのために、feature flag という手法がよく利用されています。一方、機能のリリースや A/B テストが完了して安定化した feature flag は、積極的に削除しなくともアプリケーションの動作に直接的な問題がないため、削除されずに負債化する可能性があります。
+
+本発表では、保守的なデッドコード除去で削除することが難しい安定化した feature flag を、よりアグレッシブな手法で削除する方法、実装、実際のコードベースに適用したときの効果について説明します。
+
+この実装では TypeScript の静的解析と構文木の操作を通じたソースコード編集を用いるため、ここではこれらをメタプログラミングと呼んでいます。この発表を通じて、TypeScript メタプログラミングの楽さと業務における可能性を感じて欲しいと考えています。`,
     speakerName: "azrsh",
   },
   {
@@ -386,6 +423,29 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "技術書をソフトウェア開発する - jsprimerの10年から学ぶ継続的メンテナンスの技術",
+    overview: `## 発表概要
+
+技術書の執筆とソフトウェアの開発に、大きな違いはありません。
+LLMを使って自然言語でコードを書ける/読めるようになった現在では、この違いはますます小さくなっています。
+約10年・6つのメジャーバージョンを経ているJavaScript入門書 [jsprimer](https://jsprimer.net) を例に、技術書のソフトウェア開発手法について紹介します。
+
+特に次の点を中心にお話しします。
+
+1. ドキュメントとコードの自動テスト - textlintやpower-doctestなどのTypeScriptで書かれたツールでの自動テスト
+2. ECMAScript年次更新への追従プロセス - 言語仕様の変化に合わせた計画的な更新手法
+3. ドキュメントに対するDesign Doc - 文章を書く前に文章の設計をソフトウェア開発のように行う方法
+4. コミュニティ貢献を促す仕組み - 累計で100名以上のコントリビューターが参加するjsprimerの運営方法/Open Collectiveの設計
+
+「TypeScriptは型を消せばJavaScript」と言われるように、TypeScriptとJavaScriptには密接な関係があります。
+この発表では、TypeScriptの基盤となるJavaScriptの学習リソースがどのように持続的に更新されてきたか、その技術的な工夫をお話しします。
+
+技術書は、ソフトウェアと同様に適切な設計・開発・運用プロセスを持つことで、長期的なメンテナンスと進化が可能になることについて、約10年間の具体的な実践例を通してお伝えします。
+
+## 対象者
+
+- TypeScript/JavaScript開発者：更新され続ける言語仕様に追従する方法について知りたい方
+- 技術書籍・ドキュメント作成者：継続的に更新される技術文書の作り方を知りたい方
+- OSSメンテナー：ドキュメント中心のプロジェクト運営、コントリビューター獲得に悩む方`,
     speakerName: "azu",
   },
   {
@@ -395,6 +455,19 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "機能的凝集の概念を用いて複数ロール、類似の機能を多く含むシステムのフロントエンドのコンポーネントを適切に分割する",
+    overview: `フロントエンドのコンポーネントの共通化、分割は追加開発や保守のしやすさを向上させるために必要な観点です。過度な共通化や分割によって、可読性、変更容易性が落ちると、開発者体験が損なわれ、工数が膨れる場合があります。一方で、コンポーネント志向のプログラムが業務コードとして普及してきた歴史はオブジェクト指向に比べると日が浅く、書籍など体系化された知識が少ないように感じます。
+発表者のチームでは凝集度を大切にしていたのですが、フロントエンドのコンポーネントの凝集度の説明を具体的なコードベースで説明している資料が多くなく、メンバーとの議論が非常に血肉になりました。
+
+本トークでは、特に機能的凝集の概念を持ち出して、類似の機能を多く含むシステムにおけるフロントエンドのコンポーネントの共通化、分割の粒度の考え方と、ts-patternやジェネリクス型などTypeScriptの型の恩恵を受けて実現できる具体的な手法についてお話しします。
+
+発表者は、複数ロール・多くの機能が存在システムの類似のコンポーネントが非常に多く出てくる現場で、どのようなコンポーネント設計だと論理凝集を機能的凝集へ近づけることができるかチームで幾度となく議論を重ねました。pjの立ち上げで、社内で類似のシステムを構築してきた知見が溜まっていたタイミングであったため、選択肢が多い状態でコンポーネント設計を行うことができました。
+
+発表者がpjの中で出会った設計パターンやそれらが出てきたシチュエーションをまとめ直し、複数のパターンで論理凝集の例とそれを修正した機能的凝集の例を紹介します。
+出会うシチュエーションとして、ロールごとに画面が違う場合、新規作成画面と編集画面などページ単位で機能が類似している場合、ページの中の部品単位で機能が類似している場合、Listで表示するItemに種類がある場合。
+また、差分の程度として、ほとんどが類似だが1~2箇所だけ差分がある場合、複数箇所差分が波及している場合。
+また、場合分けをする位置として、ルーティングから分けられる場合、Queryで取得した値から分ける場合。
+
+本トークを通じて機能的凝集の概念をおさらいし、具体的なパターンとその改善までの議論・プロセスを紹介することで、聴衆がご自身のpjでの制約を深く理解した上でコンポーネント分割の議論を行う材料にしていただきたいです。`,
     speakerName: "IkedaNoritaka",
   },
   {
@@ -403,6 +476,17 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK1",
     talkType: "SESSION",
     title: "複雑なフォームを継続的に開発していくための技術選定・設計・実装",
+    overview: `LLM（大規模言語モデル）を活用した開発においてはPythonが主要なプログラミング言語として広く認知されていますが、TypeScriptにもVercelが開発するOSSのAI SDKという便利なツールキットが存在します。このAI SDKを利用することでTypeScriptでもLLM関連のアプリを比較的簡単に作成できることをお伝えしたいと思います。
+
+本発表では、AI SDKの基本機能から応用事例までを紹介します。AI SDKは、Azure OpenAI、AWS Bedrock、Google CloudのVertexAIなど、多様なベンダーのLLM推論APIの呼び出しを統一的なインターフェースで扱うことが可能です。AI SDKがベンダー間の差異を吸収してくれるため、開発者は使用するLLMを柔軟に切り替えることが容易になります。
+
+さらにUIフレームワーク向けの機能も提供されており、例えばReact向けの\`useChat\`hooksを利用することでよくあるチャット型のUIを比較的簡単に実現可能です。このようにAI SDKを利用することでフロントエンドとバックエンドをTypeScriptで一貫して開発可能です。
+
+サイボウズでは、実際に社内用チャット型LLMアプリをNext.jsとAI SDKを用いて開発していますので、インフラも含めたアプリの構成例を紹介いたします。
+
+さらに応用事例として、手元のMacBook上で動かすローカルLLM + AI SDKによるオフラインでも動作するChrome拡張機能の作り方も紹介したいと思います。
+
+注：本発表ではプラットフォームとしてのVercelの話はありません`,
     speakerName: "izumin",
   },
   {
@@ -412,6 +496,11 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "TypeScript製IaCツールのAWS CDKが様々な言語で実装できる理由 〜他言語変換の仕組み〜",
+    overview: `AWS CDKとは、様々なプログラミング言語でインフラ定義を実装できるIaCツールであり、実態はTypeScriptによるOSSです。リソースの宣言方法まで全てTypeScriptで実現されていますが、ユーザーは様々な言語でリソース定義を実装できます。
+
+本セッションではそれが可能な理由、つまりTypeScriptコードを他言語で使用できるように変換する仕組みを解説します。
+
+この原理をAWS CDK以外にも応用することで、TypeScriptを起点にプログラミング言語の壁を超えて開発者への価値提供に繋げることができます。またAWS CDKではこの仕組みを通して、TypeScriptがたくさんの他言語ユーザーの支えになっているというTypeScriptの影響力についてもお伝えします。`,
     speakerName: "k.goto",
   },
   {
@@ -420,6 +509,15 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK2",
     talkType: "SESSION",
     title: "サウンドネスという概念 - 良いTypeScriptを書くためのマインドセット",
+    overview: `概要：
+Run time時における型の正確性がクオリティに直結するTypeScriptにおいて、重要ですがマイナーな概念であるSoundness(サウンドネス)を紹介することでTS上で良いコードを書くためのマインドセットを紹介します。
+
+説明：
+プログラミングにはType Soundness(型の健全性)という概念があります。これは端的に説明すると実行時にコード上で書かれた型が保証されているかということを示す言葉です。
+
+O’Reilly社の"Learning TypeScript"の著者、Josh Goldberg氏はその書籍内でTypeScriptの型システムをStructurally typed(構造的)と表現しています。これは型の構造に相互性があれば受け付けてしまうというTypeScriptの型システムの動きに起因しています。
+
+このトークでは、構造的型システムによって引き起こされるありがちなTypeScriptの直感に反した動き(readonly周り等)を紹介しつつ、Soundnessという概念の重要性を伝えたいと思います。`,
     speakerName: "Kei",
   },
   {
@@ -428,6 +526,19 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK1",
     talkType: "SESSION",
     title: "TS特化Clineプログラミング",
+    overview: `今現在、我々プログラマは TypeScript とプログラミングのドメインエキスパートとして、LLMに形式知やワークフローを叩き込む必要があります。
+
+モデル性能は向上していますが、汎用プロンプトだけではコーディングエージェントの力を引き出せているとは言えません。
+
+自分は次のような実験によって、TypeScript によるプログラミングの自動化を試みています。
+
+- deno によるプロトタイピング
+- コンテキスト境界を最小化するモジュール設計
+- npm ライブラリのサマリの自動作成
+- 型シグネチャファーストな設計
+- TDDによる実装
+
+Cline と TypeScript を通してAIプログラミングの未来を考察します。`,
     speakerName: "mizchi",
   },
   {
@@ -437,6 +548,17 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "TypeScript Language Service Plugin で CSS Modules の開発体験を改善する",
+    overview: `コンポーネントに CSS を当てる手法の1つに、CSS Modules があります。広く使われている手法ですが、エディタ上の開発体験が悪いという欠点がありました。*.tsx と *.module.css の Language Server が分かれているために、*.tsx と *.module.css を横断する言語機能 (Rename,Find All References ) の挙動に問題があるのです。
+
+長らくこの問題は解決困難と思われてました。しかし TypeScript Language Service Plugin を使うと、実は解決できるのです。この発表では、TypeScript Language Service Plugin とは何か、そしてそれを使って作ったツールについて紹介します。
+
+- TypeScript Language Service Plugin とは
+- CSS Modules Kit の紹介
+- Volar.js を使って .module.css を TypeScript コードに偽装する
+- Navigation 機能の実装 (Go to Definition, Rename, Find All References)
+- 壊れかけのファイルをサポートする
+- エディタにエラーを表示するには
+- Code Action と Applicable Refactor の実装`,
     speakerName: "mizdra",
   },
   {
@@ -445,6 +567,19 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK3",
     talkType: "SESSION",
     title: "君だけのオリジナル async / await を作ろう",
+    overview: `TypeScript でジェネレータ関数を使った独自の async / await ライクな記法の作り方を紹介します。
+
+Promise を扱うときには欠かせない async / await ですが、この記法が一般的に使われるようになる前はジェネレータ関数を使って同様の記法を実現するテクニックが使われてきました。
+このテクニックは今でも Promise 以外のデータに対して簡便な記法を導入する際には有効です。
+
+この発表では (いくらか歴史を振り返りつつ) JavaScript におけるジェネレータ関数を使った async / await の実装方法と、それに対して TypeScript で型を付けるためのちょっとしたトリック、Promise 以外のデータへの適用について紹介します。
+また私自身が取り組んでいる Algebraic Effects への応用など、発展的な話題にも触れられたらと思います。
+
+## 想定聴衆
+
+- neverthrow や Effect などのライブラリに登場する yield* の正体が気になっている方
+- async / await ライクな記法を自分でも作りたい方
+- TypeScript のプログラミング技法に関心のある方`,
     speakerName: "susisu",
   },
   {
@@ -453,6 +588,35 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK3",
     talkType: "SESSION",
     title: "Web Streams APIの基本と実践、TypeScriptでの活用法",
+    overview: `ストリームはデータを効率よく低遅延に処理する方法として、多くの言語でインターフェースが提供されています。
+Web標準でも2015頃からStreams APIが整備され、Fetch APIのレスポンスボディもストリームオブジェクトになっています。
+
+しかし、Streams APIを直接利用している方は少ないように思います。これは活用方法が十分に知られていない、もしくはより昔からあるNode Streamのように扱いが難しいと思われていると、想像しています。
+
+Web Streams
+APIはインターフェースが簡潔になり、型情報も整備されているため、TypeScriptからも扱いやすいものとなっています。
+このセッションではそんなWeb Streams APIの基本概念や利用シーンなどをお話しします。
+Node.jsのStreamとの違いや、Async Iteratorとの関係性についても触れていきます。
+
+---
+セッション詳細(仮)
+・Web Streams APIの概要
+　・3つのStream Object
+　・メモリ使用量と背圧
+　・キューイング戦略とhighWaterMark
+・独自のストリームオブジェクトを定義する
+　・型がちゃんと当たるという話
+・具体的な用例
+　・高サイズ画像の段階的な読み込み
+　・ETLツールによる大量データ処理
+　・Chat GPTのレスポンスの逐次表示
+・Node.jsのStreamとの相違点
+　・インターフェースの違い
+　・(型情報の違い)
+　・互換性とtoWeb/fromWebメソッド
+・Async Iteratorとの関係性
+　・Streamの非同期イテレーション
+　・for await ... ofの利用`,
     speakerName: "tasshi",
   },
   {
@@ -461,6 +625,13 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK2",
     talkType: "SESSION",
     title: "Pragmatic Functional Programming in TypeScript",
+    overview: `本セッションでは、関数型プログラミングの思想を実務に落とし込み、TypeScriptで堅牢かつ保守性の高いバックエンド開発を実現する手法を紹介します。
+
+具体的には、Dmitrii Kovanikov氏が提唱する5つの原則（Parse, don’t validate、Make illegal states unrepresentable、Errors as values、Functional core, imperative shell、Smart constructor）を取り上げ、TypeScriptにおける実装例を通してそれぞれのメリットや意義を解説します。
+
+なお、実装例では当社が開発しているAPIゲートウェイを題材とする予定です。本システムでは、TypeScriptの新興ライブラリ「Effect」を採用しています。例を通じて、Effectがneverthrowやpurify-tsといった類似ライブラリとは異なり、5つの原則すべてを実践するためのモジュールを提供している点にも興味を持っていただけるでしょう。
+
+バックエンド開発におけるコードの堅牢性と保守性の課題に対し、部分的な関数型アプローチによってどのように対処できるのか、普段フロントエンド開発に従事している方にも参考となるような知見を提供する内容となる予定です。`,
     speakerName: "yasaichi",
   },
   {
@@ -469,6 +640,26 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK1",
     talkType: "SESSION",
     title: "ts-morphを利用して編集可能なコード生成を実現する",
+    overview: `TypeScript製の多くのフレームワークでは、実装したAPIサーバーからOpenAPIを出力するアプローチが採用されています。しかし、OpenAPI定義を元に、サーバーのテンプレートコードを自動生成するアプローチは多くはありません。そこで、OpenAPI定義を読み込み、Fastifyのコントローラー層の実装を自動生成するツールを作成しました。
+
+クラスを使ったアプローチをするフレームワーク・言語と違い、Fastifyは生成したコードを人の手で編集したい要求があります。
+
+// ここは自動生成したい
+server.post("/hoge", hogeSchema, async (req) => { 
+  // 関数呼び出しの中身は、自分で実装したい & 次生成した場合に消えたら困る。
+  someLogic(req.body.id)
+})
+
+一つのファイルの中で、「自動生成したいコード」と「人の手で編集しコード生成時にも消してほしくないコード」が入り混じることになります。これは、従来のトップダウンのコード生成では実現が難しく、現状の実装を解析し、必要な部分だけ再生成するアプローチが必要です。
+
+今回は、この解析部分（と自動生成部分）にts-morphを利用し、自動生成と手動編集を両立させる手法について扱います。
+
+# 過去のts-morphに関する発表との違い
+
+過去のTSKaigiでもts-morphに関するトピックが採用されています。本発表では、以下の2点が違いになると考えています。
+
+・ts-morphのより具体的な活用事例について述べる点
+・単なるコード生成ではなく現在の実装の解析にもts-morphを利用することで柔軟なコード生成を実現した点`,
     speakerName: "yuta-ike",
   },
   {
@@ -478,6 +669,17 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "TypeScriptとVercel AI SDKで実現するLLMアプリケーション開発：フロントエンドからバックエンド、そしてChrome拡張まで",
+    overview: `LLM（大規模言語モデル）を活用した開発においてはPythonが主要なプログラミング言語として広く認知されていますが、TypeScriptにもVercelが開発するOSSのAI SDKという便利なツールキットが存在します。このAI SDKを利用することでTypeScriptでもLLM関連のアプリを比較的簡単に作成できることをお伝えしたいと思います。
+
+本発表では、AI SDKの基本機能から応用事例までを紹介します。AI SDKは、Azure OpenAI、AWS Bedrock、Google CloudのVertexAIなど、多様なベンダーのLLM推論APIの呼び出しを統一的なインターフェースで扱うことが可能です。AI SDKがベンダー間の差異を吸収してくれるため、開発者は使用するLLMを柔軟に切り替えることが容易になります。
+
+さらにUIフレームワーク向けの機能も提供されており、例えばReact向けの\`useChat\`hooksを利用することでよくあるチャット型のUIを比較的簡単に実現可能です。このようにAI SDKを利用することでフロントエンドとバックエンドをTypeScriptで一貫して開発可能です。
+
+サイボウズでは、実際に社内用チャット型LLMアプリをNext.jsとAI SDKを用いて開発していますので、インフラも含めたアプリの構成例を紹介いたします。
+
+さらに応用事例として、手元のMacBook上で動かすローカルLLM + AI SDKによるオフラインでも動作するChrome拡張機能の作り方も紹介したいと思います。
+
+注：本発表ではプラットフォームとしてのVercelの話はありません`,
     speakerName: "加瀬健太（@Kesin11）",
   },
   {
@@ -486,6 +688,8 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK2",
     talkType: "SESSION",
     title: "Lookback TypeScript ESM support and what should we do now.",
+    overview:
+      "TypeScriptのESM（ECMAScript Modules）サポートは、JavaScriptとその周辺エコシステムのESM対応と共に進んできました。\n\n一方でこれはJavaScriptとそのエコシステムが持つモジュールシステムの複雑さをTypeScriptが同じように引き継いでしまっているとも言えます。実際これまで段階的に行われてきたTypeScriptのESMサポート機能は単純ではなく、特に初学者やJavaScriptのモジュールシステムに詳しくない人にとっては理解しづらいものになっています。\n\n本セッションでは、JavaScriptのモジュールシステムの基礎的な部分から始め、TypeScriptにおけるESMサポートの歴史と現状を整理します。さらにESM移行への課題とその解決策、ユースケースに応じた設定の例などを紹介することで、実際のプロダクトへ活用できる内容とします。",
     speakerName: "左治木 隆成",
   },
   {
@@ -494,6 +698,8 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     track: "TRACK2",
     talkType: "SESSION",
     title: "フロントエンドがTypeScriptなら、バックエンドはPHPでもいいじゃない",
+    overview:
+      "プロダクト開発において、フロントエンドとバックエンドをTypeScriptで統一することは、型共有や開発効率の向上といった多くのメリットがあります。しかし、プロジェクトやチームによっては他の選択肢も有効です。本トークでは、バックエンドにPHPを採用するという選択肢について、PHPのエコシステムや開発サイクル、アーキテクチャやデプロイ手法などを通じて、TypeScriptではないバックエンドを持つことの魅力を紹介します。また、PHPエンジニア目線から見たTypeScriptとの組み合わせによる実践的な開発フローやバックエンド、フロントエンド分離案を提案します。本トークを通じて、言語に閉じない多様な視点を提供します。",
     speakerName: "富所 亮",
   },
   {
@@ -503,6 +709,8 @@ SmartHRでは、コンポーネントライブラリを用いてアクセシビ�
     talkType: "SESSION",
     title:
       "型システムを活用した ESLint カスタムルール開発入門 〜固有ドメインにおけるコーディング規約を開発する〜",
+    overview:
+      "ESLint は JavaScript/TypeScript における主要な Linter として広く採用されており、その特筆する機能として、 AST を活用したカスタム Lint ルールの実装が可能である点が挙げられます。  \nこのカスタム Lint ルールは、チーム固有のコーディング規約を自動化する強力なアプローチを提供しますが、その実装には AST への理解が求められ、多くの開発者に難易度が高い印象を与えているのではないでしょうか。\n\n本セッションでは、AST の基礎概念から解説を始め、段階的にカスタム Lint ルールの開発方法を解説します。  \nまた、固有ドメインに対するカスタム Lint ルールの開発アプローチとして、 TypeScript の型システムを活用した Lint ルールの開発方法を、 AWS CDK 用カスタム Lint ルールの開発経験をもとに解説します。",
     speakerName: "山梨 蓮",
   },
   {
