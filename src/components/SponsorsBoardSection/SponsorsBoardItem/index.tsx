@@ -23,7 +23,7 @@ export function SponsorsBoardItem({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full"
+      className="aspect-video w-full"
     >
       <Image
         src={src}

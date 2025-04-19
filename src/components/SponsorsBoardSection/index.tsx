@@ -1,4 +1,7 @@
+import { studentSupportSponsorList } from "@/constants/studentSupportSponsorList";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 import { sponsorList } from "../../constants/sponsorList";
 import { SponsorsBoardItem } from "./SponsorsBoardItem";
 import { SponsorsBoardTitle } from "./SponsorsBoardTitle";
@@ -18,7 +21,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
             Platinum Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+        <div className="pt-6 px-6 md:px-0 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-7xl mx-auto">
           {sponsorList.platinum.map(
             (sponsor) =>
               // 企業確認済みかつロゴ画像がある場合、またはwipページの時アイテムを表示
@@ -26,7 +29,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                 <SponsorsBoardItem
                   key={sponsor.id}
                   className={cn(
-                    "w-full h-[162px] md:h-[192px]",
+                    "w-full h-full",
                     sponsor.addPadding ? "p-8" : "p-4",
                   )}
                   src={sponsor.logoImage}
@@ -47,7 +50,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
             Gold Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center">
+        <div className="pt-6 px-6 md:px-0 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-7xl mx-auto">
           {sponsorList.gold.map(
             (sponsor) =>
               // 企業確認済みかつロゴ画像がある場合、またはwipページの時アイテムを表示
@@ -55,7 +58,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                 <SponsorsBoardItem
                   key={sponsor.id}
                   className={cn(
-                    "w-full h-[144px]",
+                    "w-full h-full",
                     sponsor.addPadding ? "p-8" : "p-4",
                   )}
                   src={sponsor.logoImage}
@@ -76,7 +79,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
             Silver Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-4 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
+        <div className="pt-6 px-6 md:px-0 grid gap-3 md:gap-4 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 w-full max-w-7xl mx-auto">
           {sponsorList.silver.map(
             (sponsor) =>
               // 企業確認済みかつロゴ画像がある場合、またはwipページの時アイテムを表示
@@ -84,7 +87,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                 <SponsorsBoardItem
                   key={sponsor.id}
                   className={cn(
-                    "w-full h-[112px]",
+                    "w-full h-full",
                     sponsor.addPadding ? "p-4" : "p-2",
                   )}
                   src={sponsor.logoImage}
@@ -105,7 +108,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
             Bronze Sponsors
           </h3>
         </SponsorsBoardTitle>
-        <div className="pt-6 px-4 md:px-0 grid gap-2 md:gap-4 grid-cols-4 md:grid-cols-5 lg:grid-cols-6 place-items-center">
+        <div className="pt-6 px-6 md:px-0 grid gap-2 md:gap-4 grid-cols-4 md:grid-cols-5 lg:grid-cols-6 w-full max-w-7xl mx-auto">
           {sponsorList.bronze.map(
             (sponsor) =>
               // 企業確認済みかつロゴ画像がある場合、またはwipページの時アイテムを表示
@@ -113,7 +116,7 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                 <SponsorsBoardItem
                   key={sponsor.id}
                   className={cn(
-                    "w-full h-[96px]",
+                    "w-full h-full",
                     sponsor.addPadding ? "p-4" : "p-2",
                   )}
                   src={sponsor.logoImage}
@@ -124,6 +127,85 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
                 />
               ),
           )}
+        </div>
+      </div>
+
+      {/* 学生支援スポンサー */}
+      <div className="pb-8 flex flex-col">
+        <SponsorsBoardTitle titleClassName="before:bg-green-600 after:bg-green-600">
+          <h3 className="text-green-600 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
+            学生支援
+          </h3>
+        </SponsorsBoardTitle>
+        <div className="pt-6 flex flex-col items-center gap-2 md:gap-4 w-full max-w-7xl mx-auto">
+          <div className="flex justify-center gap-2 md:gap-4 w-full">
+            {studentSupportSponsorList.high.map((sponsor) => (
+              <Link
+                href={sponsor.logoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video w-[22%] md:w-[18%] lg:w-[16%]"
+                key={sponsor.id}
+              >
+                <Image
+                  src={sponsor.logoImage}
+                  alt={sponsor.name}
+                  width={186}
+                  height={96}
+                  className={cn(
+                    "object-contain rounded-[10px] bg-white w-full h-full",
+                    sponsor.addPadding ? "p-4" : "p-2",
+                  )}
+                />
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex justify-center gap-2 md:gap-4 w-full">
+            {studentSupportSponsorList.medium.map((sponsor) => (
+              <Link
+                href={sponsor.logoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video w-[20%] md:w-[16%] lg:w-[14%]"
+                key={sponsor.id}
+              >
+                <Image
+                  src={sponsor.logoImage}
+                  alt={sponsor.name}
+                  width={186}
+                  height={96}
+                  className={cn(
+                    "object-contain rounded-[10px] bg-white w-full h-full",
+                    sponsor.addPadding ? "p-4" : "p-2",
+                  )}
+                />
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex justify-center gap-2 md:gap-4 w-full">
+            {studentSupportSponsorList.low.map((sponsor) => (
+              <Link
+                href={sponsor.logoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video w-[18%] md:w-[14%] lg:w-[12%]"
+                key={sponsor.id}
+              >
+                <Image
+                  src={sponsor.logoImage}
+                  alt={sponsor.name}
+                  width={186}
+                  height={96}
+                  className={cn(
+                    "object-contain rounded-[10px] bg-white w-full h-full",
+                    sponsor.addPadding ? "p-4" : "p-2",
+                  )}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@ import { CoreStaffSection } from "@/components/CoreStaffSection";
 import { HeroSectionWithMotion } from "@/components/HeroSectionWithMotion";
 import { JudgesSection } from "@/components/JudgesSection";
 import { MissionSection } from "@/components/MissionSection";
+import PersonalSponsorsSection from "@/components/PersonalSponsorsSection";
 import { SponsorsBoardSection } from "@/components/SponsorsBoardSection";
 import { StaffSection } from "@/components/StaffSection";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <BuyTicketSection />
       <MissionSection />
       <SponsorsBoardSection />
+      <PersonalSponsorsSection />
       <JudgesSection />
       <CoreStaffSection />
       <StaffSection />
