@@ -132,8 +132,8 @@ export function SponsorsBoardSection({ isWip = false }: { isWip?: boolean }) {
 
       {/* 学生支援スポンサー */}
       <div className="pb-8 flex flex-col">
-        <SponsorsBoardTitle titleClassName="before:bg-orange-600 after:bg-orange-600">
-          <h3 className="text-orange-600 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
+        <SponsorsBoardTitle titleClassName="before:bg-green-600 after:bg-green-600">
+          <h3 className="text-green-600 text-16 md:text-28 leading-[28.8px] md:leading-[42px] font-bold font-noto">
             学生支援
           </h3>
         </SponsorsBoardTitle>
