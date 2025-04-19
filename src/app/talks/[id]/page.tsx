@@ -1,5 +1,6 @@
 import { talkIds } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import Link from "next/link";
 import type { ComponentProps } from "react";
 
 import Markdown from "react-markdown";
@@ -18,6 +19,24 @@ const components: ComponentProps<typeof Markdown>["components"] = {
   ),
   h3: ({ node, ...props }) => (
     <h3 className="text-lg font-bold text-blue-light-500" {...props} />
+  ),
+  a: ({ node, href, ...props }) => {
+    if (!href) return null;
+    return (
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-link-light hover:underline"
+        href={href}
+        {...props}
+      />
+    );
+  },
+  ul: ({ node, ...props }) => (
+    <ul className="text-gray-700 list-disc list-inside pl-6" {...props} />
+  ),
+  ol: ({ node, ...props }) => (
+    <ol className="text-gray-700 list-decimal list-inside pl-6" {...props} />
   ),
   pre: ({ node, ...props }) => (
     <pre className="bg-gray-100 p-4 rounded-lg text-wrap" {...props} />
