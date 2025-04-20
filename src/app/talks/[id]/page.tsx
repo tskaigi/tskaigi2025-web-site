@@ -71,11 +71,9 @@ export default async function TalkDetailPage({
 
         {/* トーク説明文 */}
         <div className="px-6 md:px-8 lg:px-10 gap-6 flex flex-col md:text-lg">
-          {talk.overview && (
-            <Markdown components={components} remarkPlugins={[remarkBreaks]}>
-              {talk.overview}
-            </Markdown>
-          )}
+          <Markdown components={components} remarkPlugins={[remarkBreaks]}>
+            {talk.overview}
+          </Markdown>
         </div>
 
         {/* スピーカー情報 */}
