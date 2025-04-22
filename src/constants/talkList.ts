@@ -23,15 +23,19 @@ export type Track = keyof typeof TRACK;
 export const TALK_TYPE = {
   SESSION: {
     name: "セッション",
+    color: "#0C7EDC",
   },
   KEYNOTE: {
     name: "基調講演",
+    color: "#0CA90E",
   },
   LT: {
     name: "LT",
+    color: "#C0BA02",
   },
   SPONSOR_LT: {
     name: "スポンサーLT",
+    color: "#E53D84",
   },
 };
 export type TalkType = keyof typeof TALK_TYPE;
@@ -44,6 +48,7 @@ export type Talk = {
   title: string;
   overview?: string[];
   speakerName: string;
+  time: string;
 };
 
 export const talkList: Talk[] = [
@@ -59,6 +64,7 @@ export const talkList: Talk[] = [
       "この発表では、「静的解析で何を実現したいか」を軸にそこから逆算して必要になるTypeScript Compilerの知識を紹介します。TypeScript Compilerを使ってなにかを作るきっかけを提供できることを願っています。",
     ],
     speakerName: "Kazushi Konosu",
+    time: "13:40 〜 14:10",
   },
   {
     id: "2",
@@ -67,6 +73,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "checker.tsに対して真剣に向き合う",
     speakerName: "kkk4oru",
+    time: "11:50 〜 12:20",
   },
   {
     id: "3",
@@ -75,6 +82,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "SignalとObservable―新たなデータモデルを解きほぐす",
     speakerName: "lacolaco",
+    time: "13:40 〜 14:10",
   },
   {
     id: "4",
@@ -84,6 +92,7 @@ export const talkList: Talk[] = [
     title:
       "AWS LambdaをTypeScriptで動かして分かった、Node.jsのTypeScriptサポートの利点と課題",
     speakerName: "Masaki Suzuki",
+    time: "15:50 〜 16:20",
   },
   {
     id: "5",
@@ -93,6 +102,7 @@ export const talkList: Talk[] = [
     title:
       "Valibot Schema Driven UI - ノーコードWebサイトビルダーを実装してみよう！",
     speakerName: "Miyagi Hirotaka",
+    time: "16:30 〜 17:00",
   },
   {
     id: "6",
@@ -101,6 +111,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "高度な型付け、どう教える？",
     speakerName: "progfay",
+    time: "11:50 〜 12:20",
   },
   {
     id: "7",
@@ -109,6 +120,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Full-Stack TypeScript x GraphQLで実現する漸進的アーキテクチャ",
     speakerName: "Sohei Takeno",
+    time: "11:50 〜 12:20",
   },
   {
     id: "8",
@@ -117,6 +129,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TypeScriptとは何であって何でなく、誰のもので、どこへ向かうのか",
     speakerName: "Sosuke Suzuki",
+    time: "16:30 〜 17:00",
   },
   {
     id: "9",
@@ -125,6 +138,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "堅牢なデザインシステムをつくるためのTypeScript活用",
     speakerName: "takanorip",
+    time: "14:20 〜 14:50",
   },
   {
     id: "10",
@@ -133,6 +147,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Rust製JavaScript/TypeScript LinterにおけるPluginシステム実装の裏側",
     speakerName: "unvalley",
+    time: "17:10 〜 17:40",
   },
   {
     id: "11",
@@ -141,6 +156,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TypeScriptとReactで、WAI-ARIAの属性を正しく利用する",
     speakerName: "ymrl",
+    time: "15:50 〜 16:20",
   },
   {
     id: "12",
@@ -149,6 +165,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TypeScriptエンジニアがAndroid開発の世界に飛び込んだ話",
     speakerName: "yui_tang / Yui Sakamoto",
+    time: "15:50 〜 16:20",
   },
   {
     id: "13",
@@ -158,6 +175,7 @@ export const talkList: Talk[] = [
     title:
       "fast-checkとneverthrowのPBT+Result型で堅牢なビジネスロジックを実現する",
     speakerName: "上田慶祐",
+    time: "16:30 〜 17:00",
   },
   {
     id: "14",
@@ -166,6 +184,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "AI Agents Enablement in TypeScript",
     speakerName: "小谷 優空",
+    time: "15:00 〜 15:30",
   },
   {
     id: "15",
@@ -174,6 +193,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Language Serverと喋ろう",
     speakerName: "ぴざきゃっと",
+    time: "14:20 〜 14:50",
   },
   {
     id: "16",
@@ -183,6 +203,7 @@ export const talkList: Talk[] = [
     title:
       "TypeScriptで実践するクリーンアーキテクチャ ― WebからもCLIからも使えるアプリ設計",
     speakerName: "プログラミングをするパンダ",
+    time: "13:40 〜 14:10",
   },
   {
     id: "17",
@@ -191,6 +212,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TSConfigからTypeScriptの世界を覗く",
     speakerName: "らいと",
+    time: "14:20 〜 14:50",
   },
   {
     id: "18",
@@ -199,6 +221,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "推論された型の移植性エラーTS2742に挑む",
     speakerName: "elecdeer",
+    time: "15:00 〜 15:30",
   },
   {
     id: "19",
@@ -208,6 +231,7 @@ export const talkList: Talk[] = [
     title:
       "TSConfig Solution Style & subpath imports でファイル単位で型を切り替える",
     speakerName: "kotori",
+    time: "15:00 〜 15:30",
   },
   {
     id: "20",
@@ -216,6 +240,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "URLPatternから始めるWebフレームワーク開発入門",
     speakerName: "ryuapp",
+    time: "15:00 〜 15:30",
   },
   {
     id: "21",
@@ -224,6 +249,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "TypeScript だけを書いて Tauri でデスクトップアプリを作ろう",
     speakerName: "tris",
+    time: "17:10 〜 17:40",
   },
   {
     id: "22",
@@ -233,6 +259,7 @@ export const talkList: Talk[] = [
     title:
       "転生したらTypeScriptのEnumだった件～型安全性とエコシステムの変化で挫けそうになっているんだが～",
     speakerName: "yamanoku",
+    time: "15:00 〜 15:30",
   },
   {
     id: "23",
@@ -241,6 +268,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "NovaのTypeScriptサポート",
     speakerName: "Yoshino Yuto",
+    time: "17:10 〜 17:40",
   },
   {
     id: "24",
@@ -249,6 +277,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "型安全なDrag and Dropの設計を考える",
     speakerName: "yudppp",
+    time: "17:10 〜 17:40",
   },
   {
     id: "25",
@@ -258,6 +287,7 @@ export const talkList: Talk[] = [
     title:
       "タイプレベルリファクタリング奮闘記〜この「型パズル」は読めません！〜",
     speakerName: "Yugo Yagita",
+    time: "17:10 〜 17:40",
   },
   {
     id: "26",
@@ -266,6 +296,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "wasmで多言語資産をTypeScriptで活用する",
     speakerName: "赤木勇統",
+    time: "17:10 〜 17:40",
   },
   {
     id: "27",
@@ -275,6 +306,7 @@ export const talkList: Talk[] = [
     title:
       "型パズルを好きになるために、競プロを型システムだけで解いてみることにした",
     speakerName: "いまいまい",
+    time: "17:10 〜 17:40",
   },
   {
     id: "28",
@@ -283,6 +315,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Interface vs Types 〜型推論が過多推論〜",
     speakerName: "表 洋樹",
+    time: "17:10 〜 17:40",
   },
   {
     id: "29",
@@ -291,6 +324,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "ハッカソンでTypeScriptを使った実体験",
     speakerName: "河村悠太",
+    time: "15:00 〜 15:30",
   },
   {
     id: "30",
@@ -299,6 +333,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "GitHub ActionsをTypeScriptで作ろう！",
     speakerName: "じょーし",
+    time: "17:10 〜 17:40",
   },
   {
     id: "31",
@@ -308,6 +343,7 @@ export const talkList: Talk[] = [
     title:
       "コンポーネントライブラリで実現する、アクセシビリティの正しい実装パターン",
     speakerName: "たじまん",
+    time: "15:00 〜 15:30",
   },
   {
     id: "32",
@@ -316,6 +352,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "『Python→TypeScript』オンボーディング奮闘記",
     speakerName: "龍野 卓己",
+    time: "15:00 〜 15:30",
   },
   {
     id: "33",
@@ -324,6 +361,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "主要ライブラリの実例に学ぶ、TypeScriptで実現する型安全な座標定義",
     speakerName: "原口公輔",
+    time: "15:00 〜 15:30",
   },
   {
     id: "34",
@@ -332,6 +370,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "feature flag 自動お掃除のための TypeScript メタプログラミング",
     speakerName: "azrsh",
+    time: "11:30 〜 12:00",
   },
   {
     id: "35",
@@ -341,6 +380,7 @@ export const talkList: Talk[] = [
     title:
       "技術書をソフトウェア開発する - jsprimerの10年から学ぶ継続的メンテナンスの技術",
     speakerName: "azu",
+    time: "13:20 〜 13:50",
   },
   {
     id: "36",
@@ -350,6 +390,7 @@ export const talkList: Talk[] = [
     title:
       "機能的凝集の概念を用いて複数ロール、類似の機能を多く含むシステムのフロントエンドのコンポーネントを適切に分割する",
     speakerName: "IkedaNoritaka",
+    time: "14:40 〜 15:10",
   },
   {
     id: "37",
@@ -358,6 +399,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "複雑なフォームを継続的に開発していくための技術選定・設計・実装",
     speakerName: "izumin",
+    time: "11:30 〜 12:00",
   },
   {
     id: "38",
@@ -367,6 +409,7 @@ export const talkList: Talk[] = [
     title:
       "TypeScript製IaCツールのAWS CDKが様々な言語で実装できる理由 〜他言語変換の仕組み〜",
     speakerName: "k.goto",
+    time: "15:30 〜 16:00",
   },
   {
     id: "39",
@@ -375,6 +418,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "サウンドネスという概念 - 良いTypeScriptを書くためのマインドセット",
     speakerName: "Kei",
+    time: "15:30 〜 16:00",
   },
   {
     id: "40",
@@ -383,6 +427,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TS特化Clineプログラミング",
     speakerName: "mizchi",
+    time: "15:30 〜 16:00",
   },
   {
     id: "41",
@@ -392,6 +437,7 @@ export const talkList: Talk[] = [
     title:
       "TypeScript Language Service Plugin で CSS Modules の開発体験を改善する",
     speakerName: "mizdra",
+    time: "10:50 〜 11:20",
   },
   {
     id: "42",
@@ -400,6 +446,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "君だけのオリジナル async / await を作ろう",
     speakerName: "susisu",
+    time: "14:40 〜 15:10",
   },
   {
     id: "43",
@@ -408,6 +455,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Web Streams APIの基本と実践、TypeScriptでの活用法",
     speakerName: "tasshi",
+    time: "13:20 〜 13:50",
   },
   {
     id: "44",
@@ -416,6 +464,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Pragmatic Functional Programming in TypeScript",
     speakerName: "yasaichi",
+    time: "11:30 〜 12:00",
   },
   {
     id: "45",
@@ -424,6 +473,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "ts-morphを利用して編集可能なコード生成を実現する",
     speakerName: "yuta-ike",
+    time: "14:00 〜 14:30",
   },
   {
     id: "46",
@@ -433,6 +483,7 @@ export const talkList: Talk[] = [
     title:
       "TypeScriptとVercel AI SDKで実現するLLMアプリケーション開発：フロントエンドからバックエンド、そしてChrome拡張まで",
     speakerName: "加瀬健太（@Kesin11）",
+    time: "10:50 〜 11:20",
   },
   {
     id: "47",
@@ -441,6 +492,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "Lookback TypeScript ESM support and what should we do now.",
     speakerName: "左治木 隆成",
+    time: "14:40 〜 15:10",
   },
   {
     id: "48",
@@ -449,6 +501,7 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "フロントエンドがTypeScriptなら、バックエンドはPHPでもいいじゃない",
     speakerName: "富所 亮",
+    time: "10:50 〜 11:20",
   },
   {
     id: "49",
@@ -458,6 +511,7 @@ export const talkList: Talk[] = [
     title:
       "型システムを活用した ESLint カスタムルール開発入門 〜固有ドメインにおけるコーディング規約を開発する〜",
     speakerName: "山梨 蓮",
+    time: "13:20 〜 13:50",
   },
   {
     id: "50",
@@ -466,6 +520,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "React19で変化したuseReducerの型から学ぶTypeScriptの型推論",
     speakerName: "k8o",
+    time: "14:00 〜 14:30",
   },
   {
     id: "51",
@@ -474,6 +529,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Type ChallengesにPRを出して新しい問題を追加した話",
     speakerName: "Kanon",
+    time: "16:10 〜 16:50",
   },
   {
     id: "52",
@@ -482,6 +538,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Panda-CSS はどのように型安全にしているのか",
     speakerName: "Kato.work",
+    time: "16:10 〜 16:50",
   },
   {
     id: "53",
@@ -490,6 +547,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Result型、自前で書くか、ライブラリ使うか",
     speakerName: "majimaccho",
+    time: "14:00 〜 14:30",
   },
   {
     id: "54",
@@ -498,6 +556,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "ProxyとTypeScriptのおいしい関係",
     speakerName: "Motoki Shakagori",
+    time: "16:10 〜 16:50",
   },
   {
     id: "55",
@@ -506,6 +565,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Standard Schema: スキーマライブラリの統一規格とは何か",
     speakerName: "Nozomu Ikuta",
+    time: "16:10 〜 16:50",
   },
   {
     id: "56",
@@ -514,6 +574,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "令和最新版TypeScriptでのnpmパッケージ開発",
     speakerName: "odan",
+    time: "16:10 〜 16:50",
   },
   {
     id: "57",
@@ -522,6 +583,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "型付け力を強化するための Hoogle のすゝめ",
     speakerName: "TAKASE Kazuyuki (@Guvalif)",
+    time: "14:00 〜 14:30",
   },
   {
     id: "58",
@@ -531,6 +593,7 @@ export const talkList: Talk[] = [
     title:
       "クラサバ境界を失った現代 TypeScript コードベースに秩序をもたらしたい",
     speakerName: "Yo Iwamoto",
+    time: "14:00 〜 14:30",
   },
   {
     id: "59",
@@ -539,6 +602,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "ts-morph実践：型を利用するcodemodのテクニック",
     speakerName: "ypresto",
+    time: "16:10 〜 16:50",
   },
   {
     id: "60",
@@ -548,6 +612,7 @@ export const talkList: Talk[] = [
     title:
       "declaration mergingの威力：ライブラリアップデート時の書き換え作業を90%短縮するテクニック",
     speakerName: "Yuma Takei",
+    time: "16:10 〜 16:50",
   },
   {
     id: "61",
@@ -556,6 +621,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "コンパイルオプションで変わる型世界",
     speakerName: "池田 敬祐",
+    time: "16:10 〜 16:50",
   },
   {
     id: "62",
@@ -564,6 +630,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "Project Referencesを活用した実行環境ごとのtsconfig最適化",
     speakerName: "板井俊樹",
+    time: "16:10 〜 16:50",
   },
   {
     id: "63",
@@ -572,6 +639,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "TypeScriptのmoduleオプションを改めて整理する",
     speakerName: "大石 貴則 (bicstone)",
+    time: "16:10 〜 16:50",
   },
   {
     id: "64",
@@ -580,6 +648,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "TypeScript ASTとJSDocで実現するコードの自動削除",
     speakerName: "川野賢一",
+    time: "14:00 〜 14:30",
   },
   {
     id: "65",
@@ -589,6 +658,7 @@ export const talkList: Talk[] = [
     title:
       "これは型破り？型安全？真実はいつもひとつ！（じゃないかもしれない）TypeScriptクイズ〜〜〜〜！！！！！",
     speakerName: "君田 祥一",
+    time: "14:00 〜 14:30",
   },
   {
     id: "66",
@@ -597,6 +667,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "バリデーションライブラリ徹底比較",
     speakerName: "田中勇太",
+    time: "16:10 〜 16:50",
   },
   {
     id: "67",
@@ -606,6 +677,7 @@ export const talkList: Talk[] = [
     title:
       "VueUseから学ぶ実践TypeScript〜人気ライブラリのコードベースから見つけた型定義の工夫〜",
     speakerName: "ツノ",
+    time: "14:00 〜 14:30",
   },
   {
     id: "68",
@@ -614,6 +686,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "型推論の扉を開く―集合論と構造的型制約で理解する中級へのステップ",
     speakerName: "栃川晃佑",
+    time: "14:00 〜 14:30",
   },
   {
     id: "69",
@@ -622,6 +695,7 @@ export const talkList: Talk[] = [
     talkType: "LT",
     title: "型がない世界に生まれ落ちて 〜TypeScript運用進化の歴史〜",
     speakerName: "成原 聡一朗",
+    time: "16:10 〜 16:50",
   },
 ];
 
