@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Outfit } from "next/font/google";
 import type React from "react";
+import { Suspense } from "react";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://2025.tskaigi.org/"),
   description:
-    "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
+    "TSKaigiは日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
   applicationName: "TSKaigi 2025",
   authors: [
     {
@@ -59,7 +62,7 @@ export const metadata: Metadata = {
     },
     url: "https://2025.tskaigi.org/",
     description:
-      "TSKaigiは、日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
+      "TSKaigiは日本最大級のTypeScriptをテーマとした技術カンファレンスです。2025/5/23 (金) - 24 (土) の日程で開催します。",
     type: "website",
     images: ["/banner.jpg"],
   },
@@ -73,7 +76,13 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={`${outfit.variable} ${notoSansJP.variable} font-noto`}>
-        {children}
+        <Suspense>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Suspense>
       </body>
     </html>
   );

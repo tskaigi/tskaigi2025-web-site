@@ -42,6 +42,7 @@ export type Talk = {
   track: Track;
   talkType: TalkType;
   title: string;
+  overview?: string[];
   speakerName: string;
 };
 
@@ -52,6 +53,11 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "SESSION",
     title: "静的解析で実現したいことから逆算して学ぶTypeScript Compiler",
+    overview: [
+      "静的解析には、コードベースから情報を抽出したり、自動的に編集を行ったり、多くの活用方法があります。ESTreeに関連したライブラリをベースに静的解析でなにかを実現することと比べて、TypeScript Compilerを活用することの難易度は高いです。これはプラグインの充実度や関連する資料の量などエコシステムとしての広がりの差に原因があると考えられます。",
+      "難易度が高いTypeScript Compilerですが、プロジェクトの型情報を活用できるだけでなく、提供されるAPIの型が強力であることや依存関係が少なくなることなど、ツールを作るベースとして採用する複数のメリットがあります。",
+      "この発表では、「静的解析で何を実現したいか」を軸にそこから逆算して必要になるTypeScript Compilerの知識を紹介します。TypeScript Compilerを使ってなにかを作るきっかけを提供できることを願っています。",
+    ],
     speakerName: "Kazushi Konosu",
   },
   {
@@ -618,3 +624,7 @@ export const talkList: Talk[] = [
     speakerName: "成原 聡一朗",
   },
 ];
+
+export const talkIds = talkList.map((talk) => ({
+  id: talk.id,
+}));

@@ -35,34 +35,29 @@ export const BuyTicketSection = () => {
               <p>
                 これまでのコンセプトを継承し、学びの場を提供し、情報交換と交流を促進し、TypeScriptコミュニティをさらに盛り上げます！
               </p>
-              <br />
-              <p>チケットの購入は以下より行えます。</p>
             </div>
           </div>
+
+          <div className="w-full border-l-4 border-yellow-500 bg-yellow-100 p-6 rounded-r-lg mb-6">
+            <h3 className="text-22 font-bold text-red-500 mb-2">
+              現地参加チケット完売のお知らせ
+            </h3>
+            <p className="text-16 md:text-18 text-black-500 leading-[1.8]">
+              多数のお申し込みをいただき、現地参加チケットは完売いたしました。引き続きオンライン参加チケットはお申し込みいただけますので、ぜひご検討ください。
+            </p>
+          </div>
+
           <div className="flex flex-col justify-center gap-5 md:flex-col lg:flex-row p-[10px] flex-1">
+            <div className="rounded-full h-[60px] bg-black-300 text-white px-8 md:px-10 self-stretch flex items-center justify-center cursor-not-allowed">
+              <span className="font-bold text-18 lg:text-22 leading-[1.8]">
+                現地参加チケット
+              </span>
+            </div>
             <Button
               asChild
               variant="default"
               size="lg"
               className="rounded-full h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 self-stretch"
-            >
-              <Link
-                href={BuyTicketPageLink.offline}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold flex items-center text-22 [&_svg]:size-6"
-              >
-                <span className="text-18 lg:text-22 leading-[1.8]">
-                  現地参加チケット
-                </span>
-                <ArrowRight />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="default"
-              size="lg"
-              className="rounded-full h-[60px] bg-white hover:bg-black-100 text-blue-purple-500 pl-8 pr-6 md:pl-10 md:pr-8 lg:pl-10 lg:pr-8 border-[2px] border-black-500 self-stretch"
             >
               <Link
                 href={BuyTicketPageLink.online}
