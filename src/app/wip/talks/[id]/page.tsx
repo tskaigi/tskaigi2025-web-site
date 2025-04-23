@@ -77,31 +77,67 @@ export default async function TalkDetailPage({
         </div>
 
         {/* スピーカー情報 */}
-        {/* FIXME: デザイン未調整 */}
-        {/* <div className="pt-8 p-10">
+        <div className="mt-4 px-6 md:px-8 lg:px-10">
           <div className="bg-blue-light-200 p-6 rounded-xl">
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-24 h-24 rounded-full overflow-hidden">
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+              <div className="min-w-[180px] h-[180px] md:min-w-[220px] md:h-[220px] rounded-full overflow-hidden">
                 <img
-                  src={`/talks/speaker/${talk.id}.jpg`}
-                  alt={talk.speakerName}
+                  src={`/talks/speaker/${talk.speaker.id}.jpg`}
+                  alt={talk.speaker.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div>
-                <p className="font-bold text-lg">{talk.speakerName}</p>
+              <div className="flex flex-col gap-4">
+                <p className="font-bold text-22">{talk.speaker.name}</p>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-700 text-16 md:text-18">
+                    {talk.speaker.bio}
+                  </p>
+                  {talk.speaker.additionalLink && (
+                    <Link
+                      href={talk.speaker.additionalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 text-16 md:text-18 underline"
+                    >
+                      {talk.speaker.additionalLink}
+                    </Link>
+                  )}
+                </div>
                 <div className="flex gap-2 mt-2">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <TwitterIcon />
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon />
-                  </a>
+                  {talk.speaker.xId && (
+                    <Link
+                      href={`https://x.com/${talk.speaker.xId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/talks/sns/x-logo.png"
+                        alt="X"
+                        width={36}
+                        height={36}
+                      />
+                    </Link>
+                  )}
+                  {talk.speaker.githubId && (
+                    <Link
+                      href={`https://github.com/${talk.speaker.githubId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/talks/sns/github-logo.png"
+                        alt="GitHub"
+                        width={36}
+                        height={36}
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </main>
   );

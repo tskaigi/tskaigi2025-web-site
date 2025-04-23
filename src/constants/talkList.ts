@@ -42,10 +42,11 @@ export type TalkType = keyof typeof TALK_TYPE;
 
 export type Speaker = {
   name: string;
-  avatarPath?: string;
+  /** URL のリンクやプロフィール画像のリンクに利用する */
+  id?: string;
   bio?: string;
-  xLink?: string;
-  githubLink?: string;
+  xId?: string;
+  githubId?: string;
   additionalLink?: string;
 };
 
