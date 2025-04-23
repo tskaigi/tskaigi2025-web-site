@@ -56,7 +56,7 @@ const SideEvent = ({
               height={600}
               className="w-full md:max-w-xl lg:min-w-96"
             />
-            <p className="leading-7 md:text-lg md:leading-8 lg:hidden">
+            <p className="leading-7 md:text-lg md:leading-8 lg:hidden whitespace-pre-wrap">
               {detail}
             </p>
             {tags && (
@@ -73,7 +73,7 @@ const SideEvent = ({
             )}
           </div>
           <div className="flex flex-col gap-5">
-            <p className="leading-7 md:text-lg md:leading-8 hidden lg:inline">
+            <p className="leading-7 md:text-lg md:leading-8 hidden lg:inline whitespace-pre-wrap">
               {detail}
             </p>
             <p className="md:text-lg lg:text-base lg:text-right">

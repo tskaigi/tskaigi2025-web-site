@@ -6,40 +6,14 @@ import type { SideEventProps } from "@/components/SideEvent";
  */
 export const sideEventList: SideEventProps[] = [
   {
-    date: "08/06 (火)",
-    name: "TSKaigi Mashup #1 フロントエンド",
-    link: "https://example.com",
+    date: "5/23 (金)",
+    name: "TSKaigi Drinkup presented by Dinii",
+    link: "https://dinii.connpass.com/event/351839",
     thumbnail: "/sideEvents/event1.png",
-    detail: `TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！
-オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。
-一方、定期開催するTSKaigiサブイベントでは、特定の「テーマ」を設定し、そのテーマに関したセッションやLTを募集いたします！皆さんの興味のある領域やテーマの回で、ぜひご参加ください！
-初回となる今回は、王道「フロントエンド」をテーマとし、TypeScriptとフロントエンドに関するトークを行います！ゲストセッションとして、TSKaigi2024の選考委員も務めてくださったうひょさんさんにもトークを行っていただく予定です。（イベント後は懇親会も予定しています。）`,
-    tags: [
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-    ],
-    sponsors: ["株式会社LabBase", "株式会社カミナシ", "レバレジーズ株式会社"],
-  },
-  {
-    date: "08/06 (火)",
-    name: "TSKaigi Mashup #1 フロントエンド",
-    link: "https://example.com",
-    isClosed: true,
-    thumbnail: "/sideEvents/event1.png",
-    detail: `TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！
-オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。
-一方、定期開催するTSKaigiサブイベントでは、特定の「テーマ」を設定し、そのテーマに関したセッションやLTを募集いたします！皆さんの興味のある領域やテーマの回で、ぜひご参加ください！
-初回となる今回は、王道「フロントエンド」をテーマとし、TypeScriptとフロントエンドに関するトークを行います！ゲストセッションとして、TSKaigi2024の選考委員も務めてくださったうひょさんさんにもトークを行っていただく予定です。（イベント後は懇親会も予定しています。）`,
-    tags: [
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-      "公募枠あり",
-    ],
-    sponsors: ["株式会社LabBase", "株式会社カミナシ", "レバレジーズ株式会社"],
+    detail: `TSKaigi 2025 プラチナスポンサーである 株式会社ダイニー は、参加者限定のカジュアルな Drinkupを開催します！
+
+カンファレンスの熱気が冷めやらぬうちに、気軽に立ち寄って、参加者同士で語り合ってみませんか？ TSKaigi 登壇者も数名ゲストとしてお呼びする予定です。 美味しいドリンクや料理をご用意して、みなさんのご参加をお待ちしています🍻`,
+    tags: ["Drinkup"],
+    sponsors: ["株式会社 ダイニー"],
   },
 ];
