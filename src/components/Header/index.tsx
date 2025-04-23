@@ -22,6 +22,10 @@ const links: {
     label: "タイムテーブル",
   },
   {
+    href: "/side-events",
+    label: "サイドイベント",
+  },
+  {
     href: "/sponsors",
     label: "スポンサー",
   },

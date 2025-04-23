@@ -1,6 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const links: {
+  href: string;
+  label: string;
+}[] = [
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/talks",
+    label: "タイムテーブル",
+  },
+  {
+    href: "/sponsors",
+    label: "スポンサー",
+  },
+  {
+    href: "/side-events",
+    label: "サイドイベント",
+  },
+  {
+    href: "/code-of-conduct",
+    label: "行動規範",
+  },
+  {
+    href: "/specific-commercial",
+    label: "特定商取引法に基づく表記",
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="text-white text-sm">
@@ -13,31 +43,13 @@ const Footer = () => {
         <div className="flex flex-col gap-3 lg:w-72">
           <p className="font-bold">ページ一覧</p>
           <ul className="flex flex-col gap-2.5 pl-3">
-            <li>
-              <Link href="/" className="hover:underline">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/talks" className="hover:underline">
-                タイムテーブル
-              </Link>
-            </li>
-            <li>
-              <Link href="/sponsors" className="hover:underline">
-                スポンサー
-              </Link>
-            </li>
-            <li>
-              <Link href="/code-of-conduct" className="hover:underline">
-                行動規範
-              </Link>
-            </li>
-            <li>
-              <Link href="/specific-commercial" className="hover:underline">
-                特定商取引法に基づく表記
-              </Link>
-            </li>
+            {links.map(({ href, label }) => (
+              <li key={label}>
+                <Link href={href} className="hover:underline">
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
