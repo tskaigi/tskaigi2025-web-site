@@ -163,7 +163,11 @@ export const staffList: Staff[] = [
     href: "https://x.com/hisayuki_mori",
   },
   { name: "JI23", image: "/staff/ji23.jpg", href: "https://x.com/JJ_1123_I" },
-  { name: "マナティ", image: "/staff/mana-kinoshita.JPG", href: "" },
+  {
+    name: "マナティ",
+    image: "/staff/mana-kinoshita.JPG",
+    href: "https://x.com/m_k01104",
+  },
   {
     name: "magcho",
     image: "/staff/magcho.png",
@@ -221,4 +225,16 @@ export const staffList: Staff[] = [
     image: "/staff/mikai.jpeg",
     href: "https://x.com/miumitempe",
   },
+  {
+    name: "IIHARA議長",
+    image: "/staff/iihara.jpeg",
+    href: "https://x.com/iihara_gityo",
+  },
+  {
+    name: "sasanqua",
+    image: "/staff/sasanqua.jpg",
+    href: "https://x.com/sasanqua_dev",
+  },
+  { name: "takane", image: "/staff/takane.jpg", href: "https://x.com/mmmcykm" },
+  { name: "jamashita", image: "/staff/12183078.png", href: "" },
 ];
