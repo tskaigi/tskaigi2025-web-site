@@ -1,5 +1,6 @@
 import { talkIds } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import type { Metadata } from "next";
 import Link from "next/link";
 import type { ComponentProps } from "react";
 
@@ -8,6 +9,34 @@ import remarkBreaks from "remark-breaks";
 
 export async function generateStaticParams() {
   return talkIds;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const talk = getTalk(id);
+
+  return {
+    twitter: {
+      title: talk.title,
+      images: [
+        {
+          url: `/ogp/talks/${talk.id}.png`,
+        },
+      ],
+    },
+    openGraph: {
+      title: talk.title,
+      images: [
+        {
+          url: `/ogp/talks/${talk.id}.png`,
+        },
+      ],
+    },
+  };
 }
 
 const components: ComponentProps<typeof Markdown>["components"] = {
