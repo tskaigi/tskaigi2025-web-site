@@ -32,7 +32,7 @@ export function StaffSection() {
               <img
                 src={image}
                 alt={`${name} アイコン`}
-                className="w-full h-full object-cover rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden aspect-square"
               />
               <p className="text-16 leading-7 text-center">{name}</p>
             </LinkOrBox>
@@ -48,13 +48,13 @@ function LinkOrBox({
   href,
 }: { children: React.ReactNode; href: Staff["href"] }) {
   return href === "" ? (
-    <div>{children}</div>
+    <div className="flex flex-col items-center gap-2">{children}</div>
   ) : (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center gap-2 aspect-square"
+      className="flex flex-col items-center gap-2"
     >
       {children}
     </a>
