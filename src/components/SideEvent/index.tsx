@@ -77,7 +77,7 @@ const SideEvent = ({
               {detail}
             </p>
             <p className="md:text-lg lg:text-base lg:text-right">
-              スポンサー: {sponsors.join("、 ")}
+              主催: {sponsors.join("、 ")}
             </p>
           </div>
         </div>
