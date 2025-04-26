@@ -42,8 +42,9 @@ export type TalkType = keyof typeof TALK_TYPE;
 
 export type Speaker = {
   name: string;
-  /** URL のリンクやプロフィール画像のリンクに利用する */
+  /** X or GitHub の ID を設定。URL のリンクに利用する */
   id?: string;
+  profileImagePath?: string;
   bio?: string;
   xId?: string;
   githubId?: string;
