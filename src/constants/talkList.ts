@@ -42,13 +42,14 @@ export type TalkType = keyof typeof TALK_TYPE;
 
 export type Speaker = {
   name: string;
-  /** X or GitHub の ID を設定。URL のリンクに利用する */
-  id?: string;
+  username?: string;
   profileImagePath?: string;
   bio?: string;
   xId?: string;
   githubId?: string;
   additionalLink?: string;
+  affiliation?: string;
+  position?: string;
 };
 
 export type Talk = {
@@ -100,6 +101,14 @@ export const talkList: Talk[] = [
     time: "13:40 〜 14:10",
     speaker: {
       name: "lacolaco",
+      username: "laco2net",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/3.png",
+      bio: "Google Developers Expert for Angular、Angular日本ユーザー会の代表として、Angularコミュニティへのコントリビューションや翻訳、登壇、イベント主催などの活動をしています。ポッドキャスト「リファクタリングとともに生きるラジオ」でも活動中。",
+      xId: "laco2net",
+      githubId: "lacolaco",
+      additionalLink: "https://lacolaco.net",
+      affiliation: "Classi株式会社",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -114,6 +123,14 @@ export const talkList: Talk[] = [
     time: "15:50 〜 16:20",
     speaker: {
       name: "Masaki Suzuki",
+      username: "makky12",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/4.png",
+      bio: "KDDIアジャイル開発センター株式会社 / 名古屋オフィス所属。\n2019年に業務でAWSに携わったことがきっかけでクラウドの魅力にハマり、以来ずっとクラウドエンジニア（バックエンド/アーキテクト）として活動。\n特にサーバーレスやInfrastructure as Code(IaC)が大好きで、AWS LambdaやAWS CDKを用いたサーバーレスアプリケーションの設計開発・IaCでのインフラ構築・CI/CD環境構築などを得意とし、それらの開発言語としてTypeScriptやNode.jsを好んで使用している。\nその他、JAWS-UGやServerlessなどのAWS関連コミュニティにおいて、登壇・参加などのコミュニティへの貢献活動を積極的に行っており、2023年よりAWS Community Builder(Serverless)に認定。",
+      xId: "makky12",
+      githubId: "smt7174",
+      additionalLink: "https://makky12.hatenablog.com/",
+      affiliation: "KDDIアジャイル開発センター株式会社",
+      position: "バックエンドエンジニア/クラウドアーキテクト",
     },
   },
   {
@@ -124,10 +141,18 @@ export const talkList: Talk[] = [
     title:
       "Valibot Schema Driven UI - ノーコードWebサイトビルダーを実装してみよう！",
     overview:
-      "近年 Bubble や Webflow、日本だと STUDIO などのノーコードプラットフォームが注目を集めています。これらのツールは、プログラミングの知識がなくてもユーザーが思い思いの UI を構築できる機能を提供し、アプリケーション開発の民主化に貢献しています。\n\nこのようなノーコードでユーザーが自由に UI を組み立てる仕組みはどのように構築されているのでしょうか。一見複雑に見えますが、基本的な考え方を理解すれば独自のエディタを構築することは難しくありません。アーキテクチャの中核となるのは、動的な UI コンポーネントを表現するスキーマ定義と、それを実際の UI 要素に変換する仕組みです。\n\n本発表では、スキーマバリデーションライブラリであるValibotとReactを利用し、型の力を最大限に活用して動的なUIを作る仕組みを紹介します。\n具体的には、Text, Button, Imageなどの複数のUI要素の表現・要素間の親子関係の定義・スタイリングの実現・JavaScript実行までを取り扱います。\n\n題材を選んだ理由は、例に挙げたノーコードプラットフォームでなくとも近年のUI実装はどんどん複雑化しており、どのようなプロダクトでもこうした動的UI実装が必要になるケースは増えています。とはいえこの実装方法が紹介されることは少ないです。そうした中で一つのきっかけとなれたらと思い今回発表できたらと考えています。\n",
+      "近年 Bubble や Webflow、日本だと STUDIO などのノーコードプラットフォームが注目を集めています。これらのツールは、プログラミングの知識がなくてもユーザーが思い思いの UI を構築できる機能を提供し、アプリケーション開発の民主化に貢献しています。\n\nこのようなノーコードでユーザーが自由に UI を組み立てる仕組みはどのように構築されているのでしょうか。一見複雑に見えますが、基本的な考え方を理解すれば独自のエディタを構築することは難しくありません。アーキテクチャの中核となるのは、動的な UI コンポーネントを表現するスキーマ定義と、それを実際の UI 要素に変換する仕組みです。\n\n本発表では、スキーマバリデーションライブラリであるValibotとReactを利用し、型の力を最大限に活用して動的なUIを作る仕組みを紹介します。",
     time: "16:30 〜 17:00",
     speaker: {
-      name: "Miyagi Hirotaka",
+      name: "宮城広隆(@MH4GF)",
+      username: "MH4GF",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/5.png",
+      bio: "株式会社タイミーの創業期からソフトウェアエンジニアとして関わった後、フリーランスとして複数企業での開発を経験。\n2023年2月にROUTE06に入社し、Frontend Platformチームのテックリードとして大規模BtoB SaaSの設計推進を担当。\n現在はOSSのデータベーススキーマ可視化ツール Liam ERD のプロダクトマネージャーを担当しています。",
+      xId: "MH4GF",
+      githubId: "mh4gf",
+      additionalLink: "https://mh4gf.dev",
+      affiliation: "株式会社ROUTE06 Liam事業部",
+      position: "Tech Lead / Product Manager",
     },
   },
   {
@@ -180,6 +205,14 @@ export const talkList: Talk[] = [
     time: "14:20 〜 14:50",
     speaker: {
       name: "takanorip",
+      username: "takanorip",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/9.png",
+      bio: "デザインと実装両方やるタイプの人間です。今は株式会社カンムでバンドルカードの開発をしています。\n好きなフォントはFuturaです。",
+      xId: "takanoripe",
+      githubId: "takanorip",
+      additionalLink: "https://takanorip.com",
+      affiliation: "株式会社カンム",
+      position: "ソフトウェアエンジニア/デザイナー",
     },
   },
   {
@@ -206,6 +239,14 @@ export const talkList: Talk[] = [
     time: "15:50 〜 16:20",
     speaker: {
       name: "ymrl",
+      username: "ymrl",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/11.png",
+      bio: "「Webアプリケーションアクセシビリティ」共著者。UIデザイナーとしてTypeScriptを書いています。",
+      xId: "ymrl",
+      githubId: "ymrl",
+      additionalLink: undefined,
+      affiliation: "フリー株式会社",
+      position: "UIデザイナー/エンジニア",
     },
   },
   {
@@ -218,7 +259,15 @@ export const talkList: Talk[] = [
       "Webフロントエンド開発とAndroidネイティブ開発は一見まったく異なる世界に思えますが、TypeScriptとKotlin、Web FrontendにとAndroid Appには驚くほど多くの共通点があります。本セッションでは、バックエンドおよびフロントエンド開発を15年経験し複数の言語環境を経験してきたエンジニアが、Androidアプリ開発に挑戦した経験を共有します。複数の言語パラダイムを渡り歩いてきた視点から、両言語の類似パターン、設計思想の共通点、そして相違点から学んだ貴重な教訓を紹介し、Web Frontend領域のエンジニアにAndroidアプリ開発の敷居を下げられるようなお話をします。",
     time: "15:50 〜 16:20",
     speaker: {
-      name: "yui_tang / Yui Sakamoto",
+      name: "yui_tang",
+      username: "yui_tang",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/12.png",
+      bio: "東京生まれ。新卒で営業職について数年後、独学でWebプログラミングを学び転身。2014年よりメルカリでソフトウェアエンジニア・技術ブランディング等の職に就く。2024年5月にnewmo株式会社へ入社。猫・メタル・筋トレ・VTuberが好き。",
+      xId: "yui_tang",
+      githubId: "YUISAKAMOTO",
+      additionalLink: undefined,
+      affiliation: "newmo株式会社",
+      position: "ソフトウェアエンジニア",
     },
   },
   {
@@ -240,12 +289,32 @@ export const talkList: Talk[] = [
     eventDate: "DAY1",
     track: "TRACK1",
     talkType: "SESSION",
-    title: "AI Agents Enablement in TypeScript",
-    overview:
-      "私が所属するユビーでは、Full-Stack TypeScriptのコードベースにおいて、CursorやDevinをはじめとするAI Agentを活用した開発をいち早く実践してきました。その中で、人間のエンジニアと同様にAI Agentをイネーブルメントする重要性が見えてきました。\n本発表では、Full-Stack TypeScript環境でAI Agentを最大限に活用するためのイネーブルメント戦略をお伝えします。\n\nまず、エンジニア（人）による開発とAI Agentによる開発を比較しながら、AI Agentの特性とイネーブルメントの重要性を理解します。\n\n次に、具体的なイネーブルメント戦略をご紹介します。実感できるようにデモを交える予定です（AIのデモはドキドキしますね！）。例えば次のようなテーマを含みます。\n\n- AIが解釈しやすいアーキテクチャ\n- 静的解析・自動テストによるAIの自走\n- デザインシステムによる「コーディング」以外の支援\n\n最後に、TypeScriptエコシステムとAI Agentの親和性、およびエコシステムの進化を見据えた展望をお話します。\n\n本発表を通じて、皆さんがよりAI Agentを使いこなす手助けになればと思うと同時に、TypeScriptにフォーカスしたAI Agent活用の議論がより盛り上がるきっかけになることを期待します。",
+    title: "AI Coding Agent Enablement in TypeScript",
+    overview: `私が所属するユビーでは、Full-Stack TypeScriptのコードベースにおいて、CursorやDevinをはじめとするCoding Agentを活用した開発をいち早く実践してきました。その中で、人間のエンジニアと同様にCoding Agentをイネーブルメントする重要性が見えてきました。
+本発表では、Full-Stack TypeScript環境でCoding Agentを最大限に活用するためのイネーブルメント戦略をお伝えします。
+
+まず、エンジニア（人）による開発とCoding Agentによる開発を比較しながら、Coding Agentの特性とイネーブルメントの重要性を理解します。
+
+次に、具体的なイネーブルメント戦略をご紹介します。実感できるようにデモを交える予定です（AIのデモはドキドキしますね！）。例えば次のようなテーマを含みます。
+
+- AIが解釈しやすいアーキテクチャ
+- 静的解析・自動テストによるAIの自走
+- デザインシステムによる「コーディング」以外の支援
+
+最後に、TypeScriptエコシステムとCoding Agentの親和性、およびエコシステムの進化を見据えた展望をお話します。
+
+本発表を通じて、皆さんがよりCoding Agentを使いこなす手助けになればと思うと同時に、TypeScriptにフォーカスしたCoding Agent活用の議論がより盛り上がるきっかけになることを期待します。`,
     time: "15:00 〜 15:30",
     speaker: {
-      name: "小谷 優空",
+      name: "Yuku Kotani",
+      username: "yukukotani",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/14.png",
+      bio: "Ubie株式会社で、技術戦略や開発組織戦略の立案・執行をリードしています。",
+      xId: "yukukotani",
+      githubId: "yukukotani",
+      additionalLink: "https://yuku.dev",
+      affiliation: "Ubie株式会社",
+      position: "VP of Technology",
     },
   },
   {
@@ -273,6 +342,15 @@ export const talkList: Talk[] = [
     time: "13:40 〜 14:10",
     speaker: {
       name: "プログラミングをするパンダ",
+      // TODO: 確認。ブログのドメインからとってきた
+      username: "panda-program",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/16.png",
+      bio: "XP、スクラム開発が好きなフルスタックエンジニア。バックエンドからフロントエンド、レガシーシステムの開発から新規プロダクトの立ち上げ、新入社員のオンボーディングから一人ひとりと向き合うチームビルディングまで幅広く担当。BASEではシニアエンジニアとしてアジャイル開発を推進中。CodeZineでの寄稿や個人ブログの執筆、YouTube、SpotifyでPodcastを配信するなどエンジニア向け情報の発信している。",
+      xId: undefined,
+      githubId: undefined,
+      additionalLink: "https://panda-program.com/",
+      affiliation: undefined,
+      position: "シニアエンジニア",
     },
   },
   {
@@ -299,6 +377,14 @@ export const talkList: Talk[] = [
     time: "15:00 〜 15:30",
     speaker: {
       name: "elecdeer",
+      username: "elecdeerdev",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/18.png",
+      bio: "TypeScriptとReactを書くフロントエンドエンジニア。便利なツールを作るのが好き。",
+      xId: "elecdeerdev",
+      githubId: "elecdeer",
+      additionalLink: "https://elecdeer.dev/",
+      affiliation: "チームラボ　フロントエンド班",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -352,7 +438,15 @@ export const talkList: Talk[] = [
       "「…ここは、一体？」\n\n気づけば俺は、TypeScriptのEnumとして異世界転生していた。与えられたのは名前付き定数を表現する力「列挙型」。\nしかし型安全性を重視する世界において、Union型とconst assertionsたちが我が物顔で闊歩し、俺の居場所を奪っていくのであった。\n\n可読性と保守性を高めるために生まれたはずの俺が、今や時代遅れの遺物扱い。\nさらに追い打ちをかけるように、Node.jsの「--experimental-strip-types」とTypeScriptの「--erasableSyntaxOnly」のオプションたちが、存在そのものを消し去ろうとする。\n\n「このままでは…このままでは俺は消えてしまうのか…？」\n\nそれでも俺は諦めない。同じように居場所を失いかけている仲間たちと共に、俺は立ち上がる。型安全性、エコシステム、そして自身の存在意義についてを考える旅が今始まろうとしていた…。\n\n---\n\nこの発表ではTypeScriptにおけるEnumが辿ってきた歴史とその苦境についてを解説していきます。聴者がEnumを使うことを改めて見つめ直すような内容を提供いたします。",
     time: "15:00 〜 15:30",
     speaker: {
-      name: "yamanoku",
+      name: "やまのく",
+      username: "yamanoku",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/22.png",
+      bio: "一児の父です。会社員やってます。",
+      xId: "yamanoku",
+      githubId: "yamanoku",
+      additionalLink: "https://yamanoku.net",
+      affiliation: "",
+      position: "",
     },
   },
   {
@@ -374,11 +468,23 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "LT",
     title: "型安全なDrag and Dropの設計を考える",
-    overview:
-      "Drag and Drop (DnD) は、UIにおいて直感的な操作を実現できる便利な仕組みですが、実装の自由度が高いために型安全性が犠牲になりがちです。意図しない要素のドラッグや誤った場所へのドロップなど、ランタイムエラーのリスクもあります。\n\n本発表では、TypeScriptの型システムを活用し、DnDの制約を静的に表現する方法を解説します。具体的には、「何がドラッグ可能か？」、「どこにドロップできるのか？」 を interface や Generics で定義し、安全にDnDを設計する手法を紹介します。\n\n型の力を活かした拡張性のあるDnD設計を一緒に探っていきましょう！",
+    overview: `Drag and Drop (DnD) は、UIにおいて直感的な操作を実現できる便利な仕組みです。しかし、その実装の自由度の高さゆえに、型安全性の確保が課題となることも少なくありません。例えば、複数の異なる種類の要素をドラッグ可能にしたい場合や、特定の要素にのみドロップを許可したい場合、あるいはドラッグ可能な要素がDOMツリー内で深くネストしているような複雑なケースでは、意図しない要素のドラッグや誤った場所へのドロップといったランタイムエラーのリスクが増大します。
+
+本発表では、TypeScriptの強力な型システムを駆使し、このような複雑なDnDの制約を静的に表現する方法を深く掘り下げて解説します。「どのような種類の要素がドラッグ可能なのか？」、そして「それらはUIのどの領域にドロップできるのか？」といったルールを、interfaceやGenericsを用いて明確に定義し、型レベルで安全性を保証するDnD設計の手法をご紹介します。
+
+型の力を最大限に活かし、複雑な要件にも柔軟に対応できる、拡張性のあるDnD設計を一緒に探求していきましょう！`,
     time: "17:10 〜 17:40",
     speaker: {
       name: "yudppp",
+      username: "yudppp",
+      // TODO: 画像の指定がなかったので要確認
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/24.png",
+      bio: "2018年にHRBrainに10人目の社員、3人目のエンジニアとして入社。\nTypeScriptは2018年から書いています。",
+      xId: "yudppp",
+      githubId: "yudppp",
+      additionalLink: "https://blog.yudppp.com/",
+      affiliation: "株式会社HRBrain",
+      position: "執行役員CTO",
     },
   },
   {
@@ -454,11 +560,22 @@ export const talkList: Talk[] = [
     track: "TRACK3",
     talkType: "LT",
     title: "GitHub ActionsをTypeScriptで作ろう！",
-    overview:
-      "トークの主題：GitHubのカスタムアクション開発にTypeScriptの相性が良いこと\n\nGitHub Actionのカスタムアクションはjavascriptのみ直接実行でき、TypeScriptのbootstrapリポジトリも公式で提供されています。またライブラリなども公式からTypeScript向けに提供されており、GitHub Actionsの開発ではTypeScriptの相性が良いです。（他の言語では提供されていなかったりします）\n\nTypeScriptでの開発に最適化されているため、型安全性や開発効率の向上の恩恵を受けれます。\n\n私はgithub-actions-opentelemetryというGitHub Actionsのトレースや実行時間などのメトリクスをOpenTelemetryで送信するOSSを書いています。その際にTypeScriptで良かった点などを紹介します。TypeScriptを活用して、より堅牢で保守性の高いGitHubカスタムアクション開発の魅力をお伝えします。",
+    overview: `主題：GitHubのカスタムアクションにはTypeScriptがオススメ
+
+GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせませんが、公式からTypeScript向けのbootstrapリポジトリやライブラリが提供されています。そのため、GitHub Actionsのカスタムアクション開発ではTypeScriptが非常に使いやすいです。
+
+私はOSSの「GitHub Actions OpenTeremetry」をTypeScriptで開発しています。この開発を通して感じた、型安全性や開発効率の良さなど、TypeScriptを使ってよかった点を紹介します。`,
     time: "17:10 〜 17:40",
     speaker: {
-      name: "じょーし",
+      name: "じょーし（上司陽平）",
+      username: "paper2parasol",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/30.png",
+      bio: "Sansan株式会社にて、請求書管理サービス「Bill One」のソフトウェアエンジニア兼SREとして活動しています。有志メンバによるCI/CD改善チームを運営し、日々の開発者体験の向上に取り組んでいます。最近は、GitHub Actionsのパフォーマンスや効果測定を可視化するためのOSS「GitHub Actions OpenTelemetry」の開発にも注力しています。",
+      xId: "paper2parasol",
+      githubId: "paper2",
+      additionalLink: "https://paper2.hatenablog.com/",
+      affiliation: "Sansan株式会社",
+      position: "ソフトウェアエンジニア兼SRE",
     },
   },
   {
@@ -552,7 +669,15 @@ export const talkList: Talk[] = [
       "LLM（大規模言語モデル）を活用した開発においてはPythonが主要なプログラミング言語として広く認知されていますが、TypeScriptにもVercelが開発するOSSのAI SDKという便利なツールキットが存在します。このAI SDKを利用することでTypeScriptでもLLM関連のアプリを比較的簡単に作成できることをお伝えしたいと思います。\n\n本発表では、AI SDKの基本機能から応用事例までを紹介します。AI SDKは、Azure OpenAI、AWS Bedrock、Google CloudのVertexAIなど、多様なベンダーのLLM推論APIの呼び出しを統一的なインターフェースで扱うことが可能です。AI SDKがベンダー間の差異を吸収してくれるため、開発者は使用するLLMを柔軟に切り替えることが容易になります。\n\nさらにUIフレームワーク向けの機能も提供されており、例えばReact向けの`useChat`hooksを利用することでよくあるチャット型のUIを比較的簡単に実現可能です。このようにAI SDKを利用することでフロントエンドとバックエンドをTypeScriptで一貫して開発可能です。\n\nサイボウズでは、実際に社内用チャット型LLMアプリをNext.jsとAI SDKを用いて開発していますので、インフラも含めたアプリの構成例を紹介いたします。\n\nさらに応用事例として、手元のMacBook上で動かすローカルLLM + AI SDKによるオフラインでも動作するChrome拡張機能の作り方も紹介したいと思います。\n\n注：本発表ではプラットフォームとしてのVercelの話はありません",
     time: "11:30 〜 12:00",
     speaker: {
-      name: "izumin",
+      name: "izumin5210",
+      username: "izumin5210",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/37.png",
+      bio: "バクラク事業部 PlatformEngineering部 Enablingチーム。\nプロダクト開発やバックエンド・Webフロントエンドの基盤開発などをしています。APIスキーマ関連技術とコードの静的解析・自動生成技術が好き。",
+      xId: "izumin5210",
+      githubId: "izumin5210",
+      additionalLink: undefined,
+      affiliation: "株式会社LayerX",
+      position: "Staff Software Engineer",
     },
   },
   {
@@ -567,6 +692,15 @@ export const talkList: Talk[] = [
     time: "15:30 〜 16:00",
     speaker: {
       name: "k.goto",
+      username: "365_step_tech",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/38.png",
+      bio: "AWS CDK のコントリビュート活動を行っており、Top Contributor や Community Reviewer に選定。コミュニティ駆動の CDK コンストラクトライブラリのメンテナーや、自作 AWS ツールの OSS 開発も行なっている。2024 年 3 月、AWS DevTools Hero に選出。",
+      xId: "365_step_tech",
+      githubId: "go-to-k",
+      additionalLink:
+        "https://aws.amazon.com/jp/developer/community/heroes/kenta-goto/",
+      affiliation: "株式会社メイツ",
+      position: "バックエンドエンジニア",
     },
   },
   {
@@ -574,11 +708,20 @@ export const talkList: Talk[] = [
     eventDate: "DAY2",
     track: "TRACK2",
     talkType: "SESSION",
-    title: "サウンドネスという概念 - 良いTypeScriptを書くためのマインドセット",
-    overview: `## 概要\nRun time時における型の正確性がクオリティに直結するTypeScriptにおいて、重要ですがマイナーな概念であるSoundness(サウンドネス)を紹介することでTS上で良いコードを書くためのマインドセットを紹介します。\n\n## 説明\nプログラミングにはType Soundness(型の健全性)という概念があります。これは端的に説明すると実行時にコード上で書かれた型が保証されているかということを示す言葉です。\n\nO'Reilly社の"Learning TypeScript"の著者、Josh Goldberg氏はその書籍内でTypeScriptの型システムをStructurally typed(構造的)と表現しています。これは型の構造に相互性があれば受け付けてしまうというTypeScriptの型システムの動きに起因しています。\n\nこのトークでは、構造的型システムによって引き起こされるありがちなTypeScriptの直感に反した動き(readonly周り等)を紹介しつつ、Soundnessという概念の重要性を伝えたいと思います。`,
+    title: `"良い"TSのコードを書く為のマインドセット`,
+    overview:
+      "Run time時における型の正確性がクオリティに直結するTypeScriptにおいて、重要ですがマイナーな概念であるSoundness(サウンドネス)を紹介することでTS上で”良い”コードを書くためのマインドセットを紹介します。",
     time: "15:30 〜 16:00",
     speaker: {
       name: "Kei",
+      username: "kei_english_ca",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/39.png",
+      bio: "カナダでキャリアをスタートのち、5年間アメリカとカナダのスタートアップにて従事。現在は日本でWixにて働いています。",
+      xId: "kei_english_ca",
+      githubId: "kei95",
+      additionalLink: "https://www.youtube.com/@kei_NA",
+      affiliation: "Wix.com",
+      position: "フロンエンドエンジニア",
     },
   },
   {
@@ -619,6 +762,14 @@ export const talkList: Talk[] = [
     time: "14:40 〜 15:10",
     speaker: {
       name: "susisu",
+      username: "susisu2413",
+      profileImagePath: "https://avatars.githubusercontent.com/u/2443491?v=4",
+      bio: "桃栗三年型八年",
+      xId: "susisu2413",
+      githubId: "susisu",
+      additionalLink: "https://susisu.hatenablog.com/",
+      affiliation: "株式会社はてな",
+      position: "Webアプリケーションエンジニア",
     },
   },
   {
@@ -640,11 +791,22 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "SESSION",
     title: "Pragmatic Functional Programming in TypeScript",
-    overview:
-      "本セッションでは、関数型プログラミングの思想を実務に落とし込み、TypeScriptで堅牢かつ保守性の高いバックエンド開発を実現する手法を紹介します。\n\n具体的には、Dmitrii Kovanikov氏が提唱する5つの原則（Parse, don’t validate、Make illegal states unrepresentable、Errors as values、Functional core, imperative shell、Smart constructor）を取り上げ、TypeScriptにおける実装例を通してそれぞれのメリットや意義を解説します。\n\nなお、実装例では当社が開発しているAPIゲートウェイを題材とする予定です。本システムでは、TypeScriptの新興ライブラリ「Effect」を採用しています。例を通じて、Effectがneverthrowやpurify-tsといった類似ライブラリとは異なり、5つの原則すべてを実践するためのモジュールを提供している点にも興味を持っていただけるでしょう。\n\nバックエンド開発におけるコードの堅牢性と保守性の課題に対し、部分的な関数型アプローチによってどのように対処できるのか、普段フロントエンド開発に従事している方にも参考となるような知見を提供する内容となる予定です。",
+    overview: `関数型プログラミングを学んでも、実務での活用方法に悩む方は少なくありません。純粋関数、イミュータブルな値、モナドなどの概念を、具体的なコードにどう落とし込むかが明確でない場合が多いからです。
+
+そこで本セッションでは、Dmitrii Kovanikov 氏の提唱する 5 つの原則（Parse, don’t validate／Make illegal states unrepresentable／Errors as values／Functional core, imperative shell／Smart constructor）を「事前条件」「事後条件」「不変条件」という Design by Contract の視点で再構成し、TypeScript による実装例とそのメリットを解説します。
+
+加えて、当社が開発している API ゲートウェイを題材に、これらの原則を戦術的 DDD に基づくレイヤードアーキテクチャに適用する例もご紹介します。バックエンド開発におけるコードの堅牢性と保守性の両立を目指すだけでなく、状態管理の複雑なフロントエンド開発でも応用可能な設計手法をお話しします。`,
     time: "11:30 〜 12:00",
     speaker: {
       name: "yasaichi",
+      username: "_yasaichi",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/44.png",
+      bio: "2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年よりEARTHBRAINに参画。\n現在は同社のデータプラットフォームの開発を牽引している。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。",
+      xId: "_yasaichi",
+      githubId: "yasaichi",
+      additionalLink: "https://blog.yasaichi.com/",
+      affiliation: "株式会社EARTHBRAIN",
+      position: "シニアエンジニア",
     },
   },
   {
@@ -670,7 +832,15 @@ export const talkList: Talk[] = [
       "LLM（大規模言語モデル）を活用した開発においてはPythonが主要なプログラミング言語として広く認知されていますが、TypeScriptにもVercelが開発するOSSのAI SDKという便利なツールキットが存在します。このAI SDKを利用することでTypeScriptでもLLM関連のアプリを比較的簡単に作成できることをお伝えしたいと思います。\n\n本発表では、AI SDKの基本機能から応用事例までを紹介します。AI SDKは、Azure OpenAI、AWS Bedrock、Google CloudのVertexAIなど、多様なベンダーのLLM推論APIの呼び出しを統一的なインターフェースで扱うことが可能です。AI SDKがベンダー間の差異を吸収してくれるため、開発者は使用するLLMを柔軟に切り替えることが容易になります。\n\nさらにUIフレームワーク向けの機能も提供されており、例えばReact向けの`useChat`hooksを利用することでよくあるチャット型のUIを比較的簡単に実現可能です。このようにAI SDKを利用することでフロントエンドとバックエンドをTypeScriptで一貫して開発可能です。\n\nサイボウズでは、実際に社内用チャット型LLMアプリをNext.jsとAI SDKを用いて開発していますので、インフラも含めたアプリの構成例を紹介いたします。\n\nさらに応用事例として、手元のMacBook上で動かすローカルLLM + AI SDKによるオフラインでも動作するChrome拡張機能の作り方も紹介したいと思います。\n\n注：本発表ではプラットフォームとしてのVercelの話はありません",
     time: "10:50 〜 11:20",
     speaker: {
-      name: "加瀬健太（@Kesin11）",
+      name: "加瀬健太（Kesin11）",
+      username: "Kesin11",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/46.png",
+      bio: "2023年7月にサイボウズ株式会社に中途入社。開発本部 生産性向上チームにて主に大規模なGitHub Actions セルフホストランナー基盤の運用に従事。\n2024年の8月頃から生成AIに興味を持ち始め、2025年1月から開発本部 AIやっていきチームに異動。社内のAI利用の推進、社内用のAIツールの開発・運用、プロダクトのAI機能のR&DなどAI活用の業務に幅広く関わる。\nGitHubのchangelogを毎日見るのが趣味。",
+      xId: "Kesin11",
+      githubId: "Kesin11",
+      additionalLink: "https://zenn.dev/kesin11",
+      affiliation: "サイボウズ株式会社 開発本部 AIやっていきチーム",
+      position: "",
     },
   },
   {
@@ -697,6 +867,14 @@ export const talkList: Talk[] = [
     time: "10:50 〜 11:20",
     speaker: {
       name: "富所 亮",
+      username: "hanhan1978",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/48.png",
+      bio: "2005年中規模SIerに入社以後、自社サービスと受託開発を交互に繰り返しながら、一貫してWebアプリケーションの開発に従事、2020年11月にカオナビに入社。バックエンドエンドのエキスパートとしての業務の傍ら、PHP界隈を中心に勉強会やカンファレンスに登壇しています。",
+      xId: "hanhan1978",
+      githubId: "hanhan1978",
+      additionalLink: "https://blog.hanhans.net",
+      affiliation: "株式会社カオナビ",
+      position: "バックエンドエンジニア",
     },
   },
   {
@@ -711,6 +889,14 @@ export const talkList: Talk[] = [
     time: "13:20 〜 13:50",
     speaker: {
       name: "山梨 蓮",
+      username: "ren_yamanashi",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/49.png",
+      bio: "AWS CDK が好きな Web バックエンドエンジニア。\n趣味で CDK のコントリビュートを行ったり、CDK 用の ESLint Plugin (eslint-cdk-plugin) を開発したりなどしています。",
+      xId: "ren_yamanashi",
+      githubId: "ren-yamanashi",
+      additionalLink: "https://zenn.dev/yamaren",
+      affiliation: "株式会社メイツ",
+      position: "バックエンドエンジニア",
     },
   },
   {
@@ -724,6 +910,15 @@ export const talkList: Talk[] = [
     time: "14:00 〜 14:30",
     speaker: {
       name: "k8o",
+      username: "k35o",
+      // TODO: アンケートに画像へのリンクがない
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/50.png",
+      bio: "TypeScriptとReactが好きで、業務でも趣味でも日々触れています。\nフロントエンドとデザインの境界に強い関心があり、最近はデザインの勉強にも力を入れています。\n技術と表現のあいだをつなぐようなものづくりを目指しています。",
+      xId: undefined,
+      githubId: "k35o",
+      additionalLink: "https://k8o.me",
+      affiliation: "株式会社ドワンゴ/教育事業本部",
+      position: "Webフロントエンジニア",
     },
   },
   {
@@ -737,6 +932,14 @@ export const talkList: Talk[] = [
     time: "16:10 〜 16:50",
     speaker: {
       name: "Kanon",
+      username: "ysknsid25",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/51.png",
+      bio: "完全在宅 programmer",
+      xId: "ysknsid25",
+      githubId: "ysknsid25",
+      additionalLink: "https://dev.inorinrinrin.com/",
+      affiliation: "",
+      position: "",
     },
   },
   {
@@ -749,7 +952,15 @@ export const talkList: Talk[] = [
       "Panda-CSS は型が効く Tailwind という印象を持たれていることが多いように思います。実際、Tailwind と同じような記法で型安全に実装することができるわけですが、どのような方式で型安全にしているのか、というテーマで簡単にお話ししようと思っています。\n\nお話しする内容の詳細について記載します。Panda-CSS では、定義ファイル（panda.config.ts）に対してカラーバリエーション等の定義をします。この定義ファイルが元となり、型定義ファイル（*.d.ts）が出力されています。出力された型定義ファイル（*.d.ts）は、ユーティリティ関数の引数等の型定義に使用されており、開発ではユーティリティ関数を使用するため、型安全に実装することができます。Panda-CSS 以外にも型安全にCSSを実装できるライブラリとして stitches などがありますが、Panda-CSS は事前に定義ファイルから型定義を出力する部分が他のライブラリの異なる点であり、これによって型推論にかかるコストを抑えることができています。ただ、この方式にもデメリットはあり、事前に型定義を出力する、という開発のための事前準備が必要になっています。型を効かせて実装を進めるために、どのタイミングで型に関するコストを支払うか...という問題に帰着します。\n\nまた、型定義ファイル（*.d.ts）の出力の仕組みについても、シンプルな実装で実現されているため、Panda-CSS のライブラリの実装を見つつ簡単にお話しします。\n\n（参考：[Panda-CSS の型定義の出力の実装](https://github.com/chakra-ui/panda/blob/1086769eac8867a8a71ddf2369776fd27eeaebb0/packages/generator/src/artifacts/types/token-types.ts#L6)）",
     time: "16:10 〜 16:50",
     speaker: {
-      name: "Kato.work",
+      name: "加藤貴裕",
+      username: "doz13189",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/52.png",
+      bio: "株式会社BOOSTRYでフロントエンドエンジニアをしています。",
+      xId: "doz13189",
+      githubId: "doz13189",
+      additionalLink: undefined,
+      affiliation: "株式会社BOOSTRY",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -789,6 +1000,14 @@ export const talkList: Talk[] = [
     time: "16:10 〜 16:50",
     speaker: {
       name: "Nozomu Ikuta",
+      username: "nozomuikuta",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/55.png",
+      bio: "2024年10月より現職。業務では、タクシー・ライドシェア配車サービス「newmo」のフロントエンド、バックエンド、ネイティブアプリの開発や、タクシー会社のDXプロジェクト全般に取り組んでいる。技術コミュニティでは、2022年からUnJSメンバーおよびVue.js日本ユーザーグループコアスタッフ、2024年からShibuya.goオーガナイザーおよびGo Conferenceスタッフとして活動している。",
+      xId: "nozomuikuta",
+      githubId: "nozomuikuta",
+      additionalLink: undefined,
+      affiliation: "newmo株式会社",
+      position: "ソフトウェアエンジニア",
     },
   },
   {
@@ -815,6 +1034,14 @@ export const talkList: Talk[] = [
     time: "14:00 〜 14:30",
     speaker: {
       name: "TAKASE Kazuyuki (@Guvalif)",
+      username: "guvalif",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/57.png",
+      bio: '普段は EdTech × ML 系プロダクトのプロトタイピングに従事しています。クライアントサイドに適した軽量かつ疎結合なアーキテクチャに関心があり、"関数型プログラミング" を軸にいろいろとアイデアを発表しています ⚡️',
+      xId: "guvalif",
+      githubId: "Guvalif",
+      additionalLink: "https://www.wantedly.com/id/guvalif",
+      affiliation: "株式会社ドワンゴ",
+      position: "TechPM",
     },
   },
   {
@@ -868,7 +1095,15 @@ export const talkList: Talk[] = [
       "TypeScriptを使っている皆さん、tsconfig.json のコンパイルオプションを意識したことはありますか？多くのプロジェクトではすでに設定されており、普段触る機会は少ないかもしれません。しかし、コンパイルオプションの設定次第でTypeScriptの型安全性が大きく変わることを知っていますか？\n\n今回は、あえてTypeScriptのコンパイルオプションをオフにし、TypeScriptの機能を1つずつ剥がしていく ことで、「どの設定が型安全性を担保しているのか」を部分的に体感してもらいます。\n\nTypeScriptをもっと活用するために、ぜひこの機会にコンパイルオプションを見直したり、学びましょう！",
     time: "16:10 〜 16:50",
     speaker: {
-      name: "池田 敬祐",
+      name: "池田敬祐",
+      username: "ike_keichan",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/61.png",
+      bio: "東京と関西(大阪＆京都)の二拠点生活をしているエンジニア。勉強会大好きマン。大学で情報系学部に入学し、コンピュータやプログラミングの面白さを知る。\n卒業後、東京のSESの会社に新卒で入社。通常のエンジニア業務だけでなく、社内のエンジニア組織・イベントの運営、グループ会社のテックリード、案件内でのマネジメントなどにも携わる。\n株式会社ハマヤからオファーを受け入社。現在もSESという業務形態でさまざまな開発に携わりながら、自身の知識と経験を活かしてクライアントの課題解決に取り組んでいます。",
+      xId: "ike_keichan",
+      githubId: "ike-keichan",
+      additionalLink: undefined,
+      affiliation: "株式会社ハマヤ",
+      position: "エンジニア",
     },
   },
   {
@@ -894,7 +1129,15 @@ export const talkList: Talk[] = [
       "本発表は、TypeScriptにおけるmoduleオプションについて、その基本的な役割と設定時に注意すべきポイントを体系的に整理します。\n\nmoduleオプションは、TypeScriptが出力するモジュール形式を指定するための重要な設定項目であり、ESModuleやCommonJSの違い、Node.jsにおける実行時の挙動、さらにはビルド結果の違いを正確に理解しておかねば、意図しないトラブルに見舞われるリスクが高まります。\n\nそこで、発表では実際に私が遭遇したトラブル事例をもとに、moduleオプションがもたらす挙動の微妙な違いとその影響を解説し、さらにTypeScript 5.8で導入された`nodenext`の仕様変更がどのような影響を及ぼすのかについても触れます。\n\n主な対象は、日常的にTypeScriptを活用している開発者で、特に`tsconfig.json`の設定に携わる機会のある方々です。基本的なTypeScriptの知識があれば参加可能な内容となっています。\n\n発表を通じて複雑なmoduleオプションに対する苦手意識を払拭し、基礎知識と最新の挙動を理解する方法を知ることで、自信をもって設定に臨めることを目指します。",
     time: "16:10 〜 16:50",
     speaker: {
-      name: "大石 貴則 (bicstone)",
+      name: "おおいし (bicstone)",
+      username: "bicstone_me",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/63.png",
+      bio: "建設業界で機械設計に従事していたが、テクノロジーの力で世の中の摩擦を解決したいと考えるようになり2019年にWebエンジニアに転向。\n5年以上のVertical SaaSの開発経験を持ち、技術だけにこだわらずに広い視野を持ち、多角的なアプローチで迅速かつ効果的にプロダクトの価値を最大化し、社会やステークホルダーの課題解決に貢献。",
+      xId: "bicstone_me",
+      githubId: "bicstone",
+      additionalLink: "https://bicstone.me/",
+      affiliation: "ファインディ株式会社",
+      position: "Webエンジニア",
     },
   },
   {
@@ -922,6 +1165,14 @@ export const talkList: Talk[] = [
     time: "14:00 〜 14:30",
     speaker: {
       name: "君田 祥一",
+      username: "kimi_koma1111",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/65.png",
+      bio: "新卒で営業職を経験後、エンジニアに転身。不動産テックベンチャーにてフロントエンドエンジニアとしてのキャリアをスタートしました。\nその後、別の企業でふるさと納税ポータルサイトのフロントエンド開発に携わりました。\n現在はトグルホールディングス株式会社のCTO室にてAIイネーブルメントを担当しています。",
+      xId: "kimi_koma1111",
+      githubId: "kimitashoichi",
+      additionalLink: "https://kimitashoichi.github.io/Profile",
+      affiliation: "トグルホールディングス株式会社",
+      position: "プロダクトエンジニア",
     },
   },
   {
@@ -942,13 +1193,29 @@ export const talkList: Talk[] = [
     eventDate: "DAY2",
     track: "TRACK2",
     talkType: "LT",
-    title:
-      "VueUseから学ぶ実践TypeScript〜人気ライブラリのコードベースから見つけた型定義の工夫〜",
-    overview:
-      "## トークの主題\nVueUse（Vue.js用の人気ユーティリティライブラリ）のコードベースから、TypeScriptの型機能の実践的な使い方を紹介します。\n\n## なぜVueUseなのか\n・実践的なTypeScriptの使用例が豊富\n・関数単位でコンパクトに実装されており、理解しやすい\n・15.7kのGitHubスターを持つ広く使われているライブラリ\nTypeScriptの基本を理解している方を対象に、実際のOSSから学べる型システムの活用例をお伝えします。\n\n## 発表内容\n特に以下の3つの型機能に注目し、実際のコードを通じてその活用方法を解説します\n\n### 関数のオーバーロード\n複数のイベントターゲットに対して型安全なAPIを提供する方法\n\n### 条件付き型\nジェネリクスを使って、使用状況に応じて型を変更する手法\n\n### 型述語\n配列操作で型情報を正確に保持する実装パターン",
+    title: "VueUse から学ぶ実践 TypeScript",
+    overview: `# トークの主題
+VueUse（Vue.js用の人気ユーティリティライブラリ）のコードベースから、TypeScript の型機能の実践的な使い方を紹介します。
+TypeScript の基本を理解している方を対象に、実際のOSSから学べる型システムの利用例をお伝えします。
+
+# 発表内容
+VueUse の以下の2つの関数に注目し、実際のコードを通じてその活用方法を解説します。
+## useClipboard
+関数オーバーロードと Conditional Types の連携
+## useChangeCase
+複数の型機能の組み合わせによる高度な型生成`,
     time: "14:00 〜 14:30",
     speaker: {
       name: "ツノ",
+      username: "2nofa11",
+      profileImagePath:
+        "https://drive.google.com/file/d/1q3WcmH95twLTJNj526uMB7DhWyp0heVa/view?usp=drive_link",
+      bio: "弁護士ドットコム株式会社のクラウドサインというプロダクトを作っています。\nSIerや社内SEを経験した後、2022年にフロントエンドの面白さに気づき、それ以来熱中しています。",
+      xId: "2nofa11",
+      githubId: undefined,
+      additionalLink: undefined,
+      affiliation: "弁護士ドットコム株式会社",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -957,11 +1224,20 @@ export const talkList: Talk[] = [
     track: "TRACK2",
     talkType: "LT",
     title: "型推論の扉を開く―集合論と構造的型制約で理解する中級へのステップ",
-    overview:
-      "TypeScript の型システムを「実行時の値の型」としてではなく、「その変数が取り得る値の集合（ドメイン）」として捉える視点を提示し、初心者から中級者へのステップアップのきっかけを作るための発表です。\n\nTypeScript を学ぶ上で、「型」はしばしば静的なラベルのように扱われがちですが、本発表では 「型＝値の集合」 という視点を導入し、型推論や型操作を数学的な集合論の観点から解説します。特に、リテラル型・ユニオン型・交差型などがどのように集合として機能し、和集合・積集合（共通部分）といった集合演算が TypeScript の型システムにどのように反映されるのかを明確にします。\n\n例えば keyof 演算子がユニオン型に適用されたとき never になる理由を、図解や具体例を用いて、5分という短い時間で要点をわかりやすくまとめる予定です。\n\n```ts\ntype A = { a: number };\ntype B = { b: number };\ntype Keys = keyof (A | B); // 結果は never\n```",
+    overview: `TypeScript の型システムを「実行時の値の型」としてではなく、「その変数が取り得る値の集合（ドメイン）」として捉える視点を提示し、初心者から中級者へのステップアップのきっかけを作るための発表です。
+
+TypeScript を学ぶ上で、「型」はしばしば静的なラベルのように扱われがちですが、本発表では 「型＝値の集合」 という視点を導入し、型推論や型操作を数学的な集合論の観点から解説します。`,
     time: "14:00 〜 14:30",
     speaker: {
       name: "栃川晃佑",
+      username: "Web_TochiTech",
+      profileImagePath: "https://2025.tskaigi.org/talks/speaker/68.png",
+      bio: "2020年に大阪大学基礎工学部知能システム学科を卒業後、スマサテ株式会社にてAI賃料査定システム「スマサテ」の新規開発に従事。\n2023年に株式会社PLEXへ入社し、建設業界向けSaaS「サクミル」に参画し新規開発に従事し、現在は同社のエッセンシャルワーカー向け転職サービス「PLEX JOB」の新規開発・運用に携わる。\n「事業」と「人」を育てることができるエンジニアリーダを目指し日々奮闘中。大阪に住むこととマチュピチュを見ることが夢です。",
+      xId: "Web_TochiTech",
+      githubId: undefined,
+      additionalLink: "https://product.plex.co.jp/",
+      affiliation: "株式会社プレックス / PlexJob開発チーム",
+      position: "バックエンドエンジニア",
     },
   },
   {

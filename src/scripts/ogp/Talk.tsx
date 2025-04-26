@@ -484,7 +484,7 @@ export function Talk({
             }}
           >
             <img
-              src="https://github.com/kp047i.png"
+              src="https://x.com/kp047i/photo"
               alt="avatar"
               width={114}
               height={114}
