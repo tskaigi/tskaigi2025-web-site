@@ -102,7 +102,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "lacolaco",
       username: "laco2net",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/3.png",
+      profileImagePath: "3.jpg",
       bio: "Google Developers Expert for Angular、Angular日本ユーザー会の代表として、Angularコミュニティへのコントリビューションや翻訳、登壇、イベント主催などの活動をしています。ポッドキャスト「リファクタリングとともに生きるラジオ」でも活動中。",
       xId: "laco2net",
       githubId: "lacolaco",
@@ -124,7 +124,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "Masaki Suzuki",
       username: "makky12",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/4.png",
+      profileImagePath: "4.jpg",
       bio: "KDDIアジャイル開発センター株式会社 / 名古屋オフィス所属。\n2019年に業務でAWSに携わったことがきっかけでクラウドの魅力にハマり、以来ずっとクラウドエンジニア（バックエンド/アーキテクト）として活動。\n特にサーバーレスやInfrastructure as Code(IaC)が大好きで、AWS LambdaやAWS CDKを用いたサーバーレスアプリケーションの設計開発・IaCでのインフラ構築・CI/CD環境構築などを得意とし、それらの開発言語としてTypeScriptやNode.jsを好んで使用している。\nその他、JAWS-UGやServerlessなどのAWS関連コミュニティにおいて、登壇・参加などのコミュニティへの貢献活動を積極的に行っており、2023年よりAWS Community Builder(Serverless)に認定。",
       xId: "makky12",
       githubId: "smt7174",
@@ -146,7 +146,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "宮城広隆(@MH4GF)",
       username: "MH4GF",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/5.png",
+      profileImagePath: "5.jpg",
       bio: "株式会社タイミーの創業期からソフトウェアエンジニアとして関わった後、フリーランスとして複数企業での開発を経験。\n2023年2月にROUTE06に入社し、Frontend Platformチームのテックリードとして大規模BtoB SaaSの設計推進を担当。\n現在はOSSのデータベーススキーマ可視化ツール Liam ERD のプロダクトマネージャーを担当しています。",
       xId: "MH4GF",
       githubId: "mh4gf",
@@ -206,7 +206,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "takanorip",
       username: "takanorip",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/9.png",
+      profileImagePath: "9.jpg",
       bio: "デザインと実装両方やるタイプの人間です。今は株式会社カンムでバンドルカードの開発をしています。\n好きなフォントはFuturaです。",
       xId: "takanoripe",
       githubId: "takanorip",
@@ -240,7 +240,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "ymrl",
       username: "ymrl",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/11.png",
+      profileImagePath: "11.png",
       bio: "「Webアプリケーションアクセシビリティ」共著者。UIデザイナーとしてTypeScriptを書いています。",
       xId: "ymrl",
       githubId: "ymrl",
@@ -261,7 +261,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "yui_tang",
       username: "yui_tang",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/12.png",
+      profileImagePath: "12.jpg",
       bio: "東京生まれ。新卒で営業職について数年後、独学でWebプログラミングを学び転身。2014年よりメルカリでソフトウェアエンジニア・技術ブランディング等の職に就く。2024年5月にnewmo株式会社へ入社。猫・メタル・筋トレ・VTuberが好き。",
       xId: "yui_tang",
       githubId: "YUISAKAMOTO",
@@ -308,7 +308,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "Yuku Kotani",
       username: "yukukotani",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/14.png",
+      profileImagePath: "14.jpg",
       bio: "Ubie株式会社で、技術戦略や開発組織戦略の立案・執行をリードしています。",
       xId: "yukukotani",
       githubId: "yukukotani",
@@ -344,7 +344,7 @@ export const talkList: Talk[] = [
       name: "プログラミングをするパンダ",
       // TODO: 確認。ブログのドメインからとってきた
       username: "panda-program",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/16.png",
+      profileImagePath: "16.png",
       bio: "XP、スクラム開発が好きなフルスタックエンジニア。バックエンドからフロントエンド、レガシーシステムの開発から新規プロダクトの立ち上げ、新入社員のオンボーディングから一人ひとりと向き合うチームビルディングまで幅広く担当。BASEではシニアエンジニアとしてアジャイル開発を推進中。CodeZineでの寄稿や個人ブログの執筆、YouTube、SpotifyでPodcastを配信するなどエンジニア向け情報の発信している。",
       xId: undefined,
       githubId: undefined,
@@ -378,7 +378,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "elecdeer",
       username: "elecdeerdev",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/18.png",
+      profileImagePath: "18.png",
       bio: "TypeScriptとReactを書くフロントエンドエンジニア。便利なツールを作るのが好き。",
       xId: "elecdeerdev",
       githubId: "elecdeer",
@@ -440,7 +440,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "やまのく",
       username: "yamanoku",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/22.png",
+      profileImagePath: "22.jpg",
       bio: "一児の父です。会社員やってます。",
       xId: "yamanoku",
       githubId: "yamanoku",
@@ -478,7 +478,7 @@ export const talkList: Talk[] = [
       name: "yudppp",
       username: "yudppp",
       // TODO: 画像の指定がなかったので要確認
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/24.png",
+      // profileImagePath: "24.jpg",
       bio: "2018年にHRBrainに10人目の社員、3人目のエンジニアとして入社。\nTypeScriptは2018年から書いています。",
       xId: "yudppp",
       githubId: "yudppp",
@@ -569,7 +569,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "じょーし（上司陽平）",
       username: "paper2parasol",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/30.png",
+      profileImagePath: "30.jpg",
       bio: "Sansan株式会社にて、請求書管理サービス「Bill One」のソフトウェアエンジニア兼SREとして活動しています。有志メンバによるCI/CD改善チームを運営し、日々の開発者体験の向上に取り組んでいます。最近は、GitHub Actionsのパフォーマンスや効果測定を可視化するためのOSS「GitHub Actions OpenTelemetry」の開発にも注力しています。",
       xId: "paper2parasol",
       githubId: "paper2",
@@ -671,7 +671,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "izumin5210",
       username: "izumin5210",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/37.png",
+      profileImagePath: "37.jpg",
       bio: "バクラク事業部 PlatformEngineering部 Enablingチーム。\nプロダクト開発やバックエンド・Webフロントエンドの基盤開発などをしています。APIスキーマ関連技術とコードの静的解析・自動生成技術が好き。",
       xId: "izumin5210",
       githubId: "izumin5210",
@@ -693,7 +693,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "k.goto",
       username: "365_step_tech",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/38.png",
+      profileImagePath: "38.jpg",
       bio: "AWS CDK のコントリビュート活動を行っており、Top Contributor や Community Reviewer に選定。コミュニティ駆動の CDK コンストラクトライブラリのメンテナーや、自作 AWS ツールの OSS 開発も行なっている。2024 年 3 月、AWS DevTools Hero に選出。",
       xId: "365_step_tech",
       githubId: "go-to-k",
@@ -715,7 +715,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Kei",
       username: "kei_english_ca",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/39.png",
+      profileImagePath: "39.jpg",
       bio: "カナダでキャリアをスタートのち、5年間アメリカとカナダのスタートアップにて従事。現在は日本でWixにて働いています。",
       xId: "kei_english_ca",
       githubId: "kei95",
@@ -763,7 +763,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "susisu",
       username: "susisu2413",
-      profileImagePath: "https://avatars.githubusercontent.com/u/2443491?v=4",
+      profileImagePath: "42.png",
       bio: "桃栗三年型八年",
       xId: "susisu2413",
       githubId: "susisu",
@@ -800,7 +800,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "yasaichi",
       username: "_yasaichi",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/44.png",
+      profileImagePath: "44.png",
       bio: "2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年よりEARTHBRAINに参画。\n現在は同社のデータプラットフォームの開発を牽引している。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。",
       xId: "_yasaichi",
       githubId: "yasaichi",
@@ -834,7 +834,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "加瀬健太（Kesin11）",
       username: "Kesin11",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/46.png",
+      profileImagePath: "46.jpg",
       bio: "2023年7月にサイボウズ株式会社に中途入社。開発本部 生産性向上チームにて主に大規模なGitHub Actions セルフホストランナー基盤の運用に従事。\n2024年の8月頃から生成AIに興味を持ち始め、2025年1月から開発本部 AIやっていきチームに異動。社内のAI利用の推進、社内用のAIツールの開発・運用、プロダクトのAI機能のR&DなどAI活用の業務に幅広く関わる。\nGitHubのchangelogを毎日見るのが趣味。",
       xId: "Kesin11",
       githubId: "Kesin11",
@@ -868,7 +868,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "富所 亮",
       username: "hanhan1978",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/48.png",
+      profileImagePath: "48.jpg",
       bio: "2005年中規模SIerに入社以後、自社サービスと受託開発を交互に繰り返しながら、一貫してWebアプリケーションの開発に従事、2020年11月にカオナビに入社。バックエンドエンドのエキスパートとしての業務の傍ら、PHP界隈を中心に勉強会やカンファレンスに登壇しています。",
       xId: "hanhan1978",
       githubId: "hanhan1978",
@@ -890,7 +890,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "山梨 蓮",
       username: "ren_yamanashi",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/49.png",
+      profileImagePath: "49.jpg",
       bio: "AWS CDK が好きな Web バックエンドエンジニア。\n趣味で CDK のコントリビュートを行ったり、CDK 用の ESLint Plugin (eslint-cdk-plugin) を開発したりなどしています。",
       xId: "ren_yamanashi",
       githubId: "ren-yamanashi",
@@ -912,7 +912,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
       name: "k8o",
       username: "k35o",
       // TODO: アンケートに画像へのリンクがない
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/50.png",
+      // profileImagePath: "50.jpg",
       bio: "TypeScriptとReactが好きで、業務でも趣味でも日々触れています。\nフロントエンドとデザインの境界に強い関心があり、最近はデザインの勉強にも力を入れています。\n技術と表現のあいだをつなぐようなものづくりを目指しています。",
       xId: undefined,
       githubId: "k35o",
@@ -933,7 +933,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Kanon",
       username: "ysknsid25",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/51.png",
+      profileImagePath: "51.jpg",
       bio: "完全在宅 programmer",
       xId: "ysknsid25",
       githubId: "ysknsid25",
@@ -954,7 +954,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "加藤貴裕",
       username: "doz13189",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/52.png",
+      profileImagePath: "52.png",
       bio: "株式会社BOOSTRYでフロントエンドエンジニアをしています。",
       xId: "doz13189",
       githubId: "doz13189",
@@ -1001,7 +1001,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Nozomu Ikuta",
       username: "nozomuikuta",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/55.png",
+      profileImagePath: "55.jpg",
       bio: "2024年10月より現職。業務では、タクシー・ライドシェア配車サービス「newmo」のフロントエンド、バックエンド、ネイティブアプリの開発や、タクシー会社のDXプロジェクト全般に取り組んでいる。技術コミュニティでは、2022年からUnJSメンバーおよびVue.js日本ユーザーグループコアスタッフ、2024年からShibuya.goオーガナイザーおよびGo Conferenceスタッフとして活動している。",
       xId: "nozomuikuta",
       githubId: "nozomuikuta",
@@ -1035,7 +1035,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "TAKASE Kazuyuki (@Guvalif)",
       username: "guvalif",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/57.png",
+      profileImagePath: "57.png",
       bio: '普段は EdTech × ML 系プロダクトのプロトタイピングに従事しています。クライアントサイドに適した軽量かつ疎結合なアーキテクチャに関心があり、"関数型プログラミング" を軸にいろいろとアイデアを発表しています ⚡️',
       xId: "guvalif",
       githubId: "Guvalif",
@@ -1097,7 +1097,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "池田敬祐",
       username: "ike_keichan",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/61.png",
+      profileImagePath: "61.png",
       bio: "東京と関西(大阪＆京都)の二拠点生活をしているエンジニア。勉強会大好きマン。大学で情報系学部に入学し、コンピュータやプログラミングの面白さを知る。\n卒業後、東京のSESの会社に新卒で入社。通常のエンジニア業務だけでなく、社内のエンジニア組織・イベントの運営、グループ会社のテックリード、案件内でのマネジメントなどにも携わる。\n株式会社ハマヤからオファーを受け入社。現在もSESという業務形態でさまざまな開発に携わりながら、自身の知識と経験を活かしてクライアントの課題解決に取り組んでいます。",
       xId: "ike_keichan",
       githubId: "ike-keichan",
@@ -1131,7 +1131,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "おおいし (bicstone)",
       username: "bicstone_me",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/63.png",
+      profileImagePath: "63.jpg",
       bio: "建設業界で機械設計に従事していたが、テクノロジーの力で世の中の摩擦を解決したいと考えるようになり2019年にWebエンジニアに転向。\n5年以上のVertical SaaSの開発経験を持ち、技術だけにこだわらずに広い視野を持ち、多角的なアプローチで迅速かつ効果的にプロダクトの価値を最大化し、社会やステークホルダーの課題解決に貢献。",
       xId: "bicstone_me",
       githubId: "bicstone",
@@ -1166,7 +1166,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "君田 祥一",
       username: "kimi_koma1111",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/65.png",
+      profileImagePath: "65.jpg",
       bio: "新卒で営業職を経験後、エンジニアに転身。不動産テックベンチャーにてフロントエンドエンジニアとしてのキャリアをスタートしました。\nその後、別の企業でふるさと納税ポータルサイトのフロントエンド開発に携わりました。\n現在はトグルホールディングス株式会社のCTO室にてAIイネーブルメントを担当しています。",
       xId: "kimi_koma1111",
       githubId: "kimitashoichi",
@@ -1208,8 +1208,7 @@ VueUse の以下の2つの関数に注目し、実際のコードを通じてそ
     speaker: {
       name: "ツノ",
       username: "2nofa11",
-      profileImagePath:
-        "https://drive.google.com/file/d/1q3WcmH95twLTJNj526uMB7DhWyp0heVa/view?usp=drive_link",
+      profileImagePath: "67.jpg",
       bio: "弁護士ドットコム株式会社のクラウドサインというプロダクトを作っています。\nSIerや社内SEを経験した後、2022年にフロントエンドの面白さに気づき、それ以来熱中しています。",
       xId: "2nofa11",
       githubId: undefined,
@@ -1231,7 +1230,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
     speaker: {
       name: "栃川晃佑",
       username: "Web_TochiTech",
-      profileImagePath: "https://2025.tskaigi.org/talks/speaker/68.png",
+      profileImagePath: "68.jpg",
       bio: "2020年に大阪大学基礎工学部知能システム学科を卒業後、スマサテ株式会社にてAI賃料査定システム「スマサテ」の新規開発に従事。\n2023年に株式会社PLEXへ入社し、建設業界向けSaaS「サクミル」に参画し新規開発に従事し、現在は同社のエッセンシャルワーカー向け転職サービス「PLEX JOB」の新規開発・運用に携わる。\n「事業」と「人」を育てることができるエンジニアリーダを目指し日々奮闘中。大阪に住むこととマチュピチュを見ることが夢です。",
       xId: "Web_TochiTech",
       githubId: undefined,
