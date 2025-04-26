@@ -483,16 +483,18 @@ export function Talk({
               marginRight: "16px",
             }}
           >
-            <img
-              src="https://x.com/kp047i/photo"
-              alt="avatar"
-              width={114}
-              height={114}
-              style={{
-                borderRadius: "50%",
-                marginRight: "16px",
-              }}
-            />
+            {speaker.profileImagePath && (
+              <img
+                src={speaker.profileImagePath}
+                alt="avatar"
+                width={114}
+                height={114}
+                style={{
+                  borderRadius: "50%",
+                  marginRight: "16px",
+                }}
+              />
+            )}
             <div
               style={{
                 display: "flex",
