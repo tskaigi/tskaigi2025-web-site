@@ -8,7 +8,7 @@ export function Talk({
   title,
   track,
   eventDate,
-  speakerName,
+  speaker,
   talkType,
   time,
 }: Props) {
@@ -506,7 +506,7 @@ export function Talk({
                   color: "#2A2A2D",
                 }}
               >
-                {speakerName}
+                {speaker.name}
               </span>
             </div>
           </div>
