@@ -1,5 +1,6 @@
 import { talkIds } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import type { Metadata } from "next";
 import Link from "next/link";
 import type { ComponentProps } from "react";
 
@@ -8,6 +9,34 @@ import remarkBreaks from "remark-breaks";
 
 export async function generateStaticParams() {
   return talkIds;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const talk = getTalk(id);
+
+  return {
+    twitter: {
+      title: talk.title,
+      images: [
+        {
+          url: `/ogp/talks/${talk.id}.png`,
+        },
+      ],
+    },
+    openGraph: {
+      title: talk.title,
+      images: [
+        {
+          url: `/ogp/talks/${talk.id}.png`,
+        },
+      ],
+    },
+  };
 }
 
 const components: ComponentProps<typeof Markdown>["components"] = {
@@ -77,31 +106,79 @@ export default async function TalkDetailPage({
         </div>
 
         {/* スピーカー情報 */}
-        {/* FIXME: デザイン未調整 */}
-        {/* <div className="pt-8 p-10">
+        <div className="mt-4 px-6 md:px-8 lg:px-10">
           <div className="bg-blue-light-200 p-6 rounded-xl">
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-24 h-24 rounded-full overflow-hidden">
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+              {/* アイコン */}
+              <div className="min-w-[180px] h-[180px] md:min-w-[220px] md:h-[220px] rounded-full overflow-hidden">
                 <img
-                  src={`/talks/speaker/${talk.id}.jpg`}
-                  alt={talk.speakerName}
+                  src={`/talks/speaker/${talk.speaker.profileImagePath || "dummy.png"}`}
+                  alt={talk.speaker.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div>
-                <p className="font-bold text-lg">{talk.speakerName}</p>
+
+              <div className="flex flex-col gap-4">
+                {/* 名前 */}
+                <p className="font-bold text-22">{talk.speaker.name}</p>
+
+                {/* 自己紹介 */}
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-700 text-16 md:text-18">
+                    {talk.speaker.affiliation}
+                    {talk.speaker.affiliation && talk.speaker.position && " / "}
+                    {talk.speaker.position}
+                  </p>
+                  <p className="text-gray-700 text-16 md:text-18">
+                    {talk.speaker.bio}
+                  </p>
+                  {talk.speaker.additionalLink && (
+                    <Link
+                      href={talk.speaker.additionalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 text-16 md:text-18 underline"
+                    >
+                      {talk.speaker.additionalLink}
+                    </Link>
+                  )}
+                </div>
+
+                {/* SNSリンク */}
                 <div className="flex gap-2 mt-2">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <TwitterIcon />
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon />
-                  </a>
+                  {talk.speaker.xId && (
+                    <Link
+                      href={`https://x.com/${talk.speaker.xId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/talks/sns/x-logo.png"
+                        alt="X"
+                        width={36}
+                        height={36}
+                      />
+                    </Link>
+                  )}
+                  {talk.speaker.githubId && (
+                    <Link
+                      href={`https://github.com/${talk.speaker.githubId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/talks/sns/github-logo.png"
+                        alt="GitHub"
+                        width={36}
+                        height={36}
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </main>
   );

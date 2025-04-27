@@ -1,17 +1,36 @@
+import fs from "node:fs";
+import path from "node:path";
 // biome-ignore lint/correctness/noUnusedImports: <explanation>
 import React from "react";
 import { TALK_TYPE, TRACK, type Talk as TTalk } from "../../constants/talkList";
 
 type Props = TTalk;
 
+/**
+ * ローカルファイルを参照できるようにデータURLを作成する
+ */
+const makeDataUrl = (profileImagePath = "dummy.png") => {
+  const imageData = fs.readFileSync(
+    path.join(__dirname, `../../../public/talks/speaker/${profileImagePath}`),
+  );
+  const base64 = imageData.toString("base64");
+  const extension = path.extname(profileImagePath).toLowerCase();
+  const mimeType =
+    extension === ".jpg" || extension === ".jpeg" ? "image/jpeg" : "image/png";
+  const dataUrl = `data:${mimeType};base64,${base64}`;
+  return dataUrl;
+};
+
 export function Talk({
   title,
   track,
   eventDate,
-  speakerName,
+  speaker,
   talkType,
   time,
 }: Props) {
+  const avatarDataUrl = makeDataUrl(speaker.profileImagePath);
+
   return (
     <div
       style={{
@@ -484,7 +503,7 @@ export function Talk({
             }}
           >
             <img
-              src="https://github.com/kp047i.png"
+              src={avatarDataUrl}
               alt="avatar"
               width={114}
               height={114}
@@ -506,7 +525,7 @@ export function Talk({
                   color: "#2A2A2D",
                 }}
               >
-                {speakerName}
+                {speaker.name}
               </span>
             </div>
           </div>
