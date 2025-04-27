@@ -11,6 +11,8 @@ export async function generateStaticParams() {
   return talkIds;
 }
 
+const description = "TSKaigi 2025 のスピーカー、トーク情報です。";
+
 export async function generateMetadata({
   params,
 }: {
@@ -20,8 +22,10 @@ export async function generateMetadata({
   const talk = getTalk(id);
 
   return {
+    description,
     twitter: {
       title: talk.title,
+      description,
       images: [
         {
           url: `/ogp/talks/${talk.id}.png`,
@@ -30,6 +34,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: talk.title,
+      description,
       images: [
         {
           url: `/ogp/talks/${talk.id}.png`,
