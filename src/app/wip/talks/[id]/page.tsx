@@ -109,6 +109,7 @@ export default async function TalkDetailPage({
         <div className="mt-4 px-6 md:px-8 lg:px-10">
           <div className="bg-blue-light-200 p-6 rounded-xl">
             <div className="flex flex-col sm:flex-row items-center gap-6">
+              {/* アイコン */}
               <div className="min-w-[180px] h-[180px] md:min-w-[220px] md:h-[220px] rounded-full overflow-hidden">
                 <img
                   src={`/talks/speaker/${talk.speaker.profileImagePath || "dummy.png"}`}
@@ -116,9 +117,18 @@ export default async function TalkDetailPage({
                   className="w-full h-full object-cover"
                 />
               </div>
+
               <div className="flex flex-col gap-4">
+                {/* 名前 */}
                 <p className="font-bold text-22">{talk.speaker.name}</p>
+
+                {/* 自己紹介 */}
                 <div className="flex flex-col gap-2">
+                  <p className="text-gray-700 text-16 md:text-18">
+                    {talk.speaker.affiliation}
+                    {talk.speaker.affiliation && talk.speaker.position && " / "}
+                    {talk.speaker.position}
+                  </p>
                   <p className="text-gray-700 text-16 md:text-18">
                     {talk.speaker.bio}
                   </p>
@@ -133,6 +143,8 @@ export default async function TalkDetailPage({
                     </Link>
                   )}
                 </div>
+
+                {/* SNSリンク */}
                 <div className="flex gap-2 mt-2">
                   {talk.speaker.xId && (
                     <Link
