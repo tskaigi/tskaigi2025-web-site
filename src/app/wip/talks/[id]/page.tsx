@@ -99,7 +99,7 @@ export default async function TalkDetailPage({
             height="383"
             className="w-full max-w-[730px] h-auto max-h-[383px] mx-auto object-contain"
             src={`/ogp/talks/${talk.id}.png`}
-            alt="logo"
+            alt={talk.title}
           />
         </div>
 
