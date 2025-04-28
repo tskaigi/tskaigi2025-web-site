@@ -11,6 +11,8 @@ export async function generateStaticParams() {
   return talkIds;
 }
 
+const description = "TSKaigi 2025 のスピーカー、トーク情報です。";
+
 export async function generateMetadata({
   params,
 }: {
@@ -20,8 +22,10 @@ export async function generateMetadata({
   const talk = getTalk(id);
 
   return {
+    description,
     twitter: {
       title: talk.title,
+      description,
       images: [
         {
           url: `/ogp/talks/${talk.id}.png`,
@@ -30,6 +34,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: talk.title,
+      description,
       images: [
         {
           url: `/ogp/talks/${talk.id}.png`,
@@ -94,7 +99,7 @@ export default async function TalkDetailPage({
             height="383"
             className="w-full max-w-[730px] h-auto max-h-[383px] mx-auto object-contain"
             src={`/ogp/talks/${talk.id}.png`}
-            alt="logo"
+            alt={talk.title}
           />
         </div>
 
@@ -110,7 +115,7 @@ export default async function TalkDetailPage({
           <div className="bg-blue-light-200 p-6 rounded-xl">
             <div className="flex flex-col sm:flex-row items-center gap-6">
               {/* アイコン */}
-              <div className="min-w-[180px] h-[180px] md:min-w-[220px] md:h-[220px] rounded-full overflow-hidden">
+              <div className="w-[180px] md:w-[220px] h-auto rounded-full overflow-hidden">
                 <img
                   src={`/talks/speaker/${talk.speaker.profileImagePath || "dummy.png"}`}
                   alt={talk.speaker.name}
