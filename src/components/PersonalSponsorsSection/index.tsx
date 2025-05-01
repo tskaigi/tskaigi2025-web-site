@@ -24,16 +24,24 @@ const SponsorContainer = ({ link, children }: SponsorContainerProps) => {
 
 type ImageCardProps = {
   name: string;
-  imgSrc: string;
+  imgSrc: string | undefined;
 };
 const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
+  const DefaultImage = () => {
+    return <div className="w-[120px] h-[120px] bg-white rounded-full" />;
+  };
+
   return (
     <div className="flex justify-center items-center w-full h-full">
-      <img
-        src={imgSrc}
-        alt={name}
-        className="w-full h-auto rounded-full overflow-hidden"
-      />
+      {imgSrc ? (
+        <img
+          src={imgSrc}
+          alt={name}
+          className="w-full h-auto rounded-full overflow-hidden"
+        />
+      ) : (
+        <DefaultImage />
+      )}
     </div>
   );
 };
@@ -47,11 +55,10 @@ const PersonalSponsorsSection = () => {
       <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-4">
         {personalSponsorList
           // TODO: ImageCard に画像がない場合、tskaigi default の画像を出す
-          .filter((s) => typeof s.imgSrc === "string")
           .map(({ name, link, imgSrc }) => (
             <li key={name}>
               <SponsorContainer link={link}>
-                <ImageCard name={name} imgSrc={imgSrc as string} />
+                <ImageCard name={name} imgSrc={imgSrc} />
                 <p className="text-lg font-bold">{name}</p>
               </SponsorContainer>
             </li>
