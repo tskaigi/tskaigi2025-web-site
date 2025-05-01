@@ -28,7 +28,9 @@ type ImageCardProps = {
 };
 const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
   const DefaultImage = () => {
-    return <div className="w-[144px] h-[144px] bg-white rounded-full" />;
+    return (
+      <div className="w-[120px] h-[120px] md:w-[144px] md:h-[144px] bg-white rounded-full" />
+    );
   };
 
   return (
