@@ -1,8 +1,8 @@
 export const personalSponsorList: {
   id: number;
   name: string;
-  link: string;
-  imgSrc: string;
+  link: string | undefined;
+  imgSrc: string | undefined;
 }[] = [
   {
     id: 1,
@@ -109,8 +109,8 @@ export const personalSponsorList: {
   {
     id: 19,
     name: "ふーみん",
-    link: "",
-    imgSrc: "",
+    link: undefined,
+    imgSrc: undefined,
   },
   {
     id: 20,
