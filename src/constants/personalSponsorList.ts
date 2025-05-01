@@ -23,30 +23,6 @@ export const personalSponsorList: {
     imgSrc: "/personalSponsors/michiya_nishida.webp",
   },
   {
-    id: 8,
-    name: "fukumura",
-    link: "https://x.com/fukumura",
-    imgSrc: "/personalSponsors/fukumura.webp",
-  },
-  {
-    id: 9,
-    name: "kzhrk",
-    link: "https://x.com/kzhrk0430",
-    imgSrc: "/personalSponsors/kzhrk0430.webp",
-  },
-  {
-    id: 7,
-    name: "Natsuki",
-    link: "https://x.com/natch_engr",
-    imgSrc: "/personalSponsors/natch_engr.webp",
-  },
-  {
-    id: 6,
-    name: "onk",
-    link: "https://x.com/onk",
-    imgSrc: "/personalSponsors/onk.webp",
-  },
-  {
     id: 4,
     name: "shige",
     link: "https://codenote.net/about/",
@@ -57,5 +33,29 @@ export const personalSponsorList: {
     name: "Yuji Yamaguchi",
     link: "https://github.com/yug1224",
     imgSrc: "/personalSponsors/yug1224.webp",
+  },
+  {
+    id: 6,
+    name: "onk",
+    link: "https://x.com/onk",
+    imgSrc: "/personalSponsors/onk.webp",
+  },
+  {
+    id: 7,
+    name: "Natsuki",
+    link: "https://x.com/natch_engr",
+    imgSrc: "/personalSponsors/natch_engr.webp",
+  },
+  {
+    id: 8,
+    name: "fukumura",
+    link: "https://x.com/fukumura",
+    imgSrc: "/personalSponsors/fukumura.webp",
+  },
+  {
+    id: 9,
+    name: "kzhrk",
+    link: "https://x.com/kzhrk0430",
+    imgSrc: "/personalSponsors/kzhrk0430.webp",
   },
 ];
