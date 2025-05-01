@@ -80,7 +80,7 @@ export const personalSponsorList: {
     id: 14,
     name: "かるカン",
     link: "https://x.com/karukan013l23",
-    imgSrc: "/personalSponsors/karukan013l23.webp",
+    imgSrc: "/personalSponsors/karukan013L23.webp",
   },
   {
     id: 15,
