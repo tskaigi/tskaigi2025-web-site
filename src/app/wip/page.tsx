@@ -1,5 +1,6 @@
 import { BuyTicketSection } from "@/components/BuyTicketSection";
 import { CoreStaffSection } from "@/components/CoreStaffSection";
+import { JobBoardSection } from "@/components/JobBoardSection";
 import { JudgesSection } from "@/components/JudgesSection";
 import { HeroSectionWithMotion } from "../../components/HeroSectionWithMotion";
 import { MissionSection } from "../../components/MissionSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSectionWithMotion />
       <BuyTicketSection />
       <MissionSection />
+      <JobBoardSection />
       <SponsorsBoardSection isWip />
       <JudgesSection />
       <CoreStaffSection />
