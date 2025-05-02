@@ -167,6 +167,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["platinum", "beer"],
       detailPageId: "dinii",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/dinii.jpg",
+        link: "https://careers.dinii.jp/",
+      },
     },
     {
       id: "P06",
@@ -678,6 +682,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "mosh",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/mosh.jpg",
+        link: "https://careers.mosh.jp/",
+      },
     },
     {
       id: "S08",
@@ -932,6 +940,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "utoniq",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/utoniq.png",
+        link: "https://herp.careers/v1/utoniq",
+      },
     },
     {
       id: "S22",
@@ -961,6 +973,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "anyinc",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/anyinc.png",
+        link: "https://anyinc.jp/recruit",
+      },
     },
     {
       id: "S23",
@@ -1050,6 +1066,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "wantedlyinc",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/wantedlyinc.png",
+        link: "https://wantedly.engineering/",
+      },
     },
     {
       id: "S27",
