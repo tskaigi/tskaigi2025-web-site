@@ -197,6 +197,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["platinum"],
       detailPageId: "twogate",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/twogate.jpg",
+        link: "https://form.run/@twogate-casual-interview",
+      },
     },
   ],
   gold: [
@@ -436,6 +440,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "carta",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/carta.png",
+        link: "https://hrmos.co/pages/cartaholdings/jobs?category=1260098130969743360?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
+      },
     },
     {
       id: "G09",
@@ -566,6 +574,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "takumi-giken",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/takumi-giken.png",
+        link: "https://recruit.takumi-giken.co.jp/",
+      },
     },
   ],
   silver: [
