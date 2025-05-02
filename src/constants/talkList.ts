@@ -76,7 +76,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "Kazushi Konosu",
       username: "kazushikonosu",
-      profileImagePath: "1.jpg",
+      profileImagePath: "kazushikonosu.jpg",
       bio: "2021年LINE株式会社に新卒入社。現在は「LINEスキマニ」のフロントエンド領域を担うチームでエンジニアリングマネージャー・テックリードを担当。プレイングマネージャーとして、「LINEスキマニ」のWebアプリ・ネイティブアプリ開発に従事。",
       xId: "kazushikonosu",
       githubId: "kazushisan",
@@ -110,7 +110,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "lacolaco",
       username: "laco2net",
-      profileImagePath: "3.jpg",
+      profileImagePath: "laco2net.jpg",
       bio: "Google Developers Expert for Angular、Angular日本ユーザー会の代表として、Angularコミュニティへのコントリビューションや翻訳、登壇、イベント主催などの活動をしています。ポッドキャスト「リファクタリングとともに生きるラジオ」でも活動中。",
       xId: "laco2net",
       githubId: "lacolaco",
@@ -132,7 +132,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "Masaki Suzuki",
       username: "makky12",
-      profileImagePath: "4.jpg",
+      profileImagePath: "makky12.jpg",
       bio: "KDDIアジャイル開発センター株式会社 / 名古屋オフィス所属。\n2019年に業務でAWSに携わったことがきっかけでクラウドの魅力にハマり、以来ずっとクラウドエンジニア（バックエンド/アーキテクト）として活動。\n特にサーバーレスやInfrastructure as Code(IaC)が大好きで、AWS LambdaやAWS CDKを用いたサーバーレスアプリケーションの設計開発・IaCでのインフラ構築・CI/CD環境構築などを得意とし、それらの開発言語としてTypeScriptやNode.jsを好んで使用している。\nその他、JAWS-UGやServerlessなどのAWS関連コミュニティにおいて、登壇・参加などのコミュニティへの貢献活動を積極的に行っており、2023年よりAWS Community Builder(Serverless)に認定。",
       xId: "makky12",
       githubId: "smt7174",
@@ -154,7 +154,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "宮城広隆(@MH4GF)",
       username: "MH4GF",
-      profileImagePath: "5.jpg",
+      profileImagePath: "MH4GF.jpg",
       bio: "株式会社タイミーの創業期からソフトウェアエンジニアとして関わった後、フリーランスとして複数企業での開発を経験。\n2023年2月にROUTE06に入社し、Frontend Platformチームのテックリードとして大規模BtoB SaaSの設計推進を担当。\n現在はOSSのデータベーススキーマ可視化ツール Liam ERD のプロダクトマネージャーを担当しています。",
       xId: "MH4GF",
       githubId: "mh4gf",
@@ -175,7 +175,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "progfay",
       username: "progfay",
-      profileImagePath: "6.jpg",
+      profileImagePath: "progfay.jpg",
       bio: "型パズルは独学で習得したので我流です。",
       xId: "progfay",
       githubId: "progfay",
@@ -222,7 +222,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "takanorip",
       username: "takanorip",
-      profileImagePath: "9.jpg",
+      profileImagePath: "takanorip.jpg",
       bio: "デザインと実装両方やるタイプの人間です。今は株式会社カンムでバンドルカードの開発をしています。\n好きなフォントはFuturaです。",
       xId: "takanoripe",
       githubId: "takanorip",
@@ -243,7 +243,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "unvalley",
       username: "unvalley_",
-      profileImagePath: "10.jpg",
+      profileImagePath: "unvalley_.jpg",
       bio: "A software engineer who writes Rust and TypeScript, biome core member.",
       xId: "unvalley_",
       githubId: "unvalley",
@@ -264,7 +264,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "ymrl",
       username: "ymrl",
-      profileImagePath: "11.png",
+      profileImagePath: "ymrl.png",
       bio: "「Webアプリケーションアクセシビリティ」共著者。UIデザイナーとしてTypeScriptを書いています。",
       xId: "ymrl",
       githubId: "ymrl",
@@ -285,7 +285,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "yui_tang",
       username: "yui_tang",
-      profileImagePath: "12.jpg",
+      profileImagePath: "yui_tang.jpg",
       bio: "東京生まれ。新卒で営業職について数年後、独学でWebプログラミングを学び転身。2014年よりメルカリでソフトウェアエンジニア・技術ブランディング等の職に就く。2024年5月にnewmo株式会社へ入社。猫・メタル・筋トレ・VTuberが好き。",
       xId: "yui_tang",
       githubId: "YUISAKAMOTO",
@@ -332,7 +332,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "Yuku Kotani",
       username: "yukukotani",
-      profileImagePath: "14.jpg",
+      profileImagePath: "yukukotani.jpg",
       bio: "Ubie株式会社で、技術戦略や開発組織戦略の立案・執行をリードしています。",
       xId: "yukukotani",
       githubId: "yukukotani",
@@ -353,7 +353,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "ぴざきゃっと",
       username: "pizzacat83b",
-      profileImagePath: "15.png",
+      profileImagePath: "pizzacat83b.png",
       bio: "型やlinterに魅せられ、バグを仕組みで防ぐ技術を追求しているうちに、いつの間にかセキュリティの世界にいた。\nセキュリティエンジニアとしての経験を経て、現在はソフトウェアエンジニアとして、セキュリティ診断AIエージェント「Takumi」やプロダクトセキュリティプラットフォーム「Shisho Cloud byGMO」の開発を担当。\n趣味はRustでブラウザを自作すること。",
       xId: "pizzacat83b",
       githubId: "pizzacat83",
@@ -376,7 +376,7 @@ export const talkList: Talk[] = [
       name: "プログラミングをするパンダ",
       // TODO: 確認。ブログのドメインからとってきた
       username: "panda-program",
-      profileImagePath: "16.png",
+      profileImagePath: "panda-program.png",
       bio: "XP、スクラム開発が好きなフルスタックエンジニア。バックエンドからフロントエンド、レガシーシステムの開発から新規プロダクトの立ち上げ、新入社員のオンボーディングから一人ひとりと向き合うチームビルディングまで幅広く担当。BASEではシニアエンジニアとしてアジャイル開発を推進中。CodeZineでの寄稿や個人ブログの執筆、YouTube、SpotifyでPodcastを配信するなどエンジニア向け情報の発信している。",
       xId: undefined,
       githubId: undefined,
@@ -410,7 +410,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "elecdeer",
       username: "elecdeerdev",
-      profileImagePath: "18.png",
+      profileImagePath: "elecdeerdev.png",
       bio: "TypeScriptとReactを書くフロントエンドエンジニア。便利なツールを作るのが好き。",
       xId: "elecdeerdev",
       githubId: "elecdeer",
@@ -432,7 +432,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "kotori",
       username: "maminami_minami",
-      profileImagePath: "19.jpg",
+      profileImagePath: "maminami_minami.jpg",
       bio: "株式会社Gaudiyのフロントエンドエンジニア。Enablingチームに所属しフロントエンドエコシステムの改善や開発者体験の向上に努めている。自動化や効率化が得意。",
       xId: "maminami_minami",
       githubId: "minami-minami",
@@ -453,7 +453,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "ryuapp",
       username: "ryuapp",
-      profileImagePath: "20.png",
+      profileImagePath: "ryuapp.png",
       bio: "趣味でOSS活動をしている",
       xId: undefined,
       githubId: "ryuapp",
@@ -474,7 +474,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "小松 翔 (tris)",
       username: "tris5572",
-      profileImagePath: "21.jpg",
+      profileImagePath: "tris5572.jpg",
       bio: "九州の高専を卒業後、鉄道会社で運転士や社内システム開発などに従事。2024年に畑違いのドワンゴへ入社し、教育アプリZEN Studyの開発により若者の青春を応援中。",
       xId: "tris5572",
       githubId: "tris5572",
@@ -496,7 +496,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "やまのく",
       username: "yamanoku",
-      profileImagePath: "22.jpg",
+      profileImagePath: "yamanoku.jpg",
       bio: "一児の父です。会社員やってます。",
       xId: "yamanoku",
       githubId: "yamanoku",
@@ -517,7 +517,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "yossydev",
       username: "yossydev",
-      profileImagePath: "23.jpg",
+      profileImagePath: "yossydev.jpg",
       bio: "昼はFANTECH領域のフロントエンドエンジニア、夜はRust製JavaScript EngineのNova Contributor",
       xId: "yossydev",
       githubId: "yossydev",
@@ -577,7 +577,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "赤木 勇統",
       username: "yutoak",
-      profileImagePath: "26.png",
+      profileImagePath: "yutoak.png",
       bio: "RightTouchでプロダクトエンジニアをしています\n業務ではフロントエンドもバックエンドもTypeScriptで書いていますが、趣味ではいろんな言語に触れるのが好きです",
       xId: undefined,
       githubId: undefined,
@@ -599,7 +599,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "いまいまい",
       username: "imaimai17468",
-      profileImagePath: "27.jpg",
+      profileImagePath: "imaimai17468.jpg",
       bio: "カエルのアイコンだけ覚えてください",
       xId: "imaimai17468",
       githubId: "imaimai17468",
@@ -620,7 +620,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "omote",
       username: "HirokiOmote",
-      profileImagePath: "28.jpg",
+      profileImagePath: "HirokiOmote.jpg",
       bio: "株式会社estie デザインエンジニア マネージャー。\nフロントエンド、UIデザインが主務。\n\n趣味はマラソン。\n猫と犬と西武ライオンズが好き。",
       xId: "HirokiOmote",
       githubId: "HirokiOmote",
@@ -657,7 +657,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "じょーし（上司陽平）",
       username: "paper2parasol",
-      profileImagePath: "30.jpg",
+      profileImagePath: "paper2parasol.jpg",
       bio: "Sansan株式会社にて、請求書管理サービス「Bill One」のソフトウェアエンジニア兼SREとして活動しています。有志メンバによるCI/CD改善チームを運営し、日々の開発者体験の向上に取り組んでいます。最近は、GitHub Actionsのパフォーマンスや効果測定を可視化するためのOSS「GitHub Actions OpenTelemetry」の開発にも注力しています。",
       xId: "paper2parasol",
       githubId: "paper2",
@@ -679,7 +679,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "たじまん",
       username: "schktjm",
-      profileImagePath: "31.jpg",
+      profileImagePath: "schktjm.jpg",
       bio: "2021年に会津大学コンピュータ理工学部を卒業後、株式会社ZOZOテクノロジーズにフロントエンドエンジニアとして入社。HTMLやセマンティクス好きからアクセシビリティに興味を持ち2024年8月にSmartHRに入社。ウェブアクセシビリティ基盤委員会(WAIC) WG4委員。",
       xId: "schktjm",
       githubId: "schktjm",
@@ -700,7 +700,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "龍野 卓己",
       username: "takumi_t_jp",
-      profileImagePath: "32.jpg",
+      profileImagePath: "takumi_t_jp.jpg",
       bio: "トグルホールディングス株式会社のプロダクトエンジニア\n不動産開発領域でのデジタルインフラを実現する「つくるAI」シリーズの開発をフルスタックで担当しています。\n名前の「龍野」からもじって、「ドラゴンさん」と呼ばれています。\n\nまだまだ若輩ではございますが、TSKaigiでのLTを全力で楽しんでいきます！\n\nhttps://note.com/toggle/n/n25ce52d3a2ae",
       xId: "takumi_t_jp",
       githubId: "Exerea",
@@ -721,7 +721,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "原口 公輔",
       username: "Tirol_JPN",
-      profileImagePath: "33.jpg",
+      profileImagePath: "Tirol_JPN.jpg",
       bio: "2020年にフロントエンドエンジニアとしてラクスル株式会社に新卒入社。印刷ECの開発に携わる。2024年6月にトグルホールディングス株式会社に入社。現在は、ボリュームチェックに特化した案件検討DXサービスであるデベNAVIの開発・運用に携わっている。",
       xId: "Tirol_JPN",
       githubId: "TirolJPN",
@@ -756,7 +756,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "azu",
       username: "azu_re",
-      profileImagePath: "35.jpg",
+      profileImagePath: "azu_re.jpg",
       bio: "ISO/IEC JTC 1/SC 22/ECMAScript Ad Hoc委員会 エキスパートでECMAScript、JSONの仕様に関わる。2011年にJSer.infoを立ち上げ、継続的にJavaScriptの情報を発信している。ライフワークとしてオープンソースへのコントリビューションをしている。",
       xId: "azu_re",
       githubId: "azu",
@@ -791,7 +791,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "izumin5210",
       username: "izumin5210",
-      profileImagePath: "37.jpg",
+      profileImagePath: "izumin5210.jpg",
       bio: "バクラク事業部 PlatformEngineering部 Enablingチーム。\nプロダクト開発やバックエンド・Webフロントエンドの基盤開発などをしています。APIスキーマ関連技術とコードの静的解析・自動生成技術が好き。",
       xId: "izumin5210",
       githubId: "izumin5210",
@@ -813,7 +813,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "k.goto",
       username: "365_step_tech",
-      profileImagePath: "38.jpg",
+      profileImagePath: "365_step_tech.jpg",
       bio: "AWS CDK のコントリビュート活動を行っており、Top Contributor や Community Reviewer に選定。コミュニティ駆動の CDK コンストラクトライブラリのメンテナーや、自作 AWS ツールの OSS 開発も行なっている。2024 年 3 月、AWS DevTools Hero に選出。",
       xId: "365_step_tech",
       githubId: "go-to-k",
@@ -835,7 +835,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Kei",
       username: "kei_english_ca",
-      profileImagePath: "39.jpg",
+      profileImagePath: "kei_english_ca.jpg",
       bio: "カナダでキャリアをスタートのち、5年間アメリカとカナダのスタートアップにて従事。現在は日本でWixにて働いています。",
       xId: "kei_english_ca",
       githubId: "kei95",
@@ -883,7 +883,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "susisu",
       username: "susisu2413",
-      profileImagePath: "42.png",
+      profileImagePath: "susisu2413.png",
       bio: "桃栗三年型八年",
       xId: "susisu2413",
       githubId: "susisu",
@@ -920,7 +920,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "yasaichi",
       username: "_yasaichi",
-      profileImagePath: "44.png",
+      profileImagePath: "_yasaichi.png",
       bio: "2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年よりEARTHBRAINに参画。\n現在は同社のデータプラットフォームの開発を牽引している。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。",
       xId: "_yasaichi",
       githubId: "yasaichi",
@@ -954,7 +954,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "加瀬健太（Kesin11）",
       username: "Kesin11",
-      profileImagePath: "46.jpg",
+      profileImagePath: "Kesin11.jpg",
       bio: "2023年7月にサイボウズ株式会社に中途入社。開発本部 生産性向上チームにて主に大規模なGitHub Actions セルフホストランナー基盤の運用に従事。\n2024年の8月頃から生成AIに興味を持ち始め、2025年1月から開発本部 AIやっていきチームに異動。社内のAI利用の推進、社内用のAIツールの開発・運用、プロダクトのAI機能のR&DなどAI活用の業務に幅広く関わる。\nGitHubのchangelogを毎日見るのが趣味。",
       xId: "Kesin11",
       githubId: "Kesin11",
@@ -988,7 +988,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "富所 亮",
       username: "hanhan1978",
-      profileImagePath: "48.jpg",
+      profileImagePath: "hanhan1978.jpg",
       bio: "2005年中規模SIerに入社以後、自社サービスと受託開発を交互に繰り返しながら、一貫してWebアプリケーションの開発に従事、2020年11月にカオナビに入社。バックエンドエンドのエキスパートとしての業務の傍ら、PHP界隈を中心に勉強会やカンファレンスに登壇しています。",
       xId: "hanhan1978",
       githubId: "hanhan1978",
@@ -1010,7 +1010,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "山梨 蓮",
       username: "ren_yamanashi",
-      profileImagePath: "49.jpg",
+      profileImagePath: "ren_yamanashi.jpg",
       bio: "AWS CDK が好きな Web バックエンドエンジニア。\n趣味で CDK のコントリビュートを行ったり、CDK 用の ESLint Plugin (eslint-cdk-plugin) を開発したりなどしています。",
       xId: "ren_yamanashi",
       githubId: "ren-yamanashi",
@@ -1053,7 +1053,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Kanon",
       username: "ysknsid25",
-      profileImagePath: "51.jpg",
+      profileImagePath: "ysknsid25.jpg",
       bio: "完全在宅 programmer",
       xId: "ysknsid25",
       githubId: "ysknsid25",
@@ -1074,7 +1074,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "加藤貴裕",
       username: "doz13189",
-      profileImagePath: "52.png",
+      profileImagePath: "doz13189.png",
       bio: "株式会社BOOSTRYでフロントエンドエンジニアをしています。",
       xId: "doz13189",
       githubId: "doz13189",
@@ -1095,7 +1095,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "majimaccho",
       username: "majimaccho_",
-      profileImagePath: "53.jpg",
+      profileImagePath: "majimaccho_.jpg",
       bio: "キャディに2024年11月に入社し、CADDi Quoteで見積業務を効率化・高度化させる開発に取り組んでいます。バックエンドの設計において、TypeScriptの型の表現力を活かした設計を推進しています。",
       xId: "majimaccho_",
       githubId: "majimaccho",
@@ -1116,7 +1116,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Motoki Shakagori/ほとけ",
       username: "schwmtl",
-      profileImagePath: "54.png",
+      profileImagePath: "schwmtl.png",
       bio: "静的型が好きなWeb developer。最近は公私ともにTypeScriptを書くことが多く、最近はたまにNeverthrowやHonoなどのライブラリに貢献しています。",
       xId: "schwmtl",
       githubId: "m-shaka",
@@ -1137,7 +1137,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Nozomu Ikuta",
       username: "nozomuikuta",
-      profileImagePath: "55.jpg",
+      profileImagePath: "nozomuikuta.jpg",
       bio: "2024年10月より現職。業務では、タクシー・ライドシェア配車サービス「newmo」のフロントエンド、バックエンド、ネイティブアプリの開発や、タクシー会社のDXプロジェクト全般に取り組んでいる。技術コミュニティでは、2022年からUnJSメンバーおよびVue.js日本ユーザーグループコアスタッフ、2024年からShibuya.goオーガナイザーおよびGo Conferenceスタッフとして活動している。",
       xId: "nozomuikuta",
       githubId: "nozomuikuta",
@@ -1158,7 +1158,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "odan",
       username: "odan3240",
-      profileImagePath: "56.jpg",
+      profileImagePath: "odan3240.jpg",
       bio: "LINEヤフー株式会社のフロントエンドエンジニアです。\nLIFF SDKやLINEログインのフロントエンドの開発を担当してます。また兼務先のチームではフロントエンド系のカンファレンスの協賛プロジェクトも担当しています。\n\n好きなTypeScriptのオプションはnoUncheckedIndexedAccessです。",
       xId: "odan3240",
       githubId: "odanado",
@@ -1179,7 +1179,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "TAKASE Kazuyuki (@Guvalif)",
       username: "guvalif",
-      profileImagePath: "57.png",
+      profileImagePath: "guvalif.png",
       bio: '普段は EdTech × ML 系プロダクトのプロトタイピングに従事しています。クライアントサイドに適した軽量かつ疎結合なアーキテクチャに関心があり、"関数型プログラミング" を軸にいろいろとアイデアを発表しています ⚡️',
       xId: "guvalif",
       githubId: "Guvalif",
@@ -1201,7 +1201,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Yo Iwamoto",
       username: "yoiwamoto",
-      profileImagePath: "58.jpg",
+      profileImagePath: "yoiwamoto.jpg",
       bio: "SmartHR でプロダクトエンジニアをしています。\nNext.js を愛し、Next.js に愛されていません。",
       xId: "yoiwamoto",
       githubId: "yo-iwamoto",
@@ -1236,7 +1236,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "Yuma Takei",
       username: "yutake27",
-      profileImagePath: "60.jpg",
+      profileImagePath: "yutake27.jpg",
       bio: "2022年にEdTechスタートアップのatama plus株式会社に新卒入社\nTypeScriptを用いたフロントエンド開発や教育コンテンツ基盤の開発に従事しています。\nTypeScriptの強みを活かしたメンテナンスしやすく品質の高い開発を追求しています。",
       xId: "yutake27",
       githubId: "yutake27",
@@ -1257,7 +1257,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "池田敬祐",
       username: "ike_keichan",
-      profileImagePath: "61.png",
+      profileImagePath: "ike_keichan.png",
       bio: "東京と関西(大阪＆京都)の二拠点生活をしているエンジニア。勉強会大好きマン。大学で情報系学部に入学し、コンピュータやプログラミングの面白さを知る。\n卒業後、東京のSESの会社に新卒で入社。通常のエンジニア業務だけでなく、社内のエンジニア組織・イベントの運営、グループ会社のテックリード、案件内でのマネジメントなどにも携わる。\n株式会社ハマヤからオファーを受け入社。現在もSESという業務形態でさまざまな開発に携わりながら、自身の知識と経験を活かしてクライアントの課題解決に取り組んでいます。",
       xId: "ike_keichan",
       githubId: "ike-keichan",
@@ -1291,7 +1291,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "おおいし (bicstone)",
       username: "bicstone_me",
-      profileImagePath: "63.jpg",
+      profileImagePath: "bicstone_me.jpg",
       bio: "建設業界で機械設計に従事していたが、テクノロジーの力で世の中の摩擦を解決したいと考えるようになり2019年にWebエンジニアに転向。\n5年以上のVertical SaaSの開発経験を持ち、技術だけにこだわらずに広い視野を持ち、多角的なアプローチで迅速かつ効果的にプロダクトの価値を最大化し、社会やステークホルダーの課題解決に貢献。",
       xId: "bicstone_me",
       githubId: "bicstone",
@@ -1312,7 +1312,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "川野賢一",
       username: "k_rf_",
-      profileImagePath: "64.jpg",
+      profileImagePath: "k_rf_.jpg",
       bio: "2024年1月に株式会社スタンバイに中途入社。\n求人検索エンジン「スタンバイ」のWebフロントエンド開発や、オウンドメディア「スタンバイplus」の開発に従事。\n日々の業務を楽に楽しくするため、Chrome拡張機能、Slack App、GASなど、TypeScriptを使った社内ツールの開発にも積極的に取り組んでいる。",
       xId: "k_rf_",
       githubId: "k-rf",
@@ -1334,7 +1334,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "君田 祥一",
       username: "kimi_koma1111",
-      profileImagePath: "65.jpg",
+      profileImagePath: "kimi_koma1111.jpg",
       bio: "新卒で営業職を経験後、エンジニアに転身。不動産テックベンチャーにてフロントエンドエンジニアとしてのキャリアをスタートしました。\nその後、別の企業でふるさと納税ポータルサイトのフロントエンド開発に携わりました。\n現在はトグルホールディングス株式会社のCTO室にてAIイネーブルメントを担当しています。",
       xId: "kimi_koma1111",
       githubId: "kimitashoichi",
@@ -1355,7 +1355,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "田中勇太",
       username: "nayuta999999",
-      profileImagePath: "66.jpg",
+      profileImagePath: "nayuta999999.jpg",
       bio: "フロントエンドを頑張って書いています",
       xId: "nayuta999999",
       githubId: "Yuta123456",
@@ -1384,7 +1384,7 @@ VueUse の以下の2つの関数に注目し、実際のコードを通じてそ
     speaker: {
       name: "ツノ",
       username: "2nofa11",
-      profileImagePath: "67.jpg",
+      profileImagePath: "2nofa11.jpg",
       bio: "弁護士ドットコム株式会社のクラウドサインというプロダクトを作っています。\nSIerや社内SEを経験した後、2022年にフロントエンドの面白さに気づき、それ以来熱中しています。",
       xId: "2nofa11",
       githubId: undefined,
@@ -1406,7 +1406,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
     speaker: {
       name: "栃川晃佑",
       username: "Web_TochiTech",
-      profileImagePath: "68.jpg",
+      profileImagePath: "Web_TochiTech.jpg",
       bio: "2020年に大阪大学基礎工学部知能システム学科を卒業後、スマサテ株式会社にてAI賃料査定システム「スマサテ」の新規開発に従事。\n2023年に株式会社PLEXへ入社し、建設業界向けSaaS「サクミル」に参画し新規開発に従事し、現在は同社のエッセンシャルワーカー向け転職サービス「PLEX JOB」の新規開発・運用に携わる。\n「事業」と「人」を育てることができるエンジニアリーダを目指し日々奮闘中。大阪に住むこととマチュピチュを見ることが夢です。",
       xId: "Web_TochiTech",
       githubId: undefined,
@@ -1427,7 +1427,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
     speaker: {
       name: "成原 聡一朗",
       username: "feel_sooo_baaad",
-      profileImagePath: "69.jpg",
+      profileImagePath: "feel_sooo_baaad.jpg",
       bio: "1988年、札幌市出身。\n23歳の時、WEBの世界に魅了され、独学でデザインなどを学習し、WEBデザイナーとしてキャリアをスタート。\n受託制作会社で数年キャリアを積んだのち、WEBにおけるJavaScriptの可能性に魅了され、フロントエンドエンジニアに転向。\nスペースマーケットに入社後、エンジニアリング領域でのマネージメントの面白さ、奥深さに気がつきエンジニアリングマネージャーへ。\n2023年1月より、エンジニア組織全体を統括するVPoEに就任。",
       xId: undefined,
       githubId: "feel_sooo_baaad",
@@ -1441,3 +1441,9 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
 export const talkIds = talkList.map((talk) => ({
   id: talk.id,
 }));
+
+export const talkUsernames = talkList
+  .filter((talk) => talk.speaker.username)
+  .map((talk) => ({
+    username: talk.speaker.username,
+  }));

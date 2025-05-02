@@ -12,7 +12,7 @@ async function main() {
     // 画像の保存
     const buffer = await res.arrayBuffer();
     const uint8Array = new Uint8Array(buffer);
-    const filePath = `public/ogp/talks/${talk.id}.png`;
+    const filePath = `public/ogp/talks/${talk.speaker.username ?? talk.id}.png`;
     await fs.promises.writeFile(filePath, uint8Array);
     console.log(`Image saved to ${filePath}`);
   });
