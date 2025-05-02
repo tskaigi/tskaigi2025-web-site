@@ -99,6 +99,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["platinum"],
       detailPageId: "avita",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/avita.jpg",
+        link: "https://www.wantedly.com/companies/avita",
+      },
     },
     {
       id: "P04",
@@ -678,6 +682,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver", "coffee"],
       detailPageId: "kakehashi",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/kakehashi.jpg",
+        link: "https://hrmos.co/pages/kakehashi/jobs",
+      },
     },
     {
       id: "S11",
@@ -706,6 +714,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "medley",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/medley.png",
+        link: "https://medley-inc.notion.site/medley-engineer-entrance-book",
+      },
     },
     {
       id: "S12",
