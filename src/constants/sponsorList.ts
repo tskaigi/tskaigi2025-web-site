@@ -343,6 +343,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "kaminashi",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/kaminashi.png",
+        link: "https://careers.kaminashi.jp/",
+      },
     },
     {
       id: "G06",
@@ -492,6 +496,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "stmn",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/stmn.jpg",
+        link: "https://recruit.stmn.co.jp/",
+      },
     },
     {
       id: "G11",
@@ -521,6 +529,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "ubie",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/ubie.png",
+        link: "https://recruit.ubie.life/",
+      },
     },
     {
       id: "G12",
@@ -580,6 +592,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "theoria-technologies",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/theoria-technologies.png",
+        link: "https://theoriatec.com/recruit",
+      },
     },
     {
       id: "S03",
@@ -714,10 +730,6 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "medley",
-      jobBoard: {
-        imagePath: "/sponsors/jobBoard/medley.png",
-        link: "https://medley-inc.notion.site/medley-engineer-entrance-book",
-      },
     },
     {
       id: "S12",
@@ -857,6 +869,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "forcia",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/forcia.png",
+        link: "https://www.forcia.com/jobs/",
+      },
     },
     {
       id: "S20",
@@ -974,6 +990,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "dmm",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/dmm-com.png",
+        link: "https://dmm-corp.com/recruit/search/?tags=184&utm_campaign=12225203-TSKaigi2025&utm_source=TSKaigi2025&utm_medium=banner&utm_content=TSKaigi2025-banner",
+      },
     },
     {
       id: "S24",
@@ -1057,6 +1077,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "base",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/base.png",
+        link: "https://binc.jp/jobs",
+      },
     },
     {
       id: "S28",
