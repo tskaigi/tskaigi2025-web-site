@@ -14,6 +14,10 @@ export type Sponsor = {
   links?: ExternalLinkProps[];
   roles: SponsorRole[];
   detailPageId: string;
+  jobBoard?: {
+    imagePath: string;
+    link: string;
+  };
 };
 
 type SponsorList = {
