@@ -115,7 +115,7 @@ export default async function TalkDetailPage({
           <div className="bg-blue-light-200 p-6 rounded-xl">
             <div className="flex flex-col sm:flex-row items-center gap-6">
               {/* アイコン */}
-              <div className="w-[180px] md:w-[220px] h-auto rounded-full overflow-hidden">
+              <div className="w-[180px] min-w-[180px] md:w-[220px] md:min-w-[220px] h-auto rounded-full overflow-hidden">
                 <img
                   src={`/talks/speaker/${talk.speaker.profileImagePath || "dummy.png"}`}
                   alt={talk.speaker.name}
