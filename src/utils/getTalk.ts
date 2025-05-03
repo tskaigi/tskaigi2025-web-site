@@ -9,7 +9,8 @@ import { notFound } from "next/navigation";
 export function getTalk(username: string): Talk {
   const talk = Object.values(talkList)
     .flat()
-    .find((talk) => talk.speaker.username === username);
+    // TODO: 最終的には username のみを見る
+    .find((talk) => talk.speaker.username === username || talk.id === username);
 
   if (!talk) notFound();
 

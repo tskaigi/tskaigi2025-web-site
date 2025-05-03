@@ -1,4 +1,4 @@
-import { talkIds } from "@/constants/talkList";
+import { usernames } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Markdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
 
 export async function generateStaticParams() {
-  return talkIds;
+  return usernames;
 }
 
 const description = "TSKaigi 2025 のスピーカー、トーク情報です。";
@@ -98,7 +98,7 @@ export default async function TalkDetailPage({
             width="730"
             height="383"
             className="w-full max-w-[730px] h-auto max-h-[383px] mx-auto object-contain"
-            src={`/ogp/talks/${talk.id}.png`}
+            src={`/ogp/talks/${talk.speaker.username}.png`}
             alt={talk.title}
           />
         </div>
