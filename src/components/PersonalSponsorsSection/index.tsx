@@ -112,7 +112,7 @@ const PersonalSponsorsSection = () => {
             <li key={name}>
               <SponsorContainer link={link}>
                 <ImageCard name={name} imgSrc={imgSrc} />
-                <p className="text-lg font-bold">{name}</p>
+                <p className="text-lg font-bold text-center">{name}</p>
               </SponsorContainer>
             </li>
           ))}
