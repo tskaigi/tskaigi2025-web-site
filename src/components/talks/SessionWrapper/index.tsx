@@ -1,5 +1,6 @@
 import { EventWrapper } from "@/components/talks/EventWrapper";
 import type { Talk } from "@/constants/talkList";
+import Link from "next/link";
 
 type Props = {
   talk: Talk;
@@ -10,12 +11,12 @@ export function SessionWrapper({ talk }: Props) {
     <EventWrapper talkType="SESSION" textAlign="left" track={talk.track}>
       <div className="flex flex-col gap-1">
         {talk.speaker.username ? (
-          <a
+          <Link
             href={`/talks/${talk.speaker.username}`}
             className="hover:underline"
           >
             <p className="text-16">{talk.title}</p>
-          </a>
+          </Link>
         ) : (
           <p className="text-16">{talk.title}</p>
         )}
