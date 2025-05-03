@@ -1,5 +1,6 @@
 import { EventWrapper } from "@/components/talks/EventWrapper";
 import type { Talk } from "@/constants/talkList";
+import Link from "next/link";
 
 type Props = {
   talks: Talk[];
@@ -11,7 +12,16 @@ export function LtWrapper({ talks }: Props) {
       <div className="flex flex-col gap-5">
         {talks.map((talk) => (
           <div key={talk.id} className="flex flex-col gap-1">
-            <p className="text-16">{talk.title}</p>
+            {talk.speaker.username ? (
+              <Link
+                href={`/talks/${talk.speaker.username}`}
+                className="hover:underline"
+              >
+                <p className="text-16">{talk.title}</p>
+              </Link>
+            ) : (
+              <p className="text-16">{talk.title}</p>
+            )}
             <p className="text-14">{talk.speaker.name}</p>
           </div>
         ))}
