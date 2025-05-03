@@ -510,6 +510,7 @@ export function Talk({
               style={{
                 borderRadius: "50%",
                 marginRight: "16px",
+                objectFit: "cover",
               }}
             />
             <div
