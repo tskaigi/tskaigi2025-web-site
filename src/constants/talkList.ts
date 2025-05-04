@@ -392,10 +392,18 @@ export const talkList: Talk[] = [
     talkType: "SESSION",
     title: "TSConfigからTypeScriptの世界を覗く",
     overview:
-      "TSConfigはプロジェクトのTypeScriptの振る舞いを規定するものです。\nしかしながら、TSConfigのオプションは無数に存在していることや、一度設定してしまえば特に問題なく動作することからしばしばその存在を軽視されがちです。\nTSConfigを理解し、適切に設定すれば、TypeScriptそれ自体の理解を深めることやソフトウェア開発の安全性の向上に繋がります。\nまた、TypeScriptのアップデートに伴い、設定可能なオプションも追加され続けているため、キャッチアップも重要になります。\n\n本セッションは、TypeScript初級・中級者を対象にしています。\nTypeScript初級者には「TypeScriptはJavaScriptに型システムを追加して拡張した言語である」ということを主要なオプション（target, module, libなど）を通して理解できることを目標にします。\nまた、中級者にはType Checking系のオプションやProject Referencesを通して、改めてTSConfigを見直す契機としていただくことと、ここ数年のアップデート（Version 5.0 - 5.8）で追加されたオプションの紹介を通して最新情報をキャッチアップでき、今後も最新情報を把握することの重要性を理解できることを目標とします。",
+      "TSConfigはプロジェクトのTypeScriptの振る舞いを規定するものです。\nしかしながら、TSConfigのオプションは無数に存在していることや、一度設定してしまえば特に問題なく動作することからしばしばその存在を軽視されがちです。\nTSConfigを理解し、適切に設定すれば、TypeScriptそれ自体の理解を深めることやソフトウェア開発の安全性の向上に繋がります。\nまた、TypeScriptのアップデートに伴い、設定可能なオプションも追加され続けているため、キャッチアップも重要になります。\n\n本セッションでは、TSConfigの各種オプションの紹介を通してTSConfigの魅力を再発見し、TypeScriptへの理解に寄与することを目標とします。",
     time: "14:20 〜 14:50",
     speaker: {
       name: "らいと",
+      username: "light_planck",
+      profileImagePath: "17.jpg",
+      bio: "業務ではReactとRailsを書いています。 =LOVEと文学が好きです。",
+      xId: "light_planck",
+      githubId: "light-planck",
+      additionalLink: "https://zenn.dev/light_planck",
+      affiliation: "",
+      position: "ソフトウェアエンジニア",
     },
   },
   {
@@ -634,12 +642,20 @@ export const talkList: Talk[] = [
     eventDate: "DAY1",
     track: "TRACK3",
     talkType: "LT",
-    title: "ハッカソンでTypeScriptを使った実体験",
+    title: "学生でもここまで出来る！ハッカソンで爆速開発して優勝した話",
     overview:
       "みなさんは，おそらく実務などでじっくり腰を据えて開発することが多いでしょう．\nそういう開発では当然TypeScriptは活躍します．\nですが，短期間で大量のコードを書くことが迫られるハッカソンではどうでしょうか？\n一般に，TypeScriptはJavaScriptと異なり型付き言語で，エラーが発生しやすく処理量も増えるため，速度が求められる開発では避けられる傾向にあります．\n今回は，JPHACKS 2024優勝チームが，ハッカソンにてTypeScriptを用いて開発した体験談を踏まえて，短期開発におけるTypeScriptの利点を語ります．\nこれにより，TypeScriptの利便性をより明確にし，より幅広い場面でTypeScriptが使われるようになることを目指します．",
     time: "15:00 〜 15:30",
     speaker: {
-      name: "河村悠太",
+      name: "かわちゃん",
+      username: "inheritans1904",
+      profileImagePath: "29.jpg",
+      bio: "2025年に名古屋大学大学院情報学研究科知能システム学専攻に進学しました．大学で医用画像処理の研究をする傍ら，サークル・アルバイト先でフロントエンドエンジニアとして開発に従事しています．ユーザを意識したフロントエンドを開発するのが趣味で，最近はアクセシビリティなどに興味があります．",
+      xId: "inheritans1904",
+      githubId: "YutaK1026",
+      additionalLink: "https://kawaport.pages.dev/",
+      affiliation: "名古屋大学大学院・アプリ開発団体jack・株式会社Aixtal",
+      position: "フロントエンドエンジニア",
     },
   },
   {
