@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "行動規範",
+  twitter: {
+    title: "行動規範",
+  },
+  openGraph: {
+    title: "行動規範",
+  },
   robots: "noindex, nofollow",
 };
 
