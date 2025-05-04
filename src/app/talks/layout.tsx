@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "タイムテーブル",
+  title: {
+    template: "%s | TSKaigi 2025",
+    default: "タイムテーブル",
+  },
   twitter: {
-    title: "タイムテーブル",
+    title: {
+      template: "%s | TSKaigi 2025",
+      default: "タイムテーブル",
+    },
   },
   openGraph: {
-    title: "タイムテーブル",
+    title: {
+      template: "%s | TSKaigi 2025",
+      default: "タイムテーブル",
+    },
   },
 };
 
