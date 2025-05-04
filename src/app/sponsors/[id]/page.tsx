@@ -8,6 +8,8 @@ export async function generateStaticParams() {
   return sponsorIds;
 }
 
+const description = "TSKaigi 2025 のスポンサー情報です。";
+
 export async function generateMetadata({
   params,
 }: {
@@ -17,9 +19,11 @@ export async function generateMetadata({
   const sponsor = getSponsor(id);
 
   return {
-    robots: "noindex, nofollow",
+    title: sponsor.name,
+    description,
     twitter: {
       title: sponsor.name,
+      description,
       images: [
         {
           url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
@@ -28,6 +32,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: sponsor.name,
+      description,
       images: [
         {
           url: `/ogp/sponsors/${sponsor.detailPageId}.png`,
