@@ -55,11 +55,11 @@ const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
 
 const PersonalSponsorsSection = () => {
   return (
-    <section className="pt-10 md:pt-20 pb-10 md:pb-20 bg-blue-light-100">
+    <section className="pt-10 md:pt-20 pb-10 md:pb-20 md:px-10 bg-blue-light-100">
       <h2 className="text-24 md:text-32 leading-normal md:leading-[48px] text-center font-bold pb-8 md:pb-10">
         個人スポンサー
       </h2>
-      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-4">
+      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(3,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-4">
         {personalSponsorList
           // TODO: ImageCard に画像がない場合、tskaigi default の画像を出す
           .map(({ name, link, imgSrc }) => (
