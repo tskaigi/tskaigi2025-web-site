@@ -3,17 +3,6 @@ import Company from "@/components/sponsors/Company";
 import SponsorHeading from "@/components/sponsors/SponsorHeading";
 import { type SponsorClass, sponsorList } from "@/constants/sponsorList";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "スポンサー",
-  twitter: {
-    title: "スポンサー",
-  },
-  openGraph: {
-    title: "スポンサー",
-  },
-};
 
 const SponsorsPage = () => {
   return (

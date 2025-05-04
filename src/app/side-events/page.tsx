@@ -1,16 +1,5 @@
 import SideEvent from "@/components/SideEvent";
 import { sideEventList } from "@/constants/sideEventList";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "サイドイベント",
-  twitter: {
-    title: "サイドイベント",
-  },
-  openGraph: {
-    title: "サイドイベント",
-  },
-};
 
 const SideEventsPage = () => {
   return (

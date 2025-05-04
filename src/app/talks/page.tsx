@@ -6,19 +6,8 @@ import { EventDateTab } from "@/components/talks/EventDateTab";
 import { GridWrapper } from "@/components/talks/GridWrapper";
 import { TrackHeader } from "@/components/talks/TrackHeader";
 import type { EventDate } from "@/constants/talkList";
-import type { Metadata } from "next";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
-
-export const metadata: Metadata = {
-  title: "タイムテーブル",
-  twitter: {
-    title: "タイムテーブル",
-  },
-  openGraph: {
-    title: "タイムテーブル",
-  },
-};
 
 const TalksPage = () => {
   const router = useRouter();
