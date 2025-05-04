@@ -1,4 +1,5 @@
 import { personalSponsorList } from "@/constants/personalSponsorList";
+import Image from "next/image";
 
 type SponsorContainerProps = {
   link: string | undefined;
@@ -29,18 +30,22 @@ type ImageCardProps = {
 const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
   const DefaultImage = () => {
     return (
-      <div className="w-[120px] h-[120px] md:w-[144px] md:h-[144px] bg-white rounded-full" />
+      <div className="flex justify-center items-center w-36 h-36 bg-white rounded-full p-8 md:p-10 lg:p-10">
+        <Image
+          src="/personalSponsors/default-icon.svg"
+          alt="TSKaigi"
+          width={256}
+          height={256}
+          className="w-full"
+        />
+      </div>
     );
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-full">
+    <div className="flex justify-center items-center w-full h-full aspect-square rounded-full overflow-hidden">
       {imgSrc ? (
-        <img
-          src={imgSrc}
-          alt={name}
-          className="w-full h-auto rounded-full overflow-hidden"
-        />
+        <img src={imgSrc} alt={name} className="w-full h-auto" />
       ) : (
         <DefaultImage />
       )}
@@ -50,18 +55,18 @@ const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
 
 const PersonalSponsorsSection = () => {
   return (
-    <section className="pt-10 md:pt-20 pb-10 md:pb-20 bg-blue-light-100">
+    <section className="pt-10 md:pt-20 pb-10 md:pb-20 md:px-10 bg-blue-light-100">
       <h2 className="text-24 md:text-32 leading-normal md:leading-[48px] text-center font-bold pb-8 md:pb-10">
         個人スポンサー
       </h2>
-      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(4,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-4">
+      <ul className="grid grid-cols-[repeat(auto-fit,120px)] md:grid-cols-[repeat(3,144px)] lg:grid-cols-[repeat(5,144px)] justify-center gap-x-14 gap-y-8 px-4">
         {personalSponsorList
           // TODO: ImageCard に画像がない場合、tskaigi default の画像を出す
           .map(({ name, link, imgSrc }) => (
             <li key={name}>
               <SponsorContainer link={link}>
                 <ImageCard name={name} imgSrc={imgSrc} />
-                <p className="text-lg font-bold">{name}</p>
+                <p className="text-lg font-bold text-center">{name}</p>
               </SponsorContainer>
             </li>
           ))}
