@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 const specificCommercialData = {
   販売業者: <p>一般社団法人 TSKaigi Association</p>,
   所在地: <p>東京都中央区東日本橋2-4-10 701</p>,
@@ -37,6 +39,16 @@ const specificCommercialData = {
       インターネット接続料金その他の電気通信回線の通信に関する費用はお客様にて別途ご用意いただく必要があります。（金額は、お客様が契約した各事業者が定める通り）
     </p>
   ),
+};
+
+export const metadata: Metadata = {
+  title: "特定商取引法に基づく表記",
+  twitter: {
+    title: "特定商取引法に基づく表記",
+  },
+  openGraph: {
+    title: "特定商取引法に基づく表記",
+  },
 };
 
 const SpecificCommercialPage = () => {
