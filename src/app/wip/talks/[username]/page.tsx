@@ -22,6 +22,7 @@ export async function generateMetadata({
   const talk = getTalk(username);
 
   return {
+    title: talk.title,
     description,
     twitter: {
       title: talk.title,
