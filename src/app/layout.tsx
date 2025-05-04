@@ -20,7 +20,7 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    template: "TSKaigi 2025 | %s",
+    template: "%s | TSKaigi 2025",
     default: "TSKaigi 2025",
   },
   metadataBase: new URL("https://2025.tskaigi.org/"),
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   twitter: {
     title: {
-      template: "TSKaigi 2025 | %s",
+      template: "%s | TSKaigi 2025",
       default: "TSKaigi 2025",
     },
     description:
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-      template: "TSKaigi 2025 | %s",
+      template: "%s | TSKaigi 2025",
       default: "TSKaigi 2025",
     },
     url: "https://2025.tskaigi.org/",
