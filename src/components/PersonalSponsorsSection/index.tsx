@@ -32,7 +32,7 @@ const ImageCard = ({ name, imgSrc }: ImageCardProps) => {
     return (
       <div className="flex justify-center items-center w-36 h-36 bg-white rounded-full p-8 md:p-10 lg:p-10">
         <Image
-          src="/defaultIcon.svg"
+          src="/personalSponsors/default-icon.svg"
           alt="TSKaigi"
           width={256}
           height={256}
