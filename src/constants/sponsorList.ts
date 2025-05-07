@@ -297,6 +297,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "cyberagent",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/cyberagent.png",
+        link: "https://hrmos.co/pages/cyberagent-group/jobs",
+      },
     },
     {
       id: "G04",
