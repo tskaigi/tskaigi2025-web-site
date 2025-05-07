@@ -669,6 +669,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "earthbrain",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/earthbrain.png",
+        link: "https://hrmos.co/pages/earthbrain/jobs?jobType=FULL&category=1677916098953007105",
+      },
     },
     {
       id: "S06",
