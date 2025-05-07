@@ -479,6 +479,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "caddi",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/caddi.jpg",
+        link: "https://caddi.com/ja-jp/careers/",
+      },
     },
     {
       id: "G10",
