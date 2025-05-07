@@ -423,6 +423,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "toggle",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/toggle.png",
+        link: "https://hrmos.co/pages/toggle/jobs/0000007",
+      },
     },
     {
       id: "G08",
