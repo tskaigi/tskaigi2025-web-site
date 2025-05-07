@@ -138,7 +138,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       roles: ["platinum"],
       detailPageId: "nstock",
       jobBoard: {
-        imagePath: "/sponsors/jobBoard/nstock.jpg",
+        imagePath: "/sponsors/jobBoard/nstock.png",
         link: "https://herp.careers/v1/nstock/a4CrKSJNtXCa",
       },
     },
