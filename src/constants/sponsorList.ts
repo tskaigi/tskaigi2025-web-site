@@ -750,6 +750,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "medley",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/medley.png",
+        link: "https://medley-inc.notion.site/medley-engineer-entrance-book",
+      },
     },
     {
       id: "S12",
