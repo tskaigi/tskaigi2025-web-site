@@ -137,6 +137,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["platinum"],
       detailPageId: "nstock",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/nstock.png",
+        link: "https://herp.careers/v1/nstock/a4CrKSJNtXCa",
+      },
     },
     {
       id: "P05",
@@ -293,6 +297,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "cyberagent",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/cyberagent.png",
+        link: "https://hrmos.co/pages/cyberagent-group/jobs",
+      },
     },
     {
       id: "G04",
@@ -415,6 +423,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "toggle",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/toggle.png",
+        link: "https://hrmos.co/pages/toggle/jobs/0000007",
+      },
     },
     {
       id: "G08",
@@ -479,6 +491,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "caddi",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/caddi.jpg",
+        link: "https://caddi.com/ja-jp/careers/",
+      },
     },
     {
       id: "G10",
@@ -665,6 +681,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "earthbrain",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/earthbrain.png",
+        link: "https://hrmos.co/pages/earthbrain/jobs?jobType=FULL&category=1677916098953007105",
+      },
     },
     {
       id: "S06",
@@ -750,6 +770,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "medley",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/medley.png",
+        link: "https://medley-inc.notion.site/medley-engineer-entrance-book",
+      },
     },
     {
       id: "S12",
