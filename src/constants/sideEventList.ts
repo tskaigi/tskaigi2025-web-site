@@ -51,7 +51,8 @@ LT（ライトニングトーク）を通して、TSとの出会い、最近作�
     link: "https://freee.connpass.com/event/351699",
     thumbnail:
       "https://media.connpass.com/thumbs/91/aa/91aa74f2f945c0319310a531f52a366a.png",
-    detail: `TSKaigi 2025 スポンサーのフリー株式会社・株式会社カミナシ・any株式会社による、登壇者や CfP 応募者が TSKaigi 本編で話せなかったことや話したりなかったことを発表するイベントです。`,
+    detail:
+      "TSKaigi 2025 スポンサーのフリー株式会社・株式会社カミナシ・any株式会社による、登壇者や CfP 応募者が TSKaigi 本編で話せなかったことや話したりなかったことを発表するイベントです。",
     tags: ["AfterTalk", "ハイブリッド開催"],
     sponsors: ["株式会社カミナシ", "any株式会社", "フリー株式会社"],
   },
