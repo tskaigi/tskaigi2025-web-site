@@ -37,7 +37,7 @@ export const sideEventList: SideEventProps[] = [
     detail: `TSKaigiのサブイベントとして開催される、TypeScript好きな学生のためのLT＆懇親イベントです。
 
 LT（ライトニングトーク）を通して、TSとの出会い、最近作ったもの、好きなライブラリなどなどちょっとだけ自分のことを話して、ちょっとだけ誰かのことを知って、そのあと、ゆるっと飲食しながらつながる時間をご用意しています。`,
-    tags: ["LT・懇親会", "学生向け"],
+    tags: ["LT・懇親会", "学生向け", "公募枠あり"],
     sponsors: [
       "株式会社TOKIUM",
       "トグルホールディングス株式会社",
@@ -71,7 +71,7 @@ TSKaigi本編・懇親会に参加できなかった方、ここで楽しみま�
       "https://media.connpass.com/thumbs/91/aa/91aa74f2f945c0319310a531f52a366a.png",
     detail:
       "TSKaigi 2025 スポンサーのフリー株式会社・株式会社カミナシ・any株式会社による、登壇者や CfP 応募者が TSKaigi 本編で話せなかったことや話したりなかったことを発表するイベントです。",
-    tags: ["AfterTalk", "ハイブリッド開催"],
+    tags: ["AfterTalk", "ハイブリッド開催", "公募枠あり"],
     sponsors: ["株式会社カミナシ", "any株式会社", "フリー株式会社"],
   },
   {
