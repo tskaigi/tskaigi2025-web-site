@@ -48,13 +48,13 @@ const SideEvent = ({
           )}
         </h3>
         <div className="flex flex-col gap-5 lg:flex-row lg:gap-6">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 shrink-0 lg:w-1/2">
             <Image
               src={thumbnail}
               alt={name}
               width={800}
               height={600}
-              className="w-full md:max-w-xl lg:min-w-96"
+              className="w-full md:max-w-xl"
             />
             <p className="leading-7 md:text-lg md:leading-8 lg:hidden whitespace-pre-wrap">
               {detail}
@@ -77,7 +77,13 @@ const SideEvent = ({
               {detail}
             </p>
             <p className="md:text-lg lg:text-base lg:text-right">
-              主催: {sponsors.join("、 ")}
+              主催:{" "}
+              {sponsors.map((sponsor, i) => (
+                <span key={sponsor} className="inline-block">
+                  {sponsor}
+                  {i < sponsors.length - 1 && "、 "}
+                </span>
+              ))}
             </p>
           </div>
         </div>
