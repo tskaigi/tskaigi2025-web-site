@@ -11,9 +11,8 @@ export const sideEventList: SideEventProps[] = [
     link: "https://flatt.connpass.com/event/351975",
     thumbnail:
       "https://media.connpass.com/thumbs/5b/ee/5bee0d79b21934003d77a7a0a5dbe51c.png",
-    detail: `TSKaigi 2025 スポンサーの株式会社スタメンによる、振り返りイベントを名古屋で行います。
-
-当日参加された方々のセッションやLTを通して、TSKaigi2025で得られたことや楽しかった思い出などを共有しましょう！`,
+    detail: `GMO Flatt Securityは、TSKaigi 2025 公認サイドイベントとして、TypeScript のコードと、ESLint / Semgrepといった静的解析ツールを題材にした前夜祭（実際には前々夜祭）、ハンズオンイベント（飲み物・軽食あり）を開催いたします！！
+弊社のセキュリティエンジニアと、"型" だけに頼らないバグ検出技術を一緒に学びましょう！ `,
     tags: ["前夜祭", "ハンズオン"],
     sponsors: ["GMO Flatt Security株式会社"],
   },
