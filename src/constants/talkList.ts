@@ -1047,8 +1047,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "k8o",
       username: "k35o",
-      // TODO: アンケートに画像へのリンクがない
-      // profileImagePath: "50.jpg",
+      profileImagePath: "k35o.jpg",
       bio: "TypeScriptとReactが好きで、業務でも趣味でも日々触れています。\nフロントエンドとデザインの境界に強い関心があり、最近はデザインの勉強にも力を入れています。\n技術と表現のあいだをつなぐようなものづくりを目指しています。",
       xId: undefined,
       githubId: "k35o",
