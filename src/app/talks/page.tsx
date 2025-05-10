@@ -12,12 +12,28 @@ import { useState } from "react";
 const TalksPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [currentDate, setCurrentDate] = useState<EventDate>(
-    searchParams.get("day") === "2" ? "DAY2" : "DAY1",
-  );
+
+  const eventDayParam = searchParams.get("day");
+
+  const currentDate = new Date();
+  const isDay2 =
+    currentDate.getFullYear() === 2025 &&
+    currentDate.getMonth() === 4 &&
+    currentDate.getDate() === 24;
+
+  const defaultDay: EventDate = eventDayParam
+    ? eventDayParam === "2"
+      ? "DAY2"
+      : "DAY1"
+    : isDay2
+      ? "DAY2"
+      : "DAY1";
+
+  const [currentEventDate, setCurrentEventDate] =
+    useState<EventDate>(defaultDay);
 
   const handleTabChange = (date: EventDate) => {
-    setCurrentDate(date);
+    setCurrentEventDate(date);
     const day = date === "DAY1" ? "1" : "2";
     const params = new URLSearchParams(searchParams.toString());
     params.set("day", day);
@@ -30,7 +46,10 @@ const TalksPage = () => {
         タイムテーブル
       </h1>
       <div className="text-center mt-8">
-        <EventDateTab currentDate={currentDate} onTabChange={handleTabChange} />
+        <EventDateTab
+          currentDate={currentEventDate}
+          onTabChange={handleTabChange}
+        />
       </div>
 
       <div className="overflow-x-auto mt-10">
@@ -44,7 +63,7 @@ const TalksPage = () => {
             </GridWrapper>
           </div>
 
-          {currentDate === "DAY1" ? <Day1TimeTable /> : <Day2TimeTable />}
+          {currentEventDate === "DAY1" ? <Day1TimeTable /> : <Day2TimeTable />}
         </div>
       </div>
     </main>
