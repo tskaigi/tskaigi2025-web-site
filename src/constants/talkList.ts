@@ -870,7 +870,7 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     talkType: "SESSION",
     title: `"良い"TSのコードを書く為のマインドセット`,
     overview:
-      "概要：\nRun time時における型の正確性がクオリティに直結するTypeScriptにおいて、重要ですがマイナーな概念であるSoundness(サウンドネス)を紹介することでTS上で良いコードを書くためのマインドセットを紹介します。\n\n説明：\nプログラミングにはType Soundness(型の健全性)という概念があります。これは端的に説明すると実行時にコード上で書かれた型が保証されているかということを示す言葉です。\n\nO’Reilly社の\"Learning TypeScript\"の著者、Josh Goldberg氏はその書籍内でTypeScriptの型システムをStructurally typed(構造的)と表現しています。これは型の構造に相互性があれば受け付けてしまうというTypeScriptの型システムの動きに起因しています。\n\nこのトークでは、構造的型システムによって引き起こされるありがちなTypeScriptの直感に反した動き(readonly周り等)を紹介しつつ、Soundnessという概念の重要性を伝えたいと思います。",
+      '概要：\nRun time時における型の正確性がクオリティに直結するTypeScriptにおいて、重要ですがマイナーな概念であるSoundness(サウンドネス)を紹介することでTS上で良いコードを書くためのマインドセットを紹介します。\n\n説明：\nプログラミングにはType Soundness(型の健全性)という概念があります。これは端的に説明すると実行時にコード上で書かれた型が保証されているかということを示す言葉です。\n\nO’Reilly社の"Learning TypeScript"の著者、Josh Goldberg氏はその書籍内でTypeScriptの型システムをStructurally typed(構造的)と表現しています。これは型の構造に相互性があれば受け付けてしまうというTypeScriptの型システムの動きに起因しています。\n\nこのトークでは、構造的型システムによって引き起こされるありがちなTypeScriptの直感に反した動き(readonly周り等)を紹介しつつ、Soundnessという概念の重要性を伝えたいと思います。',
     time: "15:30 〜 16:00",
     speaker: {
       name: "Kei",
