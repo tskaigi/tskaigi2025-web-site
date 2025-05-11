@@ -22,7 +22,16 @@ export function LtWrapper({ talks }: Props) {
             ) : (
               <p className="text-16">{talk.title}</p>
             )}
-            <p className="text-14">{talk.speaker.name}</p>
+            <div className="flex items-center gap-2">
+              <span className="text-14">{talk.speaker.name}</span>
+              {talk.speaker.profileImagePath && (
+                <img
+                  src={`/talks/speaker/${talk.speaker.profileImagePath}`}
+                  alt={`${talk.speaker.name}のプロフィール画像`}
+                  className="h-6 w-6 rounded-full aspect-square shrink-0 object-cover"
+                />
+              )}
+            </div>
           </div>
         ))}
       </div>
