@@ -13,7 +13,7 @@ export function SessionWrapper({ talk }: Props) {
         {talk.speaker.username ? (
           <Link
             href={`/talks/${talk.speaker.username}`}
-            className="hover:underline"
+            className="underline hover:text-blue-purple-500"
           >
             <p className="text-16">{talk.title}</p>
           </Link>
