@@ -26,7 +26,7 @@ export const sideEventList: SideEventProps[] = [
 
 カンファレンスの熱気が冷めやらぬうちに、気軽に立ち寄って、参加者同士で語り合ってみませんか？ TSKaigi 登壇者も数名ゲストとしてお呼びする予定です。 美味しいドリンクや料理をご用意して、みなさんのご参加をお待ちしています🍻`,
     tags: ["Drinkup"],
-    sponsors: ["株式会社 ダイニー"],
+    sponsors: ["株式会社ダイニー"],
   },
   {
     date: "5/23 (金)",
