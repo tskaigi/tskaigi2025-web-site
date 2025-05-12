@@ -18,6 +18,17 @@ export const sideEventList: SideEventProps[] = [
   },
   {
     date: "5/23 (金)",
+    name: "KANDA SQUAREで朝ヨガ powered by スタメン",
+    link: "https://stmn.connpass.com/event/355082/",
+    thumbnail:
+      "https://media.connpass.com/thumbs/8c/a6/8ca6a07e24493dd4006b5bfed921d53a.png",
+    detail:
+      "TSKaigi 2025会場より徒歩3分のスタメン東京本社にてヨガイベントを実施します。",
+    tags: ["オフライン開催"],
+    sponsors: ["株式会社スタメン"],
+  },
+  {
+    date: "5/23 (金)",
     name: "TSKaigi Drinkup presented by Dinii",
     link: "https://dinii.connpass.com/event/351839",
     thumbnail:
