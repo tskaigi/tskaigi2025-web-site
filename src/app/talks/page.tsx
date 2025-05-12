@@ -26,8 +26,8 @@ const TalksPage = () => {
       ? "DAY2"
       : "DAY1"
     : isDay2
-    ? "DAY2"
-    : "DAY1";
+      ? "DAY2"
+      : "DAY1";
 
   const [currentEventDate, setCurrentEventDate] =
     useState<EventDate>(defaultDay);
