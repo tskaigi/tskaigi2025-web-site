@@ -26,8 +26,8 @@ const TalksPage = () => {
       ? "DAY2"
       : "DAY1"
     : isDay2
-      ? "DAY2"
-      : "DAY1";
+    ? "DAY2"
+    : "DAY1";
 
   const [currentEventDate, setCurrentEventDate] =
     useState<EventDate>(defaultDay);
@@ -52,9 +52,9 @@ const TalksPage = () => {
         />
       </div>
 
-      <div className="overflow-x-auto mt-10">
+      <div className="mt-10">
         <div className="min-w-full">
-          <div className="hidden md:block">
+          <div className="hidden md:block md:sticky md:top-16 z-40 bg-blue-light-100 shadow-lg shadow-blue-light-100">
             <GridWrapper>
               <div className="w-[70px] md:w-[99px] lg:w-[125px]" />
               <TrackHeader track={"TRACK1"} />
