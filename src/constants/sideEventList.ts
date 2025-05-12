@@ -26,7 +26,7 @@ export const sideEventList: SideEventProps[] = [
 
 カンファレンスの熱気が冷めやらぬうちに、気軽に立ち寄って、参加者同士で語り合ってみませんか？ TSKaigi 登壇者も数名ゲストとしてお呼びする予定です。 美味しいドリンクや料理をご用意して、みなさんのご参加をお待ちしています🍻`,
     tags: ["Drinkup"],
-    sponsors: ["株式会社 ダイニー"],
+    sponsors: ["株式会社ダイニー"],
   },
   {
     date: "5/23 (金)",
@@ -37,11 +37,30 @@ export const sideEventList: SideEventProps[] = [
     detail: `TSKaigiのサブイベントとして開催される、TypeScript好きな学生のためのLT＆懇親イベントです。
 
 LT（ライトニングトーク）を通して、TSとの出会い、最近作ったもの、好きなライブラリなどなどちょっとだけ自分のことを話して、ちょっとだけ誰かのことを知って、そのあと、ゆるっと飲食しながらつながる時間をご用意しています。`,
-    tags: ["LT・懇親会", "学生向け"],
+    tags: ["LT・懇親会", "学生向け", "公募枠あり"],
     sponsors: [
       "株式会社TOKIUM",
       "トグルホールディングス株式会社",
       "レバレジーズ株式会社",
+    ],
+  },
+  {
+    date: "5/27 (火)",
+    name: "TSKaigi 2025 After Night 〜セッションおかわりの会！〜",
+    link: "https://bitkey.connpass.com/event/351174/",
+    thumbnail:
+      "https://media.connpass.com/thumbs/7e/ea/7eeadf13c03175038f314a1978d989df.png",
+    detail: `TSKaigi 2025に参加した方もしていない方も集まって、おかわりのセッションを楽しむハイブリッド勉強会です！
+TypeScriptの流行をもっとキャッチアップしませんか？
+TSKaigi本編・懇親会に参加できなかった方、ここで楽しみませんか？
+プロポーザルが惜しくも採択されなかった方、ここでアウトプットしませんか？
+そんなあなたのために、10分セッションとLTをもっと供給します！`,
+    tags: ["AfterTalk", "ハイブリッド開催", "公募枠あり"],
+    sponsors: [
+      "株式会社LayerX",
+      "ユビー株式会社",
+      "株式会社ビットキー",
+      "キャディ株式会社",
     ],
   },
   {
@@ -52,7 +71,39 @@ LT（ライトニングトーク）を通して、TSとの出会い、最近作�
       "https://media.connpass.com/thumbs/91/aa/91aa74f2f945c0319310a531f52a366a.png",
     detail:
       "TSKaigi 2025 スポンサーのフリー株式会社・株式会社カミナシ・any株式会社による、登壇者や CfP 応募者が TSKaigi 本編で話せなかったことや話したりなかったことを発表するイベントです。",
-    tags: ["AfterTalk", "ハイブリッド開催"],
+    tags: ["AfterTalk", "ハイブリッド開催", "公募枠あり"],
     sponsors: ["株式会社カミナシ", "any株式会社", "フリー株式会社"],
+  },
+  {
+    date: "5/30 (金)",
+    name: "TSKaigi2025 re:Cap in Nagoya",
+    link: "https://stmn.connpass.com/event/353756/",
+    thumbnail:
+      "https://media.connpass.com/thumbs/3c/9b/3c9be86c960610a65267b5b3b476ffa3.png",
+    detail: `TSKaigi 2025 スポンサーの株式会社スタメンにて、振り返りイベントを名古屋で行います。
+
+当日参加された方々のセッションやLTを通して、TSKaigi2025で得られたことや楽しかった思い出などを共有しましょう！`,
+    tags: ["AfterTalk", "公募枠あり"],
+    sponsors: ["株式会社スタメン"],
+  },
+  {
+    date: "6/18 (水)",
+    name: "現場.ts vol2",
+    link: "https://spacemarket.connpass.com/event/353393/",
+    thumbnail:
+      "https://media.connpass.com/thumbs/11/1d/111df37d9a25bc4be87733c5dd16338e.png",
+    detail: `TypeScriptを積極的に採用している会社にフォーカスし、 Webサービス開発現場での実際の事例や、開発時に得た知見などをお話いただきます。
+
+オフラインだからこそ話せる、現場のリアルな話を聞きませんか？
+
+懇親会もありますので、お酒片手にお話しましょう。`,
+    tags: ["Meetup"],
+    sponsors: [
+      "株式会社スペースマーケット",
+      "株式会社TERASS",
+      "株式会社ケップル",
+      "株式会社メドレー",
+      "ROSCA株式会社",
+    ],
   },
 ];

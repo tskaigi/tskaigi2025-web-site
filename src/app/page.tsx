@@ -1,6 +1,7 @@
 import { BuyTicketSection } from "@/components/BuyTicketSection";
 import { CoreStaffSection } from "@/components/CoreStaffSection";
 import { HeroSectionWithMotion } from "@/components/HeroSectionWithMotion";
+import { JobBoardSection } from "@/components/JobBoardSection";
 import { JudgesSection } from "@/components/JudgesSection";
 import { MissionSection } from "@/components/MissionSection";
 import PersonalSponsorsSection from "@/components/PersonalSponsorsSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSectionWithMotion />
       <BuyTicketSection />
       <MissionSection />
+      <JobBoardSection />
       <SponsorsBoardSection />
       <PersonalSponsorsSection />
       <JudgesSection />

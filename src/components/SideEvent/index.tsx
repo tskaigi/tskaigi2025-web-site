@@ -49,13 +49,15 @@ const SideEvent = ({
         </h3>
         <div className="flex flex-col gap-5 lg:flex-row lg:gap-6">
           <div className="flex flex-col gap-5 shrink-0 lg:w-1/2">
-            <Image
-              src={thumbnail}
-              alt={name}
-              width={800}
-              height={600}
-              className="w-full md:max-w-xl"
-            />
+            <a href={link} target="_blank" rel="noreferrer">
+              <Image
+                src={thumbnail}
+                alt={name}
+                width={800}
+                height={600}
+                className="w-full md:max-w-xl"
+              />
+            </a>
             <p className="leading-7 md:text-lg md:leading-8 lg:hidden whitespace-pre-wrap">
               {detail}
             </p>
