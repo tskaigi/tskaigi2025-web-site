@@ -118,7 +118,9 @@ export default async function TalkDetailPage({
               {/* アイコン */}
               <div className="w-[180px] md:w-[220px] aspect-square shrink-0 rounded-full overflow-hidden">
                 <img
-                  src={`/talks/speaker/${talk.speaker.profileImagePath || "dummy.png"}`}
+                  src={`/talks/speaker/${
+                    talk.speaker.profileImagePath || "dummy.png"
+                  }`}
                   alt={talk.speaker.name}
                   className="w-full h-full object-cover"
                 />
@@ -143,7 +145,7 @@ export default async function TalkDetailPage({
                       href={talk.speaker.additionalLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 text-16 md:text-18 underline"
+                      className="text-gray-700 text-16 md:text-18 underline break-all"
                     >
                       {talk.speaker.additionalLink}
                     </Link>
