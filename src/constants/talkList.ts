@@ -31,7 +31,7 @@ export const TALK_TYPE = {
   },
   LT: {
     name: "LT",
-    color: "#C0BA02",
+    color: "#c3620f",
   },
   SPONSOR_LT: {
     name: "スポンサーLT",
