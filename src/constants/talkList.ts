@@ -31,7 +31,7 @@ export const TALK_TYPE = {
   },
   LT: {
     name: "LT",
-    color: "#C0BA02",
+    color: "#c3620f",
   },
   SPONSOR_LT: {
     name: "スポンサーLT",
@@ -1357,7 +1357,7 @@ server.post("/hoge", hogeSchema, async (req) => {
       name: "Toshiki Itai",
       username: "itatchi3_",
       profileImagePath: "itatchi3_.jpg",
-      bio: "2023年LINE株式会社に新卒入社。社内横断組織でフロントエンド開発のサポートをしたり、フロントエンドエンド関連のイベントを主催したりしています。",
+      bio: "2023年にLINE株式会社に新卒入社しLINEスキマニのフロントエンド開発に携わる。現在は社内横断組織でフロントエンド開発のサポートをしたり、フロントエンド関連のイベントを主催したりしています。",
       xId: "itatchi3_",
       githubId: undefined,
       additionalLink: undefined,
