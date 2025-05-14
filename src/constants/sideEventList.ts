@@ -98,6 +98,19 @@ TSKaigi本編・懇親会に参加できなかった方、ここで楽しみま�
     sponsors: ["株式会社スタメン"],
   },
   {
+    date: "6/6 (金)",
+    name: "TSKaigi 2025事後勉強会 —— まだまだ型りたい",
+    link: "https://smarthr.connpass.com/event/355359/",
+    thumbnail:
+      "https://media.connpass.com/thumbs/e1/23/e1238fbd394772160b3180faff25b0b8.png",
+    detail: `TSKaigi 2025に参加して、「もっと語り合いたい！」と感じた方に向けた、弁護士ドットコム株式会社・株式会社SmartHR共催のライトニングトークイベントです！
+当日は、60分間で11本の5分間トークをお届けします🚀
+TSKaigi 2025を通じて得た知見や気づき、TypeScriptについて共有したいことがある方は、ぜひ登壇をご検討ください！
+もちろん、「話を聞いてみたい」という方のご参加も大歓迎です✨️`,
+    tags: ["AfterTalk", "オフライン開催"],
+    sponsors: ["弁護士ドットコム株式会社", "株式会社SmartHR"],
+  },
+  {
     date: "6/18 (水)",
     name: "現場.ts vol2",
     link: "https://spacemarket.connpass.com/event/353393/",
