@@ -112,7 +112,7 @@ export default async function SponsorDetailPage({
                     alt={`${sponsor.name}のジョブボード`}
                     width={1200}
                     height={600}
-                    className="max-w-[810px]"
+                    className="lg:max-w-[810px]"
                   />
                 </Link>
               </div>
