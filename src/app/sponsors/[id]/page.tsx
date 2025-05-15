@@ -3,6 +3,8 @@ import RoleBadge from "@/components/sponsors/RoleBadge";
 import { sponsorIds } from "@/constants/sponsorList";
 import { getSponsor } from "@/utils/getSponsor";
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return sponsorIds;
@@ -93,6 +95,29 @@ export default async function SponsorDetailPage({
               </li>
             ))}
           </ul>
+
+          {sponsor.jobBoard && (
+            <div>
+              <p className="font-bold text-[20px] pb-3 border-b border-[#2A2A2D]">
+                JOB BOARD
+              </p>
+              <div className="w-full mt-4 flex justify-center">
+                <Link
+                  href={sponsor.jobBoard.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={sponsor.jobBoard.imagePath}
+                    alt={`${sponsor.name}のジョブボード`}
+                    width={1200}
+                    height={600}
+                    className="max-w-[810px]"
+                  />
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </main>
