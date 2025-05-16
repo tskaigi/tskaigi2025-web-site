@@ -12,24 +12,32 @@ import { useRef } from "react";
 // セッション情報の例
 const sessions = [
   { id: "10:50", start: "10:50:00", end: "11:00:00" },
-  { id: "11:00", start: "11:00:00", end: "11:39:59" },
-  { id: "11:40", start: "11:40:00", end: "11:49:59" },
-  { id: "11:50", start: "11:50:00", end: "12:19:59" },
-  { id: "12:20", start: "12:20:00", end: "12:29:59" },
-  { id: "12:30", start: "12:30:00", end: "13:29:59" },
-  { id: "13:30", start: "13:30:00", end: "13:39:59" },
-  { id: "13:40", start: "13:40:00", end: "14:09:59" },
-  { id: "14:10", start: "14:10:00", end: "14:19:59" },
-  { id: "14:20", start: "14:20:00", end: "14:49:59" },
-  { id: "14:50", start: "14:50:00", end: "14:59:59" },
-  { id: "15:00", start: "15:00:00", end: "15:29:59" },
-  { id: "15:30", start: "15:30:00", end: "15:49:59" },
-  { id: "15:50", start: "15:50:00", end: "16:19:59" },
-  { id: "16:20", start: "16:20:00", end: "16:29:59" },
-  { id: "16:30", start: "16:30:00", end: "16:59:59" },
-  { id: "17:00", start: "17:00:00", end: "17:09:59" },
-  { id: "17:10", start: "17:10:00", end: "17:39:59" },
+  { id: "11:00", start: "11:00:00", end: "11:40:00" },
+  { id: "11:40", start: "11:40:00", end: "11:50:00" },
+  { id: "11:50", start: "11:50:00", end: "12:20:00" },
+  { id: "12:20", start: "12:20:00", end: "12:30:00" },
+  { id: "12:30", start: "12:30:00", end: "13:30:00" },
+  { id: "13:30", start: "13:30:00", end: "13:40:00" },
+  { id: "13:40", start: "13:40:00", end: "14:10:00" },
+  { id: "14:10", start: "14:10:00", end: "14:20:00" },
+  { id: "14:20", start: "14:20:00", end: "14:50:00" },
+  { id: "14:50", start: "14:50:00", end: "15:00:00" },
+  { id: "15:00", start: "15:00:00", end: "15:30:00" },
+  { id: "15:30", start: "15:30:00", end: "15:50:00" },
+  { id: "15:50", start: "15:50:00", end: "16:20:00" },
+  { id: "16:20", start: "16:20:00", end: "16:30:00" },
+  { id: "16:30", start: "16:30:00", end: "17:00:00" },
+  { id: "17:00", start: "17:00:00", end: "17:10:00" },
+  { id: "17:10", start: "17:10:00", end: "17:40:00" },
 ];
+
+const startDate = new Date("2025-05-23T10:50:00");
+const endDate = new Date("2025-05-23T17:40:00");
+
+const isConferencePeriod = () => {
+  const now = new Date();
+  return now >= startDate && now < endDate;
+};
 
 const getCurrentSessionId = () => {
   const now = new Date();
@@ -249,13 +257,15 @@ export function Day1TimeTable() {
         />
       </GridWrapper>
 
-      <Button
-        type="button"
-        className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
-        onClick={handleScrollToCurrentSession}
-      >
-        現在のセッションにスクロールする
-      </Button>
+      {isConferencePeriod() && (
+        <Button
+          type="button"
+          className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
+          onClick={handleScrollToCurrentSession}
+        >
+          現在のセッションにスクロールする
+        </Button>
+      )}
     </>
   );
 }
