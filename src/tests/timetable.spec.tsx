@@ -21,9 +21,7 @@ test("カンファレンスの開催期間中だけスクロールボタンが�
   // 開始前
   vi.setSystemTime(new Date("2025-05-23T10:49:59"));
   const scrollButton = screen
-    .getByRole("button", {
-      name: "現在のセッションにスクロールする",
-    })
+    .getByText("現在のセッションにスクロールする")
     .element();
   await vi.waitFor(() => {
     expect(isInViewport(scrollButton)).toBeFalsy();
@@ -59,9 +57,7 @@ test("カンファレンスの開催期間中だけスクロールボタンが�
 test("スクロールボタンをクリックしたときに現在のセッションにスクロールする", async () => {
   vi.setSystemTime(new Date("2025-05-23T13:40:00"));
   const screen = render(<Day1TimeTable />);
-  const scrollButton = screen.getByRole("button", {
-    name: "現在のセッションにスクロールする",
-  });
+  const scrollButton = screen.getByText("現在のセッションにスクロールする");
   await scrollButton.click();
   const header01 = screen.getByText("13:40 ~ 14:10");
   await vi.waitFor(() => {
@@ -88,9 +84,7 @@ test("スクロールボタンをクリックしたときに現在のセッシ�
 test("現在開催中のセッションを表示している際はスクロールボタンが非表示になる", async () => {
   vi.setSystemTime(new Date("2025-05-23T13:40:00"));
   const screen = render(<Day1TimeTable />);
-  const scrollButton = screen.getByRole("button", {
-    name: "現在のセッションにスクロールする",
-  });
+  const scrollButton = screen.getByText("現在のセッションにスクロールする");
   await scrollButton.click();
 
   // 現在のセッションが表示されてスクロールボタンが隠れる
