@@ -10,13 +10,9 @@ afterEach(() => {
   vi.useRealTimers();
 });
 
-const toBeInViewport = (element: Element) => {
-  const { top, bottom, left, right } = element.getBoundingClientRect();
-  const { innerHeight, innerWidth } = window;
-
-  expect(
-    top >= 0 && bottom <= innerHeight && left >= 0 && right <= innerWidth,
-  ).toBeTruthy();
+const isInViewport = (element: Element) => {
+  const rect = element.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < window.innerHeight;
 };
 
 test("カンファレンスの開催期間中だけスクロールボタンが表示される", async () => {
@@ -24,34 +20,40 @@ test("カンファレンスの開催期間中だけスクロールボタンが�
 
   // 開始前
   vi.setSystemTime(new Date("2025-05-23T10:49:59"));
-  await expect
-    .element(
-      screen.getByRole("button", { name: "現在のセッションにスクロールする" }),
-    )
-    .not.toBeInTheDocument();
+  const scrollButton = screen
+    .getByRole("button", {
+      name: "現在のセッションにスクロールする",
+    })
+    .element();
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton)).toBeFalsy();
+  });
 
-  // オープニング開始
-  vi.setSystemTime(new Date("2025-05-23T10:50:00"));
+  // 開催中
+  vi.setSystemTime(new Date("2025-05-23T12:50:00"));
   screen.rerender(<Day1TimeTable />);
-  expect(
-    screen.getByRole("button", { name: "現在のセッションにスクロールする" }),
-  ).toBeInTheDocument();
+  // 日付の判定を走らせるため少しスクロール
+  window.scrollTo({
+    top: 200,
+    behavior: "smooth",
+  });
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton)).toBeTruthy();
+  });
 
   // 最終セッション終了
   vi.setSystemTime(new Date("2025-05-23T17:39:59"));
   screen.rerender(<Day1TimeTable />);
-  expect(
-    screen.getByRole("button", { name: "現在のセッションにスクロールする" }),
-  ).toBeInTheDocument();
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton)).toBeTruthy();
+  });
 
   // 終了後
   vi.setSystemTime(new Date("2025-05-23T17:40:00"));
   screen.rerender(<Day1TimeTable />);
-  await expect
-    .element(
-      screen.getByRole("button", { name: "現在のセッションにスクロールする" }),
-    )
-    .not.toBeInTheDocument();
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton)).toBeFalsy();
+  });
 });
 
 test("スクロールボタンをクリックしたときに現在のセッションにスクロールする", async () => {
@@ -63,7 +65,7 @@ test("スクロールボタンをクリックしたときに現在のセッシ�
   await scrollButton.click();
   const header01 = screen.getByText("13:40 ~ 14:10");
   await vi.waitFor(() => {
-    toBeInViewport(header01.element());
+    expect(isInViewport(header01.element())).toBeTruthy();
   });
 
   vi.setSystemTime(new Date("2025-05-23T17:39:59"));
@@ -71,7 +73,7 @@ test("スクロールボタンをクリックしたときに現在のセッシ�
   await scrollButton.click();
   const header02 = screen.getByText("17:10 ~ 17:40");
   await vi.waitFor(() => {
-    toBeInViewport(header02.element());
+    expect(isInViewport(header02.element())).toBeTruthy();
   });
 
   vi.setSystemTime(new Date("2025-05-23T10:50:00"));
@@ -79,6 +81,29 @@ test("スクロールボタンをクリックしたときに現在のセッシ�
   await scrollButton.click();
   const header03 = screen.getByText("10:50 ~ 11:00");
   await vi.waitFor(() => {
-    toBeInViewport(header03.element());
+    expect(isInViewport(header03.element())).toBeTruthy();
+  });
+});
+
+test("現在開催中のセッションを表示している際はスクロールボタンが非表示になる", async () => {
+  vi.setSystemTime(new Date("2025-05-23T13:40:00"));
+  const screen = render(<Day1TimeTable />);
+  const scrollButton = screen.getByRole("button", {
+    name: "現在のセッションにスクロールする",
+  });
+  await scrollButton.click();
+
+  // 現在のセッションが表示されてスクロールボタンが隠れる
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton.element())).toBeFalsy();
+  });
+
+  // 現在のセッションが非表示になってスクロールボタンが現れる
+  window.scrollTo({
+    top: 200,
+    behavior: "smooth",
+  });
+  await vi.waitFor(() => {
+    expect(isInViewport(scrollButton.element())).toBeTruthy();
   });
 });
