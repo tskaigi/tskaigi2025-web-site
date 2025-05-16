@@ -42,7 +42,7 @@ const isConferencePeriod = () => {
 const getCurrentSessionId = () => {
   const now = new Date();
   for (const session of sessions) {
-    const start = new Date(`2024-05-23T${session.start}`);
+    const start = new Date(`2025-05-23T${session.start}`);
     const end = new Date(`2025-05-23T${session.end}`);
     if (now >= start && now < end) {
       return session.id;
