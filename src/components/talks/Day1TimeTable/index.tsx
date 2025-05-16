@@ -5,8 +5,9 @@ import { LtWrapper } from "@/components/talks/LtWrapper";
 import { SessionWrapper } from "@/components/talks/SessionWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { getTalk } from "@/utils/getTalk";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // セッション情報の例
 const sessions = [
@@ -50,8 +51,15 @@ const getCurrentSessionId = () => {
   return null;
 };
 
+const isInViewport = (el: HTMLElement | null) => {
+  if (!el) return false;
+  const rect = el.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < window.innerHeight;
+};
+
 export function Day1TimeTable() {
   const sessionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   const handleScrollToCurrentSession = () => {
     const currentId = getCurrentSessionId();
@@ -63,6 +71,27 @@ export function Day1TimeTable() {
       });
     }
   };
+
+  useEffect(() => {
+    const checkButtonVisibility = () => {
+      if (!isConferencePeriod()) {
+        setShowScrollButton(false);
+        return;
+      }
+      const currentId = getCurrentSessionId();
+      const currentEl = currentId ? sessionRefs.current[currentId] : null;
+      setShowScrollButton(currentEl ? !isInViewport(currentEl) : false);
+    };
+
+    checkButtonVisibility();
+    window.addEventListener("scroll", checkButtonVisibility);
+    window.addEventListener("resize", checkButtonVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", checkButtonVisibility);
+      window.removeEventListener("resize", checkButtonVisibility);
+    };
+  }, []);
 
   return (
     <>
@@ -256,15 +285,21 @@ export function Day1TimeTable() {
         />
       </GridWrapper>
 
-      {isConferencePeriod() && (
+      <div
+        className={cn(
+          "fixed bottom-4 left-1/2 -translate-x-1/2 transition-transform duration-300 z-50",
+          showScrollButton ? "translate-y-0" : "translate-y-[150%]",
+        )}
+        style={{ pointerEvents: showScrollButton ? "auto" : "none" }}
+      >
         <Button
           type="button"
-          className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
+          className="bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
           onClick={handleScrollToCurrentSession}
         >
           現在のセッションにスクロールする
         </Button>
-      )}
+      </div>
     </>
   );
 }
