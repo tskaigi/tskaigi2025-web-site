@@ -25,8 +25,12 @@ export const TALK_TYPE = {
     name: "セッション",
     color: "#0C7EDC",
   },
-  KEYNOTE: {
-    name: "基調講演",
+  INVITATION: {
+    name: "招待講演",
+    color: "#0CA90E",
+  },
+  ORGANIZER: {
+    name: "主催者講演",
     color: "#0CA90E",
   },
   LT: {
@@ -1574,8 +1578,8 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
     id: "70",
     eventDate: "DAY1",
     track: "TRACK1",
-    talkType: "KEYNOTE",
-    title: "Keynote: The New Powerful ESLint Config with Type Safety",
+    talkType: "INVITATION",
+    title: "The New Powerful ESLint Config with Type Safety",
     overview:
       "Introduction to the new flat config and the new possibilities it enables, the new utilities and ecosystem around it, and how you can do it in a type-safe way.",
     time: "11:00 〜 11:40",
@@ -1589,6 +1593,28 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: "https://antfu.me/",
       affiliation: "NuxtLabs",
       position: "Design Engineer",
+    },
+  },
+  {
+    id: "71",
+    eventDate: "DAY2",
+    track: "TRACK1",
+    talkType: "ORGANIZER",
+    title: "TypeScriptネイティブ移植観察レポート TSKaigi 2025",
+    overview:
+      "TypeScriptのネイティブ実装への移植は、TSKaigi 2025のプロポーザル締切直後の3/11に発表されました。発表から2ヶ月が経ち、発表直後の大盛り上がりは落ち着いて、粛々と開発が進んでいます。ネイティブ実装への移植によって何がどう変わるのかをおさらいし、GitHub上を中心として様々に明かされた経緯や展望をまとめて紹介します。",
+    time: "10:00 〜 10:40",
+    speaker: {
+      name: "berlysia",
+      username: "berlysia",
+      profileImagePath: "berlysia.jpg",
+      bio: "フロントエンドに強いWebエンジニア。TypeScriptやLinterまで広く関心。TSKaigi 2025ではトーク周りを統括。株式会社ドワンゴではWebフロントエンドをリード。今回は縦書きCSSの話はしません。",
+      xId: "berlysia",
+      githubId: "berlysia",
+      additionalLink: "https://berlysia.net/",
+      affiliation:
+        "一般社団法人TSKaigi Association、株式会社ドワンゴ 教育事業本部",
+      position: "Webフロントエンドエンジニア",
     },
   },
 ];
