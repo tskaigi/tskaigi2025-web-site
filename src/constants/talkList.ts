@@ -25,8 +25,12 @@ export const TALK_TYPE = {
     name: "セッション",
     color: "#0C7EDC",
   },
-  KEYNOTE: {
-    name: "基調講演",
+  INVITATION: {
+    name: "招待講演",
+    color: "#0CA90E",
+  },
+  ORGANIZER: {
+    name: "主催者講演",
     color: "#0CA90E",
   },
   LT: {
@@ -216,6 +220,14 @@ export const talkList: Talk[] = [
     time: "16:30 〜 17:00",
     speaker: {
       name: "Sosuke Suzuki",
+      username: "__sosukesuzuki",
+      profileImagePath: "__sosukesuzuki.jpg",
+      bio: "Ubie株式会社のソフトウェアエンジニアとして、症状検索エンジン「ユビー」の開発に尽力している。また、JavaScriptのコードフォーマッタであるPrettierのメンテナ、ブラウザエンジンであるWebKitのReviewerとしても活動中。",
+      xId: "__sosukesuzuki",
+      githubId: "sosukesuzuki",
+      additionalLink: undefined,
+      affiliation: "ユビー株式会社",
+      position: "ソフトウェアエンジニア",
     },
   },
   {
@@ -557,8 +569,7 @@ export const talkList: Talk[] = [
     speaker: {
       name: "yudppp",
       username: "yudppp",
-      // TODO: 画像の指定がなかったので要確認
-      // profileImagePath: "24.jpg",
+      profileImagePath: "yudppp.jpg",
       bio: "2018年にHRBrainに10人目の社員、3人目のエンジニアとして入社。\nTypeScriptは2018年から書いています。",
       xId: "yudppp",
       githubId: "yudppp",
@@ -578,7 +589,15 @@ export const talkList: Talk[] = [
       "業務でいわゆるDataGridを型安全に定義できるユーティリティを作成した発表者。しかし、型の推論を頑張りすぎて型の記述だけで300行を超えるようになってしまう。チームのメンバーには「ちょっとこの型は読めないですね」と言われてしまい、発表者自信もこれからメンテナンスできるのかが不安に……。\nそんな事態から、メンテナンスしやすい型にするためにやったことを話します。例えば、以下のようなことを話す予定です。\n\n- 型のテストを書き、安心して変更できるようにする\n- 型から値に複雑性を移す\n- コメントの書き方を工夫する\n- 生成AIを使って型をリファクタリングする",
     time: "17:10 〜 17:40",
     speaker: {
-      name: "Yugo Yagita",
+      name: "ygkn / Yugo Yagita",
+      username: "ygkn35034",
+      profileImagePath: "ygkn35034.jpg",
+      bio: "株式会社ゆめみでWebフロントエンドやってます",
+      xId: "ygkn35034",
+      githubId: "ygkn",
+      additionalLink: "https://ygkn.dev/",
+      affiliation: "株式会社ゆめみ",
+      position: "フロントエンドエンジニア テックリード",
     },
   },
   {
@@ -905,10 +924,18 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     title:
       "TypeScript Language Service Plugin で CSS Modules の開発体験を改善する",
     overview:
-      "コンポーネントに CSS を当てる手法の1つに、CSS Modules があります。広く使われている手法ですが、エディタ上の開発体験が悪いという欠点がありました。*.tsx と *.module.css の Language Server が分かれているために、*.tsx と *.module.css を横断する言語機能 (Rename,Find All References ) の挙動に問題があるのです。\n\n長らくこの問題は解決困難と思われてました。しかし TypeScript Language Service Plugin を使うと、実は解決できるのです。この発表では、TypeScript Language Service Plugin とは何か、そしてそれを使って作ったツールについて紹介します。\n\n- TypeScript Language Service Plugin とは\n- CSS Modules Kit の紹介\n- Volar.js を使って .module.css を TypeScript コードに偽装する\n- Navigation 機能の実装 (Go to Definition, Rename, Find All References)\n- 壊れかけのファイルをサポートする\n- エディタにエラーを表示するには\n- Code Action と Applicable Refactor の実装",
+      "コンポーネントに CSS を当てる手法の1つに、CSS Modules があります。広く使われている手法ですが、エディタ上の開発体験が悪いという欠点がありました。\\*.tsx と \\*.module.css の Language Server が分かれているために、*.tsx と *.module.css を横断する言語機能 (Rename,Find All References ) の挙動に問題があるのです。\n\n長らくこの問題は解決困難と思われてました。しかし TypeScript Language Service Plugin を使うと、実は解決できるのです。この発表では、TypeScript Language Service Plugin とは何か、そしてそれを使って作ったツールについて紹介します。\n\n- TypeScript Language Service Plugin とは\n- CSS Modules Kit の紹介\n- Volar.js を使って .module.css を TypeScript コードに偽装する\n- Navigation 機能の実装 (Go to Definition, Rename, Find All References)\n- 壊れかけのファイルをサポートする\n- エディタにエラーを表示するには\n- Code Action と Applicable Refactor の実装",
     time: "10:50 〜 11:20",
     speaker: {
       name: "mizdra",
+      username: "mizdra",
+      profileImagePath: "mizdra.jpg",
+      bio: "開発者体験の改善が好きで、よく便利グッズ作ってます。ブログもよく書きます。",
+      xId: "mizdra",
+      githubId: "mizdra",
+      additionalLink: "https://www.mizdra.net/",
+      affiliation: "株式会社はてな",
+      position: "フロントエンドエキスパート",
     },
   },
   {
@@ -939,10 +966,18 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     talkType: "SESSION",
     title: "Web Streams APIの基本と実践、TypeScriptでの活用法",
     overview:
-      "ストリームはデータを効率よく低遅延に処理する方法として、多くの言語でインターフェースが提供されています。\nWeb標準でも2015頃からStreams APIが整備され、Fetch APIのレスポンスボディもストリームオブジェクトになっています。\n\nしかし、Streams APIを直接利用している方は少ないように思います。これは活用方法が十分に知られていない、もしくはより昔からあるNode Streamのように扱いが難しいと思われていると、想像しています。\n\nWeb Streams APIはインターフェースが簡潔になり、型情報も整備されているため、TypeScriptからも扱いやすいものとなっています。\nこのセッションではそんなWeb Streams APIの基本概念や利用シーンなどをお話しします。\nNode.jsのStreamとの違いや、Async Iteratorとの関係性についても触れていきます。\n\n---\n\n## セッション詳細(仮)\n\n- Web Streams APIの概要\n  - 3つのStream Object\n  - メモリ使用量と背圧\n  - キューイング戦略とhighWaterMark\n- 独自のストリームオブジェクトを定義する\n  - 型がちゃんと当たるという話\n- 具体的な用例\n  - 高サイズ画像の段階的な読み込み\n  - ETLツールによる大量データ処理\n  - Chat GPTのレスポンスの逐次表示\n- Node.jsのStreamとの相違点\n  - インターフェースの違い\n  - (型情報の違い)\n  - 互換性とtoWeb/fromWebメソッド\n- Async Iteratorとの関係性\n  - Streamの非同期イテレーション\n  - for await ... ofの利用",
+      "ストリームはデータを効率よく低遅延に処理する方法として、多くの言語でインターフェースが提供されています。\nWeb標準でも2015頃からStreams APIが整備され、Fetch APIのレスポンスボディもストリームオブジェクトになっています。\n\nしかし、Streams APIを直接利用している方は少ないように思います。これは活用方法が十分に知られていない、もしくはより昔からあるNode Streamのように扱いが難しいと思われていると、想像しています。\n\nWeb Streams APIはインターフェースが簡潔になり、型情報も整備されているため、TypeScriptからも扱いやすいものとなっています。\nこのセッションではそんなWeb Streams APIの基本概念や利用シーンなどをお話しします。\nNode.jsのStreamとの違いや、Async Iteratorとの関係性についても触れていきます。\n\n---\n\n## アウトライン\n- Web Streams APIの概要\n- 独自のストリームオブジェクトを定義する\n- ストリームによる逐次処理の具体的な用例\n- Node.jsのStreamとの違いと互換性\n- Async Iteratorとの相互運用性",
     time: "13:20 〜 13:50",
     speaker: {
       name: "tasshi",
+      username: "tasshi",
+      profileImagePath: "tasshi_me.png",
+      bio: "2020年にサイボウズ株式会社に新卒入社。kintone開発チームにて社外のカスタマイズ開発者向けのSDKを開発しています。プライベートでもnpmパッケージを触ることが多いです。",
+      xId: "tasshi_me",
+      githubId: "tasshi-me",
+      additionalLink: "https://tasshi.me/",
+      affiliation: "サイボウズ株式会社",
+      position: "ソフトウェアエンジニア/エンジニアリングマネージャー",
     },
   },
   {
@@ -1052,7 +1087,15 @@ server.post("/hoge", hogeSchema, async (req) => {
       "TypeScriptのESM（ECMAScript Modules）サポートは、JavaScriptとその周辺エコシステムのESM対応と共に進んできました。\n\n一方でこれはJavaScriptとそのエコシステムが持つモジュールシステムの複雑さをTypeScriptが同じように引き継いでしまっているとも言えます。実際これまで段階的に行われてきたTypeScriptのESMサポート機能は単純ではなく、特に初学者やJavaScriptのモジュールシステムに詳しくない人にとっては理解しづらいものになっています。\n\n本セッションでは、JavaScriptのモジュールシステムの基礎的な部分から始め、TypeScriptにおけるESMサポートの歴史と現状を整理します。さらにESM移行への課題とその解決策、ユースケースに応じた設定の例などを紹介することで、実際のプロダクトへ活用できる内容とします。",
     time: "14:40 〜 15:10",
     speaker: {
-      name: "左治木 隆成",
+      name: "Saji",
+      username: "sajikix",
+      profileImagePath: "sajikix.jpg",
+      bio: "Cybozuのフロントエンドエンジニア。業務では最近JS APIの設計やPluginのシステムを開発している。興味のある分野はi18nや日時、JS/TSの構文解析、Lintツールなど。",
+      xId: "sajikix",
+      githubId: "sajikix",
+      additionalLink: "https://www.sajiki.dev/",
+      affiliation: "サイボウズ株式会社",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -1295,10 +1338,18 @@ server.post("/hoge", hogeSchema, async (req) => {
     talkType: "LT",
     title: "ts-morph実践：型を利用するcodemodのテクニック",
     overview:
-      "ts-morphを使うと大量のコードを一度に安全に修正することができることは皆さんご存知かと思います。既存のインポート名やフィールド名をまとめて修正するなどには簡便です。ts-morph自体はあくまでもASTを編集するだけですが、その真の力は、スコープ情報や型情報など、TypeScript自体が提供する機能を活用するコードを記述することによって開放することができます。そのような実用例を紹介します。 \n\n例\n- console.error(e) にcatchを入れている箇所だけ修正\n- import文の追加時に既存のimportを上手にチェック\n- noImplicitAnyの修正\n- Excess Property Checkの修正\n\n(utility libraryを公開予定)",
+      "ts-morphを使うと大量のコードを一度に安全に修正することができることは皆さんご存知かと思います。既存のインポート名やフィールド名をまとめて修正するなどには簡便です。ts-morph自体はあくまでもASTを編集するだけですが、その真の力は、スコープ情報や型情報など、TypeScript自体が提供する機能を活用するコードを記述することによって開放することができます。そのような実用例を紹介します。",
     time: "16:10 〜 16:50",
     speaker: {
       name: "ypresto",
+      username: "yuya_presto",
+      profileImagePath: "yuya_presto.jpg",
+      bio: "2012年に新卒でMIXIに入社。2014年より「みてね」の立ち上げに関わり、Androidを中心に開発を担当。その後、教育・流通系のスタートアップ複数社に籍を移し、開発全般を担いつつ、フロントエンドやUIデザインをリードする役割を担う。2024年1月にLayerXに入社し、バクラク事業部 請求書受取チームにてフロントエンドを中心に開発に携わる。TypeScript自体のパフォーマンスについて調査し、改善のためのPull Requestがマージされた。型魔術師は憧れ。",
+      xId: "yuya_presto",
+      githubId: "ypresto",
+      additionalLink: undefined,
+      affiliation: "株式会社LayerX バクラク事業部 プロダクト開発部",
+      position: "Software Engineer",
     },
   },
   {
@@ -1516,10 +1567,54 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       profileImagePath: "feel_sooo_baaad.jpg",
       bio: "1988年、札幌市出身。\n23歳の時、WEBの世界に魅了され、独学でデザインなどを学習し、WEBデザイナーとしてキャリアをスタート。\n受託制作会社で数年キャリアを積んだのち、WEBにおけるJavaScriptの可能性に魅了され、フロントエンドエンジニアに転向。\nスペースマーケットに入社後、エンジニアリング領域でのマネージメントの面白さ、奥深さに気がつきエンジニアリングマネージャーへ。\n2023年1月より、エンジニア組織全体を統括するVPoEに就任。",
       xId: undefined,
-      githubId: "feel_sooo_baaad",
+      // NOTE: アンケートの githubId が間違っていたため一旦空欄にしている。本人に DM で確認中で返信があれば更新。
+      githubId: undefined,
       additionalLink: "https://suzuri.jp/VoodooRhythm",
       affiliation: "株式会社スペースマーケット",
       position: "VPoE",
+    },
+  },
+  {
+    id: "70",
+    eventDate: "DAY1",
+    track: "TRACK1",
+    talkType: "INVITATION",
+    title: "The New Powerful ESLint Config with Type Safety",
+    overview:
+      "Introduction to the new flat config and the new possibilities it enables, the new utilities and ecosystem around it, and how you can do it in a type-safe way.",
+    time: "11:00 〜 11:40",
+    speaker: {
+      name: "Anthony Fu",
+      username: "antfu",
+      profileImagePath: "antfu.jpg",
+      bio: "https://antfu.me/talks#eslint-one-for-all-made-easy",
+      xId: "antfu7",
+      githubId: "antfu",
+      additionalLink: "https://antfu.me/",
+      affiliation: "NuxtLabs",
+      position: "Design Engineer",
+    },
+  },
+  {
+    id: "71",
+    eventDate: "DAY2",
+    track: "TRACK1",
+    talkType: "ORGANIZER",
+    title: "TypeScriptネイティブ移植観察レポート TSKaigi 2025",
+    overview:
+      "TypeScriptのネイティブ実装への移植は、TSKaigi 2025のプロポーザル締切直後の3/11に発表されました。発表から2ヶ月が経ち、発表直後の大盛り上がりは落ち着いて、粛々と開発が進んでいます。ネイティブ実装への移植によって何がどう変わるのかをおさらいし、GitHub上を中心として様々に明かされた経緯や展望をまとめて紹介します。",
+    time: "10:00 〜 10:40",
+    speaker: {
+      name: "berlysia",
+      username: "berlysia",
+      profileImagePath: "berlysia.jpg",
+      bio: "フロントエンドに強いWebエンジニア。TypeScriptやLinterまで広く関心。TSKaigi 2025ではトーク周りを統括。株式会社ドワンゴではWebフロントエンドをリード。今回は縦書きCSSの話はしません。",
+      xId: "berlysia",
+      githubId: "berlysia",
+      additionalLink: "https://berlysia.net/",
+      affiliation:
+        "一般社団法人TSKaigi Association、株式会社ドワンゴ 教育事業本部",
+      position: "Webフロントエンドエンジニア",
     },
   },
 ];
