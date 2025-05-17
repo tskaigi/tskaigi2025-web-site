@@ -22,7 +22,7 @@ export function Day2TimeTable() {
 
       <GridWrapper>
         <TimeSlot timeText="10:00 ~ 10:40" />
-        <EventWrapper track="TRACK1">Coming Soon...</EventWrapper>
+        <SessionWrapper talk={getTalk("71")} />
         <EventWrapper track="TRACK2">サテライト</EventWrapper>
         <EventWrapper track="TRACK3" color="gray">
           クローズ

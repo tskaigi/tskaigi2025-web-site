@@ -25,8 +25,12 @@ export const TALK_TYPE = {
     name: "セッション",
     color: "#0C7EDC",
   },
-  KEYNOTE: {
-    name: "基調講演",
+  INVITATION: {
+    name: "招待講演",
+    color: "#0CA90E",
+  },
+  ORGANIZER: {
+    name: "主催者講演",
     color: "#0CA90E",
   },
   LT: {
@@ -1083,7 +1087,15 @@ server.post("/hoge", hogeSchema, async (req) => {
       "TypeScriptのESM（ECMAScript Modules）サポートは、JavaScriptとその周辺エコシステムのESM対応と共に進んできました。\n\n一方でこれはJavaScriptとそのエコシステムが持つモジュールシステムの複雑さをTypeScriptが同じように引き継いでしまっているとも言えます。実際これまで段階的に行われてきたTypeScriptのESMサポート機能は単純ではなく、特に初学者やJavaScriptのモジュールシステムに詳しくない人にとっては理解しづらいものになっています。\n\n本セッションでは、JavaScriptのモジュールシステムの基礎的な部分から始め、TypeScriptにおけるESMサポートの歴史と現状を整理します。さらにESM移行への課題とその解決策、ユースケースに応じた設定の例などを紹介することで、実際のプロダクトへ活用できる内容とします。",
     time: "14:40 〜 15:10",
     speaker: {
-      name: "左治木 隆成",
+      name: "Saji",
+      username: "sajikix",
+      profileImagePath: "sajikix.jpg",
+      bio: "Cybozuのフロントエンドエンジニア。業務では最近JS APIの設計やPluginのシステムを開発している。興味のある分野はi18nや日時、JS/TSの構文解析、Lintツールなど。",
+      xId: "sajikix",
+      githubId: "sajikix",
+      additionalLink: "https://www.sajiki.dev/",
+      affiliation: "サイボウズ株式会社",
+      position: "フロントエンドエンジニア",
     },
   },
   {
@@ -1555,10 +1567,54 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       profileImagePath: "feel_sooo_baaad.jpg",
       bio: "1988年、札幌市出身。\n23歳の時、WEBの世界に魅了され、独学でデザインなどを学習し、WEBデザイナーとしてキャリアをスタート。\n受託制作会社で数年キャリアを積んだのち、WEBにおけるJavaScriptの可能性に魅了され、フロントエンドエンジニアに転向。\nスペースマーケットに入社後、エンジニアリング領域でのマネージメントの面白さ、奥深さに気がつきエンジニアリングマネージャーへ。\n2023年1月より、エンジニア組織全体を統括するVPoEに就任。",
       xId: undefined,
-      githubId: "feel_sooo_baaad",
+      // NOTE: アンケートの githubId が間違っていたため一旦空欄にしている。本人に DM で確認中で返信があれば更新。
+      githubId: undefined,
       additionalLink: "https://suzuri.jp/VoodooRhythm",
       affiliation: "株式会社スペースマーケット",
       position: "VPoE",
+    },
+  },
+  {
+    id: "70",
+    eventDate: "DAY1",
+    track: "TRACK1",
+    talkType: "INVITATION",
+    title: "The New Powerful ESLint Config with Type Safety",
+    overview:
+      "Introduction to the new flat config and the new possibilities it enables, the new utilities and ecosystem around it, and how you can do it in a type-safe way.",
+    time: "11:00 〜 11:40",
+    speaker: {
+      name: "Anthony Fu",
+      username: "antfu",
+      profileImagePath: "antfu.jpg",
+      bio: "https://antfu.me/talks#eslint-one-for-all-made-easy",
+      xId: "antfu7",
+      githubId: "antfu",
+      additionalLink: "https://antfu.me/",
+      affiliation: "NuxtLabs",
+      position: "Design Engineer",
+    },
+  },
+  {
+    id: "71",
+    eventDate: "DAY2",
+    track: "TRACK1",
+    talkType: "ORGANIZER",
+    title: "TypeScriptネイティブ移植観察レポート TSKaigi 2025",
+    overview:
+      "TypeScriptのネイティブ実装への移植は、TSKaigi 2025のプロポーザル締切直後の3/11に発表されました。発表から2ヶ月が経ち、発表直後の大盛り上がりは落ち着いて、粛々と開発が進んでいます。ネイティブ実装への移植によって何がどう変わるのかをおさらいし、GitHub上を中心として様々に明かされた経緯や展望をまとめて紹介します。",
+    time: "10:00 〜 10:40",
+    speaker: {
+      name: "berlysia",
+      username: "berlysia",
+      profileImagePath: "berlysia.jpg",
+      bio: "フロントエンドに強いWebエンジニア。TypeScriptやLinterまで広く関心。TSKaigi 2025ではトーク周りを統括。株式会社ドワンゴではWebフロントエンドをリード。今回は縦書きCSSの話はしません。",
+      xId: "berlysia",
+      githubId: "berlysia",
+      additionalLink: "https://berlysia.net/",
+      affiliation:
+        "一般社団法人TSKaigi Association、株式会社ドワンゴ 教育事業本部",
+      position: "Webフロントエンドエンジニア",
     },
   },
 ];

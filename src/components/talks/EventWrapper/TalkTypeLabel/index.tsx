@@ -6,7 +6,8 @@ type Props = {
 
 export function TalkTypeLabel({ talkType }: Props) {
   const colors = {
-    KEYNOTE: "border-green-500 text-green-500",
+    INVITATION: "border-green-500 text-green-500",
+    ORGANIZER: "border-green-500 text-green-500",
     SESSION: "border-blue-light-500 text-blue-light-500",
     LT: "border-orange-600 text-orange-600",
     SPONSOR_LT: "border-pink-500 text-pink-500",

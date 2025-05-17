@@ -8,7 +8,7 @@ type Props = {
 
 export function SessionWrapper({ talk }: Props) {
   return (
-    <EventWrapper talkType="SESSION" textAlign="left" track={talk.track}>
+    <EventWrapper talkType={talk.talkType} textAlign="left" track={talk.track}>
       <div className="flex flex-col gap-1">
         {talk.speaker.username ? (
           <Link
