@@ -50,6 +50,11 @@ describe("1日目のタイムテーブル", () => {
     // 終了後
     vi.setSystemTime(new Date("2025-05-23T17:40:00"));
     screen.rerender(<Day1TimeTable />);
+    // 日付の判定を走らせるため少しスクロール
+    window.scrollTo({
+      top: 400,
+      behavior: "smooth",
+    });
     await vi.waitFor(() => {
       expect(isInViewport(scrollButton)).toBeFalsy();
     });
@@ -89,13 +94,16 @@ describe("1日目のタイムテーブル", () => {
     await scrollButton.click();
 
     // 現在のセッションが表示されてスクロールボタンが隠れる
-    await vi.waitFor(() => {
-      expect(isInViewport(scrollButton.element())).toBeFalsy();
-    });
+    await vi.waitFor(
+      () => {
+        expect(isInViewport(scrollButton.element())).toBeFalsy();
+      },
+      { timeout: 2000 },
+    );
 
     // 現在のセッションが非表示になってスクロールボタンが現れる
     window.scrollTo({
-      top: 200,
+      top: 300,
       behavior: "smooth",
     });
     await vi.waitFor(() => {
@@ -138,6 +146,11 @@ describe("2日目のタイムテーブル", () => {
     // 終了後
     vi.setSystemTime(new Date("2025-05-24T18:00:00"));
     screen.rerender(<Day2TimeTable />);
+    // 日付の判定を走らせるため少しスクロール
+    window.scrollTo({
+      top: 400,
+      behavior: "smooth",
+    });
     await vi.waitFor(() => {
       expect(isInViewport(scrollButton)).toBeFalsy();
     });
@@ -177,9 +190,12 @@ describe("2日目のタイムテーブル", () => {
     await scrollButton.click();
 
     // 現在のセッションが表示されてスクロールボタンが隠れる
-    await vi.waitFor(() => {
-      expect(isInViewport(scrollButton.element())).toBeFalsy();
-    });
+    await vi.waitFor(
+      () => {
+        expect(isInViewport(scrollButton.element())).toBeFalsy();
+      },
+      { timeout: 2000 },
+    );
 
     // 現在のセッションが非表示になってスクロールボタンが現れる
     window.scrollTo({

@@ -6,6 +6,19 @@ const isInViewport = (el: HTMLElement | null) => {
   return rect.bottom > 0 && rect.top < window.innerHeight;
 };
 
+function debounce<T extends (...args: unknown[]) => void>(
+  func: T,
+  wait: number,
+) {
+  let timeout: ReturnType<typeof setTimeout> | null;
+  return function (this: unknown, ...args: Parameters<T>) {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
+
 export const useTimetable = ({
   sessionTimeTable,
   sessionElements,
@@ -58,13 +71,16 @@ export const useTimetable = ({
       setShowScrollButton(currentEl ? !isInViewport(currentEl) : false);
     };
 
+    // NOTE: スクロールやリサイズが終わってからチェックする
+    const debouncedCheck = debounce(checkButtonVisibility, 100);
+
     checkButtonVisibility();
-    window.addEventListener("scroll", checkButtonVisibility);
-    window.addEventListener("resize", checkButtonVisibility);
+    window.addEventListener("scroll", debouncedCheck);
+    window.addEventListener("resize", debouncedCheck);
 
     return () => {
-      window.removeEventListener("scroll", checkButtonVisibility);
-      window.removeEventListener("resize", checkButtonVisibility);
+      window.removeEventListener("scroll", debouncedCheck);
+      window.removeEventListener("resize", debouncedCheck);
     };
   }, [sessionElements, getCurrentSessionId, isConferencePeriod]);
 
