@@ -6,93 +6,111 @@ import { SessionWrapper } from "@/components/talks/SessionWrapper";
 import { SponsorLtWrapper } from "@/components/talks/SponsorLtWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { Button } from "@/components/ui/button";
+import { useTimetable } from "@/hooks/useTimetable";
 import { cn } from "@/lib/utils";
 import { getTalk } from "@/utils/getTalk";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
-// セッション情報の例
-const sessions = [
-  { id: "10:50", start: "10:50:00", end: "11:00:00" },
-  { id: "11:00", start: "11:00:00", end: "11:40:00" },
-  { id: "11:40", start: "11:40:00", end: "11:50:00" },
-  { id: "11:50", start: "11:50:00", end: "12:20:00" },
-  { id: "12:20", start: "12:20:00", end: "12:30:00" },
-  { id: "12:30", start: "12:30:00", end: "13:30:00" },
-  { id: "13:30", start: "13:30:00", end: "13:40:00" },
-  { id: "13:40", start: "13:40:00", end: "14:10:00" },
-  { id: "14:10", start: "14:10:00", end: "14:20:00" },
-  { id: "14:20", start: "14:20:00", end: "14:50:00" },
-  { id: "14:50", start: "14:50:00", end: "15:00:00" },
-  { id: "15:00", start: "15:00:00", end: "15:30:00" },
-  { id: "15:30", start: "15:30:00", end: "15:50:00" },
-  { id: "15:50", start: "15:50:00", end: "16:20:00" },
-  { id: "16:20", start: "16:20:00", end: "16:30:00" },
-  { id: "16:30", start: "16:30:00", end: "17:00:00" },
-  { id: "17:00", start: "17:00:00", end: "17:10:00" },
-  { id: "17:10", start: "17:10:00", end: "17:40:00" },
+const date = "2025-05-23";
+const sessionTimeTable = [
+  {
+    id: "10:50",
+    start: new Date(`${date}T10:50:00`),
+    end: new Date(`${date}T11:00:00`),
+  },
+  {
+    id: "11:00",
+    start: new Date(`${date}T11:00:00`),
+    end: new Date(`${date}T11:40:00`),
+  },
+  {
+    id: "11:40",
+    start: new Date(`${date}T11:40:00`),
+    end: new Date(`${date}T11:50:00`),
+  },
+  {
+    id: "11:50",
+    start: new Date(`${date}T11:50:00`),
+    end: new Date(`${date}T12:20:00`),
+  },
+  {
+    id: "12:20",
+    start: new Date(`${date}T12:20:00`),
+    end: new Date(`${date}T12:30:00`),
+  },
+  {
+    id: "12:30",
+    start: new Date(`${date}T12:30:00`),
+    end: new Date(`${date}T13:30:00`),
+  },
+  {
+    id: "13:30",
+    start: new Date(`${date}T13:30:00`),
+    end: new Date(`${date}T13:40:00`),
+  },
+  {
+    id: "13:40",
+    start: new Date(`${date}T13:40:00`),
+    end: new Date(`${date}T14:10:00`),
+  },
+  {
+    id: "14:10",
+    start: new Date(`${date}T14:10:00`),
+    end: new Date(`${date}T14:20:00`),
+  },
+  {
+    id: "14:20",
+    start: new Date(`${date}T14:20:00`),
+    end: new Date(`${date}T14:50:00`),
+  },
+  {
+    id: "14:50",
+    start: new Date(`${date}T14:50:00`),
+    end: new Date(`${date}T15:00:00`),
+  },
+  {
+    id: "15:00",
+    start: new Date(`${date}T15:00:00`),
+    end: new Date(`${date}T15:30:00`),
+  },
+  {
+    id: "15:30",
+    start: new Date(`${date}T15:30:00`),
+    end: new Date(`${date}T15:50:00`),
+  },
+  {
+    id: "15:50",
+    start: new Date(`${date}T15:50:00`),
+    end: new Date(`${date}T16:20:00`),
+  },
+  {
+    id: "16:20",
+    start: new Date(`${date}T16:20:00`),
+    end: new Date(`${date}T16:30:00`),
+  },
+  {
+    id: "16:30",
+    start: new Date(`${date}T16:30:00`),
+    end: new Date(`${date}T17:00:00`),
+  },
+  {
+    id: "17:00",
+    start: new Date(`${date}T17:00:00`),
+    end: new Date(`${date}T17:10:00`),
+  },
+  {
+    id: "17:10",
+    start: new Date(`${date}T17:10:00`),
+    end: new Date(`${date}T17:40:00`),
+  },
 ];
-
-const startDate = new Date("2025-05-23T10:50:00");
-const endDate = new Date("2025-05-23T17:40:00");
-
-const isConferencePeriod = () => {
-  const now = new Date();
-  return now >= startDate && now < endDate;
-};
-
-const getCurrentSessionId = () => {
-  const now = new Date();
-  for (const session of sessions) {
-    const start = new Date(`2025-05-23T${session.start}`);
-    const end = new Date(`2025-05-23T${session.end}`);
-    if (now >= start && now < end) {
-      return session.id;
-    }
-  }
-  return null;
-};
-
-const isInViewport = (el: HTMLElement | null) => {
-  if (!el) return false;
-  const rect = el.getBoundingClientRect();
-  return rect.bottom > 0 && rect.top < window.innerHeight;
-};
 
 export function Day1TimeTable() {
   const sessionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const [showScrollButton, setShowScrollButton] = useState(false);
-
-  const handleScrollToCurrentSession = () => {
-    const currentId = getCurrentSessionId();
-    if (currentId && sessionRefs.current[currentId]) {
-      sessionRefs.current[currentId]?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "start",
-      });
-    }
-  };
-
-  useEffect(() => {
-    const checkButtonVisibility = () => {
-      if (!isConferencePeriod()) {
-        setShowScrollButton(false);
-        return;
-      }
-      const currentId = getCurrentSessionId();
-      const currentEl = currentId ? sessionRefs.current[currentId] : null;
-      setShowScrollButton(currentEl ? !isInViewport(currentEl) : false);
-    };
-
-    checkButtonVisibility();
-    window.addEventListener("scroll", checkButtonVisibility);
-    window.addEventListener("resize", checkButtonVisibility);
-
-    return () => {
-      window.removeEventListener("scroll", checkButtonVisibility);
-      window.removeEventListener("resize", checkButtonVisibility);
-    };
-  }, []);
+  const { showScrollButton, scrollToCurrentSession } = useTimetable({
+    sessionTimeTable,
+    sessionElements: sessionRefs.current,
+  });
 
   return (
     <>
@@ -297,7 +315,7 @@ export function Day1TimeTable() {
         <Button
           type="button"
           className="font-bold bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
-          onClick={handleScrollToCurrentSession}
+          onClick={scrollToCurrentSession}
           aria-hidden={!showScrollButton}
           tabIndex={showScrollButton ? 0 : -1}
         >
