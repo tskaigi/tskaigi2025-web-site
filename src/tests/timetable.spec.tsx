@@ -1,6 +1,5 @@
 import { Day1TimeTable } from "@/components/talks/Day1TimeTable";
 import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
-// import { Day2TimeTable } from "@/components/talks/Day2TimeTable";
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import { render } from "vitest-browser-react";
 
