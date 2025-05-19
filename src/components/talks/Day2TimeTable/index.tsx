@@ -3,6 +3,7 @@ import { EventWrapper } from "@/components/talks/EventWrapper";
 import { GridWrapper } from "@/components/talks/GridWrapper";
 import { LtWrapper } from "@/components/talks/LtWrapper";
 import { SessionWrapper } from "@/components/talks/SessionWrapper";
+import { SponsorLtWrapper } from "@/components/talks/SponsorLtWrapper";
 import { TimeSlot } from "@/components/talks/TimeSlot";
 import { getTalk } from "@/utils/getTalk";
 
@@ -51,9 +52,10 @@ export function Day2TimeTable() {
 
       <GridWrapper>
         <TimeSlot timeText="12:10 ~ 13:10" />
-        <EventWrapper track="TRACK1" talkType={"SPONSOR_LT"} textAlign="left">
-          ランチ + スポンサーセッション * 4
-        </EventWrapper>
+        <SponsorLtWrapper
+          talks={[getTalk("76"), getTalk("77"), getTalk("78"), getTalk("79")]}
+        />
+
         <EventWrapper track="TRACK2">ランチ</EventWrapper>
         <EventWrapper track="TRACK3">ランチ</EventWrapper>
       </GridWrapper>
