@@ -1,4 +1,4 @@
-  import fs from "node:fs";
+import fs from "node:fs";
 import path from "node:path";
 // biome-ignore lint/correctness/noUnusedImports: <explanation>
 import React from "react";
@@ -529,9 +529,7 @@ export function Talk({
                     alignItems: "flex-end",
                   }}
                 >
-                  <span style={{ fontSize: "24px" }}>
-                    {speaker.company}
-                  </span>
+                  <span style={{ fontSize: "24px" }}>{speaker.company}</span>
                   <span style={{ fontSize: "30px" }}>{speaker.name}</span>
                 </div>
               ) : (
