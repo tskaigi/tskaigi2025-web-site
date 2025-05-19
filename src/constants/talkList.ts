@@ -54,6 +54,7 @@ export type Speaker = {
   additionalLink?: string;
   affiliation?: string;
   position?: string;
+  company?: string;
 };
 
 export type Talk = {
@@ -1635,8 +1636,9 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       xId: "yokkori_dev",
       githubId: undefined,
       additionalLink: undefined,
-      affiliation: "株式会社 CARTA HOLDINGS",
+      affiliation: "株式会社CARTA HOLDINGS",
       position: "リードエンジニア",
+      company: "株式会社CARTA HOLDINGS",
     },
   },
   {
@@ -1658,6 +1660,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: undefined,
       affiliation: "株式会社TwoGate",
       position: "取締役CTO",
+      company: "株式会社TwoGate",
     },
   },
   {
@@ -1679,6 +1682,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: undefined,
       affiliation: "Nstock株式会社",
       position: "Software Engineer",
+      company: "Nstock株式会社",
     },
   },
   {
@@ -1693,13 +1697,14 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
     speaker: {
       name: "高橋 修平",
       username: "avita",
-      profileImagePath: undefined,
+      profileImagePath: "avita.png",
       bio: "2023年、AVITA株式会社に入社。フロントエンドエンジニアとして、アバター接客ツール「AVACOM」の開発に従事。今秋のスポーツモデルの大会に向けて絶賛減量中。",
       xId: undefined,
       githubId: undefined,
       additionalLink: undefined,
-      affiliation: "AVITA株式会社",
+      affiliation: "AVITA株式会社 開発局",
       position: "フロントエンドエンジニア",
+      company: "AVITA株式会社",
     },
   },
   {
@@ -1723,6 +1728,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       affiliation:
         "KINTOテクノロジーズ株式会社 共通サービス開発グループ/AI開発グループ",
       position: "フロントエンドエンジニア、バックエンドエンジニア",
+      company: "KINTOテクノロジーズ株式会社",
     },
   },
   {
@@ -1744,6 +1750,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: undefined,
       affiliation: "株式会社ダイニー",
       position: "プラットフォームエンジニア",
+      company: "株式会社ダイニー",
     },
   },
   {
@@ -1766,6 +1773,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: undefined,
       affiliation: "レバレジーズ株式会社 アジャイルエフェクトチーム",
       position: "エンジニア",
+      company: "レバレジーズ株式会社",
     },
   },
   {
@@ -1788,6 +1796,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       additionalLink: undefined,
       affiliation: "クラフトバンク株式会社",
       position: "VPoE",
+      company: "クラフトバンク株式会社",
     },
   },
 ];
