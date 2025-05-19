@@ -24,9 +24,19 @@ const sessionTimeTable = [
     end: new Date(`${date}T10:40:00`),
   },
   {
+    id: "10:40",
+    start: new Date(`${date}T10:40:00`),
+    end: new Date(`${date}T10:50:00`),
+  },
+  {
     id: "10:50",
     start: new Date(`${date}T10:50:00`),
     end: new Date(`${date}T11:20:00`),
+  },
+  {
+    id: "11:20",
+    start: new Date(`${date}T11:20:00`),
+    end: new Date(`${date}T11:30:00`),
   },
   {
     id: "11:30",
@@ -34,9 +44,19 @@ const sessionTimeTable = [
     end: new Date(`${date}T12:00:00`),
   },
   {
+    id: "12:00",
+    start: new Date(`${date}T12:00:00`),
+    end: new Date(`${date}T12:10:00`),
+  },
+  {
     id: "12:10",
     start: new Date(`${date}T12:10:00`),
     end: new Date(`${date}T13:10:00`),
+  },
+  {
+    id: "13:10",
+    start: new Date(`${date}T13:10:00`),
+    end: new Date(`${date}T13:20:00`),
   },
   {
     id: "13:20",
@@ -44,9 +64,19 @@ const sessionTimeTable = [
     end: new Date(`${date}T13:50:00`),
   },
   {
+    id: "13:50",
+    start: new Date(`${date}T13:50:00`),
+    end: new Date(`${date}T14:00:00`),
+  },
+  {
     id: "14:00",
     start: new Date(`${date}T14:00:00`),
     end: new Date(`${date}T14:30:00`),
+  },
+  {
+    id: "14:30",
+    start: new Date(`${date}T14:30:00`),
+    end: new Date(`${date}T14:40:00`),
   },
   {
     id: "14:40",
@@ -54,9 +84,19 @@ const sessionTimeTable = [
     end: new Date(`${date}T15:10:00`),
   },
   {
+    id: "15:10",
+    start: new Date(`${date}T15:10:00`),
+    end: new Date(`${date}T15:30:00`),
+  },
+  {
     id: "15:30",
     start: new Date(`${date}T15:30:00`),
     end: new Date(`${date}T16:00:00`),
+  },
+  {
+    id: "16:00",
+    start: new Date(`${date}T16:00:00`),
+    end: new Date(`${date}T16:10:00`),
   },
   {
     id: "16:10",
@@ -107,7 +147,13 @@ export function Day2TimeTable() {
         </EventWrapper>
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="10:40 ~ 10:50" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="10:40 ~ 10:50"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["10:40"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -120,7 +166,13 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("46")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="11:20 ~ 11:30" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="11:20 ~ 11:30"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["11:20"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -133,7 +185,13 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("34")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="12:00 ~ 12:10" eventText="ランチ配布" />
+      <CommonTrackWrapper
+        timeText="12:00 ~ 12:10"
+        eventText="ランチ配布"
+        refHandler={(el) => {
+          sessionRefs.current["12:00"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -149,7 +207,13 @@ export function Day2TimeTable() {
         <EventWrapper track="TRACK3">ランチ</EventWrapper>
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="13:10 ~ 13:20" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="13:10 ~ 13:20"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["13:10"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -162,7 +226,13 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("43")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="13:50 ~ 14:00" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="13:50 ~ 14:00"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["13:50"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -179,7 +249,13 @@ export function Day2TimeTable() {
         />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="14:30 ~ 14:40" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="14:30 ~ 14:40"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["14:30"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -192,7 +268,13 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("42")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="15:10 ~ 15:30" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="15:10 ~ 15:30"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["15:10"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
@@ -205,7 +287,13 @@ export function Day2TimeTable() {
         <SessionWrapper talk={getTalk("38")} />
       </GridWrapper>
 
-      <CommonTrackWrapper timeText="16:00 ~ 16:10" eventText="休憩" />
+      <CommonTrackWrapper
+        timeText="16:00 ~ 16:10"
+        eventText="休憩"
+        refHandler={(el) => {
+          sessionRefs.current["16:00"] = el;
+        }}
+      />
 
       <GridWrapper
         refHandler={(el) => {
