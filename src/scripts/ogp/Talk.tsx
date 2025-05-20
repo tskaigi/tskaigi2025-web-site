@@ -519,15 +519,30 @@ export function Talk({
                 flexDirection: "column",
               }}
             >
-              <span
-                style={{
-                  fontSize: "30px",
-                  fontWeight: 700,
-                  color: "#2A2A2D",
-                }}
-              >
-                {speaker.name}
-              </span>
+              {talkType === "SPONSOR_LT" ? (
+                <div
+                  style={{
+                    fontWeight: 700,
+                    color: "#2A2A2D",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-end",
+                  }}
+                >
+                  <span style={{ fontSize: "24px" }}>{speaker.company}</span>
+                  <span style={{ fontSize: "30px" }}>{speaker.name}</span>
+                </div>
+              ) : (
+                <span
+                  style={{
+                    fontSize: "30px",
+                    fontWeight: 700,
+                    color: "#2A2A2D",
+                  }}
+                >
+                  {speaker.name}
+                </span>
+              )}
             </div>
           </div>
         </div>
