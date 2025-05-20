@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "TSKaigi 2025 参加者アンケート",
@@ -22,24 +22,14 @@ const CodeOfConductPage = () => {
       </h1>
       <div className="bg-white p-6 flex flex-col gap-6 max-w-2xl mx-auto md:rounded-xl lg:p-10 text-lg">
         <div className="text-[16px] md:text-[18px] text-left leading-[1.8]">
-          <p>
-            本日はTSKaigi 2025にご参加いただきありがとうございました。
-          </p>
-          <p>
-            有意義な時間をお過ごしいただくことはできましたでしょうか？
-          </p>
-          <p>
-            少しでも学びのある場になっていれば幸いです。
-          </p>
+          <p>本日はTSKaigi 2025にご参加いただきありがとうございました。</p>
+          <p>有意義な時間をお過ごしいただくことはできましたでしょうか？</p>
+          <p>少しでも学びのある場になっていれば幸いです。</p>
           <p>
             今後のTSKaigi開催の参考にさせていただくため、アンケートへのご協力をお願いいたします。
           </p>
-          <p className="pt-4">
-            所要時間：5分程度
-          </p>
-          <p>
-            回答期限：5月31日まで
-          </p>
+          <p className="pt-4">所要時間：5分程度</p>
+          <p>回答期限：5月31日まで</p>
         </div>
         <div className="flex justify-center">
           <Button
