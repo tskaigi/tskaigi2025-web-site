@@ -269,6 +269,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "kinto-technologies",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/kinto-technologies.jpg",
+        link: "https://www.kinto-technologies.com/recruit/",
+      },
     },
     {
       id: "G03",
@@ -802,6 +806,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "dwango",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/dwango.png",
+        link: "https://www.nnn.ed.nico/recruit/",
+      },
     },
     {
       id: "S13",
