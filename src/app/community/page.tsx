@@ -36,6 +36,7 @@ const CommutityPage = () => {
                 {communities.map((community) => (
                   <Link
                     href={community.link}
+                    target="_blank"
                     className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
                     key={community.name}
                   >
@@ -59,6 +60,7 @@ const CommutityPage = () => {
               {events.map((event) => (
                 <Link
                   href={event.link}
+                  target="_blank"
                   className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
                   key={event.name}
                 >
