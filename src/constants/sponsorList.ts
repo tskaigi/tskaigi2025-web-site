@@ -173,7 +173,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       detailPageId: "dinii",
       jobBoard: {
         imagePath: "/sponsors/jobBoard/dinii.jpg",
-        link: "https://careers.dinii.jp/",
+        link: "https://diniinote.notion.site/Dinii-Engineering-EntranceBook-1df71045ad748062afe9c672363bdcab",
       },
     },
     {
@@ -454,7 +454,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       detailPageId: "carta",
       jobBoard: {
         imagePath: "/sponsors/jobBoard/carta.png",
-        link: "https://hrmos.co/pages/cartaholdings/jobs?category=1260098130969743360?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
+        link: "https://hrmos.co/pages/cartaholdings/jobs?category=1260098130969743360&utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       },
     },
     {
