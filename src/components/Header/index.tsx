@@ -33,6 +33,10 @@ const links: {
     href: "/code-of-conduct",
     label: "行動規範",
   },
+  {
+    href: "/", // TODO: リンクが確定したら修正する
+    label: "お問い合わせ",
+  },
 ];
 
 export function Header() {
