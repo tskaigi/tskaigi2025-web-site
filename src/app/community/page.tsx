@@ -2,9 +2,20 @@ import CommunityMap from "@/components/CommunityMap";
 import { communityEventList } from "@/constants/communityEventList";
 import { communityList } from "@/constants/communityList";
 import { ExternalLink } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
 
-const CommutityPage = () => {
+export const metadata: Metadata = {
+  title: "コミュニティ",
+  twitter: {
+    title: "コミュニティ",
+  },
+  openGraph: {
+    title: "コミュニティ",
+  },
+};
+
+const CommunityPage = () => {
   return (
     <main className="bg-blue-light-100 pt-16 pb-10 md:px-8 flex-1">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-light-500 text-center py-10 md:py-16">
@@ -76,4 +87,4 @@ const CommutityPage = () => {
   );
 };
 
-export default CommutityPage;
+export default CommunityPage;
