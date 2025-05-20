@@ -21,7 +21,9 @@ export function SessionWrapper({ talk }: Props) {
           <p className="text-16">{talk.title}</p>
         )}
         <div className="flex items-center gap-2">
-          <span className="text-14">{talk.speaker.name}</span>
+          {talk.talkType !== "EVENT" && (
+            <span className="text-14">{talk.speaker.name}</span>
+          )}
           {talk.speaker.profileImagePath && (
             <img
               src={`/talks/speaker/${talk.speaker.profileImagePath}`}
