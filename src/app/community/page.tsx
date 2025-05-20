@@ -44,7 +44,7 @@ const CommutityPage = () => {
                   </Link>
                 ))}
               </div>
-            )
+            ),
           )}
         </div>
 

@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef } from "react";
 
 const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
   return (
@@ -11,6 +11,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
       viewBox="0 0 1200 570"
       {...props}
     >
+      <title>日本のコミュニティマップ</title>
       <g id="_レイヤー_1-2" data-name="レイヤー 1">
         <rect
           className="cls-32"

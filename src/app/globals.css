@@ -115,7 +115,7 @@
   body {
     @apply bg-white text-font-basic;
   }
-  html{
+  html {
     @apply scroll-pt-20 scroll-smooth;
   }
 }
