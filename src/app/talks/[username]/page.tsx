@@ -1,5 +1,6 @@
 import { usernames } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ComponentProps } from "react";
@@ -112,7 +113,7 @@ export default async function TalkDetailPage({
         </div>
 
         {/* スピーカー情報 */}
-        {talk.talkType !== "EVENT" && (
+        {shouldDisplaySpeakerInfo(talk.talkType) && (
           <div className="mt-4 px-6 md:px-8 lg:px-10">
             <div className="bg-blue-light-200 p-6 rounded-xl">
               <div className="flex flex-col sm:flex-row items-center gap-6">

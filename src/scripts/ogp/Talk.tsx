@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 // biome-ignore lint/correctness/noUnusedImports: <explanation>
 import React from "react";
 import { TALK_TYPE, TRACK, type Talk as TTalk } from "../../constants/talkList";
@@ -488,7 +489,7 @@ export function Talk({
         </div>
 
         {/* 登壇者 */}
-        {talkType !== "EVENT" && (
+        {shouldDisplaySpeakerInfo(talkType) && (
           <div
             style={{
               display: "flex",
