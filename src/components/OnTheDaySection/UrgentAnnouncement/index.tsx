@@ -5,7 +5,14 @@ import { LinkText } from "@/components/OnTheDaySection/Notes/LinkText";
  * @description
  * 緊急のお知らせを表示するコンポーネント。緊急時以外は表示しない。
  */
-export function UrgentAnnouncement() {
+export function UrgentAnnouncement({
+  isVisible,
+}: {
+  /**コンポーネントを表示するかどうか */
+  isVisible: boolean;
+}) {
+  if (!isVisible) return null;
+
   return (
     <section
       className="bg-white w-full flex flex-col gap-3 justify-center rounded-lg md:rounded-2xl px-6 py-5 md:px-8 md:py-6"
