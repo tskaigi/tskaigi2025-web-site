@@ -84,6 +84,7 @@ export function Header() {
                   <Link
                     href={href}
                     className="text-blue-purple-500 font-bold text-14 block"
+                    onClick={() => setIsDrawerOpen(false)}
                   >
                     {label}
                   </Link>

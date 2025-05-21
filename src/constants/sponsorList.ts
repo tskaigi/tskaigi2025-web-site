@@ -173,7 +173,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       detailPageId: "dinii",
       jobBoard: {
         imagePath: "/sponsors/jobBoard/dinii.jpg",
-        link: "https://careers.dinii.jp/",
+        link: "https://diniinote.notion.site/Dinii-Engineering-EntranceBook-1df71045ad748062afe9c672363bdcab",
       },
     },
     {
@@ -269,6 +269,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold"],
       detailPageId: "kinto-technologies",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/kinto-technologies.jpg",
+        link: "https://www.kinto-technologies.com/recruit/",
+      },
     },
     {
       id: "G03",
@@ -454,7 +458,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       detailPageId: "carta",
       jobBoard: {
         imagePath: "/sponsors/jobBoard/carta.png",
-        link: "https://hrmos.co/pages/cartaholdings/jobs?category=1260098130969743360?utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
+        link: "https://hrmos.co/pages/cartaholdings/jobs?category=1260098130969743360&utm_source=tskaigi2025&utm_medium=Paid+Other&utm_campaign=tskaigi2025_sponsor",
       },
     },
     {
@@ -802,6 +806,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["silver"],
       detailPageId: "dwango",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/dwango.png",
+        link: "https://www.nnn.ed.nico/recruit/",
+      },
     },
     {
       id: "S13",
