@@ -100,11 +100,22 @@ export const talkList: Talk[] = [
     track: "TRACK1",
     talkType: "SESSION",
     title: "checker.tsに対して真剣に向き合う",
-    overview:
-      "## トークの主題\n\nTypeScript//src/compiler/checker.ts でどういう処理を行なっているかを時間の限りでどういう風に調べたのか、どういう風に処理を調べると良いのか悪いのか、 checker.ts の中身の処理について話す。\n\n## 題材を選んだ理由\n\nTypeScript//src/compiler/checker.ts が行数が多いというのは有名だがちゃんと読んだことがある人は自分自身を含めて少ないのではというのが理由でこの機会を通して自分自身も checker.ts についての理解を深めたい為。\n\n## 発表内容\n\nTypeScript//src/compiler/checker.ts が何をしているのか、どの辺にどういう処理が書かれているのか。TypeScriptのコンパイラの処理の中で TypeScript//src/compiler/checker.ts が他のファイルとの依存関係。",
+    overview: `checker.ts は TypeScript のコードベースの中でも特に行数が多いファイルとして知られていますが、その中身まで読み込んだことがある方は多くないかもしれません。
+
+本セッションでは、tsc コマンドを実行した際に checker.ts 内でどのような処理が行われているのかを追いながら、TypeScript の型検査の仕組みと checker.ts の役割について解説します。
+
+また、TypeScript 7.0 で導入が予定されている typescript-go における実装とも可能な限り比較し、今後の変化についても触れていきます。`,
     time: "11:50 〜 12:20",
     speaker: {
-      name: "kkk4oru",
+      name: "Kaoru",
+      username: "kkk4oru",
+      profileImagePath: "kkk4oru.jpg",
+      bio: "2015年から様々な会社でフロントエンジニアとして開発経験を経て、2022年にAVITA株式会社に入社。 AVITA株式会社では、エンジニア採用やチームが成長できることを日々模索しています。",
+      xId: "kkk4oru",
+      githubId: "kkkaoru",
+      additionalLink: undefined,
+      affiliation: "AVITA株式会社",
+      position: "VPoE, フロントエンドエンジニア",
     },
   },
   {
@@ -331,6 +342,14 @@ export const talkList: Talk[] = [
     time: "16:30 〜 17:00",
     speaker: {
       name: "上田慶祐",
+      username: "kueda",
+      profileImagePath: "kueda.jpg",
+      bio: "学生時代の個人開発者から新卒でPwCコンサルティングを経て現職\nコンサルティングのソフトウェアとAIによる「産業化」を目指し、コンサルもわかるエンジニアとして複数プロダクトの開発をリード\nフロントエンドからバックエンド、インフラまで全方位で対応。TypescriptはフロントエンドのNuxt.js、バックエンドのNest.js、インフラのCDKと手広く活用中。",
+      xId: undefined,
+      githubId: undefined,
+      additionalLink: "https://zenn.dev/kueda",
+      affiliation: "グロービング株式会社",
+      position: "クラウドプロダクト事業部CTO",
     },
   },
   {
