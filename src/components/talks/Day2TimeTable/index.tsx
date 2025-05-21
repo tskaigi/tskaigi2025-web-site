@@ -367,7 +367,11 @@ export function Day2TimeTable() {
         <EventWrapper track="TRACK3">OST</EventWrapper>
       </GridWrapper>
 
-      <GridWrapper>
+      <GridWrapper
+        refHandler={(el) => {
+          sessionRefs.current["18:00"] = el;
+        }}
+      >
         <TimeSlot
           timeText="18:00 ~ 20:10"
           isActive={isSessionActive("18:00")}
