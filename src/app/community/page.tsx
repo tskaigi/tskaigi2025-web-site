@@ -63,7 +63,7 @@ const CommunityPage = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8">
-          <h2 className="text-24 font-bold">コミュニティカレンダー</h2>
+          <h2 className="text-24 font-bold">イベント予定カレンダー</h2>
 
           {Object.entries(communityEventList).map(([month, events]) => (
             <div className="w-full flex flex-col gap-4" key={month}>
