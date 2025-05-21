@@ -14,12 +14,16 @@ const links: {
     label: "タイムテーブル",
   },
   {
+    href: "/side-events",
+    label: "サイドイベント",
+  },
+  {
     href: "/sponsors",
     label: "スポンサー",
   },
   {
-    href: "/side-events",
-    label: "サイドイベント",
+    href: "/community",
+    label: "コミュニティ",
   },
   {
     href: "/code-of-conduct",
