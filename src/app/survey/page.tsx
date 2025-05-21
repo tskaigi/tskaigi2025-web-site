@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "TSKaigi 2025 参加者アンケート",
@@ -38,7 +37,7 @@ const CodeOfConductPage = () => {
             size="lg"
             className="rounded-full h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white pl-10 pr-8"
           >
-            <Link
+            <a
               href="https://forms.gle/bEhr7VXJ7v2vzRpv6"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +47,7 @@ const CodeOfConductPage = () => {
                 アンケートを回答する
               </span>
               <ArrowRight />
-            </Link>
+            </a>
           </Button>
         </div>
       </div>
