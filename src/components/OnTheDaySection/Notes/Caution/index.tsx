@@ -4,7 +4,7 @@ type Props = {
 
 export function Caution({ children }: Props) {
   return (
-    <p className="flex gap-3 items-start" role="alert">
+    <p className="flex gap-3 items-start">
       <span className="text-blue-500" aria-hidden="true">
         －
       </span>
