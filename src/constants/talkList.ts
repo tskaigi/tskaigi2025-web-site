@@ -938,6 +938,13 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     time: "15:30 〜 16:00",
     speaker: {
       name: "mizchi",
+      username: "mizchi",
+      profileImagePath: undefined,
+      bio: undefined,
+      xId: "mizchi",
+      githubId: undefined,
+      additionalLink: undefined,
+      affiliation: undefined,
     },
   },
   {
