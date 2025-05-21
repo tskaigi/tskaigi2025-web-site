@@ -7,12 +7,14 @@ import { OnTheDaySection } from "@/components/OnTheDaySection";
 import PersonalSponsorsSection from "@/components/PersonalSponsorsSection";
 import { SponsorsBoardSection } from "@/components/SponsorsBoardSection";
 import { StaffSection } from "@/components/StaffSection";
+import { VenueGuideMapSection } from "@/components/VenueGuideMap";
 
 export default function Home() {
   return (
     <main className="pt-8 overflow-x-hidden">
       <HeroSectionWithMotion />
       <OnTheDaySection />
+      <VenueGuideMapSection />
       <MissionSection />
       <JobBoardSection />
       <SponsorsBoardSection />
