@@ -26,7 +26,7 @@ export const VenueGuideMapDialog = () => {
           </span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="modal-box w-11/12 max-w-7xl bg-white flex flex-col items-center p-1 pb-4">
+      <DialogContent className="w-11/12 max-w-7xl bg-white flex flex-col items-center p-1 pb-4">
         <DialogHeader className="sr-only">
           <DialogTitle>会場マップ</DialogTitle>
           <DialogDescription>会場マップの拡大図です。</DialogDescription>
@@ -37,7 +37,7 @@ export const VenueGuideMapDialog = () => {
         <div className="md:hidden flex flex-col gap-8">
           <img src="/venue-guide-map-v.png" alt="モバイル用会場図" />
         </div>
-        <DialogFooter className="sm:justify-start">
+        <DialogFooter>
           <DialogClose asChild>
             <Button
               variant="default"
