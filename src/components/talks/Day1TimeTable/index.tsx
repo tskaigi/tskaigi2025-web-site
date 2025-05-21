@@ -107,10 +107,11 @@ const sessionTimeTable = [
 
 export function Day1TimeTable() {
   const sessionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const { showScrollButton, scrollToCurrentSession } = useTimetable({
-    sessionTimeTable,
-    sessionElements: sessionRefs.current,
-  });
+  const { showScrollButton, scrollToCurrentSession, isSessionActive } =
+    useTimetable({
+      sessionTimeTable,
+      sessionElements: sessionRefs.current,
+    });
 
   return (
     <>
@@ -121,7 +122,10 @@ export function Day1TimeTable() {
           sessionRefs.current["10:50"] = el;
         }}
       >
-        <TimeSlot timeText="10:50 ~ 11:00" />
+        <TimeSlot
+          timeText="10:50 ~ 11:00"
+          isActive={isSessionActive("10:50")}
+        />
         <EventWrapper track="TRACK1">オープニングトーク</EventWrapper>
         <EventWrapper track="TRACK2">サテライト</EventWrapper>
         <EventWrapper track="TRACK3" color="gray">
@@ -134,7 +138,10 @@ export function Day1TimeTable() {
           sessionRefs.current["11:00"] = el;
         }}
       >
-        <TimeSlot timeText="11:00 ~ 11:40" />
+        <TimeSlot
+          timeText="11:00 ~ 11:40"
+          isActive={isSessionActive("11:00")}
+        />
         <SessionWrapper talk={getTalk("70")} />
         <EventWrapper track="TRACK2">サテライト</EventWrapper>
         <EventWrapper track="TRACK3" color="gray">
@@ -148,6 +155,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["11:40"] = el;
         }}
+        isActive={isSessionActive("11:40")}
       />
 
       <GridWrapper
@@ -155,7 +163,10 @@ export function Day1TimeTable() {
           sessionRefs.current["11:50"] = el;
         }}
       >
-        <TimeSlot timeText="11:50 ~ 12:20" />
+        <TimeSlot
+          timeText="11:50 ~ 12:20"
+          isActive={isSessionActive("11:50")}
+        />
         <SessionWrapper talk={getTalk("2")} />
         <SessionWrapper talk={getTalk("6")} />
         <SessionWrapper talk={getTalk("7")} />
@@ -167,6 +178,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["12:20"] = el;
         }}
+        isActive={isSessionActive("12:20")}
       />
 
       <GridWrapper
@@ -174,7 +186,10 @@ export function Day1TimeTable() {
           sessionRefs.current["12:30"] = el;
         }}
       >
-        <TimeSlot timeText="12:30 ~ 13:30" />
+        <TimeSlot
+          timeText="12:30 ~ 13:30"
+          isActive={isSessionActive("12:30")}
+        />
         <SponsorLtWrapper
           talks={[getTalk("72"), getTalk("73"), getTalk("74"), getTalk("75")]}
         />
@@ -188,6 +203,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["13:30"] = el;
         }}
+        isActive={isSessionActive("13:30")}
       />
 
       <GridWrapper
@@ -195,7 +211,10 @@ export function Day1TimeTable() {
           sessionRefs.current["13:40"] = el;
         }}
       >
-        <TimeSlot timeText="13:40 ~ 14:10" />
+        <TimeSlot
+          timeText="13:40 ~ 14:10"
+          isActive={isSessionActive("13:40")}
+        />
         <SessionWrapper talk={getTalk("16")} />
         <SessionWrapper talk={getTalk("1")} />
         <SessionWrapper talk={getTalk("3")} />
@@ -207,6 +226,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["14:10"] = el;
         }}
+        isActive={isSessionActive("14:10")}
       />
 
       <GridWrapper
@@ -214,7 +234,10 @@ export function Day1TimeTable() {
           sessionRefs.current["14:20"] = el;
         }}
       >
-        <TimeSlot timeText="14:20 ~ 14:50" />
+        <TimeSlot
+          timeText="14:20 ~ 14:50"
+          isActive={isSessionActive("14:20")}
+        />
         <SessionWrapper talk={getTalk("9")} />
         <SessionWrapper talk={getTalk("15")} />
         <SessionWrapper talk={getTalk("17")} />
@@ -226,6 +249,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["14:50"] = el;
         }}
+        isActive={isSessionActive("14:50")}
       />
 
       <GridWrapper
@@ -233,7 +257,10 @@ export function Day1TimeTable() {
           sessionRefs.current["15:00"] = el;
         }}
       >
-        <TimeSlot timeText="15:00 ~ 15:30" />
+        <TimeSlot
+          timeText="15:00 ~ 15:30"
+          isActive={isSessionActive("15:00")}
+        />
         <SessionWrapper talk={getTalk("14")} />
         <LtWrapper
           talks={[getTalk("18"), getTalk("19"), getTalk("33"), getTalk("31")]}
@@ -249,6 +276,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["15:30"] = el;
         }}
+        isActive={isSessionActive("15:30")}
       />
 
       <GridWrapper
@@ -256,7 +284,10 @@ export function Day1TimeTable() {
           sessionRefs.current["15:50"] = el;
         }}
       >
-        <TimeSlot timeText="15:50 ~ 16:20" />
+        <TimeSlot
+          timeText="15:50 ~ 16:20"
+          isActive={isSessionActive("15:50")}
+        />
         <SessionWrapper talk={getTalk("11")} />
         <SessionWrapper talk={getTalk("4")} />
         <SessionWrapper talk={getTalk("12")} />
@@ -268,6 +299,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["16:20"] = el;
         }}
+        isActive={isSessionActive("16:20")}
       />
 
       <GridWrapper
@@ -275,7 +307,10 @@ export function Day1TimeTable() {
           sessionRefs.current["16:30"] = el;
         }}
       >
-        <TimeSlot timeText="16:30 ~ 17:00" />
+        <TimeSlot
+          timeText="16:30 ~ 17:00"
+          isActive={isSessionActive("16:30")}
+        />
         <SessionWrapper talk={getTalk("8")} />
         <SessionWrapper talk={getTalk("13")} />
         <SessionWrapper talk={getTalk("5")} />
@@ -287,6 +322,7 @@ export function Day1TimeTable() {
         refHandler={(el) => {
           sessionRefs.current["17:00"] = el;
         }}
+        isActive={isSessionActive("17:00")}
       />
 
       <GridWrapper
@@ -294,7 +330,10 @@ export function Day1TimeTable() {
           sessionRefs.current["17:10"] = el;
         }}
       >
-        <TimeSlot timeText="17:10 ~ 17:40" />
+        <TimeSlot
+          timeText="17:10 ~ 17:40"
+          isActive={isSessionActive("17:10")}
+        />
         <SessionWrapper talk={getTalk("10")} />
         <LtWrapper
           talks={[getTalk("28"), getTalk("26"), getTalk("27"), getTalk("25")]}

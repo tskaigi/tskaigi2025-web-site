@@ -39,18 +39,21 @@ export const useTimetable = ({
     return now >= start && now < end;
   }, [sessionTimeTable]);
 
-  const getCurrentSessionId = useCallback(() => {
-    const now = new Date();
-    for (const session of sessionTimeTable) {
-      if (now >= session.start && now < session.end) {
-        return session.id;
+  const getCurrentSessionId = useCallback(
+    (now: Date) => {
+      for (const session of sessionTimeTable) {
+        if (now >= session.start && now < session.end) {
+          return session.id;
+        }
       }
-    }
-    return null;
-  }, [sessionTimeTable]);
+      return null;
+    },
+    [sessionTimeTable],
+  );
 
   const scrollToCurrentSession = useCallback(() => {
-    const currentId = getCurrentSessionId();
+    const now = new Date();
+    const currentId = getCurrentSessionId(now);
     if (currentId && sessionElements[currentId]) {
       sessionElements[currentId]?.scrollIntoView({
         behavior: "smooth",
@@ -66,7 +69,8 @@ export const useTimetable = ({
         setShowScrollButton(false);
         return;
       }
-      const currentId = getCurrentSessionId();
+      const now = new Date();
+      const currentId = getCurrentSessionId(now);
       const currentEl = currentId ? sessionElements[currentId] : null;
       setShowScrollButton(currentEl ? !isInViewport(currentEl) : false);
     };
@@ -84,8 +88,26 @@ export const useTimetable = ({
     };
   }, [sessionElements, getCurrentSessionId, isConferencePeriod]);
 
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
+  useEffect(() => {
+    if (!isConferencePeriod()) return;
+    setCurrentTime(new Date());
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isConferencePeriod]);
+
+  const isSessionActive = (sessionId: string) => {
+    const currentId = getCurrentSessionId(currentTime);
+    return currentId === sessionId;
+  };
+
   return {
     showScrollButton,
     scrollToCurrentSession,
+    isSessionActive,
   };
 };
