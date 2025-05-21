@@ -1,6 +1,7 @@
 import { Decoration } from "@/components/Decoration";
 import { SectionGradation } from "@/components/ui/sectionGradation";
 import { DecorationButton } from "./DecorationButton";
+import { ParticipationMethod } from "./ParticipationMethod";
 import { UrgentAnnouncement } from "./UrgentAnnouncement";
 
 export function OnTheDaySection() {
@@ -14,9 +15,10 @@ export function OnTheDaySection() {
           <Decoration />
         </div>
         <UrgentAnnouncement />
-        <div className="mb-8 mt-8 md:mt-10 flex flex-col items-center justify-center">
+        <div className="mt-8 md:mt-10 flex flex-col items-center justify-center">
           <DecorationButton />
         </div>
+        <ParticipationMethod />
       </div>
     </SectionGradation>
   );
