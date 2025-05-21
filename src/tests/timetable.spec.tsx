@@ -110,6 +110,37 @@ describe("1日目のタイムテーブル", () => {
       expect(isInViewport(scrollButton.element())).toBeTruthy();
     });
   });
+
+  test("現在開催中のセッションのUIがアクティブになる", async () => {
+    vi.setSystemTime(new Date("2025-05-23T13:39:59"));
+    const screen = render(<Day1TimeTable />);
+    const timeSlot = screen.getByText("13:40 ~ 14:10");
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-yellow-700");
+    });
+
+    vi.setSystemTime(new Date("2025-05-23T13:40:00"));
+    screen.rerender(<Day1TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-orange-500");
+    });
+
+    vi.setSystemTime(new Date("2025-05-23T14:09:59"));
+    screen.rerender(<Day1TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-orange-500");
+    });
+
+    vi.setSystemTime(new Date("2025-05-23T14:10:00"));
+    screen.rerender(<Day1TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-yellow-700");
+    });
+    const nextTimeSlot = screen.getByText("14:10 ~ 14:20");
+    await vi.waitFor(() => {
+      expect(nextTimeSlot.element()).toHaveClass("text-orange-500");
+    });
+  });
 });
 
 describe("2日目のタイムテーブル", () => {
@@ -204,6 +235,37 @@ describe("2日目のタイムテーブル", () => {
     });
     await vi.waitFor(() => {
       expect(isInViewport(scrollButton.element())).toBeTruthy();
+    });
+  });
+
+  test("現在開催中のセッションのUIがアクティブになる", async () => {
+    vi.setSystemTime(new Date("2025-05-24T09:59:59"));
+    const screen = render(<Day2TimeTable />);
+    const timeSlot = screen.getByText("10:00 ~ 10:40");
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-yellow-700");
+    });
+
+    vi.setSystemTime(new Date("2025-05-24T10:00:00"));
+    screen.rerender(<Day2TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-orange-500");
+    });
+
+    vi.setSystemTime(new Date("2025-05-24T10:39:59"));
+    screen.rerender(<Day2TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-orange-500");
+    });
+
+    vi.setSystemTime(new Date("2025-05-24T10:40:00"));
+    screen.rerender(<Day2TimeTable />);
+    await vi.waitFor(() => {
+      expect(timeSlot.element()).toHaveClass("text-yellow-700");
+    });
+    const nextTimeSlot = screen.getByText("10:40 ~ 10:50");
+    await vi.waitFor(() => {
+      expect(nextTimeSlot.element()).toHaveClass("text-orange-500");
     });
   });
 });
