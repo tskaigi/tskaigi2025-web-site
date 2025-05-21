@@ -71,15 +71,19 @@ const CommunityPage = () => {
                 {month}
               </h3>
               {events.map((event) => (
-                <Link
-                  href={event.link}
-                  target="_blank"
-                  className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
-                  key={event.name}
-                >
-                  {event.name}
-                  <ExternalLink size={16} className="translate-y-0.5" />
-                </Link>
+                <div className="px-5 flex items-center gap-4" key={event.name}>
+                  <div className="bg-green-100 px-4 py-2 rounded-md min-w-32 text-center text-black text-14">
+                    {event.schedule}
+                  </div>
+                  <Link
+                    href={event.link}
+                    target="_blank"
+                    className="text-blue-500 flex items-center gap-1"
+                  >
+                    {event.name}
+                    <ExternalLink size={16} className="translate-y-0.5" />
+                  </Link>
+                </div>
               ))}
             </div>
           ))}
