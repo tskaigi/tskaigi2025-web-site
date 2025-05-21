@@ -13,7 +13,8 @@ export function OnTheDaySection() {
           </h2>
           <Decoration />
         </div>
-        <UrgentAnnouncement />
+        {/* MEMO: 緊急のお知らせを掲載する場合のみコメントアウトを解除する */}
+        {/* <UrgentAnnouncement /> */}
         <div className="mb-8 mt-8 md:mt-10 flex flex-col items-center justify-center">
           <DecorationButton />
         </div>
