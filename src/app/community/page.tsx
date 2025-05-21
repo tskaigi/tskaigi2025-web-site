@@ -26,11 +26,6 @@ const CommunityPage = () => {
           <h2 className="text-24 font-bold">コミュニティ日本地図</h2>
 
           <CommunityMap className="w-full h-auto" />
-          <p>
-            コミュニティ日本地図で使用している地図画像は、kabipanotokoさんの作品「日本の白地図」（CC
-            BY-NC 2.1JP）を改変して作成したもので、CC BY-NC 4.0
-            Internationalxのもとに提供されています。
-          </p>
 
           {Object.entries(communityList).map(
             ([area, { label, communities }]) => (
@@ -82,6 +77,45 @@ const CommunityPage = () => {
             </div>
           ))}
         </div>
+        <p>
+          ※ コミュニティ日本地図で使用している地図画像は、
+          <a
+            href="https://x.com/kabipanotoko"
+            target="_blank"
+            rel="noreferrer"
+            className="text-link-light"
+          >
+            kabipanotoko
+          </a>
+          さんの作品「
+          <a
+            href="https://www.kabipan.com/geography/whitemap/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-link-light"
+          >
+            日本の白地図
+          </a>
+          」（
+          <a
+            href="https://creativecommons.org/licenses/by-nc/2.1/jp/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-link-light"
+          >
+            CC BY-NC 2.1JP
+          </a>
+          ）を改変して作成したもので、
+          <a
+            href="https://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-link-light"
+          >
+            CC BY-NC 4.0 International
+          </a>
+          のもとに提供されています。
+        </p>
       </div>
     </main>
   );
