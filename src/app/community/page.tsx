@@ -39,17 +39,24 @@ const CommunityPage = () => {
                 >
                   {label}
                 </h3>
-                {communities.map((community) => (
-                  <Link
-                    href={community.link}
-                    target="_blank"
-                    className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
-                    key={community.name}
-                  >
-                    {community.name}
-                    <ExternalLink size={16} className="translate-y-0.5" />
-                  </Link>
-                ))}
+                {communities.length > 0 ? (
+                  communities.map((community) => (
+                    <Link
+                      href={community.link}
+                      target="_blank"
+                      className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
+                      key={community.name}
+                    >
+                      {community.name}
+                      <ExternalLink size={16} className="translate-y-0.5" />
+                    </Link>
+                  ))
+                ) : (
+                  <p className="px-5  text-black">
+                    コミュニティ情報募集中！TSKaigi
+                    2025会場で掲示しているコミュニティ日本地図に直接書き込みできます
+                  </p>
+                )}
               </div>
             ),
           )}
