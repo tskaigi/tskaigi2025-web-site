@@ -33,10 +33,6 @@ const links: {
     href: "/code-of-conduct",
     label: "行動規範",
   },
-  {
-    href: "/", // TODO: リンクが確定したら修正する
-    label: "お問い合わせ",
-  },
 ];
 
 export function Header() {
@@ -84,6 +80,7 @@ export function Header() {
                   <Link
                     href={href}
                     className="text-blue-purple-500 font-bold text-14 block"
+                    onClick={() => setIsDrawerOpen(false)}
                   >
                     {label}
                   </Link>
