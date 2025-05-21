@@ -30,19 +30,11 @@ function ParticipationMethodCard({
         participationType === "online" && "bg-blue-light-300",
       )}
     >
-      <h3 className="text-22 font-bold">{title}</h3>
-      <p
-        className={cn(
-          "text-lg",
-          participationType === "local" && "leading-[1.8]",
-          participationType === "online" && "leading-[1.5]",
-        )}
-      >
-        {description}
-      </p>
+      <h3 className="text-22 font-bold max-md:text-xl">{title}</h3>
+      <p className="text-lg max-md:text-base leading-[1.8]">{description}</p>
       <a
         className={cn(
-          "w-fit py-3 px-6 rounded-full text-white font-bold flex items-center gap-2 mt-auto",
+          "w-fit py-3 px-6 rounded-full text-white font-bold flex items-center gap-2 mt-auto max-md:text-[18px] text-[22px]",
           participationType === "local" && "bg-orange-500",
           participationType === "online" && "bg-blue-purple-500",
         )}
@@ -50,7 +42,9 @@ function ParticipationMethodCard({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span>{participationButton.text}</span>
+        <span className="leading-[1.5] max-md:leading-[1.8]">
+          {participationButton.text}
+        </span>
         <ArrowRight />
       </a>
     </div>
