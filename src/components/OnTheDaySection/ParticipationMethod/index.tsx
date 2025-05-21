@@ -31,7 +31,15 @@ function ParticipationMethodCard({
       )}
     >
       <h3 className="text-22 font-bold">{title}</h3>
-      <p className="text-lg leading-8">{description}</p>
+      <p
+        className={cn(
+          "text-lg",
+          participationType === "local" && "leading-[1.8]",
+          participationType === "online" && "leading-[1.5]",
+        )}
+      >
+        {description}
+      </p>
       <a
         className={cn(
           "w-fit py-3 px-6 rounded-full text-white font-bold flex items-center gap-2 mt-auto",
