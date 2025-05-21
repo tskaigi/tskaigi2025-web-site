@@ -1,6 +1,8 @@
 import { Decoration } from "@/components/Decoration";
 import { SectionGradation } from "@/components/ui/sectionGradation";
 import { DecorationButton } from "./DecorationButton";
+import { ParticipationMethod } from "./ParticipationMethod";
+import { PointsOfAttention } from "./PointsOfAttention";
 import { UrgentAnnouncement } from "./UrgentAnnouncement";
 
 export function OnTheDaySection() {
@@ -15,9 +17,11 @@ export function OnTheDaySection() {
         </div>
         {/* MEMO: 緊急のお知らせを掲載する場合のみ、isVisibleをtrueにする */}
         <UrgentAnnouncement isVisible={false} />
-        <div className="mb-8 mt-8 md:mt-10 flex flex-col items-center justify-center">
+        <div className="mt-8 md:mt-10 flex flex-col items-center justify-center">
           <DecorationButton />
         </div>
+        <ParticipationMethod />
+        <PointsOfAttention />
       </div>
     </SectionGradation>
   );
