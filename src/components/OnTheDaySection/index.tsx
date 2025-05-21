@@ -1,7 +1,6 @@
 import { Decoration } from "@/components/Decoration";
 import { SectionGradation } from "@/components/ui/sectionGradation";
 import { DecorationButton } from "./DecorationButton";
-import { UrgentAnnouncement } from "./UrgentAnnouncement";
 
 export function OnTheDaySection() {
   return (
