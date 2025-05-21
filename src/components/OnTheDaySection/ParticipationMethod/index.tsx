@@ -63,7 +63,7 @@ export function ParticipationMethod() {
           <>
             会場到着後、受付で入場用QRコードの提示が必要になります。
             <br />
-            EventHubへのログイン後、入場用QRコードを表示して列に待機してください。
+            Peatixへのログイン後、入場用QRコードを表示して列に待機してください。
           </>
         }
         participationButton={{
