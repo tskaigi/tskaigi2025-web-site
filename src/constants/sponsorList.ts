@@ -240,6 +240,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       ],
       roles: ["gold", "naming-rights"],
       detailPageId: "leverages",
+      jobBoard: {
+        imagePath: "/sponsors/jobBoard/leverages.jpg",
+        link: "https://hrmos.co/pages/leverages/jobs?category=1819634044861276161",
+      },
     },
     {
       id: "G02",
