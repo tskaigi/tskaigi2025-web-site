@@ -1,5 +1,6 @@
 import { EventWrapper } from "@/components/talks/EventWrapper";
 import type { Talk } from "@/constants/talkList";
+import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 import Link from "next/link";
 
 type Props = {
@@ -21,7 +22,9 @@ export function SessionWrapper({ talk }: Props) {
           <p className="text-16">{talk.title}</p>
         )}
         <div className="flex items-center gap-2">
-          <span className="text-14">{talk.speaker.name}</span>
+          {shouldDisplaySpeakerInfo(talk.talkType) && (
+            <span className="text-14">{talk.speaker.name}</span>
+          )}
           {talk.speaker.profileImagePath && (
             <img
               src={`/talks/speaker/${talk.speaker.profileImagePath}`}

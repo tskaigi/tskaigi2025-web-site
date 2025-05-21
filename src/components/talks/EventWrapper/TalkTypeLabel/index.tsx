@@ -11,6 +11,7 @@ export function TalkTypeLabel({ talkType }: Props) {
     SESSION: "border-blue-light-500 text-blue-light-500",
     LT: "border-orange-600 text-orange-600",
     SPONSOR_LT: "border-pink-500 text-pink-500",
+    EVENT: "border-red-500 text-red-500",
   };
 
   return (

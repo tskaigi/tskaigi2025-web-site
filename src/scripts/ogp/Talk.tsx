@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 // biome-ignore lint/correctness/noUnusedImports: <explanation>
 import React from "react";
 import { TALK_TYPE, TRACK, type Talk as TTalk } from "../../constants/talkList";
@@ -488,64 +489,66 @@ export function Talk({
         </div>
 
         {/* 登壇者 */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginTop: "auto",
-          }}
-        >
+        {shouldDisplaySpeakerInfo(talkType) && (
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              marginRight: "16px",
+              justifyContent: "flex-end",
+              marginTop: "auto",
             }}
           >
-            <img
-              src={avatarDataUrl}
-              alt="avatar"
-              width={114}
-              height={114}
-              style={{
-                borderRadius: "50%",
-                marginRight: "16px",
-                objectFit: "cover",
-              }}
-            />
             <div
               style={{
                 display: "flex",
-                flexDirection: "column",
+                alignItems: "center",
+                marginRight: "16px",
               }}
             >
-              {talkType === "SPONSOR_LT" ? (
-                <div
-                  style={{
-                    fontWeight: 700,
-                    color: "#2A2A2D",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "flex-end",
-                  }}
-                >
-                  <span style={{ fontSize: "24px" }}>{speaker.company}</span>
-                  <span style={{ fontSize: "30px" }}>{speaker.name}</span>
-                </div>
-              ) : (
-                <span
-                  style={{
-                    fontSize: "30px",
-                    fontWeight: 700,
-                    color: "#2A2A2D",
-                  }}
-                >
-                  {speaker.name}
-                </span>
-              )}
+              <img
+                src={avatarDataUrl}
+                alt="avatar"
+                width={114}
+                height={114}
+                style={{
+                  borderRadius: "50%",
+                  marginRight: "16px",
+                  objectFit: "cover",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                {talkType === "SPONSOR_LT" ? (
+                  <div
+                    style={{
+                      fontWeight: 700,
+                      color: "#2A2A2D",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-end",
+                    }}
+                  >
+                    <span style={{ fontSize: "24px" }}>{speaker.company}</span>
+                    <span style={{ fontSize: "30px" }}>{speaker.name}</span>
+                  </div>
+                ) : (
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      fontWeight: 700,
+                      color: "#2A2A2D",
+                    }}
+                  >
+                    {speaker.name}
+                  </span>
+                )}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

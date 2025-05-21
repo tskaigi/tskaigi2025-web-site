@@ -1,5 +1,5 @@
 type CommunityArea =
-  | "Hokkaido"
+  | "hokkaido"
   | "tohoku"
   | "kanto"
   | "chubu"
@@ -23,6 +23,14 @@ type CommunityList = {
 };
 
 export const communityList: CommunityList = {
+  hokkaido: {
+    label: "北海道",
+    communities: [],
+  },
+  tohoku: {
+    label: "東北",
+    communities: [],
+  },
   kanto: {
     label: "関東",
     communities: [
@@ -101,6 +109,14 @@ export const communityList: CommunityList = {
         link: "https://react-osaka.connpass.com",
       },
     ],
+  },
+  chugoku: {
+    label: "中国",
+    communities: [],
+  },
+  shikoku: {
+    label: "四国",
+    communities: [],
   },
   kyushu: {
     label: "九州",

@@ -1,5 +1,6 @@
 import { usernames } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
+import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ComponentProps } from "react";
@@ -112,81 +113,85 @@ export default async function TalkDetailPage({
         </div>
 
         {/* スピーカー情報 */}
-        <div className="mt-4 px-6 md:px-8 lg:px-10">
-          <div className="bg-blue-light-200 p-6 rounded-xl">
-            <div className="flex flex-col sm:flex-row items-center gap-6">
-              {/* アイコン */}
-              <div className="w-[180px] md:w-[220px] aspect-square shrink-0 rounded-full overflow-hidden">
-                <img
-                  src={`/talks/speaker/${
-                    talk.speaker.profileImagePath || "dummy.png"
-                  }`}
-                  alt={talk.speaker.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="flex flex-col gap-4">
-                {/* 名前 */}
-                <p className="font-bold text-22">{talk.speaker.name}</p>
-
-                {/* 自己紹介 */}
-                <div className="flex flex-col gap-2">
-                  <p className="text-gray-700 text-16 md:text-18">
-                    {talk.speaker.affiliation}
-                    {talk.speaker.affiliation && talk.speaker.position && " / "}
-                    {talk.speaker.position}
-                  </p>
-                  <p className="text-gray-700 text-16 md:text-18">
-                    {talk.speaker.bio}
-                  </p>
-                  {talk.speaker.additionalLink && (
-                    <Link
-                      href={talk.speaker.additionalLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 text-16 md:text-18 underline break-all"
-                    >
-                      {talk.speaker.additionalLink}
-                    </Link>
-                  )}
+        {shouldDisplaySpeakerInfo(talk.talkType) && (
+          <div className="mt-4 px-6 md:px-8 lg:px-10">
+            <div className="bg-blue-light-200 p-6 rounded-xl">
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                {/* アイコン */}
+                <div className="w-[180px] md:w-[220px] aspect-square shrink-0 rounded-full overflow-hidden">
+                  <img
+                    src={`/talks/speaker/${
+                      talk.speaker.profileImagePath || "dummy.png"
+                    }`}
+                    alt={talk.speaker.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
-                {/* SNSリンク */}
-                <div className="flex gap-2 mt-2">
-                  {talk.speaker.xId && (
-                    <Link
-                      href={`https://x.com/${talk.speaker.xId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="/talks/sns/x-logo.png"
-                        alt="X"
-                        width={36}
-                        height={36}
-                      />
-                    </Link>
-                  )}
-                  {talk.speaker.githubId && (
-                    <Link
-                      href={`https://github.com/${talk.speaker.githubId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="/talks/sns/github-logo.png"
-                        alt="GitHub"
-                        width={36}
-                        height={36}
-                      />
-                    </Link>
-                  )}
+                <div className="flex flex-col gap-4">
+                  {/* 名前 */}
+                  <p className="font-bold text-22">{talk.speaker.name}</p>
+
+                  {/* 自己紹介 */}
+                  <div className="flex flex-col gap-2">
+                    <p className="text-gray-700 text-16 md:text-18">
+                      {talk.speaker.affiliation}
+                      {talk.speaker.affiliation &&
+                        talk.speaker.position &&
+                        " / "}
+                      {talk.speaker.position}
+                    </p>
+                    <p className="text-gray-700 text-16 md:text-18">
+                      {talk.speaker.bio}
+                    </p>
+                    {talk.speaker.additionalLink && (
+                      <Link
+                        href={talk.speaker.additionalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 text-16 md:text-18 underline break-all"
+                      >
+                        {talk.speaker.additionalLink}
+                      </Link>
+                    )}
+                  </div>
+
+                  {/* SNSリンク */}
+                  <div className="flex gap-2 mt-2">
+                    {talk.speaker.xId && (
+                      <Link
+                        href={`https://x.com/${talk.speaker.xId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="/talks/sns/x-logo.png"
+                          alt="X"
+                          width={36}
+                          height={36}
+                        />
+                      </Link>
+                    )}
+                    {talk.speaker.githubId && (
+                      <Link
+                        href={`https://github.com/${talk.speaker.githubId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="/talks/sns/github-logo.png"
+                          alt="GitHub"
+                          width={36}
+                          height={36}
+                        />
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </main>
   );

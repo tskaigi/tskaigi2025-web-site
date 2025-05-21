@@ -39,24 +39,31 @@ const CommunityPage = () => {
                 >
                   {label}
                 </h3>
-                {communities.map((community) => (
-                  <Link
-                    href={community.link}
-                    target="_blank"
-                    className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
-                    key={community.name}
-                  >
-                    {community.name}
-                    <ExternalLink size={16} className="translate-y-0.5" />
-                  </Link>
-                ))}
+                {communities.length > 0 ? (
+                  communities.map((community) => (
+                    <Link
+                      href={community.link}
+                      target="_blank"
+                      className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
+                      key={community.name}
+                    >
+                      {community.name}
+                      <ExternalLink size={16} className="translate-y-0.5" />
+                    </Link>
+                  ))
+                ) : (
+                  <p className="px-5  text-black">
+                    コミュニティ情報募集中！TSKaigi
+                    2025会場で掲示しているコミュニティ日本地図に直接書き込みできます
+                  </p>
+                )}
               </div>
             ),
           )}
         </div>
 
         <div className="flex flex-col items-center gap-8">
-          <h2 className="text-24 font-bold">コミュニティカレンダー</h2>
+          <h2 className="text-24 font-bold">イベント予定カレンダー</h2>
 
           {Object.entries(communityEventList).map(([month, events]) => (
             <div className="w-full flex flex-col gap-4" key={month}>
@@ -64,15 +71,19 @@ const CommunityPage = () => {
                 {month}
               </h3>
               {events.map((event) => (
-                <Link
-                  href={event.link}
-                  target="_blank"
-                  className="px-5 text-link-light underline underline-offset-2 flex items-center gap-1"
-                  key={event.name}
-                >
-                  {event.name}
-                  <ExternalLink size={16} className="translate-y-0.5" />
-                </Link>
+                <div className="px-5 flex items-center gap-4" key={event.name}>
+                  <div className="bg-green-100 px-4 py-2 rounded-md min-w-32 text-center text-black text-14">
+                    {event.schedule}
+                  </div>
+                  <Link
+                    href={event.link}
+                    target="_blank"
+                    className="text-blue-500 flex items-center gap-1"
+                  >
+                    {event.name}
+                    <ExternalLink size={16} className="translate-y-0.5" />
+                  </Link>
+                </div>
               ))}
             </div>
           ))}
