@@ -30,6 +30,10 @@ const links: {
     label: "スポンサー",
   },
   {
+    href: "/community",
+    label: "コミュニティ",
+  },
+  {
     href: "/code-of-conduct",
     label: "行動規範",
   },
