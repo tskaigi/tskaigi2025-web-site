@@ -320,7 +320,7 @@ export function Day2TimeTable() {
         <TimeSlot timeText="17:00 ~ 18:00" />
         <EventWrapper track="TRACK1">懇親会準備</EventWrapper>
         <EventWrapper track="TRACK2">休憩スペース</EventWrapper>
-        <EventWrapper track="TRACK3">OST</EventWrapper>
+        <SessionWrapper talk={getTalk("80")} />
       </GridWrapper>
 
       <GridWrapper>

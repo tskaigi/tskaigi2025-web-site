@@ -41,6 +41,10 @@ export const TALK_TYPE = {
     name: "スポンサーLT",
     color: "#E53D84",
   },
+  EVENT: {
+    name: "参加者体験企画",
+    color: "#E02527",
+  },
 };
 export type TalkType = keyof typeof TALK_TYPE;
 
@@ -1797,6 +1801,21 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       affiliation: "クラフトバンク株式会社",
       position: "VPoE",
       company: "クラフトバンク株式会社",
+    },
+  },
+  {
+    id: "80",
+    eventDate: "DAY2",
+    track: "TRACK3",
+    talkType: "EVENT",
+    title: "OST (Open Space Technology)",
+    overview:
+      "TypeScriptユーザー同士で自由に議論し、学び合えるOST（オープンスペーステクノロジー）を開催します。OSTは、参加者全員が主役となり、自由にテーマを提案しながら議論を進める形式です。TypeScriptに関する疑問や意見を共有し、知見を深める絶好の機会です。これだけ多くのTypeScriptユーザーと直接話せるチャンスはなかなかありません。ぜひお気軽にご参加いただければと思います。\n\n事前申し込みは不要ですが、座席には限りがあり、先着順でのご案内となります。自由で活発な議論をお楽しみください。\n\nまた、2日目の11:00～16:30まで、3階レバレージズトラック後方にてOSTのテーマを募集しています。TypeScriptについて「話したい」「聞きたい」テーマをぜひお寄せください。ご提案いただいたテーマは運営チームで確認し、議題決定の参考とさせていただきます。",
+    time: "17:00 〜 18:00",
+    // NOTE: 画面には表示しないが詳細ページの URL のために設定
+    speaker: {
+      name: "ost",
+      username: "ost",
     },
   },
 ];
