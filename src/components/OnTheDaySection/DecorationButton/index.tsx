@@ -8,7 +8,7 @@ export function DecorationButton() {
       asChild
       variant="default"
       size="lg"
-      className="rounded-full w-[286px] md:w-[356px] h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white px-8 md:px-10 lg:px-10"
+      className="rounded-full w-[286px] md:w-[356px] h-[60px] bg-blue-purple-500 hover:bg-blue-purple-600 text-white px-8 md:px-10 lg:px-10 self-center"
     >
       <Link
         href="/talks"

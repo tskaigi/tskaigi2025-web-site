@@ -15,7 +15,7 @@ export function UrgentAnnouncement({
 
   return (
     <section
-      className="bg-white w-full flex flex-col gap-3 justify-center rounded-lg md:rounded-2xl px-6 py-5 md:px-8 md:py-6"
+      className="bg-white w-full flex flex-col gap-3 justify-center rounded-lg md:rounded-2xl px-6 py-5 md:px-8 md:py-6 mb-8 md:mb-10"
       role="alert"
       aria-labelledby="alert_description"
     >
