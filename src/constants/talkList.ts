@@ -1597,8 +1597,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       username: "feel_sooo_baaad",
       profileImagePath: "feel_sooo_baaad.jpg",
       bio: "1988年、札幌市出身。\n23歳の時、WEBの世界に魅了され、独学でデザインなどを学習し、WEBデザイナーとしてキャリアをスタート。\n受託制作会社で数年キャリアを積んだのち、WEBにおけるJavaScriptの可能性に魅了され、フロントエンドエンジニアに転向。\nスペースマーケットに入社後、エンジニアリング領域でのマネージメントの面白さ、奥深さに気がつきエンジニアリングマネージャーへ。\n2023年1月より、エンジニア組織全体を統括するVPoEに就任。",
-      xId: undefined,
-      // NOTE: アンケートの githubId が間違っていたため一旦空欄にしている。本人に DM で確認中で返信があれば更新。
+      xId: "feel_sooo_baaad",
       githubId: undefined,
       additionalLink: "https://suzuri.jp/VoodooRhythm",
       affiliation: "株式会社スペースマーケット",
