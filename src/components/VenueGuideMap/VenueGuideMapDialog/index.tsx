@@ -32,10 +32,16 @@ export const VenueGuideMapDialog = () => {
           <DialogDescription>会場マップの拡大図です。</DialogDescription>
         </DialogHeader>
         <div className="hidden md:block">
-          <img src="/venue-guide-map-h.png" alt="PC用会場図" />
+          <img
+            src="/venue-guide-map-h.png"
+            alt="イベント会場の2階と3階のマップ。2階にはトグルルーム、配布物コーナー、スポンサーブース、受付・本部、スタンプラリーゴールがあり、一方通行の通路がある。3階にはアセンドトラック、レバレジーズトラック、スポンサーブース、Ask the Speaker、3階案内、休憩スペース＆企画エリアがあり、一部通行不可のエリアがある。各階にエレベーターとトイレがある。"
+          />
         </div>
         <div className="md:hidden flex flex-col gap-8">
-          <img src="/venue-guide-map-v.png" alt="モバイル用会場図" />
+          <img
+            src="/venue-guide-map-v.png"
+            alt="イベント会場の2階と3階のマップ。2階にはトグルルーム、配布物コーナー、スポンサーブース、受付・本部、スタンプラリーゴールがあり、一方通行の通路がある。3階にはアセンドトラック、レバレジーズトラック、スポンサーブース、Ask the Speaker、3階案内、休憩スペース＆企画エリアがあり、一部通行不可のエリアがある。各階にエレベーターとトイレがある。"
+          />
         </div>
         <DialogFooter>
           <DialogClose asChild>
