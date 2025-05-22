@@ -16,7 +16,7 @@ export function CommonTrackWrapper({
   return (
     <div
       ref={refHandler}
-      className="grid gap-1 mt-4 md:mt-2 grid-cols-[1fr] md:grid-cols-[auto_1fr] scroll-mt-16"
+      className="grid gap-1 mt-4 md:mt-2 grid-cols-[1fr] md:grid-cols-[auto_1fr]"
     >
       <TimeSlot timeText={timeText} isActive={isActive} />
       <div className="bg-gray-50 p-5 h-16 flex items-center justify-center text-black-700">

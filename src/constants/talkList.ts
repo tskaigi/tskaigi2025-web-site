@@ -1186,7 +1186,7 @@ server.post("/hoge", hogeSchema, async (req) => {
       username: "k35o",
       profileImagePath: "k35o.jpg",
       bio: "TypeScriptとReactが好きで、業務でも趣味でも日々触れています。\nフロントエンドとデザインの境界に強い関心があり、最近はデザインの勉強にも力を入れています。\n技術と表現のあいだをつなぐようなものづくりを目指しています。",
-      xId: undefined,
+      xId: "k35o53k",
       githubId: "k35o",
       additionalLink: "https://k8o.me",
       affiliation: "株式会社ドワンゴ/教育事業本部",
@@ -1597,8 +1597,7 @@ TypeScript を学ぶ上で、「型」はしばしば静的なラベルのよう
       username: "feel_sooo_baaad",
       profileImagePath: "feel_sooo_baaad.jpg",
       bio: "1988年、札幌市出身。\n23歳の時、WEBの世界に魅了され、独学でデザインなどを学習し、WEBデザイナーとしてキャリアをスタート。\n受託制作会社で数年キャリアを積んだのち、WEBにおけるJavaScriptの可能性に魅了され、フロントエンドエンジニアに転向。\nスペースマーケットに入社後、エンジニアリング領域でのマネージメントの面白さ、奥深さに気がつきエンジニアリングマネージャーへ。\n2023年1月より、エンジニア組織全体を統括するVPoEに就任。",
-      xId: undefined,
-      // NOTE: アンケートの githubId が間違っていたため一旦空欄にしている。本人に DM で確認中で返信があれば更新。
+      xId: "feel_sooo_baaad",
       githubId: undefined,
       additionalLink: "https://suzuri.jp/VoodooRhythm",
       affiliation: "株式会社スペースマーケット",

@@ -168,14 +168,14 @@ describe("2日目のタイムテーブル", () => {
     });
 
     // 最終セッション終了
-    vi.setSystemTime(new Date("2025-05-24T17:59:59"));
+    vi.setSystemTime(new Date("2025-05-24T20:09:59"));
     screen.rerender(<Day2TimeTable />);
     await vi.waitFor(() => {
       expect(isInViewport(scrollButton)).toBeTruthy();
     });
 
     // 終了後
-    vi.setSystemTime(new Date("2025-05-24T18:00:00"));
+    vi.setSystemTime(new Date("2025-05-24T20:10:00"));
     screen.rerender(<Day2TimeTable />);
     // 日付の判定を走らせるため少しスクロール
     window.scrollTo({
