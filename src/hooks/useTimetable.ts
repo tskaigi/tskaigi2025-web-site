@@ -91,14 +91,20 @@ export const useTimetable = ({
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
 
   useEffect(() => {
-    if (!isConferencePeriod()) return;
+    const now = new Date();
+    const isConferenceDay =
+      now.getFullYear() === 2025 &&
+      now.getMonth() === 4 &&
+      (now.getDate() === 23 || now.getDate() === 24);
+    if (!isConferenceDay) return;
+
     setCurrentTime(new Date());
     const interval = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [isConferencePeriod]);
+  }, []);
 
   const isSessionActive = (sessionId: string) => {
     const currentId = getCurrentSessionId(currentTime);
