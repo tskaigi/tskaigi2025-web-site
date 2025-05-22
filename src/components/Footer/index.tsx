@@ -87,7 +87,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                公式Youtube
+                公式YouTube
               </Link>
             </li>
           </ul>
