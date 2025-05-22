@@ -939,8 +939,8 @@ GitHub ActionsのカスタムアクションはJavaScriptしか直接動かせ�
     speaker: {
       name: "mizchi",
       username: "mizchi",
-      profileImagePath: undefined,
-      bio: undefined,
+      profileImagePath: "mizchi.jpeg",
+      bio: "フリーランスのフロントエンド改善傭兵",
       xId: "mizchi",
       githubId: undefined,
       additionalLink: undefined,
