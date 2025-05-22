@@ -385,24 +385,23 @@ export function Day2TimeTable() {
         </EventWrapper>
       </GridWrapper>
 
+{showScrollButton && (
       <div
         className={cn(
           "fixed bottom-4 left-1/2 -translate-x-1/2 transition-transform duration-300 z-50",
-          showScrollButton
-            ? "translate-y-0 pointer-events-auto"
-            : "translate-y-[150%] pointer-events-none",
+          "translate-y-0 pointer-events-auto",
         )}
       >
         <Button
           type="button"
           className="font-bold bg-blue-light-500 hover:bg-blue-light-500 rounded-full md:hidden"
           onClick={scrollToCurrentSession}
-          aria-hidden={!showScrollButton}
-          tabIndex={showScrollButton ? 0 : -1}
+          tabIndex={0}
         >
           現在のセッションにスクロールする
         </Button>
       </div>
+      )}
     </>
   );
 }
