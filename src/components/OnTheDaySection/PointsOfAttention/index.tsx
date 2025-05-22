@@ -25,6 +25,10 @@ export function PointsOfAttention() {
       <Caution>
         1日目に受付をお済ませの方は、2日目の受付は不要です。ただし、ネックストラップは必ずご着用ください。
       </Caution>
+      <Caution>
+        オフライン会場ではトーク終了後にスピーカーと直接話せる Ask the Speaker
+        を実施します。
+      </Caution>
     </div>
   );
 }
