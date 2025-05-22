@@ -1186,7 +1186,7 @@ server.post("/hoge", hogeSchema, async (req) => {
       username: "k35o",
       profileImagePath: "k35o.jpg",
       bio: "TypeScriptとReactが好きで、業務でも趣味でも日々触れています。\nフロントエンドとデザインの境界に強い関心があり、最近はデザインの勉強にも力を入れています。\n技術と表現のあいだをつなぐようなものづくりを目指しています。",
-      xId: undefined,
+      xId: "k35o53k",
       githubId: "k35o",
       additionalLink: "https://k8o.me",
       affiliation: "株式会社ドワンゴ/教育事業本部",
