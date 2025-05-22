@@ -42,7 +42,7 @@ export const TALK_TYPE = {
     color: "#E53D84",
   },
   EVENT: {
-    name: "参加者体験企画",
+    name: "現地参加者向け企画",
     color: "#E02527",
   },
 };
