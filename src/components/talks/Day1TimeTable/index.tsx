@@ -345,7 +345,8 @@ export function Day1TimeTable() {
 
       <div
         className={cn(
-          "fixed bottom-4 left-1/2 -translate-x-1/2 transition-transform duration-300 z-50",
+          "fixed left-1/2 -translate-x-1/2 transition-transform duration-300 z-50",
+          "bottom-[calc(1rem+env(safe-area-inset-bottom,16px))]",
           showScrollButton
             ? "translate-y-0 pointer-events-auto"
             : "translate-y-[150%] pointer-events-none",
