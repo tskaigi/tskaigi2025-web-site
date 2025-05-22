@@ -55,7 +55,7 @@ export const staffList: Staff[] = [
   {
     name: "Hikaru Kobayashi",
     image: "/staff/hikaru-kobayashi.png",
-    href: "https://x.com/splendente_dev",
+    href: "https://x.com/hikkobay",
   },
   {
     name: "midori",
