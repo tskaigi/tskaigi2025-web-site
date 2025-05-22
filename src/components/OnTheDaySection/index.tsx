@@ -17,9 +17,7 @@ export function OnTheDaySection() {
         </div>
         {/* MEMO: 緊急のお知らせを掲載する場合のみ、isVisibleをtrueにする */}
         <UrgentAnnouncement isVisible={false} />
-        <div className="mt-8 md:mt-10 flex flex-col items-center justify-center">
-          <DecorationButton />
-        </div>
+        <DecorationButton />
         <ParticipationMethod />
         <PointsOfAttention />
       </div>
