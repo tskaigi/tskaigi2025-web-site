@@ -87,7 +87,7 @@ export function ParticipationMethod() {
         }
         participationButton={{
           text: "視聴URLを表示する",
-          href: "https://peatix.com/event/4342139/view",
+          href: "https://peatix.com/event/4342139/watch_stream",
         }}
         participationType="online"
       />
