@@ -9,7 +9,7 @@
     "start": "next start",
     "check": "biome check ./src/",
     "check:fix": "biome check --write ./src/",
-    "typecheck": "tsgo -p . --noEmit",
+    "typecheck": "npx tsgo -p . --noEmit",
     "generate-talk-ogp": "npx tsx src/scripts/ogp/index.ts",
     "test": "vitest"
   },
