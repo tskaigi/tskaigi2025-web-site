@@ -68,7 +68,7 @@ export function ParticipationMethod() {
         }
         participationButton={{
           text: "参加QRを表示する",
-          href: "https://peatix.com/event/4342134/view",
+          href: "https://peatix.com/event/4342134/ticket",
         }}
         participationType="local"
       />
