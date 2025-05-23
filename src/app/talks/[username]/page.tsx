@@ -1,4 +1,4 @@
-import { usernames } from "@/constants/talkList";
+import { TALK_TYPE, TRACK, usernames } from "@/constants/talkList";
 import { getTalk } from "@/utils/getTalk";
 import { shouldDisplaySpeakerInfo } from "@/utils/shouldDisplaySpeakerInfo";
 import type { Metadata } from "next";
@@ -103,6 +103,14 @@ export default async function TalkDetailPage({
             src={`/ogp/talks/${talk.speaker.username}.png`}
             alt={talk.title}
           />
+        </div>
+
+        <div className="px-6 md:px-8 lg:px-10 flex flex-col gap-1">
+          <div className="text-lg">{TALK_TYPE[talk.talkType].name}</div>
+          <div className="text-2xl font-bold">{talk.title}</div>
+          <div className="text-lg font-bold">
+            {talk.eventDate} / {talk.time} （{TRACK[talk.track].name}）
+          </div>
         </div>
 
         {/* トーク説明文 */}
