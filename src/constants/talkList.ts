@@ -705,7 +705,8 @@ export const talkList: Talk[] = [
       xId: "inheritans1904",
       githubId: "YutaK1026",
       additionalLink: "https://kawaport.pages.dev/",
-      affiliation: "名古屋大学大学院・アプリ開発団体jack・アイスクリスタル株式会社",
+      affiliation:
+        "名古屋大学大学院・アプリ開発団体jack・アイスクリスタル株式会社",
       position: "フロントエンドエンジニア",
     },
   },
