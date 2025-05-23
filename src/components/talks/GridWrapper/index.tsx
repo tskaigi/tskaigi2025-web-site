@@ -2,7 +2,7 @@ import type React from "react";
 
 type Props = {
   children: React.ReactNode;
-  refHandler?: (ref: HTMLDivElement) => void;
+  refHandler?: (ref: HTMLDivElement | null) => void;
 };
 
 export function GridWrapper({ children, refHandler }: Props) {
