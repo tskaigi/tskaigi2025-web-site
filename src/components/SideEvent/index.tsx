@@ -5,26 +5,28 @@ export type SideEventProps = {
   date: string;
   name: string;
   link: string;
-  isClosed?: boolean;
   thumbnail: string;
   detail: string;
   tags?: string[];
   sponsors: string[];
+  finishedAt: Date;
 };
 
 const SideEvent = ({
   date,
   name,
   link,
-  isClosed = false,
   thumbnail,
   detail,
   tags,
   sponsors,
+  finishedAt,
 }: SideEventProps) => {
+  const isClosed = finishedAt < new Date();
+
   return (
     <div className="flex flex-col gap-4 md:flex-row md:gap-8">
-      <h2 className="text-2xl">
+      <h2 className="text-2xl w-[56px] shrink-0">
         <span className="font-bold pr-1">{date.split(" ")[0]}</span>
         <br className="hidden md:block" />
         {date.split(" ")[1]}
