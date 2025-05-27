@@ -15,8 +15,7 @@ export function OnTheDaySection() {
           </h2>
           <Decoration />
         </div>
-        {/* MEMO: 緊急のお知らせを掲載する場合のみ、isVisibleをtrueにする */}
-        <UrgentAnnouncement isVisible={false} />
+        <UrgentAnnouncement />
         <DecorationButton />
         <ParticipationMethod />
         <PointsOfAttention />
