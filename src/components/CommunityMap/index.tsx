@@ -735,6 +735,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#hokkaido">
+          <title>北海道</title>
           <g>
             <rect
               className="cls-36"
@@ -832,6 +833,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#tohoku">
+          <title>東北</title>
           <g>
             <rect
               className="cls-34"
@@ -908,6 +910,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#kanto">
+          <title>関東</title>
           <g>
             <rect
               className="cls-35"
@@ -977,6 +980,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#online">
+          <title>オンライン</title>
           <g>
             <rect
               className="cls-27"
@@ -1074,6 +1078,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#kinki">
+          <title>近畿</title>
           <g>
             <rect
               className="cls-3"
@@ -1143,6 +1148,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#chubu">
+          <title>中部</title>
           <g>
             <rect
               className="cls-6"
@@ -1212,6 +1218,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#chugoku">
+          <title>中国</title>
           <g>
             <rect
               className="cls-28"
@@ -1295,6 +1302,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#kyushu">
+          <title>九州</title>
           <g>
             <rect
               className="cls-9"
@@ -1371,6 +1379,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#okinawa">
+          <title>沖縄</title>
           <g>
             <rect
               className="cls-1"
@@ -1454,6 +1463,7 @@ const CommunityMap = (props?: ComponentPropsWithoutRef<"svg">) => {
           />
         </g>
         <a href="#shikoku">
+          <title>四国</title>
           <g>
             <rect
               className="cls-11"
