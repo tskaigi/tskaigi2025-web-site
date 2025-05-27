@@ -1,5 +1,4 @@
 import { Caution } from "@/components/OnTheDaySection/Notes/Caution";
-import { LinkText } from "@/components/OnTheDaySection/Notes/LinkText";
 
 export function UrgentAnnouncement() {
   return (
@@ -11,12 +10,8 @@ export function UrgentAnnouncement() {
       <span id="alert_description" className="sr-only">
         運営からのお知らせ
       </span>
-      <Caution>
-        TSKaigi 2025は終了しました。
-      </Caution>
-      <Caution>
-        ご参加いただいた皆さん、ありがとうございました。
-      </Caution>
+      <Caution>TSKaigi 2025は終了しました。</Caution>
+      <Caution>ご参加いただいた皆さん、ありがとうございました。</Caution>
     </section>
   );
 }
