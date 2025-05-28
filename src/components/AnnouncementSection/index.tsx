@@ -2,7 +2,7 @@ import { Decoration } from "@/components/Decoration";
 import { SectionGradation } from "@/components/ui/sectionGradation";
 import { Announcement } from "./Announcement";
 
-export function AnnouncementSection() {
+export function OnTheDaySection() {
   return (
     <SectionGradation>
       <div className="mx-6 flex flex-col justify-center lg:max-w-[940px] lg:mx-auto pt-6 lg:pt-16 max-sm:pb-2">
