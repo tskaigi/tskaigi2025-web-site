@@ -4,6 +4,11 @@ import { VenueInformation } from "../VenueInformation";
 function MissionSessionContent() {
   return (
     <div className="p-6 flex flex-col justify-center md:p-10 lg:max-w-[940px] lg:mx-auto lg:py-16">
+      <p className="text-xl md:text-4xl text-center font-bold my-8 md:mb-16">
+        TSKaigi 2025は終了しました。
+        <br />
+        ご参加いただきありがとうございました！
+      </p>
       <h2 className="text-sm text-center md:text-lg">MISSION</h2>
 
       <p className="text-blue-500 text-xl font-bold text-center mt-1 lg:mt-4 md:text-2xl lg:text-3xl">
