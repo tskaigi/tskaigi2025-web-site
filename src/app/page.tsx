@@ -1,4 +1,4 @@
-import { OnTheDaySection } from "@/components/AnnouncementSection";
+import { AnnouncementSection } from "@/components/AnnouncementSection";
 import { CoreStaffSection } from "@/components/CoreStaffSection";
 import { HeroSectionWithMotion } from "@/components/HeroSectionWithMotion";
 import { JobBoardSection } from "@/components/JobBoardSection";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="pt-8 overflow-x-hidden">
       <HeroSectionWithMotion />
-      <OnTheDaySection />
+      <AnnouncementSection />
       <MissionSection />
       <JobBoardSection />
       <SponsorsBoardSection />
