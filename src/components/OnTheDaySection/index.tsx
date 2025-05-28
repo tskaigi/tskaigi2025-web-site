@@ -1,9 +1,9 @@
 import { Decoration } from "@/components/Decoration";
 import { SectionGradation } from "@/components/ui/sectionGradation";
+import { Announcement } from "./Announcement";
 import { DecorationButton } from "./DecorationButton";
 import { ParticipationMethod } from "./ParticipationMethod";
 import { PointsOfAttention } from "./PointsOfAttention";
-import { UrgentAnnouncement } from "./UrgentAnnouncement";
 
 export function OnTheDaySection() {
   return (
@@ -15,7 +15,7 @@ export function OnTheDaySection() {
           </h2>
           <Decoration />
         </div>
-        <UrgentAnnouncement />
+        <Announcement />
         <DecorationButton />
         <ParticipationMethod />
         <PointsOfAttention />

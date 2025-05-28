@@ -1,6 +1,6 @@
 import { Caution } from "@/components/OnTheDaySection/Notes/Caution";
 
-export function UrgentAnnouncement() {
+export function Announcement() {
   return (
     <section
       className="bg-white w-full flex flex-col gap-3 justify-center rounded-lg md:rounded-2xl px-6 py-5 md:px-8 md:py-6 mb-8 md:mb-10"
