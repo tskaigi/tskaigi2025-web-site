@@ -32,21 +32,16 @@ function ParticipationMethodCard({
     >
       <h3 className="text-22 font-bold max-md:text-xl">{title}</h3>
       <p className="text-lg max-md:text-base leading-[1.8]">{description}</p>
-      <a
-        className={cn(
-          "w-fit py-3 px-6 rounded-full text-white font-bold flex items-center gap-2 mt-auto max-md:text-[18px] text-[22px]",
-          participationType === "local" && "bg-orange-500",
-          participationType === "online" && "bg-blue-purple-500",
-        )}
-        href={participationButton.href}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        className="w-fit py-3 px-6 rounded-full text-white font-bold flex items-center gap-2 mt-auto max-md:text-[18px] text-[22px] bg-gray-400 cursor-not-allowed"
+        type="button"
+        disabled
       >
         <span className="leading-[1.5] max-md:leading-[1.8]">
           {participationButton.text}
         </span>
         <ArrowRight />
-      </a>
+      </button>
     </div>
   );
 }
