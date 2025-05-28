@@ -1,4 +1,4 @@
-import { Caution } from "@/components/OnTheDaySection/Notes/Caution";
+import { Caution } from "@/components/AnnouncementSection/Notes/Caution";
 
 export function Announcement() {
   return (
