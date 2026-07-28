@@ -68,7 +68,7 @@ export const communityList: CommunityList = {
       },
       {
         name: "TSKaigi mashup",
-        link: "https://typescript-jpc.connpass.com",
+        link: "https://tskaigi.connpass.com",
       },
       {
         name: "フロントエンドカンファレンス東京",
